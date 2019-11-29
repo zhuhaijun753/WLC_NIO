@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Nm_Cfg.c
- *   Generation Time: 2019-12-01 17:02:26
+ *   Generation Time: 2019-11-29 22:29:13
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -53,6 +53,7 @@
 
 #include "ComM.h"
 #include "CanNm.h"
+#include "Appl_Nm.h"
 
 /**********************************************************************************************************************
  *  LOCAL CONSTANT MACROS

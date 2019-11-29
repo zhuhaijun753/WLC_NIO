@@ -20,3 +20,4 @@
 "${ProjDirPath}/Sources/BSW/CanTp"
 "${ProjDirPath}/Sources/BSW/Det"
 "${ProjDirPath}/Sources/BSW/CddDk4"
+"${ProjDirPath}/Sources/BSW/Crc"

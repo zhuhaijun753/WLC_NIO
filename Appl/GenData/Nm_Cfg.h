@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Nm_Cfg.h
- *   Generation Time: 2019-12-01 17:02:33
+ *   Generation Time: 2019-11-29 22:29:14
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -52,6 +52,7 @@
 #include "NmStack_Types.h"
 
 
+#include "Appl_Nm.h"
 
 /**********************************************************************************************************************
  *  GLOBAL CONSTANT MACROS
@@ -107,6 +108,8 @@
 
 
 /* Callbacks to Upper Layer */
+/* Indication that the Nm State has changed */
+#define UL_Nm_StateChangeNotification                  WLCUL_CANNM_StateChangeNotification
 
 
 /* Optimizations */

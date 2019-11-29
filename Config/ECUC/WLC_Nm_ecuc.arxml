@@ -86,6 +86,14 @@
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Nm/NmGlobalConfig/NmGlobalFeatures/NmCoordinatorPassiveStartUpForwarding</DEFINITION-REF>
                       <VALUE>false</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/MICROSAR/Nm/NmGlobalConfig/NmGlobalFeatures/NmStateChangeIndCallback</DEFINITION-REF>
+                      <VALUE>WLCUL_CANNM_StateChangeNotification</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Nm/NmGlobalConfig/NmGlobalFeatures/NmCallbacksPrototypeHeader</DEFINITION-REF>
+                      <VALUE>Appl_Nm.h</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE UUID="dce853e1-682e-4e98-b0d5-c48e61888b57">
