@@ -88,7 +88,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/MICROSAR/Nm/NmGlobalConfig/NmGlobalFeatures/NmStateChangeIndCallback</DEFINITION-REF>
-                      <VALUE>WLCUL_CANNM_StateChangeNotification</VALUE>
+                      <VALUE>WLC_CANNM_StateChangeNotification</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Nm/NmGlobalConfig/NmGlobalFeatures/NmCallbacksPrototypeHeader</DEFINITION-REF>

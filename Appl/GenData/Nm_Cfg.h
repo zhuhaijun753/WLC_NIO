@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Nm_Cfg.h
- *   Generation Time: 2019-11-29 22:29:14
+ *   Generation Time: 2019-11-29 22:48:51
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -109,7 +109,7 @@
 
 /* Callbacks to Upper Layer */
 /* Indication that the Nm State has changed */
-#define UL_Nm_StateChangeNotification                  WLCUL_CANNM_StateChangeNotification
+#define UL_Nm_StateChangeNotification                  WLC_CANNM_StateChangeNotification
 
 
 /* Optimizations */

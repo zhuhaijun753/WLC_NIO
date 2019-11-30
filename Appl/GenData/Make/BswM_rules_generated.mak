@@ -21,7 +21,7 @@
  #  FILE DESCRIPTION
  #  -------------------------------------------------------------------------------------------------------------------
  #              File: BswM_rules_generated.mak
- #   Generation Time: 2019-11-29 22:29:17
+ #   Generation Time: 2019-11-29 22:48:51
  #           Project: WLC - Version 1.0
  #          Delivery: CBD1900162_D00
  #      Tool Version: DaVinci Configurator (beta) 5.19.29
