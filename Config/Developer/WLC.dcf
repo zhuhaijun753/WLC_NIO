@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DCF ARSCHEMA="431_DEV">
+	<Version>1.0</Version>
+	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
+	<ADMINDATATEMPLATES>AdminDataTemplates.xml</ADMINDATATEMPLATES>
+	<PROJECTASSISTANT>..\..\WLC.dpa</PROJECTASSISTANT>
+	<FILEREF>
+		<ARXML>Packages.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>DataTypes.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>PortInterfaces.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ECUProjects\WLC.arxml</ARXML>
+		<DVG>ECUProjects\WLC.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/SWC_WLCAPP.arxml</ARXML>
+		<DVG>ComponentTypes/SWC_WLCAPP.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/SWC_APP.arxml</ARXML>
+		<DVG>ComponentTypes/SWC_APP.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/Communication_Write_APP.arxml</ARXML>
+		<DVG>ComponentTypes/Communication_Write_APP.dvg</DVG>
+	</FILEREF>
+</DCF>

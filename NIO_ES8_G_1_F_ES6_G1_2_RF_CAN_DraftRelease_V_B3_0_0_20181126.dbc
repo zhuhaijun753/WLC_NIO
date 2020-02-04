@@ -1,0 +1,688 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: WLC CGW
+
+
+BO_ 1212 WLC_DEVLP_02: 8 Vector__XXX
+ SG_ WLCDevlpRx : 7|64@0+ (1,0) [0|0] ""  WLC
+
+BO_ 1211 WLC_DEVLP_01: 8 WLC
+ SG_ WLCDevlpTx : 7|64@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1198 WLC_CDC_NFC: 8 WLC
+ SG_ WLCBTInfo : 7|64@0+ (1,0) [0|0] ""  CGW
+
+BO_ 832 WLC_02: 2 WLC
+ SG_ WLC_02_MsgCntr : 15|4@0+ (1,0) [0|15] ""  CGW
+ SG_ WLC_02_CRC : 7|8@0+ (1,0) [0|255] ""  CGW
+ SG_ WLCImobSts : 9|2@0+ (1,0) [0|3] ""  CGW
+
+BO_ 995 WLC_01: 3 WLC
+ SG_ WLC_01_MsgCntr : 15|4@0+ (1,0) [0|15] ""  CGW
+ SG_ WLCMuteViaHW : 10|1@0+ (1,0) [0|1] ""  CGW
+ SG_ WLCChrgRate : 9|2@0+ (1,0) [0|3] ""  CGW
+ SG_ WLCCtrlSts : 17|2@0+ (1,0) [0|3] ""  CGW
+ SG_ WLCChrgSts : 19|2@0+ (1,0) [0|3] ""  CGW
+ SG_ WLC_01_CRC : 7|8@0+ (1,0) [0|255] ""  CGW
+ SG_ WLCFailSts : 23|4@0+ (1,0) [0|15] ""  CGW
+
+BO_ 1336 NM_WLC: 8 WLC
+ SG_ ResdBit2_WLC : 15|1@0+ (1,0) [0|1] ""  CGW
+ SG_ UsrData2_WLC : 39|8@0+ (1,0) [0|255] ""  CGW
+ SG_ ActvWakeup_WLC : 12|1@0+ (1,0) [0|1] ""  CGW
+ SG_ NetMngtCoorrSleepRdy_WLC : 11|1@0+ (1,0) [0|1] ""  CGW
+ SG_ UsrData1_WLC : 31|8@0+ (1,0) [0|255] ""  CGW
+ SG_ RepMsgReq_WLC : 8|1@0+ (1,0) [0|1] ""  CGW
+ SG_ ResdBit1_WLC : 13|1@0+ (1,0) [0|1] ""  CGW
+ SG_ UsrData4_WLC : 55|8@0+ (1,0) [0|255] ""  CGW
+ SG_ UsrData0_WLC : 23|8@0+ (1,0) [0|255] ""  CGW
+ SG_ ScrNodId_WLC : 7|8@0+ (1,0) [0|255] ""  CGW
+ SG_ UsrData5_WLC : 63|8@0+ (1,0) [0|255] ""  CGW
+ SG_ PtlNetInfo_WLC : 14|1@0+ (1,0) [0|1] ""  CGW
+ SG_ NetMngtCoorn_WLC : 10|2@0+ (1,0) [0|3] ""  CGW
+ SG_ UsrData3_WLC : 47|8@0+ (1,0) [0|255] ""  CGW
+
+BO_ 1285 NM_CGW: 8 CGW
+ SG_ UsrData2_CGW : 39|8@0+ (1,0) [0|255] ""  WLC
+ SG_ UsrData1_CGW : 31|8@0+ (1,0) [0|255] ""  WLC
+ SG_ UsrData5_CGW : 63|8@0+ (1,0) [0|255] ""  WLC
+ SG_ ScrNodId_CGW : 7|8@0+ (1,0) [0|255] ""  WLC
+ SG_ ActvWakeup_CGW : 12|1@0+ (1,0) [0|1] ""  WLC
+ SG_ NetMngtCoorn_CGW : 10|2@0+ (1,0) [0|3] ""  WLC
+ SG_ UsrData3_CGW : 47|8@0+ (1,0) [0|255] ""  WLC
+ SG_ UsrData4_CGW : 55|8@0+ (1,0) [0|255] ""  WLC
+ SG_ NetMngtCoorrSleepRdy_CGW : 11|1@0+ (1,0) [0|1] ""  WLC
+ SG_ PtlNetInfo_CGW : 14|1@0+ (1,0) [0|1] ""  WLC
+ SG_ ResdBit1_CGW : 13|1@0+ (1,0) [0|1] ""  WLC
+ SG_ RepMsgReq_CGW : 8|1@0+ (1,0) [0|1] ""  WLC
+ SG_ UsrData0_CGW : 23|8@0+ (1,0) [0|255] ""  WLC
+ SG_ ResdBit2_CGW : 15|1@0+ (1,0) [0|1] ""  WLC
+
+BO_ 40 IMOB_WLC_CGW: 8 WLC
+ SG_ Imob_WLC_CGW_Byte4 : 39|8@0+ (1,0) [0|255] ""  CGW
+ SG_ Imob_WLC_CGW_Byte3 : 31|8@0+ (1,0) [0|255] ""  CGW
+ SG_ Imob_WLC_CGW_Byte5 : 47|8@0+ (1,0) [0|255] ""  CGW
+ SG_ Imob_WLC_CGW_Byte1 : 15|8@0+ (1,0) [0|255] ""  CGW
+ SG_ Imob_WLC_CGW_Byte6 : 55|8@0+ (1,0) [0|255] ""  CGW
+ SG_ Imob_WLC_CGW_Byte2 : 23|8@0+ (1,0) [0|255] ""  CGW
+ SG_ Imob_WLC_CGW_Byte0 : 7|8@0+ (1,0) [0|255] ""  CGW
+ SG_ Imob_WLC_CGW_Byte7 : 63|8@0+ (1,0) [0|255] ""  CGW
+
+BO_ 39 IMOB_CGW_WLC: 8 CGW
+ SG_ Imob_CGW_WLC_Byte0 : 7|8@0+ (1,0) [0|255] ""  WLC
+ SG_ Imob_CGW_WLC_Byte4 : 39|8@0+ (1,0) [0|255] ""  WLC
+ SG_ Imob_CGW_WLC_Byte1 : 15|8@0+ (1,0) [0|255] ""  WLC
+ SG_ Imob_CGW_WLC_Byte5 : 47|8@0+ (1,0) [0|255] ""  WLC
+ SG_ Imob_CGW_WLC_Byte2 : 23|8@0+ (1,0) [0|255] ""  WLC
+ SG_ Imob_CGW_WLC_Byte7 : 63|8@0+ (1,0) [0|255] ""  WLC
+ SG_ Imob_CGW_WLC_Byte6 : 55|8@0+ (1,0) [0|255] ""  WLC
+ SG_ Imob_CGW_WLC_Byte3 : 31|8@0+ (1,0) [0|255] ""  WLC
+
+BO_ 1720 DIAG_RESP_WLC: 8 WLC
+ SG_ DiagRespData3_WLC : 31|8@0+ (1,0) [0|255] ""  CGW
+ SG_ DiagRespData2_WLC : 23|8@0+ (1,0) [0|255] ""  CGW
+ SG_ DiagRespData0_WLC : 7|8@0+ (1,0) [0|255] ""  CGW
+ SG_ DiagRespData6_WLC : 55|8@0+ (1,0) [0|255] ""  CGW
+ SG_ DiagRespData1_WLC : 15|8@0+ (1,0) [0|255] ""  CGW
+ SG_ DiagRespData4_WLC : 39|8@0+ (1,0) [0|255] ""  CGW
+ SG_ DiagRespData5_WLC : 47|8@0+ (1,0) [0|255] ""  CGW
+ SG_ DiagRespData7_WLC : 63|8@0+ (1,0) [0|255] ""  CGW
+
+BO_ 1592 DIAG_REQ_WLC: 8 CGW
+ SG_ DiagReqData2_WLC : 23|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData1_WLC : 15|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData6_WLC : 55|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData3_WLC : 31|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData0_WLC : 7|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData5_WLC : 47|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData7_WLC : 63|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData4_WLC : 39|8@0+ (1,0) [0|255] ""  WLC
+
+BO_ 1537 DIAG_REQ_AllECU: 8 CGW
+ SG_ DiagReqData0_AllECU : 7|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData5_AllECU : 47|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData3_AllECU : 31|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData7_AllECU : 63|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData1_AllECU : 15|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData4_AllECU : 39|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData2_AllECU : 23|8@0+ (1,0) [0|255] ""  WLC
+ SG_ DiagReqData6_AllECU : 55|8@0+ (1,0) [0|255] ""  WLC
+
+BO_ 958 CGW_WLC: 8 CGW
+ SG_ CGW_WLC_MsgCntr : 15|4@0+ (1,0) [0|15] ""  WLC
+ SG_ CGW_WLC_CRC : 7|8@0+ (1,0) [0|255] ""  WLC
+
+BO_ 946 CGW_TCU_01: 6 CGW
+ SG_ Sec : 45|6@0+ (1,0) [0|59] "Sec"  WLC
+ SG_ Mth : 11|4@0+ (1,0) [0|15] ""  WLC
+ SG_ Day : 20|5@0+ (1,0) [0|31] "Day"  WLC
+ SG_ Yr : 7|8@0+ (1,2000) [2000|2254] "Year"  WLC
+ SG_ Min : 37|6@0+ (1,0) [0|59] "min"  WLC
+ SG_ Hr : 28|5@0+ (1,0) [0|23] "Hour"  WLC
+
+BO_ 268 CGW_03: 8 CGW
+ SG_ VehState_ASIL : 11|4@0+ (1,0) [0|15] ""  WLC
+ SG_ CGW_03_CRC : 7|8@0+ (1,0) [0|255] ""  WLC
+ SG_ ComfEna_ASIL : 17|2@0+ (1,0) [0|3] ""  WLC
+ SG_ CGW_03_MsgCntr : 15|4@0+ (1,0) [0|15] ""  WLC
+ SG_ VehMode : 21|4@0+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 707 CGW_02: 2 CGW
+ SG_ ImobEnaReq : 15|2@0+ (1,0) [0|3] ""  WLC
+ SG_ KeyAuthSts : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ KeyPrsntSts : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VehState : 7|4@0+ (1,0) [0|15] ""  WLC
+ SG_ ImobSts : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FOTAHvPwrMgnt : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ComfEna : 3|2@0+ (1,0) [0|3] ""  WLC
+
+BO_ 1199 CDC_WLC_NFC: 8 CGW
+ SG_ CDCBTInfo : 7|64@0+ (1,0) [0|0] ""  WLC
+
+BO_ 698 CDC_WLC: 1 CGW
+ SG_ WLCChrgFctEnaReq : 1|2@0+ (1,0) [0|3] ""  WLC
+
+BO_ 938 CDC_IC_01: 3 CGW
+ SG_ VehOdometer : 7|24@0+ (1,0) [0|16777214] "km"  WLC
+
+BO_ 91 BCU_04: 8 CGW
+ SG_ EPBSts : 53|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ BrkPedlSts : 55|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ BrkPress : 39|9@0+ (1,-42.5) [-42.5|425.5] "Bar" Vector__XXX
+ SG_ VehSpd : 20|13@0+ (0.05625,0) [0|360] "km/h"  WLC
+ SG_ VehMovgDir : 22|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ BrkPressOffsetValid : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HAZReq : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkOverHeat : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCU_04_CRC : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ BCUBrkLiReq : 10|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ BCU_NoBrkF : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkPressOffset : 46|5@0+ (1,-15) [-15|15] "Bar" Vector__XXX
+ SG_ BrkPressValid : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EPBSwtSts : 57|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VehSpdSts : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCU_04_MsgCntr : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+
+
+
+CM_ SG_ 1212 WLCDevlpRx "WLC development receive frame ";
+CM_ SG_ 1211 WLCDevlpTx "WLC development transmit frame ";
+CM_ SG_ 1198 WLCBTInfo "WLC Pair BT and Wifi info";
+CM_ SG_ 832 WLC_02_MsgCntr "WLC_02 Message counter  ";
+CM_ SG_ 832 WLC_02_CRC "WLC_02 CRC";
+CM_ SG_ 832 WLCImobSts "WLC Immo Status";
+CM_ SG_ 995 WLC_01_MsgCntr "WLC_01 Message counter    ";
+CM_ SG_ 995 WLCMuteViaHW "Mute line status";
+CM_ SG_ 995 WLCChrgRate "Wireless charger (WLC) charge rate";
+CM_ SG_ 995 WLCCtrlSts "Wireless charger (WLC) control status    ";
+CM_ SG_ 995 WLCChrgSts "Wireless charger (WLC) charging status    ";
+CM_ SG_ 995 WLC_01_CRC "WLC_01 CRC    ";
+CM_ SG_ 995 WLCFailSts "Wireless charger (WLC) fail status    ";
+CM_ SG_ 1336 ResdBit2_WLC "Control bit vector WLC
+Reserved   ";
+CM_ SG_ 1336 UsrData2_WLC "User data 2 WLC   ";
+CM_ SG_ 1336 ActvWakeup_WLC "Control bit vector WLC
+Active wakeup - Reserved   ";
+CM_ SG_ 1336 NetMngtCoorrSleepRdy_WLC "Control bit vector WLC
+Network management coordinator sleep ready - Reserved   ";
+CM_ SG_ 1336 UsrData1_WLC "User data 1 WLC   ";
+CM_ SG_ 1336 RepMsgReq_WLC "Control bit vector WLC Repeat Message Request   ";
+CM_ SG_ 1336 ResdBit1_WLC "Control bit vector WLC
+Reserved   ";
+CM_ SG_ 1336 UsrData4_WLC "User data 4 WLC   ";
+CM_ SG_ 1336 UsrData0_WLC "User data 0 WLC   ";
+CM_ SG_ 1336 ScrNodId_WLC "Source node identifier WLC   ";
+CM_ SG_ 1336 UsrData5_WLC "User data 5 WLC   ";
+CM_ SG_ 1336 PtlNetInfo_WLC "Control bit vector WLC
+Partial network information - Reserved   ";
+CM_ SG_ 1336 NetMngtCoorn_WLC "Control bit vector WLC
+Network management coordination - Reserved   ";
+CM_ SG_ 1336 UsrData3_WLC "User data 3 WLC   ";
+CM_ SG_ 1285 UsrData2_CGW "User data 2 CGW   ";
+CM_ SG_ 1285 UsrData1_CGW "User data 1 CGW   ";
+CM_ SG_ 1285 UsrData5_CGW "User data 5 CGW   ";
+CM_ SG_ 1285 ScrNodId_CGW "Source node identifier CGW  ";
+CM_ SG_ 1285 ActvWakeup_CGW "Control bit vector CGW Active wakeup - Reserved   ";
+CM_ SG_ 1285 NetMngtCoorn_CGW "Control bit vector CGW Network management coordination - Reserved   ";
+CM_ SG_ 1285 UsrData3_CGW "User data 3 CGW   ";
+CM_ SG_ 1285 UsrData4_CGW "User data 4 CGW   ";
+CM_ SG_ 1285 NetMngtCoorrSleepRdy_CGW "Control bit vector CGW Network management coordinator sleep ready - Reserved   ";
+CM_ SG_ 1285 PtlNetInfo_CGW "Control bit vector CGW Partial network information - Reserved   ";
+CM_ SG_ 1285 ResdBit1_CGW "Control bit vector CGW Reserved   ";
+CM_ SG_ 1285 RepMsgReq_CGW "Control bit vector CGW Repeat Message Request   ";
+CM_ SG_ 1285 UsrData0_CGW "User data 0 CGW   ";
+CM_ SG_ 1285 ResdBit2_CGW "Control bit vector CGW Reserved   ";
+CM_ SG_ 40 Imob_WLC_CGW_Byte4 "Immobilizer authentification challenge WLC_CGW byte 4  ";
+CM_ SG_ 40 Imob_WLC_CGW_Byte3 "Immobilizer authentification challenge WLC_CGW byte 3  ";
+CM_ SG_ 40 Imob_WLC_CGW_Byte5 "Immobilizer authentification challenge WLC_CGW byte 5  ";
+CM_ SG_ 40 Imob_WLC_CGW_Byte1 "Immobilizer authentification challenge WLC_CGW byte 1  ";
+CM_ SG_ 40 Imob_WLC_CGW_Byte6 "Immobilizer authentification challenge WLC_CGW byte 6  ";
+CM_ SG_ 40 Imob_WLC_CGW_Byte2 "Immobilizer authentification challenge WLC_CGW byte 2  ";
+CM_ SG_ 40 Imob_WLC_CGW_Byte0 "Immobilizer authentification challenge WLC_CGW byte 0  ";
+CM_ SG_ 40 Imob_WLC_CGW_Byte7 "Immobilizer authentification challenge WLC_CGW byte 7";
+CM_ SG_ 39 Imob_CGW_WLC_Byte0 "Immobilizer authentification challenge CGW_WLC byte 0  ";
+CM_ SG_ 39 Imob_CGW_WLC_Byte4 "Immobilizer authentification challenge CGW_WLC byte 4  ";
+CM_ SG_ 39 Imob_CGW_WLC_Byte1 "Immobilizer authentification challenge CGW_WLC byte 1  ";
+CM_ SG_ 39 Imob_CGW_WLC_Byte5 "Immobilizer authentification challenge CGW_WLC byte 5  ";
+CM_ SG_ 39 Imob_CGW_WLC_Byte2 "Immobilizer authentification challenge CGW_WLC byte 2  ";
+CM_ SG_ 39 Imob_CGW_WLC_Byte7 "Immobilizer authentification challenge CGW_WLC byte 7";
+CM_ SG_ 39 Imob_CGW_WLC_Byte6 "Immobilizer authentification challenge CGW_WLC byte 6  ";
+CM_ SG_ 39 Imob_CGW_WLC_Byte3 "Immobilizer authentification challenge CGW_WLC byte 3  ";
+CM_ SG_ 1720 DiagRespData3_WLC "Diagnostic response data 3 WLC   ";
+CM_ SG_ 1720 DiagRespData2_WLC "Diagnostic response data 2 WLC   ";
+CM_ SG_ 1720 DiagRespData0_WLC "Diagnostic response data 0 WLC   ";
+CM_ SG_ 1720 DiagRespData6_WLC "Diagnostic response data 6 WLC   ";
+CM_ SG_ 1720 DiagRespData1_WLC "Diagnostic response data 1 WLC   ";
+CM_ SG_ 1720 DiagRespData4_WLC "Diagnostic response data 4 WLC   ";
+CM_ SG_ 1720 DiagRespData5_WLC "Diagnostic response data 5 WLC   ";
+CM_ SG_ 1720 DiagRespData7_WLC "Diagnostic response data 7 WLC   ";
+CM_ SG_ 1592 DiagReqData2_WLC "Diagnostic request data 2 WLC   ";
+CM_ SG_ 1592 DiagReqData1_WLC "Diagnostic request data 1 WLC   ";
+CM_ SG_ 1592 DiagReqData6_WLC "Diagnostic request data 6 WLC   ";
+CM_ SG_ 1592 DiagReqData3_WLC "Diagnostic request data 3 WLC   ";
+CM_ SG_ 1592 DiagReqData0_WLC "Diagnostic request data 0 WLC   ";
+CM_ SG_ 1592 DiagReqData5_WLC "Diagnostic request data 5 WLC   ";
+CM_ SG_ 1592 DiagReqData7_WLC "Diagnostic request data 7 WLC   ";
+CM_ SG_ 1592 DiagReqData4_WLC "Diagnostic request data 4 WLC   ";
+CM_ SG_ 1537 DiagReqData0_AllECU "Diagnostic request data 0 for all ECUs (Functional address mode)   ";
+CM_ SG_ 1537 DiagReqData5_AllECU "Diagnostic request data 5 for all ECUs (Functional address mode)   ";
+CM_ SG_ 1537 DiagReqData3_AllECU "Diagnostic request data 3 for all ECUs (Functional address mode)   ";
+CM_ SG_ 1537 DiagReqData7_AllECU "Diagnostic request data 7 for all ECUs (Functional address mode)   ";
+CM_ SG_ 1537 DiagReqData1_AllECU "Diagnostic request data 1 for all ECUs (Functional address mode)   ";
+CM_ SG_ 1537 DiagReqData4_AllECU "Diagnostic request data 4 for all ECUs (Functional address mode)   ";
+CM_ SG_ 1537 DiagReqData2_AllECU "Diagnostic request data 2 for all ECUs (Functional address mode)   ";
+CM_ SG_ 1537 DiagReqData6_AllECU "Diagnostic request data 6 for all ECUs (Functional address mode)   ";
+CM_ SG_ 958 CGW_WLC_MsgCntr "CGW_WLC message counter";
+CM_ SG_ 958 CGW_WLC_CRC "CGW_WLC CRC ";
+CM_ SG_ 946 Sec "Second
+Reserved 3C - 3E    
+Invalid values 3F     ";
+CM_ SG_ 946 Mth "Month Invalid value F     ";
+CM_ SG_ 946 Day "Day     ";
+CM_ SG_ 946 Yr "Year
+Invalid values FF     ";
+CM_ SG_ 946 Min "Minute
+Reserved 3C - 3E
+Invalid values 3F       ";
+CM_ SG_ 946 Hr "Hour
+Reserved 18 - 1E
+Invalid values 1F     ";
+CM_ SG_ 268 VehState_ASIL "Vehicle state ASIL requirement(Replaces vehicle power mode)   ";
+CM_ SG_ 268 CGW_03_CRC "CGW_03 CRC ";
+CM_ SG_ 268 ComfEna_ASIL "Comfort enable ASIL requirement";
+CM_ SG_ 268 CGW_03_MsgCntr "CGW_03 message counter";
+CM_ SG_ 268 VehMode "Active Vehicle Mode";
+CM_ SG_ 707 ImobEnaReq "Immobilizer enable request to WLC";
+CM_ SG_ 707 KeyAuthSts "key authentication status    ";
+CM_ SG_ 707 KeyPrsntSts "Key present status";
+CM_ SG_ 707 VehState "Vehicle state (Replaces vehicle power mode)   ";
+CM_ SG_ 707 ImobSts "Immobilizer status    ";
+CM_ SG_ 707 FOTAHvPwrMgnt "FOTA high voltage power management.
+This signal only be used under FOTA(VehState equal to Software update)";
+CM_ SG_ 707 ComfEna "Comfort enable  ";
+CM_ SG_ 1199 CDCBTInfo "CDC Pair BT and Wifi info";
+CM_ SG_ 698 WLCChrgFctEnaReq "Wireless charger (WLC) charging function enable/disable ";
+CM_ SG_ 938 VehOdometer "Vehicle odometer
+Invalid value FFFFFF     ";
+CM_ SG_ 91 EPBSts "Electric Park Brake (EPB) status      ";
+CM_ SG_ 91 BrkPedlSts "Brake pedal status.      ";
+CM_ SG_ 91 BrkPress "Brake Pressure Invalid values 0x1D5 - 0x1FF      ";
+CM_ SG_ 91 VehSpd "Vehicle speed. Invalid values 1901 - 1FFF      ";
+CM_ SG_ 91 VehMovgDir "Vehicle moving direction      ";
+CM_ SG_ 91 BrkPressOffsetValid "Brake pressure offset validity      ";
+CM_ SG_ 91 HAZReq "Hazard warning (HAZ) request      ";
+CM_ SG_ 91 BrkOverHeat "Brake overheat   ";
+CM_ SG_ 91 BCU_04_CRC "BCU_04 CRC      ";
+CM_ SG_ 91 BCUBrkLiReq "BCU brake light request      ";
+CM_ SG_ 91 BCU_NoBrkF "No brake force applied on the wheel or No brake pressure applied?      ";
+CM_ SG_ 91 BrkPressOffset "Brake Pressure Offset.Required by Front Radar. What does it mean?      ";
+CM_ SG_ 91 BrkPressValid "Brake pressure Validity      ";
+CM_ SG_ 91 EPBSwtSts "Electric Park Brake (EPB) switch status      ";
+CM_ SG_ 91 VehSpdSts "Vehicle speed validity and initialization status      ";
+CM_ SG_ 91 BCU_04_MsgCntr "BCU_04 Message counter      ";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_ BO_  "TpTxIndex" INT 0 255;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NmNode" ENUM  "no","yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "no","yes";
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrTimeoutTime" INT 1 65535;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_  "NmAsrMessageCount" INT 1 256;
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "no","yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 1 65535;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 1 65535;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 2047;
+BA_DEF_ BU_  "ILUsed" ENUM  "no","yes";
+BA_DEF_  "ILTxTimeout" INT 0 65535;
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 65535;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 65535;
+BA_DEF_ BO_  "DiagUudtResponse" ENUM  "false","true";
+BA_DEF_ BO_  "DiagUudResponse" ENUM  "False","True";
+BA_DEF_ BO_  "DiagState" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "no","yes";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 65535;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "Manufacturer" "Vector";
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "NodeLayerModules" " ";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "no";
+BA_DEF_DEF_  "NmMessage" "no";
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 1500;
+BA_DEF_DEF_  "NmAsrTimeoutTime" 2000;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 3200;
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 50;
+BA_DEF_DEF_  "NmAsrNode" "no";
+BA_DEF_DEF_  "NmAsrMessageCount" 128;
+BA_DEF_DEF_  "NmAsrMessage" "no";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 320;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 640;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_  "ILUsed" "no";
+BA_DEF_DEF_  "ILTxTimeout" 0;
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "no";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "DiagUudtResponse" "false";
+BA_DEF_DEF_  "DiagUudResponse" "False";
+BA_DEF_DEF_  "DiagState" "no";
+BA_DEF_DEF_  "DiagResponse" "no";
+BA_DEF_DEF_  "DiagRequest" "no";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "Manufacturer" "Vector";
+BA_ "NmType" "NmAsr";
+BA_ "BusType" "CAN";
+BA_ "Baudrate" 500000;
+BA_ "NmAsrWaitBusSleepTime" 2000;
+BA_ "DBName" "NIO_ES6_RF_CAN_SR_V3_0";
+BA_ "ILUsed" BU_ WLC 1;
+BA_ "NmAsrCanMsgCycleOffset" BU_ WLC 0;
+BA_ "NmAsrCanMsgReducedTime" BU_ WLC 320;
+BA_ "NmAsrNode" BU_ WLC 1;
+BA_ "NmAsrNodeIdentifier" BU_ WLC 56;
+BA_ "NmNode" BU_ WLC 0;
+BA_ "NmStationAddress" BU_ WLC 56;
+BA_ "ILUsed" BU_ CGW 1;
+BA_ "NmAsrCanMsgCycleOffset" BU_ CGW 0;
+BA_ "NmAsrCanMsgReducedTime" BU_ CGW 320;
+BA_ "NmAsrNode" BU_ CGW 1;
+BA_ "NmAsrNodeIdentifier" BU_ CGW 5;
+BA_ "NmNode" BU_ CGW 0;
+BA_ "NmStationAddress" BU_ CGW 5;
+BA_ "GenMsgSendType" BO_ 1211 8;
+BA_ "GenMsgSendType" BO_ 1198 8;
+BA_ "GenMsgILSupport" BO_ 832 1;
+BA_ "GenMsgSendType" BO_ 832 0;
+BA_ "GenMsgCycleTime" BO_ 832 100;
+BA_ "GenMsgILSupport" BO_ 995 1;
+BA_ "GenMsgSendType" BO_ 995 0;
+BA_ "GenMsgCycleTime" BO_ 995 1000;
+BA_ "NmAsrMessage" BO_ 1336 1;
+BA_ "GenMsgSendType" BO_ 1336 8;
+BA_ "NmAsrMessage" BO_ 1285 1;
+BA_ "GenMsgSendType" BO_ 1285 8;
+BA_ "GenMsgSendType" BO_ 40 8;
+BA_ "GenMsgSendType" BO_ 39 8;
+BA_ "DiagResponse" BO_ 1720 1;
+BA_ "GenMsgSendType" BO_ 1720 8;
+BA_ "DiagRequest" BO_ 1592 1;
+BA_ "GenMsgSendType" BO_ 1592 8;
+BA_ "DiagState" BO_ 1537 1;
+BA_ "GenMsgSendType" BO_ 1537 8;
+BA_ "GenMsgILSupport" BO_ 958 1;
+BA_ "GenMsgSendType" BO_ 958 0;
+BA_ "GenMsgCycleTime" BO_ 958 1000;
+BA_ "GenMsgILSupport" BO_ 946 1;
+BA_ "GenMsgSendType" BO_ 946 0;
+BA_ "GenMsgCycleTime" BO_ 946 1000;
+BA_ "GenMsgILSupport" BO_ 268 1;
+BA_ "GenMsgSendType" BO_ 268 0;
+BA_ "GenMsgCycleTime" BO_ 268 20;
+BA_ "GenMsgILSupport" BO_ 707 1;
+BA_ "GenMsgSendType" BO_ 707 0;
+BA_ "GenMsgCycleTime" BO_ 707 20;
+BA_ "GenMsgSendType" BO_ 1199 8;
+BA_ "GenMsgILSupport" BO_ 698 1;
+BA_ "GenMsgSendType" BO_ 698 0;
+BA_ "GenMsgCycleTime" BO_ 698 100;
+BA_ "GenMsgILSupport" BO_ 938 1;
+BA_ "GenMsgSendType" BO_ 938 0;
+BA_ "GenMsgCycleTime" BO_ 938 1000;
+BA_ "GenMsgILSupport" BO_ 91 1;
+BA_ "GenMsgSendType" BO_ 91 0;
+BA_ "GenMsgCycleTime" BO_ 91 20;
+BA_ "GenSigSendType" SG_ 1212 WLCDevlpRx 7;
+BA_ "GenSigSendType" SG_ 1211 WLCDevlpTx 7;
+BA_ "GenSigSendType" SG_ 1198 WLCBTInfo 7;
+BA_ "GenSigSendType" SG_ 832 WLC_02_MsgCntr 0;
+BA_ "GenSigSendType" SG_ 832 WLC_02_CRC 0;
+BA_ "GenSigSendType" SG_ 832 WLCImobSts 0;
+BA_ "GenSigSendType" SG_ 995 WLC_01_MsgCntr 0;
+BA_ "GenSigSendType" SG_ 995 WLCMuteViaHW 0;
+BA_ "GenSigSendType" SG_ 995 WLCChrgRate 0;
+BA_ "GenSigSendType" SG_ 995 WLCCtrlSts 0;
+BA_ "GenSigSendType" SG_ 995 WLCChrgSts 0;
+BA_ "GenSigSendType" SG_ 995 WLC_01_CRC 0;
+BA_ "GenSigSendType" SG_ 995 WLCFailSts 0;
+BA_ "GenSigSendType" SG_ 1336 ResdBit2_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 UsrData2_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 ActvWakeup_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 NetMngtCoorrSleepRdy_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 UsrData1_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 RepMsgReq_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 ResdBit1_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 UsrData4_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 UsrData0_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 ScrNodId_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 UsrData5_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 PtlNetInfo_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 NetMngtCoorn_WLC 0;
+BA_ "GenSigSendType" SG_ 1336 UsrData3_WLC 0;
+BA_ "GenSigSendType" SG_ 1285 UsrData2_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 UsrData1_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 UsrData5_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 ScrNodId_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 ActvWakeup_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 NetMngtCoorn_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 UsrData3_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 UsrData4_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 NetMngtCoorrSleepRdy_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 PtlNetInfo_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 ResdBit1_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 RepMsgReq_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 UsrData0_CGW 0;
+BA_ "GenSigSendType" SG_ 1285 ResdBit2_CGW 0;
+BA_ "GenSigSendType" SG_ 40 Imob_WLC_CGW_Byte4 7;
+BA_ "GenSigSendType" SG_ 40 Imob_WLC_CGW_Byte3 7;
+BA_ "GenSigSendType" SG_ 40 Imob_WLC_CGW_Byte5 7;
+BA_ "GenSigSendType" SG_ 40 Imob_WLC_CGW_Byte1 7;
+BA_ "GenSigSendType" SG_ 40 Imob_WLC_CGW_Byte6 7;
+BA_ "GenSigSendType" SG_ 40 Imob_WLC_CGW_Byte2 7;
+BA_ "GenSigSendType" SG_ 40 Imob_WLC_CGW_Byte0 7;
+BA_ "GenSigSendType" SG_ 40 Imob_WLC_CGW_Byte7 7;
+BA_ "GenSigSendType" SG_ 39 Imob_CGW_WLC_Byte0 7;
+BA_ "GenSigSendType" SG_ 39 Imob_CGW_WLC_Byte4 7;
+BA_ "GenSigSendType" SG_ 39 Imob_CGW_WLC_Byte1 7;
+BA_ "GenSigSendType" SG_ 39 Imob_CGW_WLC_Byte5 7;
+BA_ "GenSigSendType" SG_ 39 Imob_CGW_WLC_Byte2 7;
+BA_ "GenSigSendType" SG_ 39 Imob_CGW_WLC_Byte7 7;
+BA_ "GenSigSendType" SG_ 39 Imob_CGW_WLC_Byte6 7;
+BA_ "GenSigSendType" SG_ 39 Imob_CGW_WLC_Byte3 7;
+BA_ "GenSigSendType" SG_ 1720 DiagRespData3_WLC 7;
+BA_ "GenSigSendType" SG_ 1720 DiagRespData2_WLC 7;
+BA_ "GenSigSendType" SG_ 1720 DiagRespData0_WLC 7;
+BA_ "GenSigSendType" SG_ 1720 DiagRespData6_WLC 7;
+BA_ "GenSigSendType" SG_ 1720 DiagRespData1_WLC 7;
+BA_ "GenSigSendType" SG_ 1720 DiagRespData4_WLC 7;
+BA_ "GenSigSendType" SG_ 1720 DiagRespData5_WLC 7;
+BA_ "GenSigSendType" SG_ 1720 DiagRespData7_WLC 7;
+BA_ "GenSigSendType" SG_ 1592 DiagReqData2_WLC 7;
+BA_ "GenSigSendType" SG_ 1592 DiagReqData1_WLC 7;
+BA_ "GenSigSendType" SG_ 1592 DiagReqData6_WLC 7;
+BA_ "GenSigSendType" SG_ 1592 DiagReqData3_WLC 7;
+BA_ "GenSigSendType" SG_ 1592 DiagReqData0_WLC 7;
+BA_ "GenSigSendType" SG_ 1592 DiagReqData5_WLC 7;
+BA_ "GenSigSendType" SG_ 1592 DiagReqData7_WLC 7;
+BA_ "GenSigSendType" SG_ 1592 DiagReqData4_WLC 7;
+BA_ "GenSigSendType" SG_ 1537 DiagReqData0_AllECU 7;
+BA_ "GenSigSendType" SG_ 1537 DiagReqData5_AllECU 7;
+BA_ "GenSigSendType" SG_ 1537 DiagReqData3_AllECU 7;
+BA_ "GenSigSendType" SG_ 1537 DiagReqData7_AllECU 7;
+BA_ "GenSigSendType" SG_ 1537 DiagReqData1_AllECU 7;
+BA_ "GenSigSendType" SG_ 1537 DiagReqData4_AllECU 7;
+BA_ "GenSigSendType" SG_ 1537 DiagReqData2_AllECU 7;
+BA_ "GenSigSendType" SG_ 1537 DiagReqData6_AllECU 7;
+BA_ "GenSigSendType" SG_ 958 CGW_WLC_MsgCntr 0;
+BA_ "GenSigSendType" SG_ 958 CGW_WLC_CRC 0;
+BA_ "GenSigSendType" SG_ 946 Sec 0;
+BA_ "GenSigSendType" SG_ 946 Mth 0;
+BA_ "GenSigSendType" SG_ 946 Day 0;
+BA_ "GenSigSendType" SG_ 946 Yr 0;
+BA_ "GenSigSendType" SG_ 946 Min 0;
+BA_ "GenSigSendType" SG_ 946 Hr 0;
+BA_ "GenSigSendType" SG_ 268 VehState_ASIL 0;
+BA_ "GenSigSendType" SG_ 268 CGW_03_CRC 0;
+BA_ "GenSigSendType" SG_ 268 ComfEna_ASIL 0;
+BA_ "GenSigSendType" SG_ 268 CGW_03_MsgCntr 0;
+BA_ "GenSigSendType" SG_ 268 VehMode 0;
+BA_ "GenSigSendType" SG_ 707 ImobEnaReq 0;
+BA_ "GenSigSendType" SG_ 707 KeyAuthSts 0;
+BA_ "GenSigSendType" SG_ 707 KeyPrsntSts 0;
+BA_ "GenSigSendType" SG_ 707 VehState 0;
+BA_ "GenSigSendType" SG_ 707 ImobSts 0;
+BA_ "GenSigSendType" SG_ 707 FOTAHvPwrMgnt 0;
+BA_ "GenSigSendType" SG_ 707 ComfEna 0;
+BA_ "GenSigSendType" SG_ 1199 CDCBTInfo 7;
+BA_ "GenSigSendType" SG_ 698 WLCChrgFctEnaReq 0;
+BA_ "GenSigSendType" SG_ 938 VehOdometer 0;
+BA_ "GenSigSendType" SG_ 91 EPBSts 0;
+BA_ "GenSigSendType" SG_ 91 BrkPedlSts 0;
+BA_ "GenSigSendType" SG_ 91 BrkPress 0;
+BA_ "GenSigSendType" SG_ 91 VehSpd 0;
+BA_ "GenSigSendType" SG_ 91 VehMovgDir 0;
+BA_ "GenSigSendType" SG_ 91 BrkPressOffsetValid 0;
+BA_ "GenSigSendType" SG_ 91 HAZReq 0;
+BA_ "GenSigSendType" SG_ 91 BrkOverHeat 0;
+BA_ "GenSigSendType" SG_ 91 BCU_04_CRC 0;
+BA_ "GenSigSendType" SG_ 91 BCUBrkLiReq 0;
+BA_ "GenSigSendType" SG_ 91 BCU_NoBrkF 0;
+BA_ "GenSigSendType" SG_ 91 BrkPressOffset 0;
+BA_ "GenSigStartValue" SG_ 91 BrkPressOffset 15;
+BA_ "GenSigSendType" SG_ 91 BrkPressValid 0;
+BA_ "GenSigSendType" SG_ 91 EPBSwtSts 0;
+BA_ "GenSigSendType" SG_ 91 VehSpdSts 0;
+BA_ "GenSigSendType" SG_ 91 BCU_04_MsgCntr 0;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 832 WLC_02_MsgCntr 500;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 832 WLC_02_CRC 500;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 832 WLCImobSts 500;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 995 WLC_01_MsgCntr 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 995 WLCMuteViaHW 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 995 WLCChrgRate 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 995 WLCCtrlSts 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 995 WLCChrgSts 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 995 WLC_01_CRC 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 995 WLCFailSts 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 ResdBit2_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 UsrData2_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 ActvWakeup_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 NetMngtCoorrSleepRdy_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 UsrData1_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 RepMsgReq_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 ResdBit1_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 UsrData4_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 UsrData0_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 ScrNodId_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 UsrData5_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 PtlNetInfo_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 NetMngtCoorn_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ CGW SG_ 1336 UsrData3_WLC 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 UsrData2_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 UsrData1_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 UsrData5_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 ScrNodId_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 ActvWakeup_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 NetMngtCoorn_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 UsrData3_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 UsrData4_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 NetMngtCoorrSleepRdy_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 PtlNetInfo_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 ResdBit1_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 RepMsgReq_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 UsrData0_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 1285 ResdBit2_CGW 3200;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 958 CGW_WLC_MsgCntr 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 958 CGW_WLC_CRC 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 946 Sec 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 946 Mth 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 946 Day 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 946 Yr 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 946 Min 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 946 Hr 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 268 VehState_ASIL 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 268 CGW_03_CRC 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 268 ComfEna_ASIL 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 268 CGW_03_MsgCntr 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 707 ImobEnaReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 707 VehState 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 707 ComfEna 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 698 WLCChrgFctEnaReq 500;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 938 VehOdometer 5000;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WLC SG_ 91 VehSpd 150;
+VAL_ 832 WLCImobSts 3 "Invalid" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 995 WLCMuteViaHW 1 "Inactive (Not muted)" 0 "Active (Muted) " ;
+VAL_ 995 WLCChrgRate 3 "Reserved" 2 "Power Reduced  " 1 "Power Requested  " 0 "Not started  " ;
+VAL_ 995 WLCCtrlSts 3 " Invalid" 2 " Reserved" 1 " WLC disabled" 0 " WLC enabled" ;
+VAL_ 995 WLCChrgSts 3 " Invalid" 2 " Charge complete" 1 " WLC on going" 0 " WLC stopped" ;
+VAL_ 995 WLCFailSts 15 " Invalid" 14 " Reserved" 13 " Reserved" 12 " Reserved" 11 " Reserved" 10 " Reserved" 9 " Reserved" 8 " Conductive Device Detected" 7 " Smartphone no response or error" 6 " Unknown error" 5 " Foreign object existing" 4 " Internal error" 3 " Over voltage" 2 " Under voltage" 1 " Over temperature" 0 " No failure" ;
+VAL_ 1336 RepMsgReq_WLC 1 " Repeat message request" 0 " No repeat message request" ;
+VAL_ 1285 RepMsgReq_CGW 1 " Repeat message request" 0 " No repeat message request" ;
+VAL_ 946 Mth 15 " Invalid" 14 " Reserved" 13 " Reserved" 12 " December" 11 " November" 10 " October" 9 " September" 8 " August" 7 " July" 6 " June" 5 " May" 4 " April" 3 " March" 2 " February" 1 " January" 0 " Unknown" ;
+VAL_ 268 VehState_ASIL 15 " Invalid" 14 " Reserved" 13 " Reserved" 12 " Reserved" 11 " Reserved" 10 " Reserved" 9 " Reserved" 8 " Reserved" 7 " Reserved" 6 " Reserved" 5 " Reserved" 4 " Reserved" 3 " Software update" 2 " Driving" 1 "Driver present(On)" 0 "Parked vehicle(Off)" ;
+VAL_ 268 ComfEna_ASIL 3 " Invalid" 2 " Reserved" 1 " Comfort enabled" 0 " Comfort not enabled" ;
+VAL_ 268 VehMode 15 "Invalid" 14 "Not used" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Driverless" 4 "Regular" 3 "Showroom" 2 "Transport" 1 "Production" 0 "Not used" ;
+VAL_ 707 ImobEnaReq 3 "Invalid" 2 "Enable AID2" 1 "Enable AID1" 0 "Disable" ;
+VAL_ 707 KeyAuthSts 3 " Reserved" 2 " Fail" 1 " Pass (valid)" 0 " Idle" ;
+VAL_ 707 KeyPrsntSts 3 "Invalid" 2 "Reserved" 1 "Key valid" 0 "No key" ;
+VAL_ 707 VehState 15 " Invalid" 14 " Reserved" 13 " Reserved" 12 " Reserved" 11 " Reserved" 10 " Reserved" 9 " Reserved" 8 " Reserved" 7 " Reserved" 6 " Reserved" 5 " Reserved" 4 " Reserved" 3 " Software update" 2 " Driving" 1 "Driver present(On)" 0 "Parked vehicle(Off)" ;
+VAL_ 707 ImobSts 3 "Immo Failure ( PEUF/R or BCM) " 2 "Not Authorised ( NFC)" 1 "No key Present  " 0 "No Error" ;
+VAL_ 707 FOTAHvPwrMgnt 3 "Invalid" 2 "Reserved" 1 "FOTA high voltage power management enable" 0 "FOTA high voltage power management disable" ;
+VAL_ 707 ComfEna 3 " Invalid" 2 " Reserved" 1 " Comfort enabled" 0 " Comfort not enabled" ;
+VAL_ 698 WLCChrgFctEnaReq 3 " Invalid" 2 "No operation" 1 " Enable WLC charging function" 0 " Disable WLC charging function" ;
+VAL_ 91 EPBSts 7 " Reserved" 6 " Reserved" 5 " Reserved" 4 " EPB applying" 3 " EPB not applied" 2 " EPB releasing" 1 " EPB applied" 0 " Unknown" ;
+VAL_ 91 BrkPedlSts 3 " Invalid (Error)" 2 " Reserved" 1 " Pressed" 0 " Not pressed" ;
+VAL_ 91 VehMovgDir 3 "Invalid" 2 "Backward" 1 "Forward" 0 "Standstill" ;
+VAL_ 91 BrkPressOffsetValid 1 " Invalid" 0 " Valid" ;
+VAL_ 91 HAZReq 1 " Hazard warning request" 0 " Hazard warning no request" ;
+VAL_ 91 BrkOverHeat 1 " Brake temperature too high" 0 " Brake temperature not high" ;
+VAL_ 91 BCUBrkLiReq 3 " Invalid" 2 " Reserved" 1 " Request" 0 " No request" ;
+VAL_ 91 BCU_NoBrkF 1 " Brake force applied" 0 " No brake force applied" ;
+VAL_ 91 BrkPressValid 1 " Invalid" 0 " Valid" ;
+VAL_ 91 EPBSwtSts 3 " Invalid" 2 " Reserved" 1 " Pressed" 0 " Not pressed" ;
+VAL_ 91 VehSpdSts 1 " Invalid" 0 " Valid" ;
+

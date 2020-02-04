@@ -1,0 +1,15 @@
+﻿28 Nov 2019 14:50:15 - Saving file AdminDataTemplates.xml (D:\Auto\Demo\WLCProject\Config\Developer\AdminDataTemplates.xml)
+28 Nov 2019 14:50:15 - Saving file WLC.dcf (D:\Auto\Demo\WLCProject\Config\Developer\WLC.dcf)
+28 Nov 2019 14:50:15 - Start import
+28 Nov 2019 14:50:15 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.3\Bin\Predefines\StandardPackages_AR4.arxml).
+28 Nov 2019 14:50:16 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.3\Bin\Predefines\ServicePortInterfaces_4.3.1.arxml).
+28 Nov 2019 14:50:16 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.3\Bin\Predefines\ApplicationPortInterfaces_4.3.1.arxml).
+28 Nov 2019 14:50:16 - Importing file (D:\Auto\Demo\WLCProject\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+28 Nov 2019 14:50:16 - Merging imported data
+28 Nov 2019 14:50:17 - Finished import
+28 Nov 2019 14:50:17 - Saving file ProfileSettings.xml (D:\Auto\Demo\WLCProject\Config\Developer\ProfileSettings.xml)
+28 Nov 2019 14:50:18 - Saving file Packages.arxml (D:\Auto\Demo\WLCProject\Config\Developer\Packages.arxml)
+28 Nov 2019 14:50:18 - Saving file DataTypes.arxml (D:\Auto\Demo\WLCProject\Config\Developer\DataTypes.arxml)
+28 Nov 2019 14:50:18 - Saving file PortInterfaces.arxml (D:\Auto\Demo\WLCProject\Config\Developer\PortInterfaces.arxml)
+28 Nov 2019 14:50:18 - Saving file WLC.arxml (D:\Auto\Demo\WLCProject\Config\Developer\ECUProjects\WLC.arxml)
+28 Nov 2019 14:50:18 - Saving file WLC.dcf (D:\Auto\Demo\WLCProject\Config\Developer\WLC.dcf)

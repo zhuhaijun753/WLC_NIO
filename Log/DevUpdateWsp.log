@@ -1,0 +1,23 @@
+﻿28 Nov 2019 14:58:48 - Opening workspace 'C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\WLC.dcf'...
+28 Nov 2019 14:58:50 - Loading file PlatformTypes_AR4.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\AUTOSAR\PlatformTypes_AR4.arxml)
+28 Nov 2019 14:58:50 - Loading file ComM_swc.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\ServiceComponents\ComM_swc.arxml)
+28 Nov 2019 14:58:50 - Loading file Dem_swc.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\ServiceComponents\Dem_swc.arxml)
+28 Nov 2019 14:58:50 - Loading file Det_swc.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\ServiceComponents\Det_swc.arxml)
+28 Nov 2019 14:58:50 - Loading file EcuM_swc.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\ServiceComponents\EcuM_swc.arxml)
+28 Nov 2019 14:58:50 - Loading file Os_swc.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\ServiceComponents\Os_swc.arxml)
+28 Nov 2019 14:58:50 - Loading file DataTypes.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\DataTypes.arxml)
+28 Nov 2019 14:58:50 - Loading file Packages.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\Packages.arxml)
+28 Nov 2019 14:58:50 - Loading file PortInterfaces.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\PortInterfaces.arxml)
+28 Nov 2019 14:58:50 - Loading file WLC.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\WLC.arxml)
+28 Nov 2019 14:58:51 - Opened workspace 'C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\WLC.dcf' successfully.
+28 Nov 2019 14:58:52 - Start import
+28 Nov 2019 14:58:52 - Importing file (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\System\SystemExtract.arxml).
+28 Nov 2019 14:58:52 - Merging imported data
+28 Nov 2019 14:58:53 - Finished import
+28 Nov 2019 14:58:53 - Saving workspace 'C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\WLC.dcf'...
+28 Nov 2019 14:58:54 - Saving file DataTypes.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\DataTypes.arxml)
+28 Nov 2019 14:58:54 - Saving file Packages.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\Packages.arxml)
+28 Nov 2019 14:58:54 - Saving file WLC.arxml (C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\WLC.arxml)
+28 Nov 2019 14:58:54 - Saved workspace 'C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\WLC.dcf' successfully.
+28 Nov 2019 14:58:54 - Closing workspace 'C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\WLC.dcf'...
+28 Nov 2019 14:58:54 - Closed workspace 'C:\Users\86159\AppData\Local\Temp\DaVinci\Cfg-3699962\Workflow\1574924271773-0\Config\Developer\WLC.dcf' successfully.
