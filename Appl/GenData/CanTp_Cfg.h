@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanTp_Cfg.h
- *   Generation Time: 2020-02-04 12:12:47
+ *   Generation Time: 2020-02-04 15:38:39
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -116,9 +116,9 @@
 #define CANTP_MAX_PDU_METADATA_LENGTH                                          0u 
 #define CANTP_MAX_SDU_METADATA_LENGTH                                          0u 
 #define CANTP_NUM_RX_CHANNELS                                                  CanTp_GetSizeOfRxState() 
-#define CANTP_NUM_RX_SDUS                                                      3 
+#define CANTP_NUM_RX_SDUS                                                      4 
 #define CANTP_NUM_TX_CHANNELS                                                  CanTp_GetSizeOfTxState() 
-#define CANTP_NUM_TX_SDUS                                                      2 
+#define CANTP_NUM_TX_SDUS                                                      3 
 #define CANTP_SIZEOF_PDULENGTHTYPE                                             2 
 
  /*  Communication Type  */ 
@@ -189,16 +189,18 @@
 /* -----------------------------------------------------------------------------
     &&&~ Rx Sdu Handle IDs
 ----------------------------------------------------------------------------- */
-#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_585bdea6 0u 
-#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu          1u 
-#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_fab217f5 2u 
+#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_001      0u 
+#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_585bdea6 1u 
+#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu          2u 
+#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_fab217f5 3u 
 
  
 /* -----------------------------------------------------------------------------
     &&&~ Tx Sdu Handle IDs
 ----------------------------------------------------------------------------- */
-#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu          0u 
-#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu_fab217f5 1u 
+#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu_001      0u 
+#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu          1u 
+#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu_fab217f5 2u 
 
 
 /* -----------------------------------------------------------------------------
@@ -208,7 +210,9 @@
 #define CanTpConf_CanTpRxNPdu_CanTpRxNPdu              0u 
 #define CanTpConf_CanTpRxFcNPdu_CanTpRxFcNPdu_b9a7b042 1u 
 #define CanTpConf_CanTpRxNPdu_CanTpRxNPdu_9b5d64b0     1u 
-#define CanTpConf_CanTpRxNPdu_CanTpRxNPdu_210b33f5     2u 
+#define CanTpConf_CanTpRxFcNPdu_CanTpRxFcNPdu_01       2u 
+#define CanTpConf_CanTpRxNPdu_CanTpRxNPdu_1            2u 
+#define CanTpConf_CanTpRxNPdu_CanTpRxNPdu_210b33f5     3u 
 
 
 /* -----------------------------------------------------------------------------
@@ -216,8 +220,10 @@
  ----------------------------------------------------------------------------- */
 #define CanTpConf_CanTpTxFcNPdu_CanTpTxFcNPdu_9b5d64b0 0u 
 #define CanTpConf_CanTpTxNPdu_CanTpTxNPdu_b9a7b042     0u 
-#define CanTpConf_CanTpTxFcNPdu_CanTpTxFcNPdu          1u 
-#define CanTpConf_CanTpTxNPdu_CanTpTxNPdu              1u 
+#define CanTpConf_CanTpTxFcNPdu_CanTpTxFcNPdu_001      1u 
+#define CanTpConf_CanTpTxNPdu_CanTpTxNPdu_1            1u 
+#define CanTpConf_CanTpTxFcNPdu_CanTpTxFcNPdu          2u 
+#define CanTpConf_CanTpTxNPdu_CanTpTxNPdu              2u 
 
 
 
@@ -662,17 +668,17 @@
 #define CanTp_GetRxSduCfgOfPCConfig()                                                               CanTp_RxSduCfg  /**< the pointer to CanTp_RxSduCfg */
 #define CanTp_GetRxSduSnv2HdlOfPCConfig()                                                           CanTp_RxSduSnv2Hdl  /**< the pointer to CanTp_RxSduSnv2Hdl */
 #define CanTp_GetRxStateOfPCConfig()                                                                CanTp_RxState  /**< the pointer to CanTp_RxState */
-#define CanTp_GetSizeOfCalcBSOfPCConfig()                                                           3u  /**< the number of accomplishable value elements in CanTp_CalcBS */
-#define CanTp_GetSizeOfRxPduMapOfPCConfig()                                                         3u  /**< the number of accomplishable value elements in CanTp_RxPduMap */
-#define CanTp_GetSizeOfRxSduCfgIndOfPCConfig()                                                      3u  /**< the number of accomplishable value elements in CanTp_RxSduCfgInd */
-#define CanTp_GetSizeOfRxSduCfgOfPCConfig()                                                         3u  /**< the number of accomplishable value elements in CanTp_RxSduCfg */
-#define CanTp_GetSizeOfRxSduSnv2HdlOfPCConfig()                                                     3u  /**< the number of accomplishable value elements in CanTp_RxSduSnv2Hdl */
-#define CanTp_GetSizeOfRxStateOfPCConfig()                                                          3u  /**< the number of accomplishable value elements in CanTp_RxState */
-#define CanTp_GetSizeOfTxSduCfgIndOfPCConfig()                                                      2u  /**< the number of accomplishable value elements in CanTp_TxSduCfgInd */
-#define CanTp_GetSizeOfTxSduCfgOfPCConfig()                                                         2u  /**< the number of accomplishable value elements in CanTp_TxSduCfg */
-#define CanTp_GetSizeOfTxSduSnv2HdlOfPCConfig()                                                     2u  /**< the number of accomplishable value elements in CanTp_TxSduSnv2Hdl */
-#define CanTp_GetSizeOfTxSemaphoresOfPCConfig()                                                     2u  /**< the number of accomplishable value elements in CanTp_TxSemaphores */
-#define CanTp_GetSizeOfTxStateOfPCConfig()                                                          2u  /**< the number of accomplishable value elements in CanTp_TxState */
+#define CanTp_GetSizeOfCalcBSOfPCConfig()                                                           4u  /**< the number of accomplishable value elements in CanTp_CalcBS */
+#define CanTp_GetSizeOfRxPduMapOfPCConfig()                                                         4u  /**< the number of accomplishable value elements in CanTp_RxPduMap */
+#define CanTp_GetSizeOfRxSduCfgIndOfPCConfig()                                                      4u  /**< the number of accomplishable value elements in CanTp_RxSduCfgInd */
+#define CanTp_GetSizeOfRxSduCfgOfPCConfig()                                                         4u  /**< the number of accomplishable value elements in CanTp_RxSduCfg */
+#define CanTp_GetSizeOfRxSduSnv2HdlOfPCConfig()                                                     4u  /**< the number of accomplishable value elements in CanTp_RxSduSnv2Hdl */
+#define CanTp_GetSizeOfRxStateOfPCConfig()                                                          4u  /**< the number of accomplishable value elements in CanTp_RxState */
+#define CanTp_GetSizeOfTxSduCfgIndOfPCConfig()                                                      3u  /**< the number of accomplishable value elements in CanTp_TxSduCfgInd */
+#define CanTp_GetSizeOfTxSduCfgOfPCConfig()                                                         3u  /**< the number of accomplishable value elements in CanTp_TxSduCfg */
+#define CanTp_GetSizeOfTxSduSnv2HdlOfPCConfig()                                                     3u  /**< the number of accomplishable value elements in CanTp_TxSduSnv2Hdl */
+#define CanTp_GetSizeOfTxSemaphoresOfPCConfig()                                                     3u  /**< the number of accomplishable value elements in CanTp_TxSemaphores */
+#define CanTp_GetSizeOfTxStateOfPCConfig()                                                          3u  /**< the number of accomplishable value elements in CanTp_TxState */
 #define CanTp_GetTxSduCfgIndOfPCConfig()                                                            CanTp_TxSduCfgInd  /**< the pointer to CanTp_TxSduCfgInd */
 #define CanTp_GetTxSduCfgOfPCConfig()                                                               CanTp_TxSduCfg  /**< the pointer to CanTp_TxSduCfg */
 #define CanTp_GetTxSduSnv2HdlOfPCConfig()                                                           CanTp_TxSduSnv2Hdl  /**< the pointer to CanTp_TxSduSnv2Hdl */

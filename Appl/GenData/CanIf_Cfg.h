@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Cfg.h
- *   Generation Time: 2020-02-04 12:12:47
+ *   Generation Time: 2020-02-04 15:38:39
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -241,13 +241,13 @@ typedef uint8 CanIf_TxBufferSizeType;
 
 /* These definitions can change at Link-time and Post-build configuration time. Use them wisely. */
 /* Assigned to: NULL_PTR*/
-#define CanIfRxPduHnd_IMOB_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_451c91a3_Rx                              0u
 /* Assigned to: CanNm_RxIndication*/
 #define CanIfRxPduHnd_WLC_d9d2b008_Rx                                                               0u
 /* Assigned to: CanTp_RxIndication*/
 #define CanIfRxPduHnd_DIAG_REQ_WLC_Tp_oNIO_ES6_RF_CAN_SR_V3_0_dcbbcb37_Rx                           0u
 #define CanIfRxPduHnd_DIAG_REQ_AllECU_Tp_oNIO_ES6_RF_CAN_SR_V3_0_23f8e329_Rx                        1u
 #define CanIfRxPduHnd_CDC_WLC_NFC_oNIO_ES6_RF_CAN_SR_V3_0_0c4c3dd1_Rx                               2u
+#define CanIfRxPduHnd_IMOB_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_451c91a3_Rx                              3u
 /* Assigned to: PduR_CanIfRxIndication*/
 #define CanIfRxPduHnd_WLC_DEVLP_02_oNIO_ES6_RF_CAN_SR_V3_0_52a3faed_Rx                              0u
 #define CanIfRxPduHnd_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_411e58d5_Rx                                   1u

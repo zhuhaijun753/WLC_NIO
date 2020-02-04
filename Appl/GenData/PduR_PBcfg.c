@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_PBcfg.c
- *   Generation Time: 2020-02-04 12:12:49
+ *   Generation Time: 2020-02-04 15:38:40
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -45,32 +45,6 @@
  * WARNING: This code has been generated with reduced-severity errors. 
  * The created output files contain errors that have been ignored. Usage of the created files can lead to unpredictable behavior of the embedded code.
  * Usage of the created files happens at own risk!
- * 
- * [Warning] PDUR07020 - Invalid setting of communication type. 
- * - [Reduced Severity due to User-Defined Parameter] Communication type of PduRRoutingPath /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_CGW_WLC_PduRRoutingPath cannot be determined. The communication types of the PduRSrcPdu and PduRDestPdu must be identical. Routing paths between different communication types are not possible.
- * 
- * Multiple communication types found:
- * TRANSPORT_PROTOCOL, COMMUNICATION_INTERFACE
- * 
- * Parameters influencing the communication type:
- * /ActiveEcuC/PduR/CDDTp[0:PduRCommunicationInterface](value=false), /ActiveEcuC/CanIf/CanIfInitCfg/IMOB_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_451c91a3_Rx[0:CanIfRxPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/IMOB_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_da4d0319_Rx)
- * Erroneous configuration elements:
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_CGW_WLC_PduRRoutingPath/PduRDestPdu_1[0:PduRDestPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/IMOB_CGW_WLC_oNIO_ES6_RF_CDDasCanTp) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRef)
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_CGW_WLC_PduRRoutingPath/PduRSrcPdu_1[0:PduRSrcPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/IMOB_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_da4d0319_Rx) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduRef)
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_CGW_WLC_PduRRoutingPath[0:PduRRoutingPathCommunicationType](value=COMMUNICATION_INTERFACE) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType)
- * 
- * [Warning] PDUR07020 - Invalid setting of communication type. 
- * - [Reduced Severity due to User-Defined Parameter] Communication type of PduRRoutingPath /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_WLC_CGW_oNIO_ES6_RF_CAN cannot be determined. The communication types of the PduRSrcPdu and PduRDestPdu must be identical. Routing paths between different communication types are not possible.
- * 
- * Multiple communication types found:
- * TRANSPORT_PROTOCOL, COMMUNICATION_INTERFACE
- * 
- * Parameters influencing the communication type:
- * /ActiveEcuC/PduR/CDDTp[0:PduRCommunicationInterface](value=false), /ActiveEcuC/CanIf/CanIfInitCfg/IMOB_WLC_CGW_oNIO_ES6_RF_CAN_SR_V3_0_4f44c7a2_Tx[0:CanIfTxPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/IMOB_WLC_CGW_oNIO_ES6_RF_CAN_SR_V3_0_efb0805f_Tx)
- * Erroneous configuration elements:
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_WLC_CGW_oNIO_ES6_RF_CAN/PduRDestPdu_2[0:PduRDestPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/IMOB_WLC_CGW_oNIO_ES6_RF_CAN_SR_V3_0_efb0805f_Tx) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRef)
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_WLC_CGW_oNIO_ES6_RF_CAN/PduRSrcPdu_2[0:PduRSrcPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/IMOB_WLC_CGW_oNIO_ES6_RF_CAN_CDDAsCanTp) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduRef)
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_WLC_CGW_oNIO_ES6_RF_CAN[0:PduRRoutingPathCommunicationType](value=COMMUNICATION_INTERFACE) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType)
  * 
  * [Warning] PDUR07020 - Invalid setting of communication type. 
  * - [Reduced Severity due to User-Defined Parameter] Communication type of PduRRoutingPath /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_01_oNIO_ES6_RF_CAN_PduRRoutingPath cannot be determined. The communication types of the PduRSrcPdu and PduRDestPdu must be identical. Routing paths between different communication types are not possible.
@@ -97,16 +71,6 @@
  * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath/PduRDestPdu_5[0:PduRDestPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/WLC_DEVLP_02_oNIO_ES6_RF_CAN_CDDasCanTp) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRef)
  * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath/PduRSrcPdu_5[0:PduRSrcPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/WLC_DEVLP_02_oNIO_ES6_RF_CAN_SR_V3_0_2ddc8841_Rx) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduRef)
  * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath[0:PduRRoutingPathCommunicationType](value=COMMUNICATION_INTERFACE) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType)
- * 
- * [Warning] PDUR07020 - Invalid setting of communication type. 
- * - [Reduced Severity due to User-Defined Parameter] The configured communication type COMMUNICATION_INTERFACE of DefinitionRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_CGW_WLC_PduRRoutingPath does not match with the expected routing type UNDEFINED.
- * Erroneous configuration elements:
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_CGW_WLC_PduRRoutingPath[0:PduRRoutingPathCommunicationType](value=COMMUNICATION_INTERFACE) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType)
- * 
- * [Warning] PDUR07020 - Invalid setting of communication type. 
- * - [Reduced Severity due to User-Defined Parameter] The configured communication type COMMUNICATION_INTERFACE of DefinitionRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_WLC_CGW_oNIO_ES6_RF_CAN does not match with the expected routing type UNDEFINED.
- * Erroneous configuration elements:
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_WLC_CGW_oNIO_ES6_RF_CAN[0:PduRRoutingPathCommunicationType](value=COMMUNICATION_INTERFACE) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType)
  * 
  * [Warning] PDUR07020 - Invalid setting of communication type. 
  * - [Reduced Severity due to User-Defined Parameter] The configured communication type COMMUNICATION_INTERFACE of DefinitionRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_01_oNIO_ES6_RF_CAN_PduRRoutingPath does not match with the expected routing type UNDEFINED.

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanTp_Lcfg.c
- *   Generation Time: 2020-02-04 12:12:48
+ *   Generation Time: 2020-02-04 15:38:39
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -95,11 +95,12 @@
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(CanTp_RxPduMapType, CANTP_CONST) CanTp_RxPduMap[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(CanTp_RxPduMapType, CANTP_CONST) CanTp_RxPduMap[4] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    RxSduCfgIndEndIdx  RxSduCfgIndStartIdx  TxSduCfgIndEndIdx                     TxSduCfgIndStartIdx                    */
   { /*     0 */                1u,                  0u,                                   1u,                                     0u },
   { /*     1 */                2u,                  1u,                                   2u,                                     1u },
-  { /*     2 */                3u,                  2u, CANTP_NO_TXSDUCFGINDENDIDXOFRXPDUMAP, CANTP_NO_TXSDUCFGINDSTARTIDXOFRXPDUMAP }
+  { /*     2 */                3u,                  2u,                                   3u,                                     2u },
+  { /*     3 */                4u,                  3u, CANTP_NO_TXSDUCFGINDENDIDXOFRXPDUMAP, CANTP_NO_TXSDUCFGINDSTARTIDXOFRXPDUMAP }
 };
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -127,11 +128,12 @@ CONST(CanTp_RxPduMapType, CANTP_CONST) CanTp_RxPduMap[3] = {  /* PRQA S 1514, 15
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(CanTp_RxSduCfgType, CANTP_CONST) CanTp_RxSduCfg[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(CanTp_RxSduCfgType, CANTP_CONST) CanTp_RxSduCfg[4] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    LoLayerTxFcPduId                                                              PduRRxSduId                              RxPduId                                     TxFcPduConfirmationPduId                        NAr  NCr   RxTaType                             STmin  TxSduCfgIdx                           Comment                            Referable Keys */
-  { /*     0 */ CANTP_INVALID_HDL                                                           , PduRConf_PduRSrcPdu_PduRSrcPdu_392782f6, CanTpConf_CanTpRxNPdu_CanTpRxNPdu_210b33f5, CANTP_INVALID_HDL                             , 11u,  11u, CANTP_FUNCTIONAL_RXTATYPEOFRXSDUCFG,    0u, CANTP_NO_TXSDUCFGIDXOFRXSDUCFG },  /* [CanTpRxNSdu_585bdea6] */  /* [CanTpRxNSdu_585bdea6, 2] */
-  { /*     1 */ CanIfConf_CanIfTxPduCfg_WLC_CDC_NFC_oNIO_ES6_RF_CAN_SR_V3_0_f65364a2_Tx     , PduRConf_PduRSrcPdu_PduRSrcPdu         , CanTpConf_CanTpRxNPdu_CanTpRxNPdu         , CanTpConf_CanTpTxFcNPdu_CanTpTxFcNPdu         , 21u, 101u,   CANTP_PHYSICAL_RXTATYPEOFRXSDUCFG,   20u,                             0u },  /* [CanTpRxNSdu]          */  /* [CanTpRxNSdu, 0] */
-  { /*     2 */ CanIfConf_CanIfTxPduCfg_DIAG_RESP_WLC_Tp_oNIO_ES6_RF_CAN_SR_V3_0_00ce42fa_Tx, PduRConf_PduRSrcPdu_PduRSrcPdu_eddf36be, CanTpConf_CanTpRxNPdu_CanTpRxNPdu_9b5d64b0, CanTpConf_CanTpTxFcNPdu_CanTpTxFcNPdu_9b5d64b0, 21u, 101u,   CANTP_PHYSICAL_RXTATYPEOFRXSDUCFG,   20u,                             1u }   /* [CanTpRxNSdu_fab217f5] */  /* [CanTpRxNSdu_fab217f5, 1] */
+  { /*     0 */ CanIfConf_CanIfTxPduCfg_IMOB_WLC_CGW_oNIO_ES6_RF_CAN_SR_V3_0_4f44c7a2_Tx    , PduRConf_PduRSrcPdu_PduRSrcPdu_1       , CanTpConf_CanTpRxNPdu_CanTpRxNPdu_1       , CanTpConf_CanTpTxFcNPdu_CanTpTxFcNPdu_001     , 21u, 101u,   CANTP_PHYSICAL_RXTATYPEOFRXSDUCFG,   20u,                             0u },  /* [CanTpRxNSdu_001]      */  /* [CanTpRxNSdu_001, 2] */
+  { /*     1 */ CANTP_INVALID_HDL                                                           , PduRConf_PduRSrcPdu_PduRSrcPdu_392782f6, CanTpConf_CanTpRxNPdu_CanTpRxNPdu_210b33f5, CANTP_INVALID_HDL                             , 11u,  11u, CANTP_FUNCTIONAL_RXTATYPEOFRXSDUCFG,    0u, CANTP_NO_TXSDUCFGIDXOFRXSDUCFG },  /* [CanTpRxNSdu_585bdea6] */  /* [CanTpRxNSdu_585bdea6, 3] */
+  { /*     2 */ CanIfConf_CanIfTxPduCfg_WLC_CDC_NFC_oNIO_ES6_RF_CAN_SR_V3_0_f65364a2_Tx     , PduRConf_PduRSrcPdu_PduRSrcPdu         , CanTpConf_CanTpRxNPdu_CanTpRxNPdu         , CanTpConf_CanTpTxFcNPdu_CanTpTxFcNPdu         , 21u, 101u,   CANTP_PHYSICAL_RXTATYPEOFRXSDUCFG,   20u,                             1u },  /* [CanTpRxNSdu]          */  /* [CanTpRxNSdu, 0] */
+  { /*     3 */ CanIfConf_CanIfTxPduCfg_DIAG_RESP_WLC_Tp_oNIO_ES6_RF_CAN_SR_V3_0_00ce42fa_Tx, PduRConf_PduRSrcPdu_PduRSrcPdu_eddf36be, CanTpConf_CanTpRxNPdu_CanTpRxNPdu_9b5d64b0, CanTpConf_CanTpTxFcNPdu_CanTpTxFcNPdu_9b5d64b0, 21u, 101u,   CANTP_PHYSICAL_RXTATYPEOFRXSDUCFG,   20u,                             2u }   /* [CanTpRxNSdu_fab217f5] */  /* [CanTpRxNSdu_fab217f5, 1] */
 };
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -149,11 +151,12 @@ CONST(CanTp_RxSduCfgType, CANTP_CONST) CanTp_RxSduCfg[3] = {  /* PRQA S 1514, 15
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(CanTp_RxSduCfgIndType, CANTP_CONST) CanTp_RxSduCfgInd[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(CanTp_RxSduCfgIndType, CANTP_CONST) CanTp_RxSduCfgInd[4] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
   /* Index     RxSduCfgInd      Referable Keys */
-  /*     0 */           1u,  /* [0] */
-  /*     1 */           2u,  /* [1] */
-  /*     2 */           0u   /* [2] */
+  /*     0 */           2u,  /* [0] */
+  /*     1 */           3u,  /* [1] */
+  /*     2 */           0u,  /* [2] */
+  /*     3 */           1u   /* [3] */
 };
 #define CANTP_STOP_SEC_CONST_8BIT
 /*lint -save -esym(961, 19.1) */
@@ -173,11 +176,12 @@ CONST(CanTp_RxSduCfgIndType, CANTP_CONST) CanTp_RxSduCfgInd[3] = {  /* PRQA S 15
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(CanTp_RxSduSnv2HdlType, CANTP_CONST) CanTp_RxSduSnv2Hdl[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(CanTp_RxSduSnv2HdlType, CANTP_CONST) CanTp_RxSduSnv2Hdl[4] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    RxSduCfgIdx        Comment */
-  { /*     0 */          0u },  /* [CanTpRxNSdu_585bdea6] */
-  { /*     1 */          1u },  /* [CanTpRxNSdu] */
-  { /*     2 */          2u }   /* [CanTpRxNSdu_fab217f5] */
+  { /*     0 */          0u },  /* [CanTpRxNSdu_001] */
+  { /*     1 */          1u },  /* [CanTpRxNSdu_585bdea6] */
+  { /*     2 */          2u },  /* [CanTpRxNSdu] */
+  { /*     3 */          3u }   /* [CanTpRxNSdu_fab217f5] */
 };
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -201,10 +205,11 @@ CONST(CanTp_RxSduSnv2HdlType, CANTP_CONST) CanTp_RxSduSnv2Hdl[3] = {  /* PRQA S 
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(CanTp_TxSduCfgType, CANTP_CONST) CanTp_TxSduCfg[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(CanTp_TxSduCfgType, CANTP_CONST) CanTp_TxSduCfg[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    LoLayerTxPduId                                                                PduRTxSduId                                                             RxFcPduId                                       TxPduConfirmationPduId                      RxSduCfgIdx        Comment                            Referable Keys */
-  { /*     0 */ CanIfConf_CanIfTxPduCfg_WLC_CDC_NFC_oNIO_ES6_RF_CAN_SR_V3_0_f65364a2_Tx     , PduRConf_PduRDestPdu_PduRDestPdu_3                                    , CanTpConf_CanTpRxFcNPdu_CanTpRxFcNPdu         , CanTpConf_CanTpTxNPdu_CanTpTxNPdu         ,          1u },  /* [CanTpTxNSdu]          */  /* [CanTpTxNSdu, 0] */
-  { /*     1 */ CanIfConf_CanIfTxPduCfg_DIAG_RESP_WLC_Tp_oNIO_ES6_RF_CAN_SR_V3_0_00ce42fa_Tx, PduRConf_PduRDestPdu_DIAG_RESP_WLC_oNIO_ES6_RF_CAN_SR_V3_0_ebfde8b0_Tx, CanTpConf_CanTpRxFcNPdu_CanTpRxFcNPdu_b9a7b042, CanTpConf_CanTpTxNPdu_CanTpTxNPdu_b9a7b042,          2u }   /* [CanTpTxNSdu_fab217f5] */  /* [CanTpTxNSdu_fab217f5, 1] */
+  { /*     0 */ CanIfConf_CanIfTxPduCfg_IMOB_WLC_CGW_oNIO_ES6_RF_CAN_SR_V3_0_4f44c7a2_Tx    , PduRConf_PduRDestPdu_PduRDestPdu_2                                    , CanTpConf_CanTpRxFcNPdu_CanTpRxFcNPdu_01      , CanTpConf_CanTpTxNPdu_CanTpTxNPdu_1       ,          0u },  /* [CanTpTxNSdu_001]      */  /* [CanTpTxNSdu_001, 2] */
+  { /*     1 */ CanIfConf_CanIfTxPduCfg_WLC_CDC_NFC_oNIO_ES6_RF_CAN_SR_V3_0_f65364a2_Tx     , PduRConf_PduRDestPdu_PduRDestPdu_3                                    , CanTpConf_CanTpRxFcNPdu_CanTpRxFcNPdu         , CanTpConf_CanTpTxNPdu_CanTpTxNPdu         ,          2u },  /* [CanTpTxNSdu]          */  /* [CanTpTxNSdu, 0] */
+  { /*     2 */ CanIfConf_CanIfTxPduCfg_DIAG_RESP_WLC_Tp_oNIO_ES6_RF_CAN_SR_V3_0_00ce42fa_Tx, PduRConf_PduRDestPdu_DIAG_RESP_WLC_oNIO_ES6_RF_CAN_SR_V3_0_ebfde8b0_Tx, CanTpConf_CanTpRxFcNPdu_CanTpRxFcNPdu_b9a7b042, CanTpConf_CanTpTxNPdu_CanTpTxNPdu_b9a7b042,          3u }   /* [CanTpTxNSdu_fab217f5] */  /* [CanTpTxNSdu_fab217f5, 1] */
 };
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -222,10 +227,11 @@ CONST(CanTp_TxSduCfgType, CANTP_CONST) CanTp_TxSduCfg[2] = {  /* PRQA S 1514, 15
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(CanTp_TxSduCfgIndType, CANTP_CONST) CanTp_TxSduCfgInd[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(CanTp_TxSduCfgIndType, CANTP_CONST) CanTp_TxSduCfgInd[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
   /* Index     TxSduCfgInd      Referable Keys */
-  /*     0 */           0u,  /* [0] */
-  /*     1 */           1u   /* [1] */
+  /*     0 */           1u,  /* [0] */
+  /*     1 */           2u,  /* [1] */
+  /*     2 */           0u   /* [2] */
 };
 #define CANTP_STOP_SEC_CONST_8BIT
 /*lint -save -esym(961, 19.1) */
@@ -245,10 +251,11 @@ CONST(CanTp_TxSduCfgIndType, CANTP_CONST) CanTp_TxSduCfgInd[2] = {  /* PRQA S 15
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(CanTp_TxSduSnv2HdlType, CANTP_CONST) CanTp_TxSduSnv2Hdl[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(CanTp_TxSduSnv2HdlType, CANTP_CONST) CanTp_TxSduSnv2Hdl[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    TxSduCfgIdx        Comment */
-  { /*     0 */          0u },  /* [CanTpTxNSdu] */
-  { /*     1 */          1u }   /* [CanTpTxNSdu_fab217f5] */
+  { /*     0 */          0u },  /* [CanTpTxNSdu_001] */
+  { /*     1 */          1u },  /* [CanTpTxNSdu] */
+  { /*     2 */          2u }   /* [CanTpTxNSdu_fab217f5] */
 };
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -262,7 +269,7 @@ CONST(CanTp_TxSduSnv2HdlType, CANTP_CONST) CanTp_TxSduSnv2Hdl[2] = {  /* PRQA S 
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-VAR(CanTp_CalcBSType, CANTP_VAR_NOINIT) CanTp_CalcBS[3];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+VAR(CanTp_CalcBSType, CANTP_VAR_NOINIT) CanTp_CalcBS[4];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
 #define CANTP_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -275,7 +282,7 @@ VAR(CanTp_CalcBSType, CANTP_VAR_NOINIT) CanTp_CalcBS[3];  /* PRQA S 1514, 1533 *
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-VAR(CanTp_RxStateType, CANTP_VAR_NOINIT) CanTp_RxState[3];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+VAR(CanTp_RxStateType, CANTP_VAR_NOINIT) CanTp_RxState[4];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
 #define CANTP_STOP_SEC_VAR_NOINIT_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -288,7 +295,7 @@ VAR(CanTp_RxStateType, CANTP_VAR_NOINIT) CanTp_RxState[3];  /* PRQA S 1514, 1533
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-VAR(CanTp_TxSemaphoreType, CANTP_VAR_NOINIT) CanTp_TxSemaphores[2];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+VAR(CanTp_TxSemaphoreType, CANTP_VAR_NOINIT) CanTp_TxSemaphores[3];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
 #define CANTP_STOP_SEC_VAR_NOINIT_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -301,7 +308,7 @@ VAR(CanTp_TxSemaphoreType, CANTP_VAR_NOINIT) CanTp_TxSemaphores[2];  /* PRQA S 1
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-VAR(CanTp_TxStateType, CANTP_VAR_NOINIT) CanTp_TxState[2];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+VAR(CanTp_TxStateType, CANTP_VAR_NOINIT) CanTp_TxState[3];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
 #define CANTP_STOP_SEC_VAR_NOINIT_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
