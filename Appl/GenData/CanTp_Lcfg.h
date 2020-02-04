@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanTp_Lcfg.h
- *   Generation Time: 2020-02-04 15:38:39
+ *   Generation Time: 2020-02-04 16:15:32
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -483,7 +483,7 @@ typedef CanTp_PCConfigType CanTp_ConfigType;  /**< A structure type is present f
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanTp_RxPduMapType, CANTP_CONST) CanTp_RxPduMap[4];
+extern CONST(CanTp_RxPduMapType, CANTP_CONST) CanTp_RxPduMap[5];
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -510,7 +510,7 @@ extern CONST(CanTp_RxPduMapType, CANTP_CONST) CanTp_RxPduMap[4];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanTp_RxSduCfgType, CANTP_CONST) CanTp_RxSduCfg[4];
+extern CONST(CanTp_RxSduCfgType, CANTP_CONST) CanTp_RxSduCfg[5];
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -527,7 +527,7 @@ extern CONST(CanTp_RxSduCfgType, CANTP_CONST) CanTp_RxSduCfg[4];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanTp_RxSduCfgIndType, CANTP_CONST) CanTp_RxSduCfgInd[4];
+extern CONST(CanTp_RxSduCfgIndType, CANTP_CONST) CanTp_RxSduCfgInd[5];
 #define CANTP_STOP_SEC_CONST_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -546,7 +546,7 @@ extern CONST(CanTp_RxSduCfgIndType, CANTP_CONST) CanTp_RxSduCfgInd[4];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanTp_RxSduSnv2HdlType, CANTP_CONST) CanTp_RxSduSnv2Hdl[4];
+extern CONST(CanTp_RxSduSnv2HdlType, CANTP_CONST) CanTp_RxSduSnv2Hdl[5];
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -569,7 +569,7 @@ extern CONST(CanTp_RxSduSnv2HdlType, CANTP_CONST) CanTp_RxSduSnv2Hdl[4];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanTp_TxSduCfgType, CANTP_CONST) CanTp_TxSduCfg[3];
+extern CONST(CanTp_TxSduCfgType, CANTP_CONST) CanTp_TxSduCfg[4];
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -586,7 +586,7 @@ extern CONST(CanTp_TxSduCfgType, CANTP_CONST) CanTp_TxSduCfg[3];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanTp_TxSduCfgIndType, CANTP_CONST) CanTp_TxSduCfgInd[3];
+extern CONST(CanTp_TxSduCfgIndType, CANTP_CONST) CanTp_TxSduCfgInd[4];
 #define CANTP_STOP_SEC_CONST_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -605,7 +605,7 @@ extern CONST(CanTp_TxSduCfgIndType, CANTP_CONST) CanTp_TxSduCfgInd[3];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanTp_TxSduSnv2HdlType, CANTP_CONST) CanTp_TxSduSnv2Hdl[3];
+extern CONST(CanTp_TxSduSnv2HdlType, CANTP_CONST) CanTp_TxSduSnv2Hdl[4];
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -618,7 +618,7 @@ extern CONST(CanTp_TxSduSnv2HdlType, CANTP_CONST) CanTp_TxSduSnv2Hdl[3];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern VAR(CanTp_CalcBSType, CANTP_VAR_NOINIT) CanTp_CalcBS[4];
+extern VAR(CanTp_CalcBSType, CANTP_VAR_NOINIT) CanTp_CalcBS[5];
 #define CANTP_STOP_SEC_VAR_NOINIT_8BIT
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -631,7 +631,7 @@ extern VAR(CanTp_CalcBSType, CANTP_VAR_NOINIT) CanTp_CalcBS[4];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern VAR(CanTp_RxStateType, CANTP_VAR_NOINIT) CanTp_RxState[4];
+extern VAR(CanTp_RxStateType, CANTP_VAR_NOINIT) CanTp_RxState[5];
 #define CANTP_STOP_SEC_VAR_NOINIT_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -644,7 +644,7 @@ extern VAR(CanTp_RxStateType, CANTP_VAR_NOINIT) CanTp_RxState[4];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern VAR(CanTp_TxSemaphoreType, CANTP_VAR_NOINIT) CanTp_TxSemaphores[3];
+extern VAR(CanTp_TxSemaphoreType, CANTP_VAR_NOINIT) CanTp_TxSemaphores[4];
 #define CANTP_STOP_SEC_VAR_NOINIT_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -657,7 +657,7 @@ extern VAR(CanTp_TxSemaphoreType, CANTP_VAR_NOINIT) CanTp_TxSemaphores[3];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern VAR(CanTp_TxStateType, CANTP_VAR_NOINIT) CanTp_TxState[3];
+extern VAR(CanTp_TxStateType, CANTP_VAR_NOINIT) CanTp_TxState[4];
 #define CANTP_STOP_SEC_VAR_NOINIT_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */

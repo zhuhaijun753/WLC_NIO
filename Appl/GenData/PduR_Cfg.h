@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_Cfg.h
- *   Generation Time: 2020-02-04 15:38:39
+ *   Generation Time: 2020-02-04 16:15:32
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -41,47 +41,6 @@
  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 **********************************************************************************************************************/
 
-/**********************************************************************************************************************
- * WARNING: This code has been generated with reduced-severity errors. 
- * The created output files contain errors that have been ignored. Usage of the created files can lead to unpredictable behavior of the embedded code.
- * Usage of the created files happens at own risk!
- * 
- * [Warning] PDUR07020 - Invalid setting of communication type. 
- * - [Reduced Severity due to User-Defined Parameter] Communication type of PduRRoutingPath /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_01_oNIO_ES6_RF_CAN_PduRRoutingPath cannot be determined. The communication types of the PduRSrcPdu and PduRDestPdu must be identical. Routing paths between different communication types are not possible.
- * 
- * Multiple communication types found:
- * TRANSPORT_PROTOCOL, COMMUNICATION_INTERFACE
- * 
- * Parameters influencing the communication type:
- * /ActiveEcuC/PduR/CDDTp[0:PduRCommunicationInterface](value=false), /ActiveEcuC/CanIf/CanIfInitCfg/WLC_DEVLP_01_oNIO_ES6_RF_CAN_SR_V3_0_163e9779_Tx[0:CanIfTxPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/WLC_DEVLP_01_oNIO_ES6_RF_CAN_SR_V3_0_0423feed_Tx)
- * Erroneous configuration elements:
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_01_oNIO_ES6_RF_CAN_PduRRoutingPath/PduRDestPdu_4[0:PduRDestPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/WLC_DEVLP_01_oNIO_ES6_RF_CAN_SR_V3_0_0423feed_Tx) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRef)
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_01_oNIO_ES6_RF_CAN_PduRRoutingPath/PduRSrcPdu_4[0:PduRSrcPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/WLC_DEVLP_01_oNIO_ES6_RF_CAN_CDDasCanTp) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduRef)
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_01_oNIO_ES6_RF_CAN_PduRRoutingPath[0:PduRRoutingPathCommunicationType](value=COMMUNICATION_INTERFACE) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType)
- * 
- * [Warning] PDUR07020 - Invalid setting of communication type. 
- * - [Reduced Severity due to User-Defined Parameter] Communication type of PduRRoutingPath /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath cannot be determined. The communication types of the PduRSrcPdu and PduRDestPdu must be identical. Routing paths between different communication types are not possible.
- * 
- * Multiple communication types found:
- * TRANSPORT_PROTOCOL, COMMUNICATION_INTERFACE
- * 
- * Parameters influencing the communication type:
- * /ActiveEcuC/PduR/CDDTp[0:PduRCommunicationInterface](value=false), /ActiveEcuC/CanIf/CanIfInitCfg/WLC_DEVLP_02_oNIO_ES6_RF_CAN_SR_V3_0_52a3faed_Rx[0:CanIfRxPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/WLC_DEVLP_02_oNIO_ES6_RF_CAN_SR_V3_0_2ddc8841_Rx)
- * Erroneous configuration elements:
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath/PduRDestPdu_5[0:PduRDestPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/WLC_DEVLP_02_oNIO_ES6_RF_CAN_CDDasCanTp) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRef)
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath/PduRSrcPdu_5[0:PduRSrcPduRef](value=/ActiveEcuC/EcuC/EcucPduCollection/WLC_DEVLP_02_oNIO_ES6_RF_CAN_SR_V3_0_2ddc8841_Rx) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduRef)
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath[0:PduRRoutingPathCommunicationType](value=COMMUNICATION_INTERFACE) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType)
- * 
- * [Warning] PDUR07020 - Invalid setting of communication type. 
- * - [Reduced Severity due to User-Defined Parameter] The configured communication type COMMUNICATION_INTERFACE of DefinitionRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_01_oNIO_ES6_RF_CAN_PduRRoutingPath does not match with the expected routing type UNDEFINED.
- * Erroneous configuration elements:
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_01_oNIO_ES6_RF_CAN_PduRRoutingPath[0:PduRRoutingPathCommunicationType](value=COMMUNICATION_INTERFACE) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType)
- * 
- * [Warning] PDUR07020 - Invalid setting of communication type. 
- * - [Reduced Severity due to User-Defined Parameter] The configured communication type COMMUNICATION_INTERFACE of DefinitionRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath does not match with the expected routing type UNDEFINED.
- * Erroneous configuration elements:
- * /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath[0:PduRRoutingPathCommunicationType](value=COMMUNICATION_INTERFACE) (DefRef: /MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType)
- *********************************************************************************************************************/
 #if !defined (PDUR_CFG_H)
 # define PDUR_CFG_H
 
@@ -193,7 +152,6 @@
 #define PduRConf_PduRDestPdu_CGW_03_oNIO_ES6_RF_CAN_SR_V3_0_2fb1cd3a_Rx_8f6b5f25_Rx 4u
 #define PduRConf_PduRDestPdu_CGW_TCU_01_oNIO_ES6_RF_CAN_SR_V3_0_9e3e6b3d_Rx_ece35bb2_Rx 5u
 #define PduRConf_PduRDestPdu_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_57df1db7_Rx_8b01a8ad_Rx 6u
-#define PduRConf_PduRDestPdu_PduRDestPdu_5                            7u
 /**\} */
 
 /**
@@ -206,7 +164,6 @@
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_3ec2fcac                       0u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_3feaaad3                       1u
-#define PduRConf_PduRSrcPdu_PduRSrcPdu_5                              7u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_8b01a8ad                       6u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_8b049bb0                       2u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_8f6b5f25                       4u
@@ -240,7 +197,6 @@
 /* Handle IDs active in all predefined variants (the application has not to take the active variant into account) */
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
 #define PduRConf_PduRDestPdu_NM_WLC_oNIO_ES6_RF_CAN_SR_V3_0_9357dd65_Tx_9febb8af_Tx 0u
-#define PduRConf_PduRDestPdu_PduRDestPdu_4                            3u
 #define PduRConf_PduRDestPdu_WLC_01_oNIO_ES6_RF_CAN_SR_V3_0_49299080_Tx 1u
 #define PduRConf_PduRDestPdu_WLC_02_oNIO_ES6_RF_CAN_SR_V3_0_60d6e62c_Tx 2u
 /**\} */
@@ -257,6 +213,7 @@
 #define PduRConf_PduRDestPdu_DIAG_REQ_WLC_oNIO_ES6_RF_CAN_SR_V3_0_af2d88ff_Rx_eddf36be_Rx 2u
 #define PduRConf_PduRDestPdu_PduRDestPdu                              0u
 #define PduRConf_PduRDestPdu_PduRDestPdu_1                            3u
+#define PduRConf_PduRDestPdu_PduRDestPdu_5                            4u
 /**\} */
 
 /**
@@ -269,6 +226,7 @@
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
 #define PduRConf_PduRSrcPdu_PduRSrcPdu                                0u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_1                              3u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_5                              4u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_392782f6                       1u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_eddf36be                       2u
 /**\} */
@@ -284,6 +242,7 @@
 #define PduRConf_PduRDestPdu_DIAG_RESP_WLC_oNIO_ES6_RF_CAN_SR_V3_0_ebfde8b0_Tx 0u
 #define PduRConf_PduRDestPdu_PduRDestPdu_2                            1u
 #define PduRConf_PduRDestPdu_PduRDestPdu_3                            2u
+#define PduRConf_PduRDestPdu_PduRDestPdu_4                            3u
 /**\} */
 
 

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Cfg.h
- *   Generation Time: 2020-02-04 15:38:39
+ *   Generation Time: 2020-02-04 16:15:32
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -246,17 +246,17 @@ typedef uint8 CanIf_TxBufferSizeType;
 /* Assigned to: CanTp_RxIndication*/
 #define CanIfRxPduHnd_DIAG_REQ_WLC_Tp_oNIO_ES6_RF_CAN_SR_V3_0_dcbbcb37_Rx                           0u
 #define CanIfRxPduHnd_DIAG_REQ_AllECU_Tp_oNIO_ES6_RF_CAN_SR_V3_0_23f8e329_Rx                        1u
-#define CanIfRxPduHnd_CDC_WLC_NFC_oNIO_ES6_RF_CAN_SR_V3_0_0c4c3dd1_Rx                               2u
-#define CanIfRxPduHnd_IMOB_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_451c91a3_Rx                              3u
+#define CanIfRxPduHnd_WLC_DEVLP_02_oNIO_ES6_RF_CAN_SR_V3_0_52a3faed_Rx                              2u
+#define CanIfRxPduHnd_CDC_WLC_NFC_oNIO_ES6_RF_CAN_SR_V3_0_0c4c3dd1_Rx                               3u
+#define CanIfRxPduHnd_IMOB_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_451c91a3_Rx                              4u
 /* Assigned to: PduR_CanIfRxIndication*/
-#define CanIfRxPduHnd_WLC_DEVLP_02_oNIO_ES6_RF_CAN_SR_V3_0_52a3faed_Rx                              0u
-#define CanIfRxPduHnd_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_411e58d5_Rx                                   1u
-#define CanIfRxPduHnd_CGW_TCU_01_oNIO_ES6_RF_CAN_SR_V3_0_a587df53_Rx                                2u
-#define CanIfRxPduHnd_CDC_IC_01_oNIO_ES6_RF_CAN_SR_V3_0_6ce0b6d1_Rx                                 3u
-#define CanIfRxPduHnd_CGW_02_oNIO_ES6_RF_CAN_SR_V3_0_e6e0b02d_Rx                                    4u
-#define CanIfRxPduHnd_CDC_WLC_oNIO_ES6_RF_CAN_SR_V3_0_96cf9e96_Rx                                   5u
-#define CanIfRxPduHnd_CGW_03_oNIO_ES6_RF_CAN_SR_V3_0_3fecd32f_Rx                                    6u
-#define CanIfRxPduHnd_BCU_04_oNIO_ES6_RF_CAN_SR_V3_0_7f355556_Rx                                    7u
+#define CanIfRxPduHnd_CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_411e58d5_Rx                                   0u
+#define CanIfRxPduHnd_CGW_TCU_01_oNIO_ES6_RF_CAN_SR_V3_0_a587df53_Rx                                1u
+#define CanIfRxPduHnd_CDC_IC_01_oNIO_ES6_RF_CAN_SR_V3_0_6ce0b6d1_Rx                                 2u
+#define CanIfRxPduHnd_CGW_02_oNIO_ES6_RF_CAN_SR_V3_0_e6e0b02d_Rx                                    3u
+#define CanIfRxPduHnd_CDC_WLC_oNIO_ES6_RF_CAN_SR_V3_0_96cf9e96_Rx                                   4u
+#define CanIfRxPduHnd_CGW_03_oNIO_ES6_RF_CAN_SR_V3_0_3fecd32f_Rx                                    5u
+#define CanIfRxPduHnd_BCU_04_oNIO_ES6_RF_CAN_SR_V3_0_7f355556_Rx                                    6u
 
 
 
@@ -719,7 +719,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_GetSizeOfTxBufferPrioByCanIdBaseOfPCConfig()            1u  /**< the number of accomplishable value elements in CanIf_TxBufferPrioByCanIdBase */
 #define CanIf_GetSizeOfTxBufferPrioByCanIdByteQueueConfigOfPCConfig() 1u  /**< the number of accomplishable value elements in CanIf_TxBufferPrioByCanIdByteQueueConfig */
 #define CanIf_GetSizeOfTxBufferPrioByCanIdByteQueueMappedTxPdusOfPCConfig() 7u  /**< the number of accomplishable value elements in CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus */
-#define CanIf_GetSizeOfTxConfirmationFctListOfPCConfig()              4u  /**< the number of accomplishable value elements in CanIf_TxConfirmationFctList */
+#define CanIf_GetSizeOfTxConfirmationFctListOfPCConfig()              3u  /**< the number of accomplishable value elements in CanIf_TxConfirmationFctList */
 #define CanIf_GetSizeOfTxPduConfigOfPCConfig()                        7u  /**< the number of accomplishable value elements in CanIf_TxPduConfig */
 #define CanIf_GetSizeOfTxPduQueueIndexOfPCConfig()                    7u  /**< the number of accomplishable value elements in CanIf_TxPduQueueIndex */
 #define CanIf_GetSizeOfTxQueueOfPCConfig()                            7u  /**< the number of accomplishable value elements in CanIf_TxQueue */
@@ -1625,7 +1625,7 @@ extern CONST(CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType, CANIF_CONST) Ca
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctList[4];
+extern CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctList[3];
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
