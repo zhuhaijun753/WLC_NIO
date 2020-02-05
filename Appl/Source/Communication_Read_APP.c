@@ -16,7 +16,7 @@
  *             File:  Communication_Read_APP.c
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
  *        SW-C Type:  Communication_Read_APP
- *  Generation Time:  2020-02-05 11:25:12
+ *  Generation Time:  2020-02-05 20:41:34
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0
@@ -105,6 +105,7 @@
  * WLC_02_CRC: Integer in interval [0...255]
  * WLC_02_MsgCntr: Integer in interval [0...15]
  * Yr: Integer in interval [0...255]
+ * uint16: Integer in interval [0...65535] (standard type)
  * uint8: Integer in interval [0...255] (standard type)
  *
  * Enumeration Types:
@@ -283,6 +284,7 @@
  *
  * Array Types:
  * ============
+ * Dcm_Data2ByteType: Array with 2 element(s) of type uint8
  * Dcm_Data4ByteType: Array with 4 element(s) of type uint8
  *
  *********************************************************************************************************************/
@@ -377,6 +379,2575 @@ FUNC(void, Communication_Read_APP_CODE) ComReadandWrite_Runnable(void) /* PRQA S
  * Symbol: ComReadandWrite_Runnable
  *********************************************************************************************************************/
 
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_BootloaderVersion>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_BootloaderVersion_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_BootloaderVersion_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_BootloaderVersion_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_BootloaderVersion>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_BootloaderVersion_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_BootloaderVersion_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_BootloaderVersion_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_BootloaderVersion_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_BootloaderVersion_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_BootloaderVersion_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_BootloaderVersion_ReadDataLength
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadDataLength> of PortPrototype <DataServices_DcmDspData_BootloaderVersion>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_BootloaderVersion_ReadDataLength(Dcm_OpStatusType OpStatus, uint16 *DataLength)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_BootloaderVersion_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_BootloaderVersion_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_BootloaderVersion_ReadDataLength_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_BootloaderVersion_ReadDataLength(Dcm_OpStatusType OpStatus, P2VAR(uint16, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) DataLength) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_BootloaderVersion_ReadDataLength (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_ConfigurarionFingerprint>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ConfigurarionFingerprint_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_ConfigurarionFingerprint>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ConfigurarionFingerprint_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ConfigurarionFingerprint_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ConfigurarionFingerprint_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ConfigurarionFingerprint_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ConfigurarionFingerprint_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_ConfigurarionFingerprint>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ConfigurarionFingerprint_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ConfigurarionFingerprint_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ConfigurarionFingerprint_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ConfigurarionFingerprint_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_ECUConfigurarion>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUConfigurarion_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUConfigurarion_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUConfigurarion_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_ECUConfigurarion>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUConfigurarion_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUConfigurarion_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUConfigurarion_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUConfigurarion_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUConfigurarion_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUConfigurarion_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUConfigurarion_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_ECUConfigurarion>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUConfigurarion_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUConfigurarion_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUConfigurarion_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUConfigurarion_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUConfigurarion_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUConfigurarion_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_ECUDiagDatabaseVersion>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_ECUDiagDatabaseVersion>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_ECUManufacturingDate>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUManufacturingDate_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUManufacturingDate_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUManufacturingDate_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_ECUManufacturingDate>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUManufacturingDate_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUManufacturingDate_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUManufacturingDate_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUManufacturingDate_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUManufacturingDate_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUManufacturingDate_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_ECUProgrammingDate>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUProgrammingDate_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUProgrammingDate_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUProgrammingDate_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_ECUProgrammingDate>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUProgrammingDate_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUProgrammingDate_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUProgrammingDate_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUProgrammingDate_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUProgrammingDate_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUProgrammingDate_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_ECUSerialNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUSerialNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUSerialNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ECUSerialNumber_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_ECUSerialNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ECUSerialNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ECUSerialNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ECUSerialNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUSerialNumber_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUSerialNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ECUSerialNumber_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_ReadActiveDiagSession>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ReadActiveDiagSession_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_ReadActiveDiagSession>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ReadActiveDiagSession_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ReadActiveDiagSession_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ReadActiveDiagSession_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ReadActiveDiagSession_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_ReadFingerprint>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ReadFingerprint_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ReadFingerprint_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_ReadFingerprint_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_ReadFingerprint>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_ReadFingerprint_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_ReadFingerprint_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_ReadFingerprint_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ReadFingerprint_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ReadFingerprint_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_ReadFingerprint_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_RepairShopFingerPrint>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_RepairShopFingerPrint_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_RepairShopFingerPrint>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_RepairShopFingerPrint_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_RepairShopFingerPrint_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_RepairShopFingerPrint_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_RepairShopFingerPrint_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_RepairShopFingerPrint_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_RepairShopFingerPrint>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_RepairShopFingerPrint_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_RepairShopFingerPrint_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_RepairShopFingerPrint_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_RepairShopFingerPrint_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_SystemName_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_SystemName>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_SystemName_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_SystemName_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_SystemName_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_SystemName_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemName_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_SystemName_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_SystemName_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_SystemName>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_SystemName_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_SystemName_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_SystemName_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_SystemName_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemName_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_SystemName_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_SystemName_ReadDataLength
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadDataLength> of PortPrototype <DataServices_DcmDspData_SystemName>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_SystemName_ReadDataLength(Dcm_OpStatusType OpStatus, uint16 *DataLength)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_SystemName_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_SystemName_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_SystemName_ReadDataLength_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemName_ReadDataLength(Dcm_OpStatusType OpStatus, P2VAR(uint16, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) DataLength) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_SystemName_ReadDataLength (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_SystemSupplierIdData>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_SystemSupplierIdData_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_SystemSupplierIdData_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_SystemSupplierIdData_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_SystemSupplierIdData>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_SystemSupplierIdData_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_SystemSupplierIdData_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_SystemSupplierIdData_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_SystemSupplierIdData_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemSupplierIdData_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_SystemSupplierIdData_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VIN_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_VIN>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VIN_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VIN_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VIN_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VIN_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VIN_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VIN_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VIN_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_VIN>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VIN_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VIN_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VIN_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VIN_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VIN_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VIN_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VIN_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_VIN>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VIN_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VIN_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VIN_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VIN_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VIN_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VIN_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_VM_CalibrarionPartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_VM_CalibrarionPartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_VM_CalibrarionPartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_VM_CalibrationBaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_CalibrationBaseline_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_VM_CalibrationBaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_CalibrationBaseline_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrationBaseline_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrationBaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrationBaseline_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_CalibrationBaseline_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_VM_CalibrationBaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_CalibrationBaseline_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrationBaseline_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrationBaseline_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_CalibrationBaseline_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_VM_FOTASpecialPartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_VM_FOTASpecialPartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_VM_FOTASpecialPartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_VM_SoftwarBaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_SoftwarBaseline_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_VM_SoftwarBaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_SoftwarBaseline_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SoftwarBaseline_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SoftwarBaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SoftwarBaseline_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_SoftwarBaseline_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_VM_SoftwarBaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_SoftwarBaseline_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SoftwarBaseline_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SoftwarBaseline_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SoftwarBaseline_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_VM_SofwarePartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_SofwarePartNumber_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_VM_SofwarePartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_SofwarePartNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SofwarePartNumber_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SofwarePartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SofwarePartNumber_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_SofwarePartNumber_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_VM_SofwarePartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_SofwarePartNumber_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SofwarePartNumber_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SofwarePartNumber_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SofwarePartNumber_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_VM_SparepartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_SparepartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_SparepartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_SparepartNumber_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_VM_SparepartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_SparepartNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_SparepartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_SparepartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SparepartNumber_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SparepartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SparepartNumber_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_SparepartNumber_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_VM_SparepartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_SparepartNumber_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_SparepartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_SparepartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SparepartNumber_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SparepartNumber_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_SparepartNumber_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_DcmDspData_VM_Specialdatabaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_Specialdatabaseline_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_DcmDspData_VM_Specialdatabaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_Specialdatabaseline_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_Specialdatabaseline_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_Specialdatabaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_Specialdatabaseline_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadDataLength> of PortPrototype <DataServices_DcmDspData_VM_Specialdatabaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength(Dcm_OpStatusType OpStatus, uint16 *DataLength)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength(Dcm_OpStatusType OpStatus, P2VAR(uint16, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) DataLength) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_DcmDspData_VM_Specialdatabaseline_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_DcmDspData_VM_Specialdatabaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_DcmDspData_VM_Specialdatabaseline_WriteData(const uint8 *Data, uint16 DataLength, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_Specialdatabaseline_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_Specialdatabaseline_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, uint16 DataLength, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_DcmDspData_VM_Specialdatabaseline_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -517,6 +3088,486 @@ FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOn
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_Diag_VM_HardwareBaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_Diag_VM_HardwareBaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_Diag_VM_HardwareBaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_Diag_VM_HardwareBaseline_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_Diag_VM_HardwareBaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_Diag_VM_HardwareBaseline_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_Diag_VM_HardwareBaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_Diag_VM_HardwareBaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwareBaseline_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwareBaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwareBaseline_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_Diag_VM_HardwareBaseline_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_Diag_VM_HardwareBaseline>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_Diag_VM_HardwareBaseline_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_Diag_VM_HardwareBaseline_DCM_E_PENDING
+ *   RTE_E_DataServices_Diag_VM_HardwareBaseline_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwareBaseline_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwareBaseline_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwareBaseline_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_Diag_VM_HardwarePartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_Diag_VM_HardwarePartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_Diag_VM_HardwarePartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_Diag_VM_HardwarePartNumber_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_Diag_VM_HardwarePartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_Diag_VM_HardwarePartNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_Diag_VM_HardwarePartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_Diag_VM_HardwarePartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwarePartNumber_ReadData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwarePartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwarePartNumber_ReadData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_Diag_VM_HardwarePartNumber_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_Diag_VM_HardwarePartNumber>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_Diag_VM_HardwarePartNumber_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_Diag_VM_HardwarePartNumber_DCM_E_PENDING
+ *   RTE_E_DataServices_Diag_VM_HardwarePartNumber_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwarePartNumber_WriteData_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwarePartNumber_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DataServices_Diag_VM_HardwarePartNumber_WriteData (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: SecurityAccess_Level_01_CompareKey
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <CompareKey> of PortPrototype <SecurityAccess_Level_01>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType SecurityAccess_Level_01_CompareKey(const uint8 *Key, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Key: uint8* is of type Dcm_Data2ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_SecurityAccess_Level_01_DCM_E_COMPARE_KEY_FAILED
+ *   RTE_E_SecurityAccess_Level_01_DCM_E_PENDING
+ *   RTE_E_SecurityAccess_Level_01_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: SecurityAccess_Level_01_CompareKey_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_01_CompareKey(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Key, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: SecurityAccess_Level_01_CompareKey (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: SecurityAccess_Level_01_GetSeed
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <GetSeed> of PortPrototype <SecurityAccess_Level_01>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType SecurityAccess_Level_01_GetSeed(Dcm_OpStatusType OpStatus, uint8 *Seed, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Seed: uint8* is of type Dcm_Data2ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_SecurityAccess_Level_01_DCM_E_PENDING
+ *   RTE_E_SecurityAccess_Level_01_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: SecurityAccess_Level_01_GetSeed_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_01_GetSeed(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Seed, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: SecurityAccess_Level_01_GetSeed (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: SecurityAccess_Level_02_CompareKey
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <CompareKey> of PortPrototype <SecurityAccess_Level_02>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType SecurityAccess_Level_02_CompareKey(const uint8 *Key, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Key: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_SecurityAccess_Level_02_DCM_E_COMPARE_KEY_FAILED
+ *   RTE_E_SecurityAccess_Level_02_DCM_E_PENDING
+ *   RTE_E_SecurityAccess_Level_02_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: SecurityAccess_Level_02_CompareKey_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_02_CompareKey(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Key, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: SecurityAccess_Level_02_CompareKey (returns application error)
+ *********************************************************************************************************************/
+
+  return RTE_E_OK;
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: SecurityAccess_Level_02_GetSeed
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <GetSeed> of PortPrototype <SecurityAccess_Level_02>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType SecurityAccess_Level_02_GetSeed(Dcm_OpStatusType OpStatus, uint8 *Seed, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Seed: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_SecurityAccess_Level_02_DCM_E_PENDING
+ *   RTE_E_SecurityAccess_Level_02_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: SecurityAccess_Level_02_GetSeed_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_02_GetSeed(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Seed, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: SecurityAccess_Level_02_GetSeed (returns application error)
  *********************************************************************************************************************/
 
   return RTE_E_OK;

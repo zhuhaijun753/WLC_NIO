@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dcm_Lcfg.h
- *   Generation Time: 2019-12-01 17:02:46
+ *   Generation Time: 2020-02-05 20:39:37
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -90,9 +90,9 @@ typedef uint8_least  Dcm_ThreadIdOptType;
 ---------------------------------------------- */
 
 /*! Depends on the largest configured buffer size */
-typedef uint8 Dcm_CfgNetBufferSizeMemType;
+typedef uint16 Dcm_CfgNetBufferSizeMemType;
 /*! Depends on the largest configured buffer size */
-typedef uint8_least Dcm_CfgNetBufferSizeOptType;
+typedef uint16_least Dcm_CfgNetBufferSizeOptType;
 /*! Function pointer prototype for a protocol activation notification */
 typedef P2FUNC(Std_ReturnType, DCM_CODE, Dcm_NetProtocolIndicationFuncType) (Dcm_ProtocolType newProtocol /* IN: new ProtocolId */);
 
@@ -1727,7 +1727,7 @@ extern CONST(uint8, DCM_CONST) Dcm_CfgSvc11SubFuncLookUpTable[2];
 /*! Service 0x19 look up table  */
 extern CONST(uint8, DCM_CONST) Dcm_CfgSvc19SubFuncLookUpTable[4];
 /*! Service 0x27 look up table  */
-extern CONST(uint8, DCM_CONST) Dcm_CfgSvc27SubFuncLookUpTable[3];
+extern CONST(uint8, DCM_CONST) Dcm_CfgSvc27SubFuncLookUpTable[5];
 /*! Service 0x3E look up table  */
 extern CONST(uint8, DCM_CONST) Dcm_CfgSvc3ESubFuncLookUpTable[2];
 /*! Look up table of service 0x85 */
@@ -1744,7 +1744,7 @@ extern CONST(uint8, DCM_CONST) Dcm_CfgSvc85SubFuncLookUpTable[3];
 # include "MemMap.h"                                                                                                                                 /* PRQA S 5087 */ /* MD_MSR_MemMap */
 /*lint -restore */
 /*! DID look up table  */
-extern CONST(uint16, DCM_CONST) Dcm_CfgDidMgrDidLookUpTable[2];
+extern CONST(uint16, DCM_CONST) Dcm_CfgDidMgrDidLookUpTable[24];
 # define DCM_STOP_SEC_CONST_16
 /*lint -save -esym(961, 19.1) */
 # include "MemMap.h"                                                                                                                                 /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -1773,15 +1773,15 @@ extern CONST(Dcm_CfgStatePreconditionInfoType, DCM_CONST) Dcm_CfgStatePreconditi
 /*! Session state properties */
 extern CONST(Dcm_CfgStateSessionInfoType, DCM_CONST) Dcm_CfgStateSessionInfo[3];
 /*! Security Access state properties */
-extern CONST(Dcm_CfgStateSecurityInfoType, DCM_CONST) Dcm_CfgStateSecurityInfo[1];
+extern CONST(Dcm_CfgStateSecurityInfoType, DCM_CONST) Dcm_CfgStateSecurityInfo[2];
 /*! DID properties */
-extern CONST(Dcm_CfgDidMgrDidInfoType, DCM_CONST) Dcm_CfgDidMgrDidInfo[1];
+extern CONST(Dcm_CfgDidMgrDidInfoType, DCM_CONST) Dcm_CfgDidMgrDidInfo[23];
 /*! DID operation properties */
-extern CONST(Dcm_CfgDidMgrDidOpInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpInfo[2];
+extern CONST(Dcm_CfgDidMgrDidOpInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpInfo[37];
 /*! DID operation classes */
-extern CONST(Dcm_CfgDidMgrDidOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpClassInfo[4];
+extern CONST(Dcm_CfgDidMgrDidOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpClassInfo[64];
 /*! DID signal operation classes */
-extern CONST(Dcm_CfgDidMgrSignalOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrSignalOpClassInfo[3];
+extern CONST(Dcm_CfgDidMgrSignalOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrSignalOpClassInfo[63];
 /*! DCM service initializers */
 extern CONST(Dcm_DiagSvcInitFuncType, DCM_CONST) Dcm_CfgDiagSvcInitializers[2];
 /*! DCM service properties */
@@ -1807,11 +1807,11 @@ extern CONST(Dcm_CfgSvc19SubFuncInfoType, DCM_CONST) Dcm_CfgSvc19SubFuncInfo[3];
 /*! Indirection from service 0x19 sub functions to execution pre conditions */
 extern CONST(Dcm_CfgStateRefMemType, DCM_CONST) Dcm_CfgSvc19SubFuncExecPrecondTable[3];
 /*! Service 0x27 sub-service properties table  */
-extern CONST(Dcm_CfgSvc27SubFuncInfoType, DCM_CONST) Dcm_CfgSvc27SubFuncInfo[2];
+extern CONST(Dcm_CfgSvc27SubFuncInfoType, DCM_CONST) Dcm_CfgSvc27SubFuncInfo[4];
 /*! Service 0x27 security level properties table  */
-extern CONST(Dcm_CfgSvc27SecLevelInfoType, DCM_CONST) Dcm_CfgSvc27SecLevelInfo[1];
+extern CONST(Dcm_CfgSvc27SecLevelInfoType, DCM_CONST) Dcm_CfgSvc27SecLevelInfo[2];
 /*! Indirection from service 0x27 sub functions to execution pre conditions */
-extern CONST(Dcm_CfgStateRefMemType, DCM_CONST) Dcm_CfgSvc27SubFuncExecPrecondTable[2];
+extern CONST(Dcm_CfgStateRefMemType, DCM_CONST) Dcm_CfgSvc27SubFuncExecPrecondTable[4];
 /*! Indirection from service 0x3E sub functions to execution pre conditions */
 extern CONST(Dcm_CfgStateRefMemType, DCM_CONST) Dcm_CfgSvc3ESubFuncExecPrecondTable[1];
 /*! Indirection from service 0x85 sub functions to execution pre conditions */

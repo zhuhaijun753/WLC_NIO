@@ -134,7 +134,7 @@
  * Dcm_OpStatusType: Enumeration of integer in interval [0...64] with enumerators
  * Dcm_ProtocolType: Enumeration of integer in interval [0...254] with enumerators
  * Dcm_RequestKindType: Enumeration of integer in interval [0...2] with enumerators
- * Dcm_SecLevelType: Enumeration of integer in interval [0...1] with enumerators
+ * Dcm_SecLevelType: Enumeration of integer in interval [0...2] with enumerators
  * Dcm_SesCtrlType: Enumeration of integer in interval [0...3] with enumerators
  * Dem_DTCFormatType: Enumeration of integer in interval [0...255] with enumerators
  * Dem_DTCKindType: Enumeration of integer in interval [0...255] with enumerators

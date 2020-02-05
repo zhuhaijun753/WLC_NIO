@@ -205,12 +205,254 @@ FUNC(uint8, RTE_CODE) Rte_Mode_Communication_Read_APP_DcmEcuReset_DcmEcuReset(vo
 
 # ifndef RTE_CORE
 #  define RTE_RUNNABLE_ComReadandWrite_Runnable ComReadandWrite_Runnable
+#  define RTE_RUNNABLE_DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_BootloaderVersion_ReadData DataServices_DcmDspData_BootloaderVersion_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_BootloaderVersion_ReadDataLength DataServices_DcmDspData_BootloaderVersion_ReadDataLength
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ConfigurarionFingerprint_ReadData DataServices_DcmDspData_ConfigurarionFingerprint_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData DataServices_DcmDspData_ConfigurarionFingerprint_WriteData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUConfigurarion_ReadData DataServices_DcmDspData_ECUConfigurarion_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUConfigurarion_WriteData DataServices_DcmDspData_ECUConfigurarion_WriteData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUManufacturingDate_ReadData DataServices_DcmDspData_ECUManufacturingDate_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUProgrammingDate_ReadData DataServices_DcmDspData_ECUProgrammingDate_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ECUSerialNumber_ReadData DataServices_DcmDspData_ECUSerialNumber_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ReadActiveDiagSession_ReadData DataServices_DcmDspData_ReadActiveDiagSession_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_ReadFingerprint_ReadData DataServices_DcmDspData_ReadFingerprint_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_RepairShopFingerPrint_ReadData DataServices_DcmDspData_RepairShopFingerPrint_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_RepairShopFingerPrint_WriteData DataServices_DcmDspData_RepairShopFingerPrint_WriteData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_SystemName_ConditionCheckRead DataServices_DcmDspData_SystemName_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_SystemName_ReadData DataServices_DcmDspData_SystemName_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_SystemName_ReadDataLength DataServices_DcmDspData_SystemName_ReadDataLength
+#  define RTE_RUNNABLE_DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_SystemSupplierIdData_ReadData DataServices_DcmDspData_SystemSupplierIdData_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VIN_ConditionCheckRead DataServices_DcmDspData_VIN_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VIN_ReadData DataServices_DcmDspData_VIN_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VIN_WriteData DataServices_DcmDspData_VIN_WriteData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_CalibrationBaseline_ReadData DataServices_DcmDspData_VM_CalibrationBaseline_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData DataServices_DcmDspData_VM_CalibrationBaseline_WriteData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_SoftwarBaseline_ReadData DataServices_DcmDspData_VM_SoftwarBaseline_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData DataServices_DcmDspData_VM_SoftwarBaseline_WriteData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_SofwarePartNumber_ReadData DataServices_DcmDspData_VM_SofwarePartNumber_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData DataServices_DcmDspData_VM_SofwarePartNumber_WriteData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_SparepartNumber_ReadData DataServices_DcmDspData_VM_SparepartNumber_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_SparepartNumber_WriteData DataServices_DcmDspData_VM_SparepartNumber_WriteData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_Specialdatabaseline_ReadData DataServices_DcmDspData_VM_Specialdatabaseline_ReadData
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength
+#  define RTE_RUNNABLE_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData DataServices_DcmDspData_VM_Specialdatabaseline_WriteData
 #  define RTE_RUNNABLE_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead
 #  define RTE_RUNNABLE_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData
 #  define RTE_RUNNABLE_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData
+#  define RTE_RUNNABLE_DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_Diag_VM_HardwareBaseline_ReadData DataServices_Diag_VM_HardwareBaseline_ReadData
+#  define RTE_RUNNABLE_DataServices_Diag_VM_HardwareBaseline_WriteData DataServices_Diag_VM_HardwareBaseline_WriteData
+#  define RTE_RUNNABLE_DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead
+#  define RTE_RUNNABLE_DataServices_Diag_VM_HardwarePartNumber_ReadData DataServices_Diag_VM_HardwarePartNumber_ReadData
+#  define RTE_RUNNABLE_DataServices_Diag_VM_HardwarePartNumber_WriteData DataServices_Diag_VM_HardwarePartNumber_WriteData
+#  define RTE_RUNNABLE_SecurityAccess_Level_01_CompareKey SecurityAccess_Level_01_CompareKey
+#  define RTE_RUNNABLE_SecurityAccess_Level_01_GetSeed SecurityAccess_Level_01_GetSeed
+#  define RTE_RUNNABLE_SecurityAccess_Level_02_CompareKey SecurityAccess_Level_02_CompareKey
+#  define RTE_RUNNABLE_SecurityAccess_Level_02_GetSeed SecurityAccess_Level_02_GetSeed
 # endif
 
 FUNC(void, Communication_Read_APP_CODE) ComReadandWrite_Runnable(void); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_BootloaderVersion_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_BootloaderVersion_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_BootloaderVersion_ReadDataLength(Dcm_OpStatusType OpStatus, P2VAR(uint16, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) DataLength); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ConfigurarionFingerprint_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ConfigurarionFingerprint_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ConfigurarionFingerprint_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ConfigurarionFingerprint_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUConfigurarion_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUConfigurarion_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUConfigurarion_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUConfigurarion_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUManufacturingDate_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUManufacturingDate_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUProgrammingDate_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUProgrammingDate_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUSerialNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ECUSerialNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ReadActiveDiagSession_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ReadActiveDiagSession_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ReadFingerprint_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_ReadFingerprint_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_RepairShopFingerPrint_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_RepairShopFingerPrint_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_RepairShopFingerPrint_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_RepairShopFingerPrint_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemName_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemName_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemName_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemName_ReadDataLength(Dcm_OpStatusType OpStatus, P2VAR(uint16, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) DataLength); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemSupplierIdData_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_SystemSupplierIdData_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VIN_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VIN_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VIN_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VIN_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VIN_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrationBaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrationBaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrationBaseline_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_CalibrationBaseline_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SoftwarBaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SoftwarBaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SoftwarBaseline_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SoftwarBaseline_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SofwarePartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SofwarePartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SofwarePartNumber_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SofwarePartNumber_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SparepartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SparepartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SparepartNumber_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_SparepartNumber_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_Specialdatabaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_Specialdatabaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength(Dcm_OpStatusType OpStatus, P2VAR(uint16, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) DataLength); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_Specialdatabaseline_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, uint16 DataLength, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_DcmDspData_VM_Specialdatabaseline_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, uint16 DataLength, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
 FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 # ifdef RTE_PTR2ARRAYBASETYPE_PASSING
 FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
@@ -222,6 +464,48 @@ FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOn
 # else
 FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 # endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwareBaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwareBaseline_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwareBaseline_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwareBaseline_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwarePartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwarePartNumber_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwarePartNumber_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_VM_HardwarePartNumber_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_01_CompareKey(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Key, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_01_CompareKey(P2CONST(Dcm_Data2ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Key, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_01_GetSeed(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Seed, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_01_GetSeed(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data2ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Seed, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_02_CompareKey(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Key, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_02_CompareKey(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Key, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_02_GetSeed(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Seed, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) SecurityAccess_Level_02_GetSeed(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Seed, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
 
 # define Communication_Read_APP_STOP_SEC_CODE
 # include "Communication_Read_APP_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
@@ -232,9 +516,109 @@ FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOn
  * Application errors
  *********************************************************************************************************************/
 
+#  define RTE_E_DataServices_DcmDspData_BootloaderVersion_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_BootloaderVersion_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_ECUConfigurarion_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_ECUConfigurarion_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_ECUManufacturingDate_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_ECUManufacturingDate_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_ECUProgrammingDate_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_ECUProgrammingDate_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_ECUSerialNumber_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_ECUSerialNumber_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_ReadFingerprint_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_ReadFingerprint_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_SystemName_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_SystemName_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_SystemSupplierIdData_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_SystemSupplierIdData_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_VIN_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_VIN_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_SparepartNumber_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_SparepartNumber_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK (1U)
+
 #  define RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_DCM_E_PENDING (10U)
 
 #  define RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_Diag_VM_HardwareBaseline_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_Diag_VM_HardwareBaseline_E_NOT_OK (1U)
+
+#  define RTE_E_DataServices_Diag_VM_HardwarePartNumber_DCM_E_PENDING (10U)
+
+#  define RTE_E_DataServices_Diag_VM_HardwarePartNumber_E_NOT_OK (1U)
+
+#  define RTE_E_SecurityAccess_Level_01_DCM_E_COMPARE_KEY_FAILED (11U)
+
+#  define RTE_E_SecurityAccess_Level_01_DCM_E_PENDING (10U)
+
+#  define RTE_E_SecurityAccess_Level_01_E_NOT_OK (1U)
+
+#  define RTE_E_SecurityAccess_Level_02_DCM_E_COMPARE_KEY_FAILED (11U)
+
+#  define RTE_E_SecurityAccess_Level_02_DCM_E_PENDING (10U)
+
+#  define RTE_E_SecurityAccess_Level_02_E_NOT_OK (1U)
 # endif /* !defined(RTE_CORE) */
 
 # ifdef __cplusplus

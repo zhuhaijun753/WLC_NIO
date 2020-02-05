@@ -321,6 +321,7 @@ typedef unsigned int Rte_BitType;
 typedef struct
 {
   Rte_BitType Rte_ModeSwitchAck_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Ack : 1;
+  Rte_BitType Rte_ModeSwitchAck_Dcm_DcmControlDtcSetting_DcmControlDtcSetting_Ack : 1;
   Rte_BitType Rte_ModeSwitchAck_Dcm_DcmEcuReset_DcmEcuReset_Ack : 1;
 } Rte_AckFlagsType;
 

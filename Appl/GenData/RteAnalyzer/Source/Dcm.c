@@ -256,9 +256,10 @@ typedef P2FUNC(Std_ReturnType, RTE_CODE, FncPtrType)(void); /* PRQA S 3448 */ /*
  *   DCM_REQ_KIND_NONE (0U)
  *   DCM_REQ_KIND_EXTERNAL (1U)
  *   DCM_REQ_KIND_ROE (2U)
- * Dcm_SecLevelType: Enumeration of integer in interval [0...1] with enumerators
+ * Dcm_SecLevelType: Enumeration of integer in interval [0...2] with enumerators
  *   DCM_SEC_LEV_LOCKED (0U)
  *   DCM_SEC_LEV_L1 (1U)
+ *   DCM_SEC_LEV_L2 (2U)
  * Dcm_SesCtrlType: Enumeration of integer in interval [0...3] with enumerators
  *   DCM_DEFAULT_SESSION (1U)
  *   DCM_PROGRAMMING_SESSION (2U)
@@ -314,6 +315,199 @@ typedef P2FUNC(Std_ReturnType, RTE_CODE, FncPtrType)(void); /* PRQA S 3448 */ /*
  * ==============
  *   Service Invocation:
  *   -------------------
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_BootloaderVersion_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_BootloaderVersion_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_BootloaderVersion_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_BootloaderVersion_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_BootloaderVersion_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_BootloaderVersion_ReadDataLength(Dcm_OpStatusType OpStatus, uint16 *DataLength)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_BootloaderVersion_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_BootloaderVersion_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ConfigurarionFingerprint_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUConfigurarion_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUConfigurarion_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUConfigurarion_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUConfigurarion_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUConfigurarion_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUConfigurarion_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUConfigurarion_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUConfigurarion_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUManufacturingDate_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUManufacturingDate_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUManufacturingDate_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUManufacturingDate_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUManufacturingDate_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUProgrammingDate_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUProgrammingDate_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUProgrammingDate_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUProgrammingDate_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUProgrammingDate_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUSerialNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUSerialNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ECUSerialNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ECUSerialNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ECUSerialNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ReadActiveDiagSession_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ReadFingerprint_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ReadFingerprint_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_ReadFingerprint_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_ReadFingerprint_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_ReadFingerprint_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_RepairShopFingerPrint_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_RepairShopFingerPrint_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_SystemName_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_SystemName_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_SystemName_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_SystemName_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_SystemName_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_SystemName_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_SystemName_ReadDataLength(Dcm_OpStatusType OpStatus, uint16 *DataLength)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_SystemName_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_SystemName_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_SystemSupplierIdData_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_SystemSupplierIdData_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_SystemSupplierIdData_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_SystemSupplierIdData_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_SystemSupplierIdData_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VIN_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VIN_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VIN_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VIN_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VIN_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VIN_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VIN_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VIN_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VIN_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_CalibrationBaseline_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_SoftwarBaseline_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_SofwarePartNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_SparepartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_SparepartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_SparepartNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_SparepartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_SparepartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_SparepartNumber_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_SparepartNumber_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_SparepartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength(Dcm_OpStatusType OpStatus, uint16 *DataLength)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData(const uint8 *Data, uint16 DataLength, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING, RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK
  *   Std_ReturnType Rte_Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
  *     Synchronous Service Invocation. Timeout: None
  *     Returned Application Errors: RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_DCM_E_PENDING, RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_E_NOT_OK
@@ -325,6 +519,28 @@ typedef P2FUNC(Std_ReturnType, RTE_CODE, FncPtrType)(void); /* PRQA S 3448 */ /*
  *     Argument Data: uint8* is of type Dcm_Data4ByteType
  *     Synchronous Service Invocation. Timeout: None
  *     Returned Application Errors: RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_DCM_E_PENDING, RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_Diag_VM_HardwareBaseline_DCM_E_PENDING, RTE_E_DataServices_Diag_VM_HardwareBaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_Diag_VM_HardwareBaseline_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_Diag_VM_HardwareBaseline_DCM_E_PENDING, RTE_E_DataServices_Diag_VM_HardwareBaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_Diag_VM_HardwareBaseline_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_Diag_VM_HardwareBaseline_DCM_E_PENDING, RTE_E_DataServices_Diag_VM_HardwareBaseline_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_Diag_VM_HardwarePartNumber_DCM_E_PENDING, RTE_E_DataServices_Diag_VM_HardwarePartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_Diag_VM_HardwarePartNumber_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_Diag_VM_HardwarePartNumber_DCM_E_PENDING, RTE_E_DataServices_Diag_VM_HardwarePartNumber_E_NOT_OK
+ *   Std_ReturnType Rte_Call_DataServices_Diag_VM_HardwarePartNumber_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_DataServices_Diag_VM_HardwarePartNumber_DCM_E_PENDING, RTE_E_DataServices_Diag_VM_HardwarePartNumber_E_NOT_OK
  *   Std_ReturnType Rte_Call_SecurityAccess_Level_01_CompareKey(const uint8 *Key, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
  *     Argument Key: uint8* is of type Dcm_Data2ByteType
  *     Synchronous Service Invocation. Timeout: None
@@ -333,6 +549,14 @@ typedef P2FUNC(Std_ReturnType, RTE_CODE, FncPtrType)(void); /* PRQA S 3448 */ /*
  *     Argument Seed: uint8* is of type Dcm_Data2ByteType
  *     Synchronous Service Invocation. Timeout: None
  *     Returned Application Errors: RTE_E_SecurityAccess_Level_01_DCM_E_PENDING, RTE_E_SecurityAccess_Level_01_E_NOT_OK
+ *   Std_ReturnType Rte_Call_SecurityAccess_Level_02_CompareKey(const uint8 *Key, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Key: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_SecurityAccess_Level_02_DCM_E_COMPARE_KEY_FAILED, RTE_E_SecurityAccess_Level_02_DCM_E_PENDING, RTE_E_SecurityAccess_Level_02_E_NOT_OK
+ *   Std_ReturnType Rte_Call_SecurityAccess_Level_02_GetSeed(Dcm_OpStatusType OpStatus, uint8 *Seed, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Seed: uint8* is of type Dcm_Data4ByteType
+ *     Synchronous Service Invocation. Timeout: None
+ *     Returned Application Errors: RTE_E_SecurityAccess_Level_02_DCM_E_PENDING, RTE_E_SecurityAccess_Level_02_E_NOT_OK
  *
  * Status Interfaces:
  * ==================
@@ -361,6 +585,133 @@ FUNC(void, Dcm_CODE) Dcm_MainFunction(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
   Std_ReturnType fct_status;
   boolean fct_error = 0;
 
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_BootloaderVersion_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  uint16 Call_DataServices_DcmDspData_BootloaderVersion_ReadDataLength_DataLength = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_ConfigurarionFingerprint_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_ECUConfigurarion_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_ECUConfigurarion_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_ECUConfigurarion_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_ECUManufacturingDate_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_ECUProgrammingDate_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_ECUSerialNumber_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_ReadActiveDiagSession_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_ReadFingerprint_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_RepairShopFingerPrint_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_RepairShopFingerPrint_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_RepairShopFingerPrint_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_SystemName_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_SystemName_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  uint16 Call_DataServices_DcmDspData_SystemName_ReadDataLength_DataLength = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_SystemSupplierIdData_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VIN_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VIN_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VIN_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VIN_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_CalibrationBaseline_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_SoftwarBaseline_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_SofwarePartNumber_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_SparepartNumber_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_SparepartNumber_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_SparepartNumber_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_Specialdatabaseline_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  uint16 Call_DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength_DataLength = 0U;
+  Dcm_Data4ByteType Call_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData_ErrorCode = 0U;
   Dcm_NegativeResponseCodeType Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead_ErrorCode = 0U;
   Dcm_Data4ByteType Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData_Data = {
   0U, 0U, 0U, 0U
@@ -369,6 +720,22 @@ FUNC(void, Dcm_CODE) Dcm_MainFunction(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
   0U, 0U, 0U, 0U
 };
   Dcm_NegativeResponseCodeType Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_Diag_VM_HardwareBaseline_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_Diag_VM_HardwareBaseline_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_Diag_VM_HardwareBaseline_WriteData_ErrorCode = 0U;
+  Dcm_NegativeResponseCodeType Call_DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_DataServices_Diag_VM_HardwarePartNumber_ReadData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_Data4ByteType Call_DataServices_Diag_VM_HardwarePartNumber_WriteData_Data = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_DataServices_Diag_VM_HardwarePartNumber_WriteData_ErrorCode = 0U;
   Dcm_Data2ByteType Call_SecurityAccess_Level_01_CompareKey_Key = {
   0U, 0U
 };
@@ -377,6 +744,14 @@ FUNC(void, Dcm_CODE) Dcm_MainFunction(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
   0U, 0U
 };
   Dcm_NegativeResponseCodeType Call_SecurityAccess_Level_01_GetSeed_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_SecurityAccess_Level_02_CompareKey_Key = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_SecurityAccess_Level_02_CompareKey_ErrorCode = 0U;
+  Dcm_Data4ByteType Call_SecurityAccess_Level_02_GetSeed_Seed = {
+  0U, 0U, 0U, 0U
+};
+  Dcm_NegativeResponseCodeType Call_SecurityAccess_Level_02_GetSeed_ErrorCode = 0U;
 
   /**********************************************************
   * Direct Function Accesses and Take Addresses of Functions
@@ -423,6 +798,1302 @@ FUNC(void, Dcm_CODE) Dcm_MainFunction(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
       fct_error = 0;
       break;
     case RTE_E_LIMIT:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_BootloaderVersion_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_BootloaderVersion_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_BootloaderVersion_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_BootloaderVersion_ReadData(0U, Call_DataServices_DcmDspData_BootloaderVersion_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_BootloaderVersion_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_BootloaderVersion_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_BootloaderVersion_ReadDataLength; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_BootloaderVersion_ReadDataLength(0U, &Call_DataServices_DcmDspData_BootloaderVersion_ReadDataLength_DataLength);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_BootloaderVersion_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_BootloaderVersion_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ConfigurarionFingerprint_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ConfigurarionFingerprint_ReadData(0U, Call_DataServices_DcmDspData_ConfigurarionFingerprint_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData(Call_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData_Data, 0U, &Call_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ConfigurarionFingerprint_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUConfigurarion_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUConfigurarion_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUConfigurarion_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUConfigurarion_ReadData(0U, Call_DataServices_DcmDspData_ECUConfigurarion_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUConfigurarion_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUConfigurarion_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUConfigurarion_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUConfigurarion_WriteData(Call_DataServices_DcmDspData_ECUConfigurarion_WriteData_Data, 0U, &Call_DataServices_DcmDspData_ECUConfigurarion_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUConfigurarion_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUConfigurarion_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData(0U, Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUDiagDatabaseVersion_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUManufacturingDate_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUManufacturingDate_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUManufacturingDate_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUManufacturingDate_ReadData(0U, Call_DataServices_DcmDspData_ECUManufacturingDate_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUManufacturingDate_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUManufacturingDate_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUProgrammingDate_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUProgrammingDate_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUProgrammingDate_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUProgrammingDate_ReadData(0U, Call_DataServices_DcmDspData_ECUProgrammingDate_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUProgrammingDate_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUProgrammingDate_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUSerialNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUSerialNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUSerialNumber_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ECUSerialNumber_ReadData(0U, Call_DataServices_DcmDspData_ECUSerialNumber_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUSerialNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ECUSerialNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ReadActiveDiagSession_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ReadActiveDiagSession_ReadData(0U, Call_DataServices_DcmDspData_ReadActiveDiagSession_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ReadActiveDiagSession_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ReadFingerprint_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ReadFingerprint_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_ReadFingerprint_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_ReadFingerprint_ReadData(0U, Call_DataServices_DcmDspData_ReadFingerprint_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ReadFingerprint_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_ReadFingerprint_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_RepairShopFingerPrint_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_RepairShopFingerPrint_ReadData(0U, Call_DataServices_DcmDspData_RepairShopFingerPrint_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_RepairShopFingerPrint_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_RepairShopFingerPrint_WriteData(Call_DataServices_DcmDspData_RepairShopFingerPrint_WriteData_Data, 0U, &Call_DataServices_DcmDspData_RepairShopFingerPrint_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_RepairShopFingerPrint_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_SystemName_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_SystemName_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_SystemName_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_SystemName_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_SystemName_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_SystemName_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_SystemName_ReadData(0U, Call_DataServices_DcmDspData_SystemName_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_SystemName_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_SystemName_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_SystemName_ReadDataLength; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_SystemName_ReadDataLength(0U, &Call_DataServices_DcmDspData_SystemName_ReadDataLength_DataLength);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_SystemName_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_SystemName_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_SystemSupplierIdData_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_SystemSupplierIdData_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_SystemSupplierIdData_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_SystemSupplierIdData_ReadData(0U, Call_DataServices_DcmDspData_SystemSupplierIdData_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_SystemSupplierIdData_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_SystemSupplierIdData_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VIN_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VIN_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_VIN_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VIN_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VIN_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VIN_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VIN_ReadData(0U, Call_DataServices_DcmDspData_VIN_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VIN_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VIN_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VIN_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VIN_WriteData(Call_DataServices_DcmDspData_VIN_WriteData_Data, 0U, &Call_DataServices_DcmDspData_VIN_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VIN_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VIN_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData(0U, Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData(Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData_Data, 0U, &Call_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrarionPartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrationBaseline_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrationBaseline_ReadData(0U, Call_DataServices_DcmDspData_VM_CalibrationBaseline_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData(Call_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData_Data, 0U, &Call_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_CalibrationBaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData(0U, Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData(Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData_Data, 0U, &Call_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_FOTASpecialPartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SoftwarBaseline_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SoftwarBaseline_ReadData(0U, Call_DataServices_DcmDspData_VM_SoftwarBaseline_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData(Call_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData_Data, 0U, &Call_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SoftwarBaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SofwarePartNumber_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SofwarePartNumber_ReadData(0U, Call_DataServices_DcmDspData_VM_SofwarePartNumber_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData(Call_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData_Data, 0U, &Call_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SofwarePartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SparepartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SparepartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SparepartNumber_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SparepartNumber_ReadData(0U, Call_DataServices_DcmDspData_VM_SparepartNumber_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SparepartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SparepartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SparepartNumber_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_SparepartNumber_WriteData(Call_DataServices_DcmDspData_VM_SparepartNumber_WriteData_Data, 0U, &Call_DataServices_DcmDspData_VM_SparepartNumber_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SparepartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_SparepartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead(0U, &Call_DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_ReadData(0U, Call_DataServices_DcmDspData_VM_Specialdatabaseline_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength(0U, &Call_DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength_DataLength);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData(Call_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData_Data, 0U, 0U, &Call_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_DcmDspData_VM_Specialdatabaseline_E_NOT_OK:
       fct_error = 1;
       break;
   }
@@ -501,6 +2172,150 @@ FUNC(void, Dcm_CODE) Dcm_MainFunction(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 
   {
     FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead(0U, &Call_DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwareBaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwareBaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwareBaseline_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwareBaseline_ReadData(0U, Call_DataServices_Diag_VM_HardwareBaseline_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwareBaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwareBaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwareBaseline_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwareBaseline_WriteData(Call_DataServices_Diag_VM_HardwareBaseline_WriteData_Data, 0U, &Call_DataServices_Diag_VM_HardwareBaseline_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwareBaseline_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwareBaseline_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead(0U, &Call_DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwarePartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwarePartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwarePartNumber_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwarePartNumber_ReadData(0U, Call_DataServices_Diag_VM_HardwarePartNumber_ReadData_Data);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwarePartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwarePartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwarePartNumber_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_DataServices_Diag_VM_HardwarePartNumber_WriteData(Call_DataServices_Diag_VM_HardwarePartNumber_WriteData_Data, 0U, &Call_DataServices_Diag_VM_HardwarePartNumber_WriteData_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwarePartNumber_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_DataServices_Diag_VM_HardwarePartNumber_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
     Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_SecurityAccess_Level_01_CompareKey; /* PRQA S 0313 */ /* MD_Rte_TestCode */
   }
   fct_status = TSC_Dcm_Rte_Call_SecurityAccess_Level_01_CompareKey(Call_SecurityAccess_Level_01_CompareKey_Key, 0U, &Call_SecurityAccess_Level_01_CompareKey_ErrorCode);
@@ -546,6 +2361,57 @@ FUNC(void, Dcm_CODE) Dcm_MainFunction(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
       fct_error = 1;
       break;
     case RTE_E_SecurityAccess_Level_01_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_SecurityAccess_Level_02_CompareKey; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_SecurityAccess_Level_02_CompareKey(Call_SecurityAccess_Level_02_CompareKey_Key, 0U, &Call_SecurityAccess_Level_02_CompareKey_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_SecurityAccess_Level_02_DCM_E_COMPARE_KEY_FAILED:
+      fct_error = 1;
+      break;
+    case RTE_E_SecurityAccess_Level_02_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_SecurityAccess_Level_02_E_NOT_OK:
+      fct_error = 1;
+      break;
+  }
+
+  {
+    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
+    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_SecurityAccess_Level_02_GetSeed; /* PRQA S 0313 */ /* MD_Rte_TestCode */
+  }
+  fct_status = TSC_Dcm_Rte_Call_SecurityAccess_Level_02_GetSeed(0U, Call_SecurityAccess_Level_02_GetSeed_Seed, &Call_SecurityAccess_Level_02_GetSeed_ErrorCode);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_TIMEOUT:
+      fct_error = 1;
+      break;
+    case RTE_E_SecurityAccess_Level_02_DCM_E_PENDING:
+      fct_error = 1;
+      break;
+    case RTE_E_SecurityAccess_Level_02_E_NOT_OK:
       fct_error = 1;
       break;
   }
@@ -1005,6 +2871,7 @@ static void Dcm_TestDefines(void)
 
   Dcm_SecLevelType Test_Dcm_SecLevelType_V_1 = DCM_SEC_LEV_LOCKED;
   Dcm_SecLevelType Test_Dcm_SecLevelType_V_2 = DCM_SEC_LEV_L1;
+  Dcm_SecLevelType Test_Dcm_SecLevelType_V_3 = DCM_SEC_LEV_L2;
 
   Dcm_SesCtrlType Test_Dcm_SesCtrlType_V_1 = DCM_DEFAULT_SESSION;
   Dcm_SesCtrlType Test_Dcm_SesCtrlType_V_2 = DCM_PROGRAMMING_SESSION;

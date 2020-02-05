@@ -199,6 +199,10 @@
             <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>
+        <Settings Name="com.vector.cfg.dom.runtimesys.ui.editor.internal.ecucomponent.parts.ApplicationPortsGrid">
+            <Setting Value="0,1,2,3,4,5,6," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:145,2:118,3:285,4:229,5:205,6:143," Name="nattable.BODY.columnWidth.sizes"/>
+        </Settings>
         <Settings Name="com.vector.cfg.dom.runtimesys.ui.editor.internal.ecucomponent.parts.ECUCompositionApplicationPortsGrid">
             <Setting Value="0,1,2,3,4,5,6,7,8," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:21,1:209,2:119,3:239,4:286,5:230,6:206,7:170,8:144," Name="nattable.BODY.columnWidth.sizes"/>
@@ -206,6 +210,24 @@
         <Settings Name="com.vector.cfg.dom.runtimesys.ui.editor.internal.ecucomponent.parts.ECUCompositionDataMappingsGrid">
             <Setting Value="0,1,2,3,4,5,6,7,8,9,10," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:20,1:145,2:201,3:102,4:214,5:103,6:94,7:87,8:67,9:81,10:80," Name="nattable.BODY.columnWidth.sizes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.dom.runtimesys.ui.editor.internal.ecucomponent.parts.ExclusiveAreaImplGrid">
+            <Setting Value="0,1,2,3," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:79,2:152,3:129," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.dom.runtimesys.ui.editor.internal.ecucomponent.parts.PortInterfaceMappingSetGridPart">
+            <Setting Value="0,1,2,3," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:79,2:170,3:194," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.dom.runtimesys.ui.editor.internal.ecucomponent.parts.PortInterfaceMappingSetsGridPart">
+            <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:105,2:212," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>
         <Settings Name="com.vector.cfg.dom.runtimesys.ui.editor.internal.ecucomponent.parts.ServiceComponentsGridPart">
             <Setting Value="0,1,2,3,4,5," Name="nattable.BODY.columnIndexOrder"/>
@@ -442,7 +464,7 @@
             <Setting Value="0,1,2,3," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:20,1:212,2:193,3:445," Name="nattable.BODY.columnWidth.sizes"/>
             <Setting Value="ASC" Name="nattable.sortDirections"/>
-            <Setting Value="1" Name="nattable.sortIndexes"/>
+            <Setting Value="2" Name="nattable.sortIndexes"/>
         </Settings>
         <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.Dcm.DcmConfigSet.DcmDsp.DcmDspDidInfo">
             <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
@@ -477,6 +499,24 @@
         <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.Dcm.DcmConfigSet.DcmDsp.DcmDspRoutineInfo">
             <Setting Value="0,1," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:20,1:190," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.Dcm.DcmConfigSet.DcmDsp.DcmDspSecurity.DcmDspSecurityCallback">
+            <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:224,2:221," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.Dcm.DcmConfigSet.DcmDsp.DcmDspSecurity.DcmDspSecurityRow">
+            <Setting Value="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:195,2:242,3:314,4:254,5:246,6:310,7:469,8:307,9:223,10:237,11:169,12:237,13:247,14:305,15:244," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.Dcm.DcmConfigSet.DcmDsp.DcmDspSecurity.DcmDspSecurityRow.DcmDspSecurityFixedBytes">
+            <Setting Value="0,1,2,3," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:234,2:250,3:398," Name="nattable.BODY.columnWidth.sizes"/>
             <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>

@@ -871,6 +871,590 @@
               </PROVIDED-COM-SPECS>
               <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="5CA3AAE6-7A55-49F3-89CB-AF4B4A46A33D">
+              <SHORT-NAME>DataServices_Diag_VM_HardwarePartNumber</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="A6AAD910-C903-4629-A3D4-B61866B19527">
+              <SHORT-NAME>DataServices_DcmDspData_BootloaderVersion</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ReadDataLength</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="53B9CE1C-E4A9-4300-96C1-24BD62BEAC90">
+              <SHORT-NAME>DataServices_DcmDspData_ConfigurarionFingerprint</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="EF38AD4C-40CE-4317-ABE1-95629A4066EB">
+              <SHORT-NAME>DataServices_DcmDspData_ECUConfigurarion</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="7925CDF9-B1A4-407B-A943-814CBD091FF6">
+              <SHORT-NAME>DataServices_DcmDspData_ECUDiagDatabaseVersion</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="F6E534ED-D3B5-4218-A74D-BDA3A48EAC98">
+              <SHORT-NAME>DataServices_DcmDspData_ECUManufacturingDate</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="C6CE1202-6B0F-4D04-938E-5B55F02CAA5A">
+              <SHORT-NAME>DataServices_DcmDspData_ECUProgrammingDate</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="90AA8EE3-E7E5-4385-909F-022233BD7F6E">
+              <SHORT-NAME>DataServices_DcmDspData_ECUSerialNumber</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="B93D8399-2B60-4D79-83CB-1A7A3BB258FE">
+              <SHORT-NAME>DataServices_DcmDspData_ReadActiveDiagSession</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="4E4DA90D-C52C-445E-8A00-DA035401ED6E">
+              <SHORT-NAME>DataServices_DcmDspData_ReadFingerprint</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="1ECA4A65-CEAF-483C-B100-CD3F76BFB2A7">
+              <SHORT-NAME>DataServices_DcmDspData_RepairShopFingerPrint</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="9C3A4088-BE3B-417F-A8FC-83E283CEF12C">
+              <SHORT-NAME>DataServices_DcmDspData_SystemName</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ReadDataLength</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="25649207-96BA-4E07-8E45-F792E35554CF">
+              <SHORT-NAME>DataServices_DcmDspData_SystemSupplierIdData</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="8C1886FC-5A44-40EB-B1C2-6B002CF3E35C">
+              <SHORT-NAME>DataServices_DcmDspData_VIN</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="B67D11DA-2672-411F-8455-338173CE702A">
+              <SHORT-NAME>DataServices_DcmDspData_VM_CalibrarionPartNumber</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="E16F5698-65BB-4FB7-B642-70D5FAB3724D">
+              <SHORT-NAME>DataServices_DcmDspData_VM_CalibrationBaseline</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="A8689963-683B-47D5-8B68-F5AFFDDB1F72">
+              <SHORT-NAME>DataServices_DcmDspData_VM_FOTASpecialPartNumber</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="A6B696DD-ADAF-4F6F-AE6A-AFB49018D774">
+              <SHORT-NAME>DataServices_DcmDspData_VM_SoftwarBaseline</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="0141BD51-1B24-4B73-A508-977D4C09DC88">
+              <SHORT-NAME>DataServices_DcmDspData_VM_SofwarePartNumber</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="F638A983-3FCA-4C9C-8062-BA65F958C1E0">
+              <SHORT-NAME>DataServices_DcmDspData_VM_SparepartNumber</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="AD1DEBEB-4041-4566-9124-374F55700B72">
+              <SHORT-NAME>DataServices_DcmDspData_VM_Specialdatabaseline</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ReadDataLength</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="01BABDAD-BCA6-48A0-98E7-B1FB638312D4">
+              <SHORT-NAME>DataServices_Diag_VM_HardwareBaseline</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="0839764F-3A31-4E5F-AA38-59729B988F5A">
+              <SHORT-NAME>DcmControlDtcSetting</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <MODE-SWITCH-RECEIVER-COM-SPEC>
+                  <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/Dcm_swc/Interfaces/DcmControlDtcSetting/DcmControlDtcSetting</MODE-GROUP-REF>
+                </MODE-SWITCH-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DcmControlDtcSetting</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="97FB3AEC-3FF6-4FB8-874B-9713D0CC7AE7">
+              <SHORT-NAME>SecurityAccess_Level_01</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/GetSeed</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/CompareKey</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="33689952-0EC7-4CE5-B1D6-9EC2C5EB47E9">
+              <SHORT-NAME>SecurityAccess_Level_02</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/GetSeed</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/CompareKey</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
           </PORTS>
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="71A74260-FE74-40BC-B2DD-7AB3978B67ED">
@@ -903,6 +1487,518 @@
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="B14C46AB-16D6-4D48-B54E-A158A9329CDA">
+                  <SHORT-NAME>OIT_DataServices_Diag_VM_HardwarePartNumber_WriteData_DataServices_Diag_VM_HardwarePartNumber_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_Diag_VM_HardwarePartNumber_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_VM_HardwarePartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="3CBCBF46-AF1F-4389-8D0F-A98E033867B1">
+                  <SHORT-NAME>OIT_DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead_DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_VM_HardwarePartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="7DA115FC-27D9-4225-80ED-24FAFB93809D">
+                  <SHORT-NAME>OIT_DataServices_Diag_VM_HardwarePartNumber_ReadData_DataServices_Diag_VM_HardwarePartNumber_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_Diag_VM_HardwarePartNumber_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_VM_HardwarePartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="F80691D5-CD6D-4F04-B4CF-94181795B6F2">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead_DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_BootloaderVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="57B03A59-DADE-40DB-B167-26BA4FF4BB14">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_BootloaderVersion_ReadDataLength_DataServices_DcmDspData_BootloaderVersion_ReadDataLength</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_BootloaderVersion_ReadDataLength</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_BootloaderVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ReadDataLength</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="EBB57EF1-72E7-44A7-A934-3390291AE7C0">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_BootloaderVersion_ReadData_DataServices_DcmDspData_BootloaderVersion_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_BootloaderVersion_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_BootloaderVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="17BA1D9F-612B-44F9-8800-40A5D5B0FD18">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ConfigurarionFingerprint_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ConfigurarionFingerprint</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="45B11301-5E12-49B7-B3C3-60B7C91B45CE">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead_DataServices_DcmDspData_ConfigurarionFingerprint8B465459</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ConfigurarionFingerprint</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="700D9DC7-99AB-416E-AC97-5C5D5A0FF162">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ConfigurarionFingerprint_ReadData_DataServices_DcmDspData_ConfigurarionFingerprint_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ConfigurarionFingerprint_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ConfigurarionFingerprint</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="90097D1B-4696-46D4-B717-6FB2DB6ED05C">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUConfigurarion_WriteData_DataServices_DcmDspData_ECUConfigurarion_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUConfigurarion_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUConfigurarion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="4ABF8854-F373-4ED3-A068-2311DE3553BA">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead_DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUConfigurarion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="6CB3A82F-35C1-4C1C-AEFF-983F2B98636C">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUConfigurarion_ReadData_DataServices_DcmDspData_ECUConfigurarion_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUConfigurarion_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUConfigurarion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="D079FBC7-5057-4A45-85F6-2B4EC7CC8C98">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead_DataServices_DcmDspData_ECUDiagDatabaseVersion_Con898CC0D4</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUDiagDatabaseVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="28B51A16-66B8-4985-B758-6114FB9ECFA3">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUDiagDatabaseVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="5C06DD3B-0158-49D9-A064-E93F036DB398">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead_DataServices_DcmDspData_ECUManufacturingDate_Conditi36A93663</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUManufacturingDate</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="1D9B5898-9430-40C1-90F8-5D1C61506ABA">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUManufacturingDate_ReadData_DataServices_DcmDspData_ECUManufacturingDate_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUManufacturingDate_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUManufacturingDate</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="883F76D1-1038-484E-ADC9-760EAA2DCDFD">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUProgrammingDate</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="A67A3ED0-F254-4622-9C43-AFC7F7AECA52">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUProgrammingDate_ReadData_DataServices_DcmDspData_ECUProgrammingDate_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUProgrammingDate_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUProgrammingDate</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="2C6E3E34-9ECB-4867-A15F-9CF88C7E8BEB">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead_DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUSerialNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="15536361-E76A-4593-8757-3D6BC3DEBAE1">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ECUSerialNumber_ReadData_DataServices_DcmDspData_ECUSerialNumber_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ECUSerialNumber_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUSerialNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="E78C1D52-3F34-4201-8CB9-C116E433DAA3">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead_DataServices_DcmDspData_ReadActiveDiagSession_Condi595C28B7</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ReadActiveDiagSession</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="B0965DE3-D815-405F-B54C-F22E41EAA0C6">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ReadActiveDiagSession_ReadData_DataServices_DcmDspData_ReadActiveDiagSession_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ReadActiveDiagSession_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ReadActiveDiagSession</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="18038B57-528E-4EE1-810B-4BA49A575C37">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead_DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ReadFingerprint</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="2083D07B-2DEA-478E-AF12-8F93ACD98024">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_ReadFingerprint_ReadData_DataServices_DcmDspData_ReadFingerprint_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_ReadFingerprint_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ReadFingerprint</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="35E606D3-F7CD-48C4-8CD5-C7C002F78547">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_RepairShopFingerPrint_WriteData_DataServices_DcmDspData_RepairShopFingerPrint_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_RepairShopFingerPrint_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_RepairShopFingerPrint</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="78BADCA7-2501-43DD-BD5C-F79D10864293">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead_DataServices_DcmDspData_RepairShopFingerPrint_CondiF74E6915</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_RepairShopFingerPrint</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="255B15E0-B997-4A09-96D0-9C2A9D93DE66">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_RepairShopFingerPrint_ReadData_DataServices_DcmDspData_RepairShopFingerPrint_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_RepairShopFingerPrint_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_RepairShopFingerPrint</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="9B775163-5564-4825-ADC8-6EDCB144E5E3">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_SystemName_ConditionCheckRead_DataServices_DcmDspData_SystemName_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_SystemName_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_SystemName</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="AF4D08EF-2F55-4BEB-A334-B5FB63F6ACB7">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_SystemName_ReadDataLength_DataServices_DcmDspData_SystemName_ReadDataLength</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_SystemName_ReadDataLength</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_SystemName</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ReadDataLength</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="2E1E8B3E-6C2A-4343-9719-8B06BF9C3991">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_SystemName_ReadData_DataServices_DcmDspData_SystemName_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_SystemName_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_SystemName</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="FE6E26F9-7FDC-457E-8314-2D8248AA4696">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead_DataServices_DcmDspData_SystemSupplierIdData_Conditi555B98AA</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_SystemSupplierIdData</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="D083ECAB-343F-4873-B317-D0185DA2DCD0">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_SystemSupplierIdData_ReadData_DataServices_DcmDspData_SystemSupplierIdData_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_SystemSupplierIdData_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_SystemSupplierIdData</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="A2196E55-1A51-4827-944C-7E292349DE48">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VIN_WriteData_DataServices_DcmDspData_VIN_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VIN_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VIN</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="C7784934-1261-4924-9024-330DCF0ACD47">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VIN_ConditionCheckRead_DataServices_DcmDspData_VIN_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VIN_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VIN</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="4BA01F3F-F3C8-48A4-98C1-6AC7DA2C6A6D">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VIN_ReadData_DataServices_DcmDspData_VIN_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VIN_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VIN</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="28825D5A-7D5B-47A6-9038-A6899C55663A">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_CalibrarionPartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="97EDEAAF-A651-4D63-A6A0-2A692B57E79E">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead_DataServices_DcmDspData_VM_CalibrarionPartNumber03305360</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_CalibrarionPartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="23F8560B-C90F-46B9-9039-408F7D286C13">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData_DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_CalibrarionPartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="C091965B-09F0-4F63-9009-B6B3CA7B25EC">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_CalibrationBaseline_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_CalibrationBaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="B8FADECD-3E32-463E-8211-8A23E868639C">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead_DataServices_DcmDspData_VM_CalibrationBaseline_Con9CE12721</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_CalibrationBaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="13FC4975-6693-4CD7-AE2B-85AECBBE1C73">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_CalibrationBaseline_ReadData_DataServices_DcmDspData_VM_CalibrationBaseline_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_CalibrationBaseline_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_CalibrationBaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="BADF10E5-2DF2-45C5-BCDC-68C78EC983EB">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_FOTASpecialPartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="48E6CD40-244F-486B-9304-DE653C7ED9C2">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead_DataServices_DcmDspData_VM_FOTASpecialPartNumber12F56527</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_FOTASpecialPartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="87D0641A-306D-44E9-ACED-6241B86E5E3D">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_FOTASpecialPartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="E0EFF0B2-9DC3-4FE2-85DB-0D9365B97C6F">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_SoftwarBaseline_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SoftwarBaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="8B59054F-EF1D-48DE-A362-1A0827D73209">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead_DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SoftwarBaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="2E36D3F1-9955-47DC-BD61-7E9571F339C5">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_SoftwarBaseline_ReadData_DataServices_DcmDspData_VM_SoftwarBaseline_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_SoftwarBaseline_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SoftwarBaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="0527C3E3-EE9F-4540-99E8-B5268CD73D59">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_SofwarePartNumber_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SofwarePartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="55D7375E-5484-43BB-B9E2-A6515857869C">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead_DataServices_DcmDspData_VM_SofwarePartNumber_ConditiA041C6FF</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SofwarePartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="D531EAF9-8292-49C5-83F9-15CA64489CF6">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_SofwarePartNumber_ReadData_DataServices_DcmDspData_VM_SofwarePartNumber_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_SofwarePartNumber_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SofwarePartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="ED280DC2-5529-4A0C-8AE1-2D90ED882478">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_SparepartNumber_WriteData_DataServices_DcmDspData_VM_SparepartNumber_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_SparepartNumber_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SparepartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="6FA530A5-41C9-4EB0-ACEF-526C3431277C">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead_DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SparepartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="3BC4300F-49F0-4B42-B56B-8D9D3EAA6B6E">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_SparepartNumber_ReadData_DataServices_DcmDspData_VM_SparepartNumber_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_SparepartNumber_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SparepartNumber</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="A05C27BC-0D1F-4276-BB5D-131ACC7CEE0F">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_Specialdatabaseline_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_Specialdatabaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="21A284B6-8460-48CE-BCB2-9CC735C757FB">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead_DataServices_DcmDspData_VM_Specialdatabaseline_Con3B7A3020</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_Specialdatabaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="1CB36553-BE6E-4158-9531-AD495A4D6AD2">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength_DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_Specialdatabaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ReadDataLength</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="AB49D104-7BC2-4B1C-8CA3-81D2C58440EA">
+                  <SHORT-NAME>OIT_DataServices_DcmDspData_VM_Specialdatabaseline_ReadData_DataServices_DcmDspData_VM_Specialdatabaseline_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_DcmDspData_VM_Specialdatabaseline_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_Specialdatabaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="7A038641-3EBF-4F6F-AE90-F2E6D8F4D9A4">
+                  <SHORT-NAME>OIT_DataServices_Diag_VM_HardwareBaseline_WriteData_DataServices_Diag_VM_HardwareBaseline_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_Diag_VM_HardwareBaseline_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_VM_HardwareBaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="9CBA21B5-E81B-4EE0-A768-B8E1B985B5AF">
+                  <SHORT-NAME>OIT_DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead_DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_VM_HardwareBaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="4D042547-1418-4D4C-9D54-06A13FCDF070">
+                  <SHORT-NAME>OIT_DataServices_Diag_VM_HardwareBaseline_ReadData_DataServices_Diag_VM_HardwareBaseline_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_Diag_VM_HardwareBaseline_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_VM_HardwareBaseline</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="6C9FB7AF-A6D0-4021-8589-82A25D80B34B">
+                  <SHORT-NAME>OIT_SecurityAccess_Level_01_CompareKey_SecurityAccess_Level_01_CompareKey</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/SecurityAccess_Level_01_CompareKey</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/SecurityAccess_Level_01</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/CompareKey</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="DA2D8070-823D-407E-862D-926878D8A8D4">
+                  <SHORT-NAME>OIT_SecurityAccess_Level_01_GetSeed_SecurityAccess_Level_01_GetSeed</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/SecurityAccess_Level_01_GetSeed</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/SecurityAccess_Level_01</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/GetSeed</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="895EAE8F-93DC-437A-8FF9-41970BDF2028">
+                  <SHORT-NAME>OIT_SecurityAccess_Level_02_CompareKey_SecurityAccess_Level_02_CompareKey</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/SecurityAccess_Level_02_CompareKey</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/SecurityAccess_Level_02</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/CompareKey</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="90DBE899-6E8A-49D2-A118-333CC83DBDF4">
+                  <SHORT-NAME>OIT_SecurityAccess_Level_02_GetSeed_SecurityAccess_Level_02_GetSeed</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/SecurityAccess_Level_02_GetSeed</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/SecurityAccess_Level_02</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/GetSeed</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
               </EVENTS>
@@ -1238,6 +2334,198 @@
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="FD84799E-7421-42B6-ACB9-930B6C3B949B">
                   <SHORT-NAME>DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1F827C11-2109-4ED4-9520-F884CB70DCF0">
+                  <SHORT-NAME>DataServices_Diag_VM_HardwarePartNumber_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="C434018B-8ABA-4DAE-B7FF-BF5CA7B4F6A9">
+                  <SHORT-NAME>DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="444E15FA-76CC-4E49-9673-AB9DE4DF6F77">
+                  <SHORT-NAME>DataServices_Diag_VM_HardwarePartNumber_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0209A17D-6518-4966-9FD8-5290698CB61A">
+                  <SHORT-NAME>DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="73BE94EC-0149-4001-A86E-ED4912F5E7C2">
+                  <SHORT-NAME>DataServices_DcmDspData_BootloaderVersion_ReadDataLength</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="C694C247-9C6F-4C46-8E59-BCEC9D9A594F">
+                  <SHORT-NAME>DataServices_DcmDspData_BootloaderVersion_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="2AB5E63F-F4D2-4F04-9042-56968D6DC3C4">
+                  <SHORT-NAME>DataServices_DcmDspData_ConfigurarionFingerprint_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="B173B34C-7499-4411-8210-AA52981DB083">
+                  <SHORT-NAME>DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="D51131AF-2118-47AD-9DC1-1AB3F679BE0F">
+                  <SHORT-NAME>DataServices_DcmDspData_ConfigurarionFingerprint_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="3ECA822A-4D49-470D-8C18-D6F48928F900">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUConfigurarion_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="CF8F30CF-5577-4305-A9E5-952AD074BF3A">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="8D5D4D2B-6597-4F1B-912D-9B2F9A78096D">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUConfigurarion_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="A8457A06-E0B9-485D-9F3E-DC983C2D7A78">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="215474DF-FC2A-45CB-BF92-E2161A85B721">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="8D73F8E8-AB1C-48B9-A40D-5F14BBA6FBCC">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="33237BB9-CFC7-4E0C-8741-D003743A80B6">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUManufacturingDate_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4426EB99-10E1-414A-A800-8A8D4ED32BC7">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="AE039F31-AF3D-4C7E-B40C-8EE3B56D4F5B">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUProgrammingDate_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="EFAA3CAE-5035-4202-9CDC-C1473AA39FF3">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="D8062C65-3E49-4CD3-85FC-6AA8951A605A">
+                  <SHORT-NAME>DataServices_DcmDspData_ECUSerialNumber_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="E22E58FC-8731-4D41-8AEE-C02AB35E4500">
+                  <SHORT-NAME>DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="04BD2211-0F4B-47DB-917A-C6321CA60509">
+                  <SHORT-NAME>DataServices_DcmDspData_ReadActiveDiagSession_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="2A41DB44-4CC1-42A3-88B9-387B6890C3BA">
+                  <SHORT-NAME>DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="A8F98930-8D3D-4024-9858-DFA4A53DE8FD">
+                  <SHORT-NAME>DataServices_DcmDspData_ReadFingerprint_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0C0194E7-4DF1-49A2-A8EF-35A84DA6CB82">
+                  <SHORT-NAME>DataServices_DcmDspData_RepairShopFingerPrint_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="BC79AA52-5B77-4A07-B9F1-1CD2D20C11B6">
+                  <SHORT-NAME>DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="7511D8C6-0EB1-4411-8970-206EC5C06C93">
+                  <SHORT-NAME>DataServices_DcmDspData_RepairShopFingerPrint_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="F73D04AA-0266-4CA6-A198-2BBCB94E7E2B">
+                  <SHORT-NAME>DataServices_DcmDspData_SystemName_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="271EE788-E220-401B-82EA-1F913C59302E">
+                  <SHORT-NAME>DataServices_DcmDspData_SystemName_ReadDataLength</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="B17B8FB5-DEE6-477E-AFA3-B61E5E81B17E">
+                  <SHORT-NAME>DataServices_DcmDspData_SystemName_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1E4C4999-3FF6-4B01-BB0C-F56771B00E19">
+                  <SHORT-NAME>DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="05BC9623-6035-4D12-AF8F-7AF44E958AA8">
+                  <SHORT-NAME>DataServices_DcmDspData_SystemSupplierIdData_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="A27C5E82-DC1F-453A-8573-132CEAC17E1A">
+                  <SHORT-NAME>DataServices_DcmDspData_VIN_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="410AB715-A667-4517-8F5B-5A23014FDFAF">
+                  <SHORT-NAME>DataServices_DcmDspData_VIN_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="78A8996D-3EF9-4D21-BA3F-7C700B70CF95">
+                  <SHORT-NAME>DataServices_DcmDspData_VIN_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0DB2E3CD-0A81-45AA-9D9B-BFBCA682B0F6">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1AC5AB27-3ECC-4801-8813-C7BAD9AD39E9">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1F3550CA-A7BD-4244-AA94-CED167836B0B">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="8F85ADE1-95B6-4D48-86B9-5D4C7CBE6224">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_CalibrationBaseline_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="B69E5B32-7EF4-4D7D-9644-F2C465890CB9">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="98F050A1-267B-4CAE-ADDC-A1EF0331C726">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_CalibrationBaseline_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="9374DE9A-2B84-4BC8-85E0-42E7B98E8D15">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="C7DE1E79-23CD-45DD-8FE4-85FFC1147033">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0058316E-F7FE-4823-9917-988B82F5FCFA">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="39186B99-7BB9-4B48-8D05-A900FA0D9941">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_SoftwarBaseline_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="5E857248-CEF4-453C-96AB-50A8963E65D5">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="E9FDEAF1-1194-4240-BBC4-DB637E40FE41">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_SoftwarBaseline_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="DEABB839-A6A5-4DB5-814C-89A3CEF8AE95">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_SofwarePartNumber_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="479F0F4A-D90C-4EB0-BBCD-90FE76BD169B">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="C4C7DE70-A40C-49B9-90D7-3BCC16861EAC">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_SofwarePartNumber_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="658D25BD-F857-4788-8105-2616666D170E">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_SparepartNumber_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4B477371-0134-4BDA-971B-862C1F6F8245">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="A2D17D9F-75B6-4EBB-9DA9-4397378FAF00">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_SparepartNumber_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="863F3840-FF32-4250-ABFA-9E9A931D68E1">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_Specialdatabaseline_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="A31E6916-4BFA-41E8-B5A6-B47CD8057B82">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="08D4D9FB-3218-4371-9CBB-8BD97D5F5C32">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="EBF6D8C6-6D6F-47E9-86FF-024F88EBF7E8">
+                  <SHORT-NAME>DataServices_DcmDspData_VM_Specialdatabaseline_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="68F1045B-BA73-4239-8B62-C83F1D74D8BD">
+                  <SHORT-NAME>DataServices_Diag_VM_HardwareBaseline_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="D55CCE36-06EC-4B28-8F6D-0C1F05005C3B">
+                  <SHORT-NAME>DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1182652B-1459-4826-BCBB-A2B258690D8F">
+                  <SHORT-NAME>DataServices_Diag_VM_HardwareBaseline_ReadData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="146B2AAC-19CE-443A-ADE3-6B0A4568CCBA">
+                  <SHORT-NAME>SecurityAccess_Level_01_CompareKey</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="9B56C9D7-4885-49D2-9684-F5586FA56906">
+                  <SHORT-NAME>SecurityAccess_Level_01_GetSeed</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="7C368074-4EB5-4D68-8AEA-3150545D5DFC">
+                  <SHORT-NAME>SecurityAccess_Level_02_CompareKey</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="FBE3A3A8-C5EF-4439-B329-B3563DE1F1B3">
+                  <SHORT-NAME>SecurityAccess_Level_02_GetSeed</SHORT-NAME>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
             </SWC-INTERNAL-BEHAVIOR>

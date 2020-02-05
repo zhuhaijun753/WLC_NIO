@@ -502,6 +502,10 @@ extern "C"
 #   define DCM_SEC_LEV_L1 (1U)
 #  endif
 
+#  ifndef DCM_SEC_LEV_L2
+#   define DCM_SEC_LEV_L2 (2U)
+#  endif
+
 #  ifndef DCM_DEFAULT_SESSION
 #   define DCM_DEFAULT_SESSION (1U)
 #  endif

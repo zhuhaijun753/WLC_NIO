@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dcm_Cfg.h
- *   Generation Time: 2019-12-01 17:02:46
+ *   Generation Time: 2020-02-05 20:39:36
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -380,9 +380,9 @@
 /*! Diagnostic service 0x27 handled by DCM */
 # define DCM_SVC_27_SUPPORT_ENABLED                                            STD_ON
 /*! Support multiple attempt counter instances */
-# define DCM_SVC_27_MULTI_ATTEMPT_COUNTER_ENABLED                              STD_OFF
+# define DCM_SVC_27_MULTI_ATTEMPT_COUNTER_ENABLED                              STD_ON
 /*! Support multiple delay timer instances */
-# define DCM_SVC_27_MULTI_DELAY_TIMER_ENABLED                                  STD_OFF
+# define DCM_SVC_27_MULTI_DELAY_TIMER_ENABLED                                  STD_ON
 /*! Security attempt counter reset on delay timer expiry */
 # define DCM_STATE_SEC_RESET_ATT_CNTR_ON_TIMEOUT_ENABLED                       STD_OFF
 /*! Diagnostic service 0x28 handled by DCM */
@@ -492,7 +492,7 @@
 /*! Pattern byte used for periodic transmission message padding */
 # define DCM_NET_PERIODIC_MSG_PADDING_PATTERN                                  0xAAu
 /*! The maximum size of all configured buffers */
-# define DCM_NET_MAX_BUFFER_SIZE                                                 50u
+# define DCM_NET_MAX_BUFFER_SIZE                                                300u
 /*! Maximum number of connections */
 # define DCM_NET_MAX_NUM_CONNECTIONS                                            1u
 /*! Number of channels from main connections and ComControl channels */
@@ -545,15 +545,15 @@
 /*! Number of session states */
 # define DCM_STATE_NUM_SESSION                                                  3u
 /*! Number of security access states */
-# define DCM_STATE_NUM_SECURITY                                                 2u
+# define DCM_STATE_NUM_SECURITY                                                 3u
 /*! Number of security levels (all security states except the "locked" one) */
-# define DCM_STATE_SECURITY_NUM_LEVELS                                          1u
+# define DCM_STATE_SECURITY_NUM_LEVELS                                          2u
 /*! Size of table Dcm_CfgStatePreconditions */
 # define DCM_CFGSTATEPRECONDITIONS_SIZE                                         2u
 /*! Size of table Dcm_CfgStateSessionInfo */
 # define DCM_CFGSTATESESSIONINFO_SIZE                                           3u
 /*! Size of table Dcm_CfgStateSecurityInfo */
-# define DCM_CFGSTATESECURITYINFO_SIZE                                          1u
+# define DCM_CFGSTATESECURITYINFO_SIZE                                          2u
 /*!  ----- Symbolic name values for Session -----  */
 # define DcmConf_DcmDspSessionRow_Default                                       1u
 # define DcmConf_DcmDspSessionRow_Programming                                   2u
@@ -561,6 +561,7 @@
 /*!  ----- Symbolic name values for Security -----  */
 # define DcmConf_DcmDspSecurity_Locked                                          0u
 # define DcmConf_DcmDspSecurityRow_Level_01                                     1u
+# define DcmConf_DcmDspSecurityRow_Level_02                                     2u
 /*! Number of DID ranges */
 # define DCM_NUM_DID_RANGES                                                     0u
 /*! Read paged data page buffer size */
@@ -574,15 +575,15 @@
 /*! Maximum size of an IO control DIDs CEMR to be passed to the application */
 # define DCM_DIDMGR_IODID_MAX_EXT_CEMR_SIZE                                       1u
 /*! Size of table Dcm_CfgDidMgrDidLookUpTable */
-# define DCM_CFGDIDMGRDIDLOOKUPTABLE_SIZE                                       2u
+# define DCM_CFGDIDMGRDIDLOOKUPTABLE_SIZE                                      24u
 /*! Size of table Dcm_CfgDidMgrDidInfo */
-# define DCM_CFGDIDMGRDIDINFO_SIZE                                              1u
+# define DCM_CFGDIDMGRDIDINFO_SIZE                                             23u
 /*! Size of table Dcm_CfgDidMgrDidOpInfo */
-# define DCM_CFGDIDMGRDIDOPINFO_SIZE                                            2u
+# define DCM_CFGDIDMGRDIDOPINFO_SIZE                                           37u
 /*! Size of table Dcm_CfgDidMgrDidOpClassInfo */
-# define DCM_CFGDIDMGRDIDOPCLASSINFO_SIZE                                       4u
+# define DCM_CFGDIDMGRDIDOPCLASSINFO_SIZE                                      64u
 /*! Size of table Dcm_CfgDidMgrSignalOpClassInfo */
-# define DCM_CFGDIDMGRSIGNALOPCLASSINFO_SIZE                                    3u
+# define DCM_CFGDIDMGRSIGNALOPCLASSINFO_SIZE                                   63u
 /*! Invalid value for Routine Info Byte */
 # define DCM_CFGRIDMGR_INVALID_ROUTINEINFOBYTE                                    0u
 /*! Specifies total number of supported memory operations */
@@ -648,17 +649,17 @@
 /*! Specifies the maximum number of DIDs per single request service 0x22 */
 # define DCM_SVC_22_MAX_DID_LIST_LEN                                            5u
 /*! The total number of failed attempt counter monitors */
-# define DCM_SVC_27_NUM_ATTEMPT_COUNTERS                                        1u
+# define DCM_SVC_27_NUM_ATTEMPT_COUNTERS                                        2u
 /*! The total number of failed attempt timers */
-# define DCM_SVC_27_NUM_DELAY_TIMERS                                            1u
+# define DCM_SVC_27_NUM_DELAY_TIMERS                                            2u
 /*! Size of table Dcm_CfgSvc27SubFuncLookUpTable */
-# define DCM_CFGSVC27SUBFUNCLOOKUPTABLE_SIZE                                    3u
+# define DCM_CFGSVC27SUBFUNCLOOKUPTABLE_SIZE                                    5u
 /*! Size of table Dcm_CfgSvc27SubFuncInfo */
-# define DCM_CFGSVC27SUBFUNCINFO_SIZE                                           2u
+# define DCM_CFGSVC27SUBFUNCINFO_SIZE                                           4u
 /*! Size of table Dcm_CfgSvc27SecLevelInfo */
-# define DCM_CFGSVC27SECLEVELINFO_SIZE                                          1u
+# define DCM_CFGSVC27SECLEVELINFO_SIZE                                          2u
 /*! Size of table Dcm_CfgSvc27SubFuncExecPrecondTable */
-# define DCM_CFGSVC27SUBFUNCEXECPRECONDTABLE_SIZE                               2u
+# define DCM_CFGSVC27SUBFUNCEXECPRECONDTABLE_SIZE                               4u
 /*! Specifies the buffers size needed for data extraction of a DDDID source item */
 # define DCM_SVC_2C_READ_BUFFER_SIZE                                              0u
 /*! Size of table Dcm_CfgSvc3ESubFuncLookUpTable */

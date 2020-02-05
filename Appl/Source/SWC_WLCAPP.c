@@ -16,7 +16,7 @@
  *             File:  SWC_WLCAPP.c
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
  *        SW-C Type:  SWC_WLCAPP
- *  Generation Time:  2020-02-05 11:25:12
+ *  Generation Time:  2020-02-05 20:41:35
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0

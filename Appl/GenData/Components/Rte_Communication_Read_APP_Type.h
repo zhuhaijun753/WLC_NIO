@@ -520,9 +520,26 @@ extern "C"
 /**********************************************************************************************************************
  * Definitions for Mode Management
  *********************************************************************************************************************/
+# ifndef RTE_MODETYPE_DcmControlDtcSetting
+#  define RTE_MODETYPE_DcmControlDtcSetting
+typedef uint8 Rte_ModeType_DcmControlDtcSetting;
+# endif
 # ifndef RTE_MODETYPE_DcmEcuReset
 #  define RTE_MODETYPE_DcmEcuReset
 typedef uint8 Rte_ModeType_DcmEcuReset;
+# endif
+
+# define RTE_MODE_Communication_Read_APP_DcmControlDtcSetting_ENABLEDTCSETTING (0U)
+# ifndef RTE_MODE_DcmControlDtcSetting_ENABLEDTCSETTING
+#  define RTE_MODE_DcmControlDtcSetting_ENABLEDTCSETTING (0U)
+# endif
+# define RTE_MODE_Communication_Read_APP_DcmControlDtcSetting_DISABLEDTCSETTING (1U)
+# ifndef RTE_MODE_DcmControlDtcSetting_DISABLEDTCSETTING
+#  define RTE_MODE_DcmControlDtcSetting_DISABLEDTCSETTING (1U)
+# endif
+# define RTE_TRANSITION_Communication_Read_APP_DcmControlDtcSetting (2U)
+# ifndef RTE_TRANSITION_DcmControlDtcSetting
+#  define RTE_TRANSITION_DcmControlDtcSetting (2U)
 # endif
 
 # define RTE_MODE_Communication_Read_APP_DcmEcuReset_NONE (0U)

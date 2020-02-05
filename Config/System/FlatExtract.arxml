@@ -2289,6 +2289,281 @@
                                     <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</TARGET-R-PORT-REF>
                                   </REQUESTER-IREF>
                                 </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="506531b6-5d09-4380-96b7-0e652e2a2851">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_Diag_VM_HardwarePartNumber_Dcm_DataServices_Diag_VM_HardwarePartNumber</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_VM_HardwarePartNumber</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Diag_VM_HardwarePartNumber</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="02ff042b-a2a5-4b87-b13a-0e520a2fd070">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_BootloaderVersion_Dcm_DataServices_DcmDspData_BootloaderVersion</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_BootloaderVersion</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_BootloaderVersion</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="92e34210-34a3-4b22-a4cb-497990f23194">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_ConfigurarionFingerprint_Dcm_DataServices_DcmDspData_ConfigurarionFingerprint</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ConfigurarionFingerprint</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ConfigurarionFingerprint</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="5d51ef29-b692-46be-b5c1-531a9556ce28">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_ECUConfigurarion_Dcm_DataServices_DcmDspData_ECUConfigurarion</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUConfigurarion</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ECUConfigurarion</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="f86851fd-a255-4f6d-bfd8-cf817f649efb">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_ECUDiagDatabaseVersion_Dcm_DataServices_DcmDspData_ECUDiagDatabaseVersion</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUDiagDatabaseVersion</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ECUDiagDatabaseVersion</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="c3527d9c-33f3-4e46-9e8b-b53f5e759053">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_ECUManufacturingDate_Dcm_DataServices_DcmDspData_ECUManufacturingDate</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUManufacturingDate</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ECUManufacturingDate</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="dba5cdf7-7c79-4609-ac43-3628a931f2cb">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_ECUProgrammingDate_Dcm_DataServices_DcmDspData_ECUProgrammingDate</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUProgrammingDate</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ECUProgrammingDate</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="2454c991-1376-40d7-b57f-d525b1116ebd">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_ECUSerialNumber_Dcm_DataServices_DcmDspData_ECUSerialNumber</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUSerialNumber</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ECUSerialNumber</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="67d392ec-cbbf-490e-a45e-876cf138d6eb">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_ReadActiveDiagSession_Dcm_DataServices_DcmDspData_ReadActiveDiagSession</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ReadActiveDiagSession</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ReadActiveDiagSession</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="b2bc3fda-e4c8-42d7-a72d-5ed0ce480828">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_ReadFingerprint_Dcm_DataServices_DcmDspData_ReadFingerprint</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ReadFingerprint</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ReadFingerprint</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="5abb99c4-9a9d-41cf-baac-78e6941cf507">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_RepairShopFingerPrint_Dcm_DataServices_DcmDspData_RepairShopFingerPrint</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_RepairShopFingerPrint</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_RepairShopFingerPrint</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="919c2196-0a35-4081-9890-4bfc0bd2c289">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_SystemName_Dcm_DataServices_DcmDspData_SystemName</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_SystemName</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_SystemName</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="b832163f-eaff-4f09-bd44-15e295347191">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_SystemSupplierIdData_Dcm_DataServices_DcmDspData_SystemSupplierIdData</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_SystemSupplierIdData</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_SystemSupplierIdData</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="31122104-6813-48d1-af86-de4a40790a3a">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_VIN_Dcm_DataServices_DcmDspData_VIN</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VIN</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VIN</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="931ea945-bec8-40b2-bc63-dfb6ae0271fa">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_VM_CalibrarionPartNumber_Dcm_DataServices_DcmDspData_VM_CalibrarionPartNumber</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_CalibrarionPartNumber</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_CalibrarionPartNumber</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="16eaae7a-5537-46fe-966a-613ca5dc7a21">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_VM_CalibrationBaseline_Dcm_DataServices_DcmDspData_VM_CalibrationBaseline</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_CalibrationBaseline</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_CalibrationBaseline</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="467641fe-7211-4a66-9e3d-2a0e0aba07f2">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_VM_FOTASpecialPartNumber_Dcm_DataServices_DcmDspData_VM_FOTASpecialPartNumber</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_FOTASpecialPartNumber</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_FOTASpecialPartNumber</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="d112654f-3f4d-45d5-a4da-0a1f444b737a">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_VM_SoftwarBaseline_Dcm_DataServices_DcmDspData_VM_SoftwarBaseline</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SoftwarBaseline</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_SoftwarBaseline</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="12b017ee-dc17-41db-a009-fdfaed56eb3b">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_VM_SofwarePartNumber_Dcm_DataServices_DcmDspData_VM_SofwarePartNumber</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SofwarePartNumber</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_SofwarePartNumber</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="5e5b2fb7-6abc-42d5-992a-44869218ad4e">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_VM_SparepartNumber_Dcm_DataServices_DcmDspData_VM_SparepartNumber</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SparepartNumber</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_SparepartNumber</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="35d11015-0474-4157-a65f-c30938fe4b57">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_DcmDspData_VM_Specialdatabaseline_Dcm_DataServices_DcmDspData_VM_Specialdatabaseline</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_Specialdatabaseline</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_Specialdatabaseline</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="127ad47d-154e-4be9-a3dc-e00bcddaa4f3">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_Diag_VM_HardwareBaseline_Dcm_DataServices_Diag_VM_HardwareBaseline</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_VM_HardwareBaseline</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Diag_VM_HardwareBaseline</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="7572abc5-d55c-4e26-9385-ae9a00f65798">
+                                  <SHORT-NAME>Dcm_DcmControlDtcSetting_Communication_Read_APP_DcmControlDtcSetting</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmControlDtcSetting</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DcmControlDtcSetting</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="3dd75e9c-2f7a-4282-821a-dd2e61f72d3c">
+                                  <SHORT-NAME>Communication_Read_APP_SecurityAccess_Level_01_Dcm_SecurityAccess_Level_01</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/SecurityAccess_Level_01</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/SecurityAccess_Level_01</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="b07b3192-e582-4b94-8490-9693c25eba0b">
+                                  <SHORT-NAME>Communication_Read_APP_SecurityAccess_Level_02_Dcm_SecurityAccess_Level_02</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/SecurityAccess_Level_02</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/SecurityAccess_Level_02</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
                               </CONNECTORS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="ff2fed10-e9b2-43a3-b700-ddb5191b3479">
@@ -2324,9 +2599,34 @@
                                     <SD GID="782f8768-e908-4e3c-a74c-cc9f3858aa5b">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComfEna</SD>
                                     <SD GID="78b68e9b-0977-43fb-8deb-7d8f369eb2f7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComfEna_ASIL</SD>
                                     <SD GID="b8cebb45-cdab-4eaa-81e1-da1a53b7b17b">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</SD>
+                                    <SD GID="02ff042b-a2a5-4b87-b13a-0e520a2fd070">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_BootloaderVersion_Dcm_DataServices_DcmDspData_BootloaderVersion</SD>
+                                    <SD GID="92e34210-34a3-4b22-a4cb-497990f23194">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_ConfigurarionFingerprint_Dcm_DataServices_DcmDspData_ConfigurarionFingerprint</SD>
+                                    <SD GID="5d51ef29-b692-46be-b5c1-531a9556ce28">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_ECUConfigurarion_Dcm_DataServices_DcmDspData_ECUConfigurarion</SD>
+                                    <SD GID="f86851fd-a255-4f6d-bfd8-cf817f649efb">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_ECUDiagDatabaseVersion_Dcm_DataServices_DcmDspData_ECUDiagDatabaseVersion</SD>
+                                    <SD GID="c3527d9c-33f3-4e46-9e8b-b53f5e759053">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_ECUManufacturingDate_Dcm_DataServices_DcmDspData_ECUManufacturingDate</SD>
+                                    <SD GID="dba5cdf7-7c79-4609-ac43-3628a931f2cb">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_ECUProgrammingDate_Dcm_DataServices_DcmDspData_ECUProgrammingDate</SD>
+                                    <SD GID="2454c991-1376-40d7-b57f-d525b1116ebd">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_ECUSerialNumber_Dcm_DataServices_DcmDspData_ECUSerialNumber</SD>
+                                    <SD GID="67d392ec-cbbf-490e-a45e-876cf138d6eb">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_ReadActiveDiagSession_Dcm_DataServices_DcmDspData_ReadActiveDiagSession</SD>
+                                    <SD GID="b2bc3fda-e4c8-42d7-a72d-5ed0ce480828">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_ReadFingerprint_Dcm_DataServices_DcmDspData_ReadFingerprint</SD>
+                                    <SD GID="5abb99c4-9a9d-41cf-baac-78e6941cf507">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_RepairShopFingerPrint_Dcm_DataServices_DcmDspData_RepairShopFingerPrint</SD>
+                                    <SD GID="919c2196-0a35-4081-9890-4bfc0bd2c289">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_SystemName_Dcm_DataServices_DcmDspData_SystemName</SD>
+                                    <SD GID="b832163f-eaff-4f09-bd44-15e295347191">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_SystemSupplierIdData_Dcm_DataServices_DcmDspData_SystemSupplierIdData</SD>
+                                    <SD GID="31122104-6813-48d1-af86-de4a40790a3a">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_VIN_Dcm_DataServices_DcmDspData_VIN</SD>
+                                    <SD GID="931ea945-bec8-40b2-bc63-dfb6ae0271fa">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_VM_CalibrarionPartNumber_Dcm_DataServices_DcmDspData_VM_CalibrarionPartNumber</SD>
+                                    <SD GID="16eaae7a-5537-46fe-966a-613ca5dc7a21">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_VM_CalibrationBaseline_Dcm_DataServices_DcmDspData_VM_CalibrationBaseline</SD>
+                                    <SD GID="467641fe-7211-4a66-9e3d-2a0e0aba07f2">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_VM_FOTASpecialPartNumber_Dcm_DataServices_DcmDspData_VM_FOTASpecialPartNumber</SD>
+                                    <SD GID="d112654f-3f4d-45d5-a4da-0a1f444b737a">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_VM_SoftwarBaseline_Dcm_DataServices_DcmDspData_VM_SoftwarBaseline</SD>
+                                    <SD GID="12b017ee-dc17-41db-a009-fdfaed56eb3b">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_VM_SofwarePartNumber_Dcm_DataServices_DcmDspData_VM_SofwarePartNumber</SD>
+                                    <SD GID="5e5b2fb7-6abc-42d5-992a-44869218ad4e">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_VM_SparepartNumber_Dcm_DataServices_DcmDspData_VM_SparepartNumber</SD>
+                                    <SD GID="35d11015-0474-4157-a65f-c30938fe4b57">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_DcmDspData_VM_Specialdatabaseline_Dcm_DataServices_DcmDspData_VM_Specialdatabaseline</SD>
                                     <SD GID="63a2b7af-875f-4758-95bb-4b34e9dcc83b">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_Dcm_DataServices_Diag_RWDI_LightOnO</SD>
+                                    <SD GID="127ad47d-154e-4be9-a3dc-e00bcddaa4f3">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_Diag_VM_HardwareBaseline_Dcm_DataServices_Diag_VM_HardwareBaseline</SD>
+                                    <SD GID="506531b6-5d09-4380-96b7-0e652e2a2851">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_Diag_VM_HardwarePartNumber_Dcm_DataServices_Diag_VM_HardwarePartNumber</SD>
+                                    <SD GID="3dd75e9c-2f7a-4282-821a-dd2e61f72d3c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_SecurityAccess_Level_01_Dcm_SecurityAccess_Level_01</SD>
+                                    <SD GID="b07b3192-e582-4b94-8490-9693c25eba0b">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_SecurityAccess_Level_02_Dcm_SecurityAccess_Level_02</SD>
                                     <SD GID="0fdeb1f5-790f-491b-8636-d60075d66349">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Day</SD>
                                     <SD GID="c5c30fd6-931f-4480-a405-34b79bde84e2">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</SD>
+                                    <SD GID="7572abc5-d55c-4e26-9385-ae9a00f65798">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm_DcmControlDtcSetting_Communication_Read_APP_DcmControlDtcSetting</SD>
                                     <SD GID="d8958a83-7c71-41fa-9af6-c5135765ad03">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm_DcmEcuReset_Communication_Read_APP_DcmEcuReset</SD>
                                     <SD GID="888a4b22-1a67-44a9-8c44-8b552ea536c5">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemMaster_0</SD>
                                     <SD GID="70f24848-36f5-45b8-bee0-407436fd5cdd">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemSatellite_0</SD>
@@ -2371,18 +2671,107 @@
                                     <SD GID="374A289C-8BA0-408F-9939-1824463BFF87">/ComponentTypes/Communication_Read_APP/CGW_WLC_MsgCntr</SD>
                                     <SD GID="E75ABFD7-8F2D-4490-8EEC-BFC065580125">/ComponentTypes/Communication_Read_APP/ComfEna</SD>
                                     <SD GID="787C47C1-07F9-422F-985D-00B2875062FF">/ComponentTypes/Communication_Read_APP/ComfEna_ASIL</SD>
+                                    <SD GID="F80691D5-CD6D-4F04-B4CF-94181795B6F2">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead_DataServices_DcmDspData_BootloaderVersion_ConditionCheckRead</SD>
+                                    <SD GID="57B03A59-DADE-40DB-B167-26BA4FF4BB14">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_BootloaderVersion_ReadDataLength_DataServices_DcmDspData_BootloaderVersion_ReadDataLength</SD>
+                                    <SD GID="EBB57EF1-72E7-44A7-A934-3390291AE7C0">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_BootloaderVersion_ReadData_DataServices_DcmDspData_BootloaderVersion_ReadData</SD>
+                                    <SD GID="45B11301-5E12-49B7-B3C3-60B7C91B45CE">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ConfigurarionFingerprint_ConditionCheckRead_DataServices_DcmDspData_ConfigurarionFingerprint8B465459</SD>
+                                    <SD GID="700D9DC7-99AB-416E-AC97-5C5D5A0FF162">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ConfigurarionFingerprint_ReadData_DataServices_DcmDspData_ConfigurarionFingerprint_ReadData</SD>
+                                    <SD GID="17BA1D9F-612B-44F9-8800-40A5D5B0FD18">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData_DataServices_DcmDspData_ConfigurarionFingerprint_WriteData</SD>
+                                    <SD GID="4ABF8854-F373-4ED3-A068-2311DE3553BA">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead_DataServices_DcmDspData_ECUConfigurarion_ConditionCheckRead</SD>
+                                    <SD GID="6CB3A82F-35C1-4C1C-AEFF-983F2B98636C">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUConfigurarion_ReadData_DataServices_DcmDspData_ECUConfigurarion_ReadData</SD>
+                                    <SD GID="90097D1B-4696-46D4-B717-6FB2DB6ED05C">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUConfigurarion_WriteData_DataServices_DcmDspData_ECUConfigurarion_WriteData</SD>
+                                    <SD GID="D079FBC7-5057-4A45-85F6-2B4EC7CC8C98">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead_DataServices_DcmDspData_ECUDiagDatabaseVersion_Con898CC0D4</SD>
+                                    <SD GID="28B51A16-66B8-4985-B758-6114FB9ECFA3">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData</SD>
+                                    <SD GID="5C06DD3B-0158-49D9-A064-E93F036DB398">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUManufacturingDate_ConditionCheckRead_DataServices_DcmDspData_ECUManufacturingDate_Conditi36A93663</SD>
+                                    <SD GID="1D9B5898-9430-40C1-90F8-5D1C61506ABA">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUManufacturingDate_ReadData_DataServices_DcmDspData_ECUManufacturingDate_ReadData</SD>
+                                    <SD GID="883F76D1-1038-484E-ADC9-760EAA2DCDFD">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead</SD>
+                                    <SD GID="A67A3ED0-F254-4622-9C43-AFC7F7AECA52">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUProgrammingDate_ReadData_DataServices_DcmDspData_ECUProgrammingDate_ReadData</SD>
+                                    <SD GID="2C6E3E34-9ECB-4867-A15F-9CF88C7E8BEB">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead_DataServices_DcmDspData_ECUSerialNumber_ConditionCheckRead</SD>
+                                    <SD GID="15536361-E76A-4593-8757-3D6BC3DEBAE1">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ECUSerialNumber_ReadData_DataServices_DcmDspData_ECUSerialNumber_ReadData</SD>
+                                    <SD GID="E78C1D52-3F34-4201-8CB9-C116E433DAA3">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ReadActiveDiagSession_ConditionCheckRead_DataServices_DcmDspData_ReadActiveDiagSession_Condi595C28B7</SD>
+                                    <SD GID="B0965DE3-D815-405F-B54C-F22E41EAA0C6">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ReadActiveDiagSession_ReadData_DataServices_DcmDspData_ReadActiveDiagSession_ReadData</SD>
+                                    <SD GID="18038B57-528E-4EE1-810B-4BA49A575C37">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead_DataServices_DcmDspData_ReadFingerprint_ConditionCheckRead</SD>
+                                    <SD GID="2083D07B-2DEA-478E-AF12-8F93ACD98024">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_ReadFingerprint_ReadData_DataServices_DcmDspData_ReadFingerprint_ReadData</SD>
+                                    <SD GID="78BADCA7-2501-43DD-BD5C-F79D10864293">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_RepairShopFingerPrint_ConditionCheckRead_DataServices_DcmDspData_RepairShopFingerPrint_CondiF74E6915</SD>
+                                    <SD GID="255B15E0-B997-4A09-96D0-9C2A9D93DE66">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_RepairShopFingerPrint_ReadData_DataServices_DcmDspData_RepairShopFingerPrint_ReadData</SD>
+                                    <SD GID="35E606D3-F7CD-48C4-8CD5-C7C002F78547">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_RepairShopFingerPrint_WriteData_DataServices_DcmDspData_RepairShopFingerPrint_WriteData</SD>
+                                    <SD GID="9B775163-5564-4825-ADC8-6EDCB144E5E3">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_SystemName_ConditionCheckRead_DataServices_DcmDspData_SystemName_ConditionCheckRead</SD>
+                                    <SD GID="AF4D08EF-2F55-4BEB-A334-B5FB63F6ACB7">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_SystemName_ReadDataLength_DataServices_DcmDspData_SystemName_ReadDataLength</SD>
+                                    <SD GID="2E1E8B3E-6C2A-4343-9719-8B06BF9C3991">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_SystemName_ReadData_DataServices_DcmDspData_SystemName_ReadData</SD>
+                                    <SD GID="FE6E26F9-7FDC-457E-8314-2D8248AA4696">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_SystemSupplierIdData_ConditionCheckRead_DataServices_DcmDspData_SystemSupplierIdData_Conditi555B98AA</SD>
+                                    <SD GID="D083ECAB-343F-4873-B317-D0185DA2DCD0">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_SystemSupplierIdData_ReadData_DataServices_DcmDspData_SystemSupplierIdData_ReadData</SD>
+                                    <SD GID="C7784934-1261-4924-9024-330DCF0ACD47">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VIN_ConditionCheckRead_DataServices_DcmDspData_VIN_ConditionCheckRead</SD>
+                                    <SD GID="4BA01F3F-F3C8-48A4-98C1-6AC7DA2C6A6D">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VIN_ReadData_DataServices_DcmDspData_VIN_ReadData</SD>
+                                    <SD GID="A2196E55-1A51-4827-944C-7E292349DE48">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VIN_WriteData_DataServices_DcmDspData_VIN_WriteData</SD>
+                                    <SD GID="97EDEAAF-A651-4D63-A6A0-2A692B57E79E">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_CalibrarionPartNumber_ConditionCheckRead_DataServices_DcmDspData_VM_CalibrarionPartNumber03305360</SD>
+                                    <SD GID="23F8560B-C90F-46B9-9039-408F7D286C13">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData_DataServices_DcmDspData_VM_CalibrarionPartNumber_ReadData</SD>
+                                    <SD GID="28825D5A-7D5B-47A6-9038-A6899C55663A">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData_DataServices_DcmDspData_VM_CalibrarionPartNumber_WriteData</SD>
+                                    <SD GID="B8FADECD-3E32-463E-8211-8A23E868639C">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_CalibrationBaseline_ConditionCheckRead_DataServices_DcmDspData_VM_CalibrationBaseline_Con9CE12721</SD>
+                                    <SD GID="13FC4975-6693-4CD7-AE2B-85AECBBE1C73">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_CalibrationBaseline_ReadData_DataServices_DcmDspData_VM_CalibrationBaseline_ReadData</SD>
+                                    <SD GID="C091965B-09F0-4F63-9009-B6B3CA7B25EC">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData_DataServices_DcmDspData_VM_CalibrationBaseline_WriteData</SD>
+                                    <SD GID="48E6CD40-244F-486B-9304-DE653C7ED9C2">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ConditionCheckRead_DataServices_DcmDspData_VM_FOTASpecialPartNumber12F56527</SD>
+                                    <SD GID="87D0641A-306D-44E9-ACED-6241B86E5E3D">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData_DataServices_DcmDspData_VM_FOTASpecialPartNumber_ReadData</SD>
+                                    <SD GID="BADF10E5-2DF2-45C5-BCDC-68C78EC983EB">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData_DataServices_DcmDspData_VM_FOTASpecialPartNumber_WriteData</SD>
+                                    <SD GID="8B59054F-EF1D-48DE-A362-1A0827D73209">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead_DataServices_DcmDspData_VM_SoftwarBaseline_ConditionCheckRead</SD>
+                                    <SD GID="2E36D3F1-9955-47DC-BD61-7E9571F339C5">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_SoftwarBaseline_ReadData_DataServices_DcmDspData_VM_SoftwarBaseline_ReadData</SD>
+                                    <SD GID="E0EFF0B2-9DC3-4FE2-85DB-0D9365B97C6F">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData_DataServices_DcmDspData_VM_SoftwarBaseline_WriteData</SD>
+                                    <SD GID="55D7375E-5484-43BB-B9E2-A6515857869C">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_SofwarePartNumber_ConditionCheckRead_DataServices_DcmDspData_VM_SofwarePartNumber_ConditiA041C6FF</SD>
+                                    <SD GID="D531EAF9-8292-49C5-83F9-15CA64489CF6">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_SofwarePartNumber_ReadData_DataServices_DcmDspData_VM_SofwarePartNumber_ReadData</SD>
+                                    <SD GID="0527C3E3-EE9F-4540-99E8-B5268CD73D59">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData_DataServices_DcmDspData_VM_SofwarePartNumber_WriteData</SD>
+                                    <SD GID="6FA530A5-41C9-4EB0-ACEF-526C3431277C">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead_DataServices_DcmDspData_VM_SparepartNumber_ConditionCheckRead</SD>
+                                    <SD GID="3BC4300F-49F0-4B42-B56B-8D9D3EAA6B6E">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_SparepartNumber_ReadData_DataServices_DcmDspData_VM_SparepartNumber_ReadData</SD>
+                                    <SD GID="ED280DC2-5529-4A0C-8AE1-2D90ED882478">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_SparepartNumber_WriteData_DataServices_DcmDspData_VM_SparepartNumber_WriteData</SD>
+                                    <SD GID="21A284B6-8460-48CE-BCB2-9CC735C757FB">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_Specialdatabaseline_ConditionCheckRead_DataServices_DcmDspData_VM_Specialdatabaseline_Con3B7A3020</SD>
+                                    <SD GID="1CB36553-BE6E-4158-9531-AD495A4D6AD2">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength_DataServices_DcmDspData_VM_Specialdatabaseline_ReadDataLength</SD>
+                                    <SD GID="AB49D104-7BC2-4B1C-8CA3-81D2C58440EA">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_Specialdatabaseline_ReadData_DataServices_DcmDspData_VM_Specialdatabaseline_ReadData</SD>
+                                    <SD GID="A05C27BC-0D1F-4276-BB5D-131ACC7CEE0F">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData_DataServices_DcmDspData_VM_Specialdatabaseline_WriteData</SD>
                                     <SD GID="181D4EBC-CBC4-4613-8AEB-9A6F03E9C500">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead_DataServices_Diag_RWDI_LightOnOf2065F94A</SD>
                                     <SD GID="B58E1F65-55E6-4050-9283-8DDA765926C8">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData_DataServices_Diag_RWDI_LightOnOffCounter_LBCB6C10A</SD>
                                     <SD GID="B0D89E14-B796-4F68-8FD9-7B37FF325AE8">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData_DataServices_Diag_RWDI_LightOnOffCounter_9798F8A6</SD>
+                                    <SD GID="9CBA21B5-E81B-4EE0-A768-B8E1B985B5AF">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead_DataServices_Diag_VM_HardwareBaseline_ConditionCheckRead</SD>
+                                    <SD GID="4D042547-1418-4D4C-9D54-06A13FCDF070">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_VM_HardwareBaseline_ReadData_DataServices_Diag_VM_HardwareBaseline_ReadData</SD>
+                                    <SD GID="7A038641-3EBF-4F6F-AE90-F2E6D8F4D9A4">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_VM_HardwareBaseline_WriteData_DataServices_Diag_VM_HardwareBaseline_WriteData</SD>
+                                    <SD GID="3CBCBF46-AF1F-4389-8D0F-A98E033867B1">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead_DataServices_Diag_VM_HardwarePartNumber_ConditionCheckRead</SD>
+                                    <SD GID="7DA115FC-27D9-4225-80ED-24FAFB93809D">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_VM_HardwarePartNumber_ReadData_DataServices_Diag_VM_HardwarePartNumber_ReadData</SD>
+                                    <SD GID="B14C46AB-16D6-4D48-B54E-A158A9329CDA">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_VM_HardwarePartNumber_WriteData_DataServices_Diag_VM_HardwarePartNumber_WriteData</SD>
+                                    <SD GID="6C9FB7AF-A6D0-4021-8589-82A25D80B34B">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_SecurityAccess_Level_01_CompareKey_SecurityAccess_Level_01_CompareKey</SD>
+                                    <SD GID="DA2D8070-823D-407E-862D-926878D8A8D4">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_SecurityAccess_Level_01_GetSeed_SecurityAccess_Level_01_GetSeed</SD>
+                                    <SD GID="895EAE8F-93DC-437A-8FF9-41970BDF2028">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_SecurityAccess_Level_02_CompareKey_SecurityAccess_Level_02_CompareKey</SD>
+                                    <SD GID="90DBE899-6E8A-49D2-A118-333CC83DBDF4">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_SecurityAccess_Level_02_GetSeed_SecurityAccess_Level_02_GetSeed</SD>
                                     <SD GID="FFE71E43-ED97-42EE-951A-A850BDC2C64B">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/TMT_WLCAPP_Runnable</SD>
+                                    <SD GID="A6AAD910-C903-4629-A3D4-B61866B19527">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_BootloaderVersion</SD>
+                                    <SD GID="53B9CE1C-E4A9-4300-96C1-24BD62BEAC90">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ConfigurarionFingerprint</SD>
+                                    <SD GID="EF38AD4C-40CE-4317-ABE1-95629A4066EB">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUConfigurarion</SD>
+                                    <SD GID="7925CDF9-B1A4-407B-A943-814CBD091FF6">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUDiagDatabaseVersion</SD>
+                                    <SD GID="F6E534ED-D3B5-4218-A74D-BDA3A48EAC98">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUManufacturingDate</SD>
+                                    <SD GID="C6CE1202-6B0F-4D04-938E-5B55F02CAA5A">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUProgrammingDate</SD>
+                                    <SD GID="90AA8EE3-E7E5-4385-909F-022233BD7F6E">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ECUSerialNumber</SD>
+                                    <SD GID="B93D8399-2B60-4D79-83CB-1A7A3BB258FE">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ReadActiveDiagSession</SD>
+                                    <SD GID="4E4DA90D-C52C-445E-8A00-DA035401ED6E">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_ReadFingerprint</SD>
+                                    <SD GID="1ECA4A65-CEAF-483C-B100-CD3F76BFB2A7">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_RepairShopFingerPrint</SD>
+                                    <SD GID="9C3A4088-BE3B-417F-A8FC-83E283CEF12C">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_SystemName</SD>
+                                    <SD GID="25649207-96BA-4E07-8E45-F792E35554CF">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_SystemSupplierIdData</SD>
+                                    <SD GID="8C1886FC-5A44-40EB-B1C2-6B002CF3E35C">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VIN</SD>
+                                    <SD GID="B67D11DA-2672-411F-8455-338173CE702A">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_CalibrarionPartNumber</SD>
+                                    <SD GID="E16F5698-65BB-4FB7-B642-70D5FAB3724D">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_CalibrationBaseline</SD>
+                                    <SD GID="A8689963-683B-47D5-8B68-F5AFFDDB1F72">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_FOTASpecialPartNumber</SD>
+                                    <SD GID="A6B696DD-ADAF-4F6F-AE6A-AFB49018D774">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SoftwarBaseline</SD>
+                                    <SD GID="0141BD51-1B24-4B73-A508-977D4C09DC88">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SofwarePartNumber</SD>
+                                    <SD GID="F638A983-3FCA-4C9C-8062-BA65F958C1E0">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_SparepartNumber</SD>
+                                    <SD GID="AD1DEBEB-4041-4566-9124-374F55700B72">/ComponentTypes/Communication_Read_APP/DataServices_DcmDspData_VM_Specialdatabaseline</SD>
                                     <SD GID="A201F79E-7D84-42DF-8EBB-160265B3AC6B">/ComponentTypes/Communication_Read_APP/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</SD>
+                                    <SD GID="01BABDAD-BCA6-48A0-98E7-B1FB638312D4">/ComponentTypes/Communication_Read_APP/DataServices_Diag_VM_HardwareBaseline</SD>
+                                    <SD GID="5CA3AAE6-7A55-49F3-89CB-AF4B4A46A33D">/ComponentTypes/Communication_Read_APP/DataServices_Diag_VM_HardwarePartNumber</SD>
                                     <SD GID="AF6D8962-9026-4180-A093-6DC9C7ACA5BE">/ComponentTypes/Communication_Read_APP/Day</SD>
+                                    <SD GID="0839764F-3A31-4E5F-AA38-59729B988F5A">/ComponentTypes/Communication_Read_APP/DcmControlDtcSetting</SD>
                                     <SD GID="C2CEFB7D-798B-4D90-944E-60AAA5B2EE82">/ComponentTypes/Communication_Read_APP/DcmEcuReset</SD>
                                     <SD GID="83FB0B14-D2BD-40EC-9B7F-069A17FCB8E7">/ComponentTypes/Communication_Read_APP/Hr</SD>
                                     <SD GID="364C4D2D-3481-496A-9FC3-AEBD0A13F34C">/ComponentTypes/Communication_Read_APP/ImobEnaReq</SD>
                                     <SD GID="02BAFC97-28D7-4729-AB67-9FE14B615C8B">/ComponentTypes/Communication_Read_APP/Min</SD>
                                     <SD GID="33D3FC17-A647-48C1-92D3-6B16687C2530">/ComponentTypes/Communication_Read_APP/Mth</SD>
                                     <SD GID="DFEE1C22-1D10-492C-AD83-E9C195D027DC">/ComponentTypes/Communication_Read_APP/Sec</SD>
+                                    <SD GID="97FB3AEC-3FF6-4FB8-874B-9713D0CC7AE7">/ComponentTypes/Communication_Read_APP/SecurityAccess_Level_01</SD>
+                                    <SD GID="33689952-0EC7-4CE5-B1D6-9EC2C5EB47E9">/ComponentTypes/Communication_Read_APP/SecurityAccess_Level_02</SD>
                                     <SD GID="DCD1735D-B574-47C4-A793-6DB806F24CB8">/ComponentTypes/Communication_Read_APP/UsrData0_WLC</SD>
                                     <SD GID="E497BE55-8184-4759-AF56-5CB3701B85EC">/ComponentTypes/Communication_Read_APP/UsrData1_WLC</SD>
                                     <SD GID="2D7ADC64-C836-4FB3-A5C9-7DA4E6C70AC6">/ComponentTypes/Communication_Read_APP/UsrData2_WLC</SD>
@@ -2689,12 +3078,96 @@
                                     <SD GID="b802796d-2782-44d1-b819-7c3e8b0b8876">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm_MainFunction</SD>
                                     <SD GID="c2766515-ce8c-49b7-8b7f-2dd20f7124e4">/MICROSAR/Dcm_swc/ComponentTypes/Dcm</SD>
                                     <SD GID="664b0b9d-3e5b-4815-938a-f5ff84a84c60">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DCMServices</SD>
+                                    <SD GID="11e0c261-4959-43ce-bd24-f2611da66615">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_BootloaderVersion</SD>
+                                    <SD GID="bae43ad1-13ad-4aef-b165-3357d3e5b743">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ConfigurarionFingerprint</SD>
+                                    <SD GID="fe677158-9c97-43d0-acde-c50ad6a52349">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ECUConfigurarion</SD>
+                                    <SD GID="a1ac548e-fd1e-44a7-9269-06364b4cf58d">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ECUDiagDatabaseVersion</SD>
+                                    <SD GID="6553571b-3b9a-4253-b0a6-8de2e01ce8e5">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ECUManufacturingDate</SD>
+                                    <SD GID="84efb483-5485-482a-87d7-ce4e9c3b428f">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ECUProgrammingDate</SD>
+                                    <SD GID="23235967-1760-42e2-8181-150c344d403d">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ECUSerialNumber</SD>
+                                    <SD GID="e116c483-5ebf-48ff-be66-5668adf30d40">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ReadActiveDiagSession</SD>
+                                    <SD GID="50bba91e-a62b-4bf5-89bc-2db904444708">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_ReadFingerprint</SD>
+                                    <SD GID="27e5d948-4284-48be-bb8f-0394e466a44e">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_RepairShopFingerPrint</SD>
+                                    <SD GID="404fb9a0-2601-4a2c-bc8d-edc9d020861a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_SystemName</SD>
+                                    <SD GID="9079066e-4a03-4dae-a6e0-838f4b90bb84">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_SystemSupplierIdData</SD>
+                                    <SD GID="5f334ef8-894e-40b7-9971-8f7f400ce040">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VIN</SD>
+                                    <SD GID="ea3856db-fe96-4506-8a53-c91052415cd9">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_CalibrarionPartNumber</SD>
+                                    <SD GID="d8754b78-4a9a-4662-9b78-cf01caf39cfa">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_CalibrationBaseline</SD>
+                                    <SD GID="9e92d2f5-e6ae-4b96-a8f2-25ab8974c103">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_FOTASpecialPartNumber</SD>
+                                    <SD GID="c81b48fd-04a5-4565-8473-585633d95176">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_SoftwarBaseline</SD>
+                                    <SD GID="690dfb63-88ca-497c-a739-005f5fd5348e">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_SofwarePartNumber</SD>
+                                    <SD GID="f6151ad7-e5e3-4abf-89e8-a09074a55527">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_SparepartNumber</SD>
+                                    <SD GID="556129c2-e2de-401c-b7e3-400e0c2c9413">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_DcmDspData_VM_Specialdatabaseline</SD>
                                     <SD GID="bd49c742-d824-46f9-aac7-e8514c717558">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</SD>
+                                    <SD GID="f34ab41a-d102-4c62-bf90-7abcc9aa036f">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Diag_VM_HardwareBaseline</SD>
+                                    <SD GID="3abe9a1f-3d55-43bb-a4af-fa1229edda89">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Diag_VM_HardwarePartNumber</SD>
                                     <SD GID="a45e8800-153b-46bc-a637-37d828ebfd56">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmControlDtcSetting</SD>
                                     <SD GID="ffb0c2df-4117-4a49-9461-6a6d6c060ec3">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmDiagnosticSessionControl</SD>
                                     <SD GID="16b519fe-6e1b-4d1f-a325-f2c43b06c3cc">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmEcuReset</SD>
                                     <SD GID="f2ac2e50-7243-4719-9d6c-398526fed12b">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior</SD>
                                     <SD GID="f80a5236-c0c3-42ae-a322-0a916f506ef6">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction</SD>
+                                    <SD GID="a3fde723-3fe0-437b-b001-2523921345f7">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_CompareKey_SecurityAccess_Level_02</SD>
+                                    <SD GID="6e283577-a12c-46bd-b247-6c701f46da51">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_BootloaderVersion</SD>
+                                    <SD GID="a8946e02-f629-4278-9a67-5043b35e3dc4">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_ConfigurarionFingerprint</SD>
+                                    <SD GID="667d6017-3ffa-4819-b9c7-bca62be3f289">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_ECUConfigurarion</SD>
+                                    <SD GID="8b54d181-f911-4728-9fbc-8a9a022010ce">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_ECUDiagDatabaseVersion</SD>
+                                    <SD GID="d1d90695-ecac-4dfb-9b0a-a2abfb3e3f33">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_ECUManufacturingDate</SD>
+                                    <SD GID="0bb948df-c89c-4e25-b20b-16bffa6c1746">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_ECUProgrammingDate</SD>
+                                    <SD GID="1b0f1250-f58c-4cf9-aecd-6578eba93d65">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_ECUSerialNumber</SD>
+                                    <SD GID="396ba480-9243-4130-a2f3-3758f65f0921">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_ReadActiveDiagSession</SD>
+                                    <SD GID="a62c619d-c8be-45a0-a3cf-cca87d931ebf">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_ReadFingerprint</SD>
+                                    <SD GID="168558ea-f5e7-4069-b6df-dd72e610e973">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_RepairShopFingerPrint</SD>
+                                    <SD GID="d1addd72-f6a4-47a6-bd83-bc4cba5309df">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_SystemName</SD>
+                                    <SD GID="5e8fcce4-86d9-4cdc-9342-9d6abedf7d5c">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_SystemSupplierIdData</SD>
+                                    <SD GID="d829f457-2243-4b87-97e6-2d8579393a83">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_VIN</SD>
+                                    <SD GID="1562a12b-2590-4972-b1b1-e08e45bc7344">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_VM_CalibrarionPartNumber</SD>
+                                    <SD GID="4bdb23ab-570c-414a-b190-9ce2dfdfc5d0">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_VM_CalibrationBaseline</SD>
+                                    <SD GID="b6f6860a-a204-4a5d-bc8e-76699f4f81e0">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_VM_FOTASpecialPartNumber</SD>
+                                    <SD GID="fb1d2573-6cfc-428a-b9f5-1a1d01ad7145">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_VM_SoftwarBaseline</SD>
+                                    <SD GID="3bd811c4-d223-427e-b083-9b1f387e4a13">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_VM_SofwarePartNumber</SD>
+                                    <SD GID="2f1deac7-d252-4963-bacf-c19c328e4355">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_VM_SparepartNumber</SD>
+                                    <SD GID="7a304275-5459-4484-a329-370255907745">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_DcmDspData_VM_Specialdatabaseline</SD>
+                                    <SD GID="2ce9533b-063b-43ac-8e8d-2fc55b157e30">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_Diag_VM_HardwareBaseline</SD>
+                                    <SD GID="53f76758-5b07-450f-8767-627823faaa0c">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ConditionCheckRead_DataServices_Diag_VM_HardwarePartNumber</SD>
+                                    <SD GID="1b923b07-7829-4e46-b73c-c87d6d0e1a94">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_GetSeed_SecurityAccess_Level_02</SD>
+                                    <SD GID="9320c423-494b-4a5a-a007-440a61ae5981">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadDataLength_DataServices_DcmDspData_BootloaderVersion</SD>
+                                    <SD GID="62c1e69d-277b-4856-b26f-90ed02a653ae">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadDataLength_DataServices_DcmDspData_SystemName</SD>
+                                    <SD GID="0bae2106-fbb0-495c-b7eb-5a71675b917f">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadDataLength_DataServices_DcmDspData_VM_Specialdatabaseline</SD>
+                                    <SD GID="537bc8ce-c2b5-4de4-ab4c-3c5615afa473">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_BootloaderVersion</SD>
+                                    <SD GID="9a7ce52d-5c26-4cd5-a235-f04ed825e5cb">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_ConfigurarionFingerprint</SD>
+                                    <SD GID="01c8b847-b32d-45cf-83cc-f9e83b2c6f83">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_ECUConfigurarion</SD>
+                                    <SD GID="d727db43-33ef-4c70-aec5-7b1ccb56e215">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_ECUDiagDatabaseVersion</SD>
+                                    <SD GID="06892f99-9799-402f-b327-26e6eb96e899">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_ECUManufacturingDate</SD>
+                                    <SD GID="a539d3ae-81d7-40dd-a51d-9e4cf40d1022">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_ECUProgrammingDate</SD>
+                                    <SD GID="6c7242fa-222e-4bda-8a06-6ba617aeb808">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_ECUSerialNumber</SD>
+                                    <SD GID="8cdb4986-ed1c-475f-8b01-384420c5d624">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_ReadActiveDiagSession</SD>
+                                    <SD GID="17a60476-9876-4120-b4f4-31258778982b">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_ReadFingerprint</SD>
+                                    <SD GID="e071d8ca-ffcc-4315-b3b9-ba5ed4d90c58">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_RepairShopFingerPrint</SD>
+                                    <SD GID="de8d86b8-3c5b-4e25-835c-0888e0eb4a10">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_SystemName</SD>
+                                    <SD GID="ff68f12a-f0fe-4824-9b33-f3553bc8454b">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_SystemSupplierIdData</SD>
+                                    <SD GID="b9c9ca5e-9ab5-4d1e-86b0-89a2918ba8d4">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_VIN</SD>
+                                    <SD GID="31c641dd-9d18-477b-96f6-cba0bc8c34ba">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_VM_CalibrarionPartNumber</SD>
+                                    <SD GID="150dd1e1-fad7-4da4-8faf-fb2150f2a809">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_VM_CalibrationBaseline</SD>
+                                    <SD GID="4c3bca0c-b117-4305-b79b-b93de099b96a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_VM_FOTASpecialPartNumber</SD>
+                                    <SD GID="fa9d31ce-a41d-48ab-b0c1-94699bc559b5">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_VM_SoftwarBaseline</SD>
+                                    <SD GID="c5b199ee-738d-48e0-b201-1eaf740c7c8c">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_VM_SofwarePartNumber</SD>
+                                    <SD GID="11d1dad2-4419-46b2-b6bc-91c75bc096b4">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_VM_SparepartNumber</SD>
+                                    <SD GID="a93ed264-895b-4523-9fb0-264a073cf00d">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_DcmDspData_VM_Specialdatabaseline</SD>
+                                    <SD GID="2a02b31d-2489-4d6a-8a8b-310dd90ba7ba">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_Diag_VM_HardwareBaseline</SD>
+                                    <SD GID="f8c1c617-0e3b-4d61-9b25-3500b5de996d">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_Diag_VM_HardwarePartNumber</SD>
+                                    <SD GID="6048a0c8-f5a3-4bc5-bd09-d9fb12c7cddf">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_ConfigurarionFingerprint</SD>
+                                    <SD GID="0c2961c9-e5b5-460b-a40f-a383cb15ad25">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_ECUConfigurarion</SD>
+                                    <SD GID="459b3434-11ba-4dbb-9675-9e32dc57f526">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_RepairShopFingerPrint</SD>
+                                    <SD GID="370e8b9e-763c-45f8-a139-824e0034284a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_VIN</SD>
+                                    <SD GID="901ac311-1850-486c-987d-a4d6e92f962a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_VM_CalibrarionPartNumber</SD>
+                                    <SD GID="033ac34f-dfad-4a23-b949-e876c120011e">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_VM_CalibrationBaseline</SD>
+                                    <SD GID="b372d9ce-d6ae-42a2-8dc5-a746be4dde05">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_VM_FOTASpecialPartNumber</SD>
+                                    <SD GID="ec9fcaea-92b3-4478-9148-ac12510d8bd8">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_VM_SoftwarBaseline</SD>
+                                    <SD GID="2bfdb36a-ccc5-4166-84be-73d7dbf96266">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_VM_SofwarePartNumber</SD>
+                                    <SD GID="a2892c72-ba74-4add-990f-1ecc3e7b3148">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_VM_SparepartNumber</SD>
+                                    <SD GID="42f28dea-8990-4848-8639-e557d84255a1">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_VM_Specialdatabaseline</SD>
+                                    <SD GID="da1e821c-9c2e-47b3-8143-932d7e90e441">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_Diag_VM_HardwareBaseline</SD>
+                                    <SD GID="28a67b89-1152-4c82-bde9-df9afce4e890">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_Diag_VM_HardwarePartNumber</SD>
                                     <SD GID="96332016-aded-4a96-b03f-d08034ed7b5f">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetActiveProtocol</SD>
                                     <SD GID="0c6322dc-b3a8-4469-a6b4-d81eab0d55a5">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetRequestKind</SD>
                                     <SD GID="03012524-b3af-43e1-8b22-15a0bf8d3a20">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetSecurityLevel</SD>
@@ -2709,6 +3182,7 @@
                                     <SD GID="5d33b48b-446c-4cb4-83d8-9af6feacaae1">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/SetActiveDiagnostic</SD>
                                     <SD GID="80bb6f89-efc3-49aa-8044-3b0df13ac458">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Timer_Dcm_MainFunction</SD>
                                     <SD GID="d441c1f2-1067-4c3c-96d1-70914917208a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/SecurityAccess_Level_01</SD>
+                                    <SD GID="dbbff8bd-abf4-4bb1-878f-11b4001f06b6">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/SecurityAccess_Level_02</SD>
                                     <SD GID="c8033024-1f8a-463b-ab5d-2a9b90fba81e">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_CommunicationModeType</SD>
                                     <SD GID="20c0f836-9935-4f8e-9dab-6defc211b3ad">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_ConfirmationStatusType</SD>
                                     <SD GID="62fb3552-ab3b-4698-b80e-24cb9ddcf76d">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_ControlDtcSettingType</SD>
@@ -2729,7 +3203,7 @@
                                     <SD GID="f66edcfa-8aac-40fa-94c8-f2920d680338">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_OpStatusType_Constr</SD>
                                     <SD GID="c8f7282a-d1f2-4b70-988f-66a642d5bd60">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_ProtocolType_Constr</SD>
                                     <SD GID="1e64020e-45a1-4ade-9788-4ace64a6202b">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_RequestKindType_Constr</SD>
-                                    <SD GID="eef25e12-9c11-4aec-bd20-630d30077c4e">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_SecLevelType_Constr</SD>
+                                    <SD GID="74215957-eccc-4d9f-af9c-2d9ffc81dd8a">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_SecLevelType_Constr</SD>
                                     <SD GID="bc2f9bc7-2f35-45f4-96e1-bb024037361a">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_SesCtrlType_Constr</SD>
                                     <SD GID="5a2c9602-6fb3-40bc-85bc-0668d5ff080b">/MICROSAR/Dcm_swc/DataTypes/Dcm_CommunicationModeType</SD>
                                     <SD GID="c57cf37c-4a6d-40b2-97a2-f75475592a8c">/MICROSAR/Dcm_swc/DataTypes/Dcm_ConfirmationStatusType</SD>
@@ -2742,7 +3216,6 @@
                                     <SD GID="e548fc26-7f58-43a7-b42f-9b799e2e7352">/MICROSAR/Dcm_swc/DataTypes/Dcm_OpStatusType</SD>
                                     <SD GID="d2fc7a7e-23d1-4b88-bfbc-5583420771ce">/MICROSAR/Dcm_swc/DataTypes/Dcm_ProtocolType</SD>
                                     <SD GID="b6491fe8-c077-4da8-878a-31962eee3211">/MICROSAR/Dcm_swc/DataTypes/Dcm_RequestKindType</SD>
-                                    <SD GID="7895117e-b393-4798-aaeb-03d8c8b91526">/MICROSAR/Dcm_swc/DataTypes/Dcm_SecLevelType</SD>
                                     <SD GID="bc1282d9-b90e-4d14-a94a-67933d9c7cfc">/MICROSAR/Dcm_swc/DataTypes/Dcm_SesCtrlType</SD>
                                     <SD GID="f00406cc-93b5-4776-afa2-825f88493cb1">/MICROSAR/Dcm_swc/DcmControlDtcSetting</SD>
                                     <SD GID="fdde75a5-e446-4aac-8200-d305870842ee">/MICROSAR/Dcm_swc/DcmControlDtcSetting/ENABLEDTCSETTING</SD>
@@ -2757,15 +3230,276 @@
                                     <SD GID="590d299b-a907-4366-8f57-5754430063ca">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetActiveProtocol</SD>
                                     <SD GID="7424097a-4461-43ad-a7b7-3376d582df5c">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetRequestKind</SD>
                                     <SD GID="a48392da-0dd7-4a30-a6ae-bcb2044dec7f">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetSecurityLevel</SD>
+                                    <SD GID="5ff8ca9f-dcf5-4f1a-bbff-d8dd5de5f6eb">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetSecurityLevel/SecLevel</SD>
                                     <SD GID="f79928c1-cc6e-4524-b3c8-060117bfe9d6">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetSesCtrlType</SD>
                                     <SD GID="631a2a4b-d71c-493a-9ef2-1770bf34cc53">/MICROSAR/Dcm_swc/Interfaces/DCMServices/ResetToDefaultSession</SD>
                                     <SD GID="6262434f-ffee-4016-8e39-f47b920351cd">/MICROSAR/Dcm_swc/Interfaces/DCMServices/SetActiveDiagnostic</SD>
+                                    <SD GID="ded74f80-d811-450c-80f7-f45aa945af08">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion</SD>
+                                    <SD GID="3c775ecc-65f0-490b-9922-fb3f2e485ea8">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ConditionCheckRead</SD>
+                                    <SD GID="43070da4-0906-4fed-a8fe-de1bd3aad8fc">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="c1d2f913-d0b8-4ed8-bacd-ef858df1bc65">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="cea9a622-3f52-4c96-99b6-0d7604e7389c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/DCM_E_PENDING</SD>
+                                    <SD GID="52c36dbc-e680-468b-9c0c-f273d2b62b3e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/E_NOT_OK</SD>
+                                    <SD GID="4655d150-4f7c-4765-8fa2-3a9e23524873">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ReadData</SD>
+                                    <SD GID="e8e1e2a7-7ea4-4f6c-9ffb-e8526d617886">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ReadData/Data</SD>
+                                    <SD GID="f84a0902-05da-4342-8f03-5fe3671f40ee">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ReadData/OpStatus</SD>
+                                    <SD GID="29e65c72-be43-4b2b-b43d-9cf31b448adf">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ReadDataLength</SD>
+                                    <SD GID="52f02d70-1896-4c22-93ad-bf15ba027257">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ReadDataLength/DataLength</SD>
+                                    <SD GID="ae1a1148-1448-44ba-9722-194c23e656c8">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_BootloaderVersion/ReadDataLength/OpStatus</SD>
+                                    <SD GID="4f8dae6f-31c9-4f6f-b4d3-db9d97c88816">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint</SD>
+                                    <SD GID="912d1855-c779-469b-b949-531de1459f89">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/ConditionCheckRead</SD>
+                                    <SD GID="4a446510-ddaf-4809-befe-86ddbe5462a6">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="f4b75557-e902-475d-b252-e3c4fc3635af">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="78ee6284-8293-4fa7-a198-c7724b8d32d4">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/DCM_E_PENDING</SD>
+                                    <SD GID="7935553a-d4cf-482c-ab3c-a41ed87878e2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/E_NOT_OK</SD>
+                                    <SD GID="9beabc42-6a62-43ec-99f7-f8aecafe4945">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/ReadData</SD>
+                                    <SD GID="4a526d04-fbf8-4fa6-926b-beee13c77c04">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/ReadData/Data</SD>
+                                    <SD GID="f569945c-5f91-47b6-8c15-96b8a8524298">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/ReadData/OpStatus</SD>
+                                    <SD GID="d1c934ed-65bd-4083-a886-9fca29508c2b">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/WriteData</SD>
+                                    <SD GID="f0b72737-46f0-4a53-bbeb-c923179601db">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/WriteData/Data</SD>
+                                    <SD GID="804f00c4-24d5-4d52-a0b8-6fd4ddb333b3">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/WriteData/ErrorCode</SD>
+                                    <SD GID="fbf8f46f-0153-41c7-8f6f-b7622716bbc2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ConfigurarionFingerprint/WriteData/OpStatus</SD>
+                                    <SD GID="c37efde3-ec6a-4a84-9b2e-28e5593e03c8">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion</SD>
+                                    <SD GID="3efa6b25-2b1d-4ec8-aa50-d7fd46bd93a5">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/ConditionCheckRead</SD>
+                                    <SD GID="81403961-67ac-4dbd-a5ff-55568b0af9d6">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="e4b0ec3b-1094-4b1e-8322-6887dd0d1fba">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="4414f2fe-0e9d-4881-8169-e7a4badb6fd3">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/DCM_E_PENDING</SD>
+                                    <SD GID="99d2b0e1-a7cd-4a85-b61d-b5d30cf3c6a5">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/E_NOT_OK</SD>
+                                    <SD GID="a0d0b544-e4b3-463e-a1a7-5952da7fff35">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/ReadData</SD>
+                                    <SD GID="a328b2dd-e980-436b-9ee1-7517610433f2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/ReadData/Data</SD>
+                                    <SD GID="31bf9c1a-fb6e-4bf5-9782-8e24e1266d0f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/ReadData/OpStatus</SD>
+                                    <SD GID="5f768370-5853-4fb1-afc7-1869ee14f317">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/WriteData</SD>
+                                    <SD GID="5d71fc98-31cf-44bd-84d3-a41112805b05">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/WriteData/Data</SD>
+                                    <SD GID="0c58a338-449f-47e5-9cb1-b0505908dd6e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/WriteData/ErrorCode</SD>
+                                    <SD GID="a447c1c8-26fa-4bdc-a11a-02ae942c03a5">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUConfigurarion/WriteData/OpStatus</SD>
+                                    <SD GID="a5a007e0-641b-4242-9db5-e36bd79e7081">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion</SD>
+                                    <SD GID="9291d32a-d5a7-4563-9bd8-5e7815d218e7">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ConditionCheckRead</SD>
+                                    <SD GID="09931aee-fe47-4027-994e-efe59a75c8af">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="4787667c-a985-44b6-a77c-eb57d0739672">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="a0c9e99a-560c-47fe-a5fd-16e785ef89bb">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/DCM_E_PENDING</SD>
+                                    <SD GID="563b8ad8-5a46-4add-a40c-1bfc9fb6d75c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/E_NOT_OK</SD>
+                                    <SD GID="09b043f5-e669-4d5b-99c1-fe95f05c798e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ReadData</SD>
+                                    <SD GID="08586d51-2bdd-4f39-ba27-96763dbeaef6">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ReadData/Data</SD>
+                                    <SD GID="2c69590d-1aed-4f4e-b842-75c6549c2908">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ReadData/OpStatus</SD>
+                                    <SD GID="258606b2-8285-405f-a13f-f7df43a61a28">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate</SD>
+                                    <SD GID="b378fc16-9fcc-43d5-81f0-4f56608d6159">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ConditionCheckRead</SD>
+                                    <SD GID="c6275e8e-313f-4f28-af27-4e3453296b15">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="c428c0c3-d3d4-4a97-bb04-1af45a3c41b2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="38b220b6-ff4e-4595-8db8-729cd6737931">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/DCM_E_PENDING</SD>
+                                    <SD GID="6ef4e6ee-af62-417d-8324-6b6492da1be7">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/E_NOT_OK</SD>
+                                    <SD GID="d12ac500-db1b-4d76-bfa4-6c23b563e70f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ReadData</SD>
+                                    <SD GID="63ed005c-02e7-4c6c-a134-ad5a51ef6c0c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ReadData/Data</SD>
+                                    <SD GID="cfca21f1-26de-4c86-bc5f-b0a9fdcdc1ed">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ReadData/OpStatus</SD>
+                                    <SD GID="3d6243fa-8186-48cf-9e9b-63da8f8af364">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate</SD>
+                                    <SD GID="ce37c540-9308-4c92-a890-16fe0d0edbd8">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/ConditionCheckRead</SD>
+                                    <SD GID="b3170c69-3b63-45f1-ad58-d8fde64688b7">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="efaf71d9-1074-4880-9e9f-1bac68bd9496">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="6e814481-f862-4c5c-94ea-65f6d8f4632f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/DCM_E_PENDING</SD>
+                                    <SD GID="53229913-90eb-4955-a28c-3ae1c20aefa2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/E_NOT_OK</SD>
+                                    <SD GID="98df80c9-e6d3-42f5-a77a-f4fc53241608">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/ReadData</SD>
+                                    <SD GID="a5abe7e2-28f7-4ffb-93d8-ec9eb50341b2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/ReadData/Data</SD>
+                                    <SD GID="9614ff3c-9836-454e-b192-9e8dbc3c66cb">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUProgrammingDate/ReadData/OpStatus</SD>
+                                    <SD GID="d650ca08-c260-40e4-90ef-fc53bd736356">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber</SD>
+                                    <SD GID="cf1de642-19a0-45ef-a502-18fd4355b91b">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/ConditionCheckRead</SD>
+                                    <SD GID="10df3b9a-23f4-4b9a-8a46-12c9dcdc80c6">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="60d67aaf-8e33-4278-9ac4-695f504849d2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="28d893af-24d3-4c14-9f86-f091d6eb58d7">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/DCM_E_PENDING</SD>
+                                    <SD GID="32f16d2b-9d37-4819-9032-4540ca479dfc">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/E_NOT_OK</SD>
+                                    <SD GID="4409fd7f-bbc6-4ee6-b24e-32e3cd21d722">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/ReadData</SD>
+                                    <SD GID="06f7dd05-0e43-41d3-8019-337a0a8ce687">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/ReadData/Data</SD>
+                                    <SD GID="206752aa-43c5-4966-aa82-e8c856fac487">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUSerialNumber/ReadData/OpStatus</SD>
+                                    <SD GID="5f4ec9f3-ff4b-4f32-a424-a7c2bc04fea2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession</SD>
+                                    <SD GID="b55c9038-0bb1-4597-9d8c-a913bb8be940">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/ConditionCheckRead</SD>
+                                    <SD GID="aee4f8e9-e282-4539-9aa9-e0bbcc13d0bd">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="ac90a8ac-03ab-42ab-9b5f-e3d69a46278c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="bcbfd85b-4e26-420f-81ea-c4a2178b3e7a">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/DCM_E_PENDING</SD>
+                                    <SD GID="429b8951-f8c5-4d8a-a522-ab6361775094">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/E_NOT_OK</SD>
+                                    <SD GID="e802ae51-6d74-49a5-923a-3fdb35f71561">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/ReadData</SD>
+                                    <SD GID="5add5b38-c8d7-4525-bdd3-77e80a794394">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/ReadData/Data</SD>
+                                    <SD GID="d2cb891f-51ad-4f38-9fb2-24e6aae6b916">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadActiveDiagSession/ReadData/OpStatus</SD>
+                                    <SD GID="9f5cb0a7-2cc1-4407-93a9-8229b4c520d9">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint</SD>
+                                    <SD GID="c0f08655-ede8-4aec-90bb-fda178989f6f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/ConditionCheckRead</SD>
+                                    <SD GID="0150a1ac-08ab-492f-ab04-76b6f0b054d2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="2f4f6ed8-e6f2-4749-beef-e389ab309c2d">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="da08618e-723f-48a6-9039-322ea5963af9">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/DCM_E_PENDING</SD>
+                                    <SD GID="4eb41477-dc7d-4a79-a89e-309c911d5928">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/E_NOT_OK</SD>
+                                    <SD GID="47be7fbf-8b0a-46c7-bd75-e7e787bd8e4c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/ReadData</SD>
+                                    <SD GID="992e8978-5bb9-4cca-95e1-58a3235d9c87">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/ReadData/Data</SD>
+                                    <SD GID="6069cc90-62cd-4663-b648-0001a40a550c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ReadFingerprint/ReadData/OpStatus</SD>
+                                    <SD GID="e76cb337-bf94-490e-9306-9b02bcb94388">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint</SD>
+                                    <SD GID="696b5bf7-d4cd-4406-a960-78168094bb5d">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/ConditionCheckRead</SD>
+                                    <SD GID="0dbfaddb-b59e-4e9e-ad95-f74b42720c6f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="96c7542b-ecb6-42a5-9124-5c66c60f771f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="fa27ccbe-c281-42ce-b6f3-556c0ce84936">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/DCM_E_PENDING</SD>
+                                    <SD GID="29a2e702-2130-47d3-b888-154eef4da96c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/E_NOT_OK</SD>
+                                    <SD GID="33f50b68-ad2e-4dbc-9f16-40292b7c118e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/ReadData</SD>
+                                    <SD GID="31d0fa5e-3dbe-47c0-9e3f-2b11fbb3f5e8">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/ReadData/Data</SD>
+                                    <SD GID="c6c30e5f-b283-4e02-9d95-dc0109bb6ead">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/ReadData/OpStatus</SD>
+                                    <SD GID="79cd7d9f-1f11-4e0b-ba8e-181880ec8d40">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/WriteData</SD>
+                                    <SD GID="5f73860a-7c60-4f03-a8ca-d6cdaf6663ba">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/WriteData/Data</SD>
+                                    <SD GID="157a120d-9f2d-4362-9773-12685c6c701a">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/WriteData/ErrorCode</SD>
+                                    <SD GID="344a48c9-aac6-47af-8458-81964a250d04">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_RepairShopFingerPrint/WriteData/OpStatus</SD>
+                                    <SD GID="2c3c5fdf-922b-4fc1-9f6b-849ea29ffd71">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName</SD>
+                                    <SD GID="35b09ac5-272c-4730-b06c-61f48583cd34">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ConditionCheckRead</SD>
+                                    <SD GID="9b472632-3d6a-48ea-abb3-52e8a0e1b0d0">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="0cfcc197-8850-4d75-a8fa-c80fdd54035f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="f62443fb-391f-4857-b68c-b660924cc5da">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/DCM_E_PENDING</SD>
+                                    <SD GID="2a820fc0-79f3-4e40-917c-5db533b35a8a">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/E_NOT_OK</SD>
+                                    <SD GID="5ed70452-57de-47ca-98fc-8be6b4b7cc03">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ReadData</SD>
+                                    <SD GID="c877c54b-d732-43ac-9ceb-80a21f36e9cf">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ReadData/Data</SD>
+                                    <SD GID="661774f4-5fb8-4bf1-bfcc-81354e2a7520">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ReadData/OpStatus</SD>
+                                    <SD GID="e111ef9f-bc79-4ff6-8c81-33e7690e82a3">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ReadDataLength</SD>
+                                    <SD GID="c56c74d6-426b-4b3b-a172-e1968a216b30">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ReadDataLength/DataLength</SD>
+                                    <SD GID="d55080cf-7544-4988-b550-5e4a8f164a1e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemName/ReadDataLength/OpStatus</SD>
+                                    <SD GID="48ab1e85-8981-4707-9371-3d767e5b245f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData</SD>
+                                    <SD GID="78631e6b-2577-4781-987c-fe5e73b46fe4">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/ConditionCheckRead</SD>
+                                    <SD GID="2033f142-0cb2-40be-afd9-e16f89ed7a36">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="c42bd9b6-e9fe-4045-a166-a1d09f0e4424">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="3f4b790d-b817-4d35-8c3b-fed4ebbf5a90">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/DCM_E_PENDING</SD>
+                                    <SD GID="b4c341ba-50e1-47c3-a0c9-d360174b4722">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/E_NOT_OK</SD>
+                                    <SD GID="3e87c743-9cb1-4b34-8ec9-120c7a4eb1a5">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/ReadData</SD>
+                                    <SD GID="b39047a2-3f32-476e-8a47-3ccb622b6346">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/ReadData/Data</SD>
+                                    <SD GID="307762cc-7408-4e86-bb69-d9167ebfd2eb">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_SystemSupplierIdData/ReadData/OpStatus</SD>
+                                    <SD GID="d4c9e6af-de50-4ef5-9945-1e62b359f7d0">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN</SD>
+                                    <SD GID="8421ce2e-2a68-4b62-96dd-61acd5a11ba6">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/ConditionCheckRead</SD>
+                                    <SD GID="e3420cc4-472a-4a2f-a076-815c02247d13">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="5ce06fb9-d27a-473c-ac30-4e26481f5bb3">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="8077dd03-7a6d-40b8-8c72-f98232fc366e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/DCM_E_PENDING</SD>
+                                    <SD GID="7c7f7f89-4693-44f8-8949-9bd46ee19041">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/E_NOT_OK</SD>
+                                    <SD GID="8c8c1da1-58b0-4866-91e1-de17836e6f0c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/ReadData</SD>
+                                    <SD GID="a44e31fe-ba56-4f9f-b36a-fd1e1d7cd2f9">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/ReadData/Data</SD>
+                                    <SD GID="98882e6a-e460-41a1-870f-3c9116eb300e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/ReadData/OpStatus</SD>
+                                    <SD GID="61a9daef-bd12-435a-a548-f8401739120d">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/WriteData</SD>
+                                    <SD GID="5bfdd1cf-abcd-4f87-a536-84cfa010c9ae">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/WriteData/Data</SD>
+                                    <SD GID="d7902f33-0b07-4f51-928c-9992213ff765">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/WriteData/ErrorCode</SD>
+                                    <SD GID="f76a7b15-3caa-4c9c-b49d-ccd8ef00a402">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VIN/WriteData/OpStatus</SD>
+                                    <SD GID="da60e6b4-5a04-4b24-95bb-56c09da232d0">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber</SD>
+                                    <SD GID="40612d9e-6809-4119-b237-58fc3581dbfc">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/ConditionCheckRead</SD>
+                                    <SD GID="acaf34e3-4e8d-4da9-9f3a-0af4fdde8d28">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="f09cf503-c345-4fd3-9348-54af9edcf8d1">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="fb501b1e-fd51-4ac5-8ef6-713d5f049d3a">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/DCM_E_PENDING</SD>
+                                    <SD GID="a308e875-a9e2-4c36-a7aa-9b215ef536d6">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/E_NOT_OK</SD>
+                                    <SD GID="e7e4acb5-9d1e-4722-b0a9-4c555095c5e5">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/ReadData</SD>
+                                    <SD GID="55d4c863-98bc-4a56-a184-74168e0684b8">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/ReadData/Data</SD>
+                                    <SD GID="9a47380a-1037-4978-8b4a-516bc5440f3b">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/ReadData/OpStatus</SD>
+                                    <SD GID="eefccd28-4301-45b8-b17b-a6fd92930693">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/WriteData</SD>
+                                    <SD GID="0405e49b-2358-4b71-8312-c9a2f1cb885f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/WriteData/Data</SD>
+                                    <SD GID="9b6d5156-156f-4052-8749-1c9f7c751910">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/WriteData/ErrorCode</SD>
+                                    <SD GID="9cace6a5-a0b2-451c-8d79-2c901673b79b">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrarionPartNumber/WriteData/OpStatus</SD>
+                                    <SD GID="ca20628f-c35b-4708-a969-b57ae457e0b3">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline</SD>
+                                    <SD GID="39129756-dd3c-478a-8b32-6f653934f2c2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/ConditionCheckRead</SD>
+                                    <SD GID="3299dd1c-1417-472d-b7c1-bbf49c8b4b3c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="57021b69-a4e7-4cb1-9397-e02f610a2019">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="7dddda89-8882-490a-9781-ee29fd2f6f99">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/DCM_E_PENDING</SD>
+                                    <SD GID="67253ae0-0709-467f-8440-c6ef760324d0">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/E_NOT_OK</SD>
+                                    <SD GID="b99bbbdf-24a4-4653-9d22-dd713f8769bb">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/ReadData</SD>
+                                    <SD GID="a34c6c53-4bf5-466c-9851-d21ac5bb4c2c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/ReadData/Data</SD>
+                                    <SD GID="f91a0bc5-f5af-4426-908a-211632aaa9f4">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/ReadData/OpStatus</SD>
+                                    <SD GID="a6bcbcba-f6ae-4021-913f-9cdba1c77c46">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/WriteData</SD>
+                                    <SD GID="0a56eb84-68fb-47e6-9da0-04ca2455aa5e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/WriteData/Data</SD>
+                                    <SD GID="8ec80b39-d99a-4e19-81fc-e402616c8168">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/WriteData/ErrorCode</SD>
+                                    <SD GID="85365d24-0740-459e-b2ee-2dfd55dbc24c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_CalibrationBaseline/WriteData/OpStatus</SD>
+                                    <SD GID="7bbf0ca5-a6b6-436a-aad9-cc4747b9ce15">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber</SD>
+                                    <SD GID="775f84bb-38cb-4659-a46f-23404f31ab3c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/ConditionCheckRead</SD>
+                                    <SD GID="27972d5d-9c3d-4a4b-8867-bf56354969c1">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="9beb5c45-2fe0-4d40-9722-ba21c6690d2b">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="c66f4716-47bb-450a-94a2-396cdc4400a1">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/DCM_E_PENDING</SD>
+                                    <SD GID="2038d953-df0b-4b21-a50f-1e3e888123f9">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/E_NOT_OK</SD>
+                                    <SD GID="ecfebdf5-eef5-4029-aa9c-8f343dfd75d9">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/ReadData</SD>
+                                    <SD GID="bc3183c0-c029-4261-a562-9d8e3dfffc71">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/ReadData/Data</SD>
+                                    <SD GID="3df954af-fc22-4abf-b90a-d0735d7e6b6f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/ReadData/OpStatus</SD>
+                                    <SD GID="c04567ff-9251-4bd2-be35-11d126328337">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/WriteData</SD>
+                                    <SD GID="7f3759a9-9975-47d9-ad9e-b3637e341907">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/WriteData/Data</SD>
+                                    <SD GID="17fa5214-57ff-48e5-856b-20c8f423cec4">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/WriteData/ErrorCode</SD>
+                                    <SD GID="5c247af5-9d90-45e1-b018-3b7d0c813129">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_FOTASpecialPartNumber/WriteData/OpStatus</SD>
+                                    <SD GID="3da0ca9d-d026-4f16-9058-11f0ea1bbd3f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline</SD>
+                                    <SD GID="7427840f-ba33-4e57-ba5d-1e05694d926e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/ConditionCheckRead</SD>
+                                    <SD GID="45cedb4c-1164-42b0-8176-6f370f894ef8">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="fbc52618-29bd-4e73-ad48-34275ba987f1">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="695982a6-c606-4473-a0e5-f53629542c90">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/DCM_E_PENDING</SD>
+                                    <SD GID="b3d9d0cd-69f8-45a6-a243-887dbf596965">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/E_NOT_OK</SD>
+                                    <SD GID="fef2dafd-d865-48af-90d3-9bfca52e7b9e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/ReadData</SD>
+                                    <SD GID="96fc53c1-73aa-4653-a13d-e33463491297">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/ReadData/Data</SD>
+                                    <SD GID="fe6c2e3f-94ce-4693-9134-b9c72fa171c1">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/ReadData/OpStatus</SD>
+                                    <SD GID="8ba74385-3caf-4ad1-bece-51b4c6b370b3">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/WriteData</SD>
+                                    <SD GID="60444c58-6d2b-4526-b3b2-fa3e613c126f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/WriteData/Data</SD>
+                                    <SD GID="40856e0d-adbc-4366-aa9c-9b3d2f2d8126">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/WriteData/ErrorCode</SD>
+                                    <SD GID="f90099bb-4e9b-4505-9dff-f9641f65d94f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SoftwarBaseline/WriteData/OpStatus</SD>
+                                    <SD GID="7cfeafa9-44c4-4bb5-8c73-392cab3322e9">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber</SD>
+                                    <SD GID="a2d47517-6134-424d-9285-1cb5da777243">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/ConditionCheckRead</SD>
+                                    <SD GID="b3a58660-a874-4201-9dcc-6464de786cf3">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="86b3a50c-c817-41e3-83ea-7d667ca1de83">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="09926b35-e9df-4691-afa3-fa041a4e07ed">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/DCM_E_PENDING</SD>
+                                    <SD GID="0ac090d4-42f0-4a77-bc02-46540b008829">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/E_NOT_OK</SD>
+                                    <SD GID="f142bb72-8440-479a-99fd-23e0b894cd3b">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/ReadData</SD>
+                                    <SD GID="4f51855f-fd57-434d-ac0a-fe6ccbc2d9a4">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/ReadData/Data</SD>
+                                    <SD GID="6a5b7a6f-4348-4138-88cd-485ec84277db">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/ReadData/OpStatus</SD>
+                                    <SD GID="a129761f-5a7b-47e7-a2f2-b3a4a013ee4a">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/WriteData</SD>
+                                    <SD GID="c8e99d14-ba36-4d7f-a890-a6ca38dca5c8">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/WriteData/Data</SD>
+                                    <SD GID="ddfebdeb-e699-4b17-9286-7519db8e2833">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/WriteData/ErrorCode</SD>
+                                    <SD GID="d6313fa0-b17c-4fa1-8df6-0bb1670c89fc">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SofwarePartNumber/WriteData/OpStatus</SD>
+                                    <SD GID="5c9f3144-9af3-4d82-8d31-96412b58d129">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber</SD>
+                                    <SD GID="4b240c4d-905f-4397-99d7-61d9d6a4e6d7">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/ConditionCheckRead</SD>
+                                    <SD GID="6297b269-3365-4f7f-9919-26b1d222fea9">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="553711bb-dbdd-4fed-b85f-ff56e877240b">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="78f9e097-3359-4575-91b0-77f8df048443">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/DCM_E_PENDING</SD>
+                                    <SD GID="0df482b4-5f5b-4371-bb45-76b1d0f0a775">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/E_NOT_OK</SD>
+                                    <SD GID="07332a42-2ef0-4c71-8782-c24d14d665ed">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/ReadData</SD>
+                                    <SD GID="199e8fe9-5193-4847-8945-84bc148ad97b">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/ReadData/Data</SD>
+                                    <SD GID="ec58ac52-9401-4ef3-9454-676b2bdcec3c">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/ReadData/OpStatus</SD>
+                                    <SD GID="d3ab6b8c-8f24-4b81-bb60-89a71b2edcc8">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/WriteData</SD>
+                                    <SD GID="28a8e7cb-61e3-495f-a81f-dcb6cadb8259">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/WriteData/Data</SD>
+                                    <SD GID="b3f0c707-43c7-4b28-b469-5852d5d929f3">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/WriteData/ErrorCode</SD>
+                                    <SD GID="48c86518-ed45-455d-8e7d-fb1bf199f213">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_SparepartNumber/WriteData/OpStatus</SD>
+                                    <SD GID="cda55bcb-7679-44db-b053-f417e5298bf7">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline</SD>
+                                    <SD GID="642cd2a2-85ef-4084-9cb3-201c7aecb3d4">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ConditionCheckRead</SD>
+                                    <SD GID="567c27fd-74c6-41bc-9e19-867eac2adb05">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="3a605d8c-c9e8-4c0b-9c33-d128fb695205">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="5ecc94cb-9e72-4fb3-b680-a79e960630c7">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/DCM_E_PENDING</SD>
+                                    <SD GID="05433706-0a7b-41da-8491-168dc3962a8f">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/E_NOT_OK</SD>
+                                    <SD GID="1402c7c1-373f-4154-8b68-8e0123383690">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ReadData</SD>
+                                    <SD GID="b79deb79-f65a-42d7-89a1-668555ed9dec">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ReadData/Data</SD>
+                                    <SD GID="9b0bb2dd-1a0c-4a98-bdfd-2def6b0c2b4a">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ReadData/OpStatus</SD>
+                                    <SD GID="1852535b-a542-43d1-bb56-1ae721c60338">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ReadDataLength</SD>
+                                    <SD GID="20f02c0b-9b1e-4929-a66c-497961a633e7">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ReadDataLength/DataLength</SD>
+                                    <SD GID="83b05e05-8697-4ff2-ae38-15955457d7d5">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/ReadDataLength/OpStatus</SD>
+                                    <SD GID="6c87b5ff-36a4-45d4-8fcd-2c6f849a0496">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/WriteData</SD>
+                                    <SD GID="e6c3cbad-e32a-42c4-85f6-2e144546a623">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/WriteData/Data</SD>
+                                    <SD GID="d5e2b87b-f883-4930-bc40-b0ff835dff4a">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/WriteData/DataLength</SD>
+                                    <SD GID="1efcb855-44dd-42ec-aefe-499db6ba0e65">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/WriteData/ErrorCode</SD>
+                                    <SD GID="533fdcf5-fd63-4363-ae75-2f7c2f5c62b5">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_VM_Specialdatabaseline/WriteData/OpStatus</SD>
                                     <SD GID="d4486642-e972-4a63-ae07-92ed2d95cb67">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</SD>
                                     <SD GID="4126f705-9ff0-4b5c-8d00-cf35e1845970">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/ConditionCheckRead</SD>
                                     <SD GID="9ccced1b-0fb7-48e0-a9db-9b65ddf92b47">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/DCM_E_PENDING</SD>
                                     <SD GID="f51576ec-1c7b-46de-84ea-f0fb168912af">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/E_NOT_OK</SD>
                                     <SD GID="aaca6602-63ae-4d24-aba6-4271276da6fd">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/ReadData</SD>
                                     <SD GID="7f3dc4b4-6a1c-4f94-a301-50e16dcf64cd">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/WriteData</SD>
+                                    <SD GID="f87d7e25-3a35-42ec-b1a3-e24acd209087">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline</SD>
+                                    <SD GID="68564bec-7dcc-4646-a044-5ab2436e936a">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/ConditionCheckRead</SD>
+                                    <SD GID="01cce169-b0cf-4dd1-bd05-7f285fd828ca">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="dd1788c6-4062-46f6-a831-d687dbd46b85">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="6beabdf0-079b-43df-9e41-2a3d0dc71b3a">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/DCM_E_PENDING</SD>
+                                    <SD GID="0c746253-93d3-4fe5-b56e-bab748f7a3fd">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/E_NOT_OK</SD>
+                                    <SD GID="36eb21ef-9713-42cd-9e52-5d6b2e67919e">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/ReadData</SD>
+                                    <SD GID="13d689ac-6291-4e0c-ab0d-e06b07c800ae">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/ReadData/Data</SD>
+                                    <SD GID="9f55a855-3598-4c6b-a8a6-8c885b3f6ced">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/ReadData/OpStatus</SD>
+                                    <SD GID="156ec893-58b0-4fff-b49e-92f4839478ec">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/WriteData</SD>
+                                    <SD GID="48e51303-ed5f-4c8e-bbbc-cd1f12a1c35f">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/WriteData/Data</SD>
+                                    <SD GID="eacf88c8-ec06-4a07-b0a1-be3f13a5b158">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/WriteData/ErrorCode</SD>
+                                    <SD GID="9bb8c635-efcf-45d5-bd8a-a824c343fcf1">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwareBaseline/WriteData/OpStatus</SD>
+                                    <SD GID="5683f37f-c333-4e27-9ea1-975ba2eb710d">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber</SD>
+                                    <SD GID="fdd51013-3e10-4f01-87b1-053244fcbcbd">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/ConditionCheckRead</SD>
+                                    <SD GID="f5a2c2b7-5061-47e7-8cac-f314987c348e">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/ConditionCheckRead/ErrorCode</SD>
+                                    <SD GID="82c64ec7-5220-465d-b963-af877716de99">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/ConditionCheckRead/OpStatus</SD>
+                                    <SD GID="50668d2b-0e9f-4b0a-9a7a-de3982437d7c">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/DCM_E_PENDING</SD>
+                                    <SD GID="cc4c03d5-f0f8-4d40-9605-8701011dbc60">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/E_NOT_OK</SD>
+                                    <SD GID="1c3d0cf4-faab-4265-b6d2-097aacdd62c7">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/ReadData</SD>
+                                    <SD GID="417f8987-9b97-4346-81bf-f6f1c2e4c5db">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/ReadData/Data</SD>
+                                    <SD GID="bf17803b-4ac6-4564-b976-1d6d69ecc1fc">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/ReadData/OpStatus</SD>
+                                    <SD GID="850153f9-97aa-4ce3-9932-b132d1e3f642">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/WriteData</SD>
+                                    <SD GID="c7c48fba-73dd-4fae-9a5e-620fa8510c71">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/WriteData/Data</SD>
+                                    <SD GID="d344e86a-6bcc-4c20-abb1-59127f250fba">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/WriteData/ErrorCode</SD>
+                                    <SD GID="6c5dba93-b3b8-4680-bbab-9d4f680221bd">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_VM_HardwarePartNumber/WriteData/OpStatus</SD>
                                     <SD GID="9c75f0ff-b6ef-49d7-bcda-1689eb8ad2f9">/MICROSAR/Dcm_swc/Interfaces/DcmControlDtcSetting</SD>
                                     <SD GID="b18330ba-b4c1-4f56-9479-88a7a41c35f6">/MICROSAR/Dcm_swc/Interfaces/DcmControlDtcSetting/DcmControlDtcSetting</SD>
                                     <SD GID="7a20f2ad-6ac6-40f5-ad15-3ddf2d5fdf13">/MICROSAR/Dcm_swc/Interfaces/DcmDiagnosticSessionControl</SD>
@@ -2778,6 +3512,18 @@
                                     <SD GID="cb4757c3-1594-4762-8cb5-6a4eb71ce6dd">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/DCM_E_PENDING</SD>
                                     <SD GID="d71b0d48-7484-4398-b3ad-bd718ca684c0">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/E_NOT_OK</SD>
                                     <SD GID="fc9fb5ca-0cf1-4116-8f98-7ea62512abc4">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/GetSeed</SD>
+                                    <SD GID="2420de97-515f-43ea-b88f-ff44543cb035">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02</SD>
+                                    <SD GID="a226d808-258b-45fb-bb10-5a3e16d4ec2e">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/CompareKey</SD>
+                                    <SD GID="f9316300-5666-4f4f-bdea-e10de9b9b105">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/CompareKey/ErrorCode</SD>
+                                    <SD GID="b2e9f3c0-bb37-4260-bf3e-8b8aa3009f97">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/CompareKey/Key</SD>
+                                    <SD GID="ae86740d-8589-48f2-9844-b0ea270df562">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/CompareKey/OpStatus</SD>
+                                    <SD GID="cf699dce-de53-4e05-a99f-52acb3997186">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/DCM_E_COMPARE_KEY_FAILED</SD>
+                                    <SD GID="472d5d80-8099-4d04-9f96-17b043fcf31a">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/DCM_E_PENDING</SD>
+                                    <SD GID="e61635ba-721c-4398-809a-91f02b0cc39f">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/E_NOT_OK</SD>
+                                    <SD GID="db3f4022-f945-4a6f-9903-ac9e18cb0f45">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/GetSeed</SD>
+                                    <SD GID="b971db8b-2377-439c-96d5-a2529a92db12">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/GetSeed/ErrorCode</SD>
+                                    <SD GID="a64e6ec9-2d54-42c6-872e-f372f9020c00">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/GetSeed/OpStatus</SD>
+                                    <SD GID="aab27837-7b82-443e-ae0e-209c42fca936">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_02/GetSeed/Seed</SD>
                                     <SD GID="8e4754a8-68f2-496b-a679-95b9bac82fef">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior</SD>
                                     <SD GID="4ae289d4-a146-4820-934d-808b6e4ae3eb">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/DEM_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="2f25f203-f809-4a3d-af6e-9ff5d0f9b027">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/DEM_EXCLUSIVE_AREA_1</SD>

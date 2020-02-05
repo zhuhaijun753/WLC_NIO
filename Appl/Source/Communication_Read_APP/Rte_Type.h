@@ -13,7 +13,7 @@
  *             File:  Rte_Type.h
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
  *        SW-C Type:  Communication_Read_APP
- *  Generation Time:  2020-02-05 11:25:12
+ *  Generation Time:  2020-02-05 20:41:34
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0
@@ -135,6 +135,9 @@ typedef uint8 WLCFailSts;
 # define Rte_TypeDef_WLCImobSts
 typedef uint8 WLCImobSts;
 
+# define Rte_TypeDef_Dcm_Data2ByteType
+typedef uint8 Dcm_Data2ByteType[2];
+
 # define Rte_TypeDef_Dcm_Data4ByteType
 typedef uint8 Dcm_Data4ByteType[4];
 
@@ -158,9 +161,6 @@ typedef const void * dtRef_const_VOID;
 
 #  define Rte_TypeDef_DataArrayType_uint8_4
 typedef uint8 DataArrayType_uint8_4[4];
-
-#  define Rte_TypeDef_Dcm_Data2ByteType
-typedef uint8 Dcm_Data2ByteType[2];
 
 #  define Rte_TypeDef_Dem_MaxDataValueType
 typedef uint8 Dem_MaxDataValueType[4];

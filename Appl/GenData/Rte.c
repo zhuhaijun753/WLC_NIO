@@ -138,6 +138,26 @@ FUNC(void, RTE_CODE) Rte_MemClr(P2VAR(void, AUTOMATIC, RTE_VAR_NOINIT) ptr, uint
 /**********************************************************************************************************************
  * Helper functions for mode management
  *********************************************************************************************************************/
+FUNC(uint8, RTE_CODE) Rte_GetInternalModeIndex_Dcm_DcmControlDtcSetting(Dcm_ControlDtcSettingType mode) /* PRQA S 3408 */ /* MD_Rte_3408 */
+{
+  uint8 ret;
+
+  if (mode == 0U)
+  {
+    ret = 1U;
+  }
+  else if (mode == 1U)
+  {
+    ret = 0U;
+  }
+  else
+  {
+    ret = 2U;
+  }
+
+  return ret;
+}
+
 FUNC(uint8, RTE_CODE) Rte_GetInternalModeIndex_Dcm_DcmEcuReset(Dcm_EcuResetType mode) /* PRQA S 3408 */ /* MD_Rte_3408 */
 {
   uint8 ret;
@@ -191,6 +211,7 @@ FUNC(uint8, RTE_CODE) Rte_GetInternalModeIndex_Dcm_DcmEcuReset(Dcm_EcuResetType 
 
 VAR(BswM_ESH_Mode, RTE_VAR_NOINIT) Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode; /* PRQA S 3408 */ /* MD_Rte_3408 */
 
+VAR(Dcm_ControlDtcSettingType, RTE_VAR_NOINIT) Rte_ModeMachine_Dcm_DcmControlDtcSetting_DcmControlDtcSetting; /* PRQA S 3408 */ /* MD_Rte_3408 */
 VAR(Dcm_EcuResetType, RTE_VAR_NOINIT) Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuReset; /* PRQA S 3408 */ /* MD_Rte_3408 */
 
 #define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
@@ -267,11 +288,14 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void) /* PRQA S 0850 */ /* MD_MSR_19.8 
   /* reset Tx Ack Flags */
   Rte_AckFlagsInit();
   Rte_AckFlags.Rte_ModeSwitchAck_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Ack = 1;
+  Rte_AckFlags.Rte_ModeSwitchAck_Dcm_DcmControlDtcSetting_DcmControlDtcSetting_Ack = 1;
   Rte_AckFlags.Rte_ModeSwitchAck_Dcm_DcmEcuReset_DcmEcuReset_Ack = 1;
 
   /* mode management initialization part 1 */
 
   Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode = RTE_MODE_BswM_ESH_Mode_STARTUP;
+
+  Rte_ModeMachine_Dcm_DcmControlDtcSetting_DcmControlDtcSetting = RTE_MODE_Dcm_DcmControlDtcSetting_ENABLEDTCSETTING;
 
   Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuReset = RTE_MODE_Dcm_DcmEcuReset_NONE;
 
@@ -492,28 +516,6 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Read_BswM_Request_ESH_RunRequest_1_requestedM
  * Internal C/S connections
  *********************************************************************************************************************/
 
-FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_SecurityAccess_Level_01_CompareKey(P2CONST(Dcm_Data2ByteType, AUTOMATIC, RTE_DCM_APPL_DATA) Key, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DCM_APPL_VAR) ErrorCode) /* PRQA S 0850, 1505, 3206, 3673 */ /* MD_MSR_19.8, MD_MSR_8.10, MD_Rte_3206, MD_Rte_Qac */
-{
-  Std_ReturnType ret = RTE_E_UNCONNECTED; /* PRQA S 3197 */ /* MD_Rte_3197 */
-
-  Key = Key;
-  OpStatus = OpStatus;
-  ErrorCode = ErrorCode;
-
-  return ret;
-}
-
-FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_SecurityAccess_Level_01_GetSeed(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data2ByteType, AUTOMATIC, RTE_DCM_APPL_VAR) Seed, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DCM_APPL_VAR) ErrorCode) /* PRQA S 0850, 1505, 3206, 3673 */ /* MD_MSR_19.8, MD_MSR_8.10, MD_Rte_3206, MD_Rte_Qac */
-{
-  Std_ReturnType ret = RTE_E_UNCONNECTED; /* PRQA S 3197 */ /* MD_Rte_3197 */
-
-  OpStatus = OpStatus;
-  Seed = Seed;
-  ErrorCode = ErrorCode;
-
-  return ret;
-}
-
 FUNC(Std_ReturnType, RTE_CODE) Rte_Call_DemMaster_0_CBReadData_OccurrenceCounter_OccurenceCounter_ReadData(P2VAR(DataArrayType_uint8_4, AUTOMATIC, RTE_DEMMASTER_0_APPL_VAR) Data) /* PRQA S 0850, 1505, 3206, 3673 */ /* MD_MSR_19.8, MD_MSR_8.10, MD_Rte_3206, MD_Rte_Qac */
 {
   Std_ReturnType ret = RTE_E_UNCONNECTED; /* PRQA S 3197 */ /* MD_Rte_3197 */
@@ -667,14 +669,34 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_SwitchAck_Dcm_DcmEcuReset_DcmEcuReset(void) /
  * Mode Switch API (Rte_Switch)
  *********************************************************************************************************************/
 
-FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_Dcm_DcmControlDtcSetting_DcmControlDtcSetting(Dcm_ControlDtcSettingType nextMode) /* PRQA S 0850, 1505, 3206 */ /* MD_MSR_19.8, MD_MSR_8.10, MD_Rte_3206 */
+FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_Dcm_DcmControlDtcSetting_DcmControlDtcSetting(Dcm_ControlDtcSettingType nextMode) /* PRQA S 0850, 1505 */ /* MD_MSR_19.8, MD_MSR_8.10 */
 {
   Std_ReturnType ret = RTE_E_OK;
 
-  nextMode = nextMode;
+  uint8 internalIndexNextMode = Rte_GetInternalModeIndex_Dcm_DcmControlDtcSetting(nextMode);
+  uint8 internalIndexCurrentMode;
+  Dcm_ControlDtcSettingType currentMode;
+  SuspendOSInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+  currentMode = Rte_ModeMachine_Dcm_DcmControlDtcSetting_DcmControlDtcSetting;
+  internalIndexCurrentMode = Rte_GetInternalModeIndex_Dcm_DcmControlDtcSetting(currentMode);
+  if (internalIndexNextMode >= 2U)
+  {
+    ResumeOSInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+    ret = RTE_E_LIMIT;
+  }
+  else if (internalIndexCurrentMode >= 2U)
+  {
+    ResumeOSInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+    ret = RTE_E_LIMIT;
+  }
+  else
+  {
+    Rte_ModeMachine_Dcm_DcmControlDtcSetting_DcmControlDtcSetting = nextMode;
+    ResumeOSInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+  }
 
   return ret;
-}
+} /* PRQA S 6050 */ /* MD_MSR_STCAL */
 
 FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_Dcm_DcmDiagnosticSessionControl_DcmDiagnosticSessionControl(Dcm_DiagnosticSessionControlType nextMode) /* PRQA S 0850, 1505, 3206 */ /* MD_MSR_19.8, MD_MSR_8.10, MD_Rte_3206 */
 {
