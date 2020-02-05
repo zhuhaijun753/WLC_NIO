@@ -846,6 +846,31 @@
               </REQUIRED-COM-SPECS>
               <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DcmEcuReset</REQUIRED-INTERFACE-TREF>
             </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="A201F79E-7D84-42DF-8EBB-160265B3AC6B">
+              <SHORT-NAME>DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
           </PORTS>
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="71A74260-FE74-40BC-B2DD-7AB3978B67ED">
@@ -856,6 +881,30 @@
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/ComReadandWrite_Runnable</START-ON-EVENT-REF>
                   <PERIOD>0.01</PERIOD>
                 </TIMING-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="B0D89E14-B796-4F68-8FD9-7B37FF325AE8">
+                  <SHORT-NAME>OIT_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData_DataServices_Diag_RWDI_LightOnOffCounter_9798F8A6</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="181D4EBC-CBC4-4613-8AEB-9A6F03E9C500">
+                  <SHORT-NAME>OIT_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead_DataServices_Diag_RWDI_LightOnOf2065F94A</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="B58E1F65-55E6-4050-9283-8DDA765926C8">
+                  <SHORT-NAME>OIT_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData_DataServices_Diag_RWDI_LightOnOffCounter_LBCB6C10A</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
               </EVENTS>
               <RUNNABLES>
                 <RUNNABLE-ENTITY UUID="2E154164-AC95-46E8-9881-2975EC739D87">
@@ -1180,6 +1229,15 @@
                       </MODE-GROUP-IREF>
                     </MODE-ACCESS-POINT>
                   </MODE-ACCESS-POINTS>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="29C151A4-9C8D-44B8-85F6-3B8E79115206">
+                  <SHORT-NAME>DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="A08BF28F-7EE5-4755-9837-7BA6372B047A">
+                  <SHORT-NAME>DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="FD84799E-7421-42B6-ACB9-930B6C3B949B">
+                  <SHORT-NAME>DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData</SHORT-NAME>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
             </SWC-INTERNAL-BEHAVIOR>

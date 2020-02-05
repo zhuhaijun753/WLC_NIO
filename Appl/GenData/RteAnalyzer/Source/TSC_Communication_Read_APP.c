@@ -232,6 +232,87 @@ uint8 TSC_Communication_Read_APP_Rte_Mode_DcmEcuReset_DcmEcuReset(void)
 
 
 
+
+
+
+
+
+
+     /* Client Server Interfaces: */
+
+
+     /* Service calls */
+
+
+     /* Mode Interfaces */
+
+
+
+
+     /* Trigger Interfaces */
+
+     /* Inter-Runnable variables */
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* Client Server Interfaces: */
+
+
+     /* Service calls */
+
+
+     /* Mode Interfaces */
+
+
+
+
+     /* Trigger Interfaces */
+
+     /* Inter-Runnable variables */
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* Client Server Interfaces: */
+
+
+     /* Service calls */
+
+
+     /* Mode Interfaces */
+
+
+
+
+     /* Trigger Interfaces */
+
+     /* Inter-Runnable variables */
+
+
+
+
+
+
+
      /* Communication_Read_APP */
       /* Communication_Read_APP */
 

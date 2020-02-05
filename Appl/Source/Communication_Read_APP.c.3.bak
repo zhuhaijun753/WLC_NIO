@@ -16,7 +16,7 @@
  *             File:  Communication_Read_APP.c
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
  *        SW-C Type:  Communication_Read_APP
- *  Generation Time:  2020-02-05 11:25:12
+ *  Generation Time:  2020-01-15 11:48:02
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0
@@ -34,32 +34,6 @@
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of version logging area >>                  DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-
-/**********************************************************************************************************************
- *
- * AUTOSAR Modelling Object Descriptions
- *
- **********************************************************************************************************************
- *
- * Data Types:
- * ===========
- * Dcm_NegativeResponseCodeType
- *   uint8 represents integers with a minimum value of 0 and a maximum value of 255.
- *      The order-relation on uint8 is: x < y if y - x is positive.
- *      uint8 has a lexical representation consisting of a finite-length sequence 
- *      of decimal digits (#x30-#x39).
- *      
- *      For example: 1, 0, 126, +10.
- *
- * Dcm_OpStatusType
- *   uint8 represents integers with a minimum value of 0 and a maximum value of 255.
- *      The order-relation on uint8 is: x < y if y - x is positive.
- *      uint8 has a lexical representation consisting of a finite-length sequence 
- *      of decimal digits (#x30-#x39).
- *      
- *      For example: 1, 0, 126, +10.
- *
  *********************************************************************************************************************/
 
 #include "Rte_Communication_Read_APP.h" /* PRQA S 0857 */ /* MD_MSR_1.1_857 */
@@ -105,7 +79,6 @@
  * WLC_02_CRC: Integer in interval [0...255]
  * WLC_02_MsgCntr: Integer in interval [0...15]
  * Yr: Integer in interval [0...255]
- * uint8: Integer in interval [0...255] (standard type)
  *
  * Enumeration Types:
  * ==================
@@ -119,69 +92,6 @@
  *   Cx1_Comfort_enabled (1U)
  *   Cx2_Reserved (2U)
  *   Cx3_Invalid (3U)
- * Dcm_NegativeResponseCodeType: Enumeration of integer in interval [0...254] with enumerators
- *   DCM_E_POSITIVERESPONSE (0U)
- *   DCM_E_GENERALREJECT (16U)
- *   DCM_E_SERVICENOTSUPPORTED (17U)
- *   DCM_E_SUBFUNCTIONNOTSUPPORTED (18U)
- *   DCM_E_INCORRECTMESSAGELENGTHORINVALIDFORMAT (19U)
- *   DCM_E_RESPONSETOOLONG (20U)
- *   DCM_E_BUSYREPEATREQUEST (33U)
- *   DCM_E_CONDITIONSNOTCORRECT (34U)
- *   DCM_E_REQUESTSEQUENCEERROR (36U)
- *   DCM_E_NORESPONSEFROMSUBNETCOMPONENT (37U)
- *   DCM_E_FAILUREPREVENTSEXECUTIONOFREQUESTEDACTION (38U)
- *   DCM_E_REQUESTOUTOFRANGE (49U)
- *   DCM_E_SECURITYACCESSDENIED (51U)
- *   DCM_E_INVALIDKEY (53U)
- *   DCM_E_EXCEEDNUMBEROFATTEMPTS (54U)
- *   DCM_E_REQUIREDTIMEDELAYNOTEXPIRED (55U)
- *   DCM_E_UPLOADDOWNLOADNOTACCEPTED (112U)
- *   DCM_E_TRANSFERDATASUSPENDED (113U)
- *   DCM_E_GENERALPROGRAMMINGFAILURE (114U)
- *   DCM_E_WRONGBLOCKSEQUENCECOUNTER (115U)
- *   DCM_E_REQUESTCORRECTLYRECEIVEDRESPONSEPENDING (120U)
- *   DCM_E_SUBFUNCTIONNOTSUPPORTEDINACTIVESESSION (126U)
- *   DCM_E_SERVICENOTSUPPORTEDINACTIVESESSION (127U)
- *   DCM_E_RPMTOOHIGH (129U)
- *   DCM_E_RPMTOOLOW (130U)
- *   DCM_E_ENGINEISRUNNING (131U)
- *   DCM_E_ENGINEISNOTRUNNING (132U)
- *   DCM_E_ENGINERUNTIMETOOLOW (133U)
- *   DCM_E_TEMPERATURETOOHIGH (134U)
- *   DCM_E_TEMPERATURETOOLOW (135U)
- *   DCM_E_VEHICLESPEEDTOOHIGH (136U)
- *   DCM_E_VEHICLESPEEDTOOLOW (137U)
- *   DCM_E_THROTTLE_PEDALTOOHIGH (138U)
- *   DCM_E_THROTTLE_PEDALTOOLOW (139U)
- *   DCM_E_TRANSMISSIONRANGENOTINNEUTRAL (140U)
- *   DCM_E_TRANSMISSIONRANGENOTINGEAR (141U)
- *   DCM_E_BRAKESWITCH_NOTCLOSED (143U)
- *   DCM_E_SHIFTERLEVERNOTINPARK (144U)
- *   DCM_E_TORQUECONVERTERCLUTCHLOCKED (145U)
- *   DCM_E_VOLTAGETOOHIGH (146U)
- *   DCM_E_VOLTAGETOOLOW (147U)
- *   DCM_E_VMSCNC_0 (240U)
- *   DCM_E_VMSCNC_1 (241U)
- *   DCM_E_VMSCNC_2 (242U)
- *   DCM_E_VMSCNC_3 (243U)
- *   DCM_E_VMSCNC_4 (244U)
- *   DCM_E_VMSCNC_5 (245U)
- *   DCM_E_VMSCNC_6 (246U)
- *   DCM_E_VMSCNC_7 (247U)
- *   DCM_E_VMSCNC_8 (248U)
- *   DCM_E_VMSCNC_9 (249U)
- *   DCM_E_VMSCNC_A (250U)
- *   DCM_E_VMSCNC_B (251U)
- *   DCM_E_VMSCNC_C (252U)
- *   DCM_E_VMSCNC_D (253U)
- *   DCM_E_VMSCNC_E (254U)
- * Dcm_OpStatusType: Enumeration of integer in interval [0...64] with enumerators
- *   DCM_INITIAL (0U)
- *   DCM_PENDING (1U)
- *   DCM_CANCEL (2U)
- *   DCM_FORCE_RCRRP_OK (3U)
- *   DCM_FORCE_RCRRP_NOT_OK (64U)
  * ImobEnaReq: Enumeration of integer in interval [0...3] with enumerators
  *   Cx0_Disable (0U)
  *   Cx1_Enable_AID1 (1U)
@@ -281,10 +191,6 @@
  *   Cx2_Reserved (2U)
  *   Cx3_Invalid (3U)
  *
- * Array Types:
- * ============
- * Dcm_Data4ByteType: Array with 4 element(s) of type uint8
- *
  *********************************************************************************************************************/
 
 
@@ -346,19 +252,6 @@
  *   Std_ReturnType Rte_Write_WLC_02_CRC_WLC_02_CRC(WLC_02_CRC data)
  *   Std_ReturnType Rte_Write_WLC_02_MsgCntr_WLC_02_MsgCntr(WLC_02_MsgCntr data)
  *
- * Mode Interfaces:
- * ================
- *   uint8 Rte_Mode_DcmEcuReset_DcmEcuReset(void)
- *   Modes of Rte_ModeType_DcmEcuReset:
- *   - RTE_MODE_DcmEcuReset_EXECUTE
- *   - RTE_MODE_DcmEcuReset_HARD
- *   - RTE_MODE_DcmEcuReset_JUMPTOBOOTLOADER
- *   - RTE_MODE_DcmEcuReset_JUMPTOSYSSUPPLIERBOOTLOADER
- *   - RTE_MODE_DcmEcuReset_KEYONOFF
- *   - RTE_MODE_DcmEcuReset_NONE
- *   - RTE_MODE_DcmEcuReset_SOFT
- *   - RTE_TRANSITION_DcmEcuReset
- *
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
@@ -377,149 +270,6 @@ FUNC(void, Communication_Read_APP_CODE) ComReadandWrite_Runnable(void) /* PRQA S
  * Symbol: ComReadandWrite_Runnable
  *********************************************************************************************************************/
 
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-}
-
-/**********************************************************************************************************************
- *
- * Runnable Entity Name: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead
- *
- *---------------------------------------------------------------------------------------------------------------------
- *
- * Executed if at least one of the following trigger conditions occurred:
- *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value>
- *
- **********************************************************************************************************************
- *
- * Runnable prototype:
- * ===================
- *   Std_ReturnType DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
- *
- **********************************************************************************************************************
- *
- * Available Application Errors:
- * =============================
- *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_DCM_E_PENDING
- *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_E_NOT_OK
- *
- *********************************************************************************************************************/
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
- * Symbol: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead_doc
- *********************************************************************************************************************/
-
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-
-FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
-{
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
- * Symbol: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead (returns application error)
- *********************************************************************************************************************/
-
-  return RTE_E_OK;
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-}
-
-/**********************************************************************************************************************
- *
- * Runnable Entity Name: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData
- *
- *---------------------------------------------------------------------------------------------------------------------
- *
- * Executed if at least one of the following trigger conditions occurred:
- *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value>
- *
- **********************************************************************************************************************
- *
- * Runnable prototype:
- * ===================
- *   Std_ReturnType DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
- *     Argument Data: uint8* is of type Dcm_Data4ByteType
- *
- **********************************************************************************************************************
- *
- * Available Application Errors:
- * =============================
- *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_DCM_E_PENDING
- *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_E_NOT_OK
- *
- *********************************************************************************************************************/
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
- * Symbol: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData_doc
- *********************************************************************************************************************/
-
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-
-FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data) /* PRQA S 0850 */ /* MD_MSR_19.8 */
-{
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
- * Symbol: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData (returns application error)
- *********************************************************************************************************************/
-
-  return RTE_E_OK;
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-}
-
-/**********************************************************************************************************************
- *
- * Runnable Entity Name: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData
- *
- *---------------------------------------------------------------------------------------------------------------------
- *
- * Executed if at least one of the following trigger conditions occurred:
- *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value>
- *
- **********************************************************************************************************************
- *
- * Runnable prototype:
- * ===================
- *   Std_ReturnType DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
- *     Argument Data: uint8* is of type Dcm_Data4ByteType
- *
- **********************************************************************************************************************
- *
- * Available Application Errors:
- * =============================
- *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_DCM_E_PENDING
- *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_E_NOT_OK
- *
- *********************************************************************************************************************/
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
- * Symbol: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData_doc
- *********************************************************************************************************************/
-
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-
-FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode) /* PRQA S 0850 */ /* MD_MSR_19.8 */
-{
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
- * Symbol: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData (returns application error)
- *********************************************************************************************************************/
-
-  return RTE_E_OK;
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!

@@ -56,17 +56,6 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_Dcm_DcmControlDtcSetting_DcmControlDtc
 FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_Dcm_DcmDiagnosticSessionControl_DcmDiagnosticSessionControl(Dcm_DiagnosticSessionControlType nextMode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_Dcm_DcmEcuReset_DcmEcuReset(Dcm_EcuResetType nextMode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 FUNC(Std_ReturnType, RTE_CODE) Rte_SwitchAck_Dcm_DcmEcuReset_DcmEcuReset(void); /* PRQA S 0850 */ /* MD_MSR_19.8 */
-FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DCM_APPL_VAR) ErrorCode); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
-# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
-FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_DCM_APPL_VAR) Data); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
-# else
-FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_DCM_APPL_VAR) Data); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
-# endif
-# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
-FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData(P2CONST(uint8, AUTOMATIC, RTE_DCM_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DCM_APPL_VAR) ErrorCode); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
-# else
-FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_DCM_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DCM_APPL_VAR) ErrorCode); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
-# endif
 # ifdef RTE_PTR2ARRAYBASETYPE_PASSING
 FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_SecurityAccess_Level_01_CompareKey(P2CONST(uint8, AUTOMATIC, RTE_DCM_APPL_DATA) Key, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DCM_APPL_VAR) ErrorCode); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
 # else
@@ -101,9 +90,35 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_SecurityAccess_Level_01_GetSeed(Dcm_
 /**********************************************************************************************************************
  * Rte_Call_<p>_<o> (unmapped) for synchronous C/S communication
  *********************************************************************************************************************/
-#  define Rte_Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead Rte_Call_Dcm_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead
-#  define Rte_Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData Rte_Call_Dcm_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData
-#  define Rte_Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData Rte_Call_Dcm_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData
+#  define RTE_START_SEC_COMMUNICATION_READ_APP_APPL_CODE
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+FUNC(Std_ReturnType, RTE_COMMUNICATION_READ_APP_APPL_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
+#  define RTE_STOP_SEC_COMMUNICATION_READ_APP_APPL_CODE
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+#  define Rte_Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead
+#  define RTE_START_SEC_COMMUNICATION_READ_APP_APPL_CODE
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+#  ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, RTE_COMMUNICATION_READ_APP_APPL_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
+#  else
+FUNC(Std_ReturnType, RTE_COMMUNICATION_READ_APP_APPL_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
+#  endif
+#  define RTE_STOP_SEC_COMMUNICATION_READ_APP_APPL_CODE
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+#  define Rte_Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData
+#  define RTE_START_SEC_COMMUNICATION_READ_APP_APPL_CODE
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+#  ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, RTE_COMMUNICATION_READ_APP_APPL_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
+#  else
+FUNC(Std_ReturnType, RTE_COMMUNICATION_READ_APP_APPL_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
+#  endif
+#  define RTE_STOP_SEC_COMMUNICATION_READ_APP_APPL_CODE
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+#  define Rte_Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData
 #  define Rte_Call_SecurityAccess_Level_01_CompareKey Rte_Call_Dcm_SecurityAccess_Level_01_CompareKey
 #  define Rte_Call_SecurityAccess_Level_01_GetSeed Rte_Call_Dcm_SecurityAccess_Level_01_GetSeed
 

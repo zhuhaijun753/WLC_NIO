@@ -11,51 +11,41 @@
  *  are necessary according to the state of the art before its use..
  *********************************************************************************************************************/
 /**********************************************************************************************************************
+ *  COPYRIGHT
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  \verbatim
+ *
+ *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+ *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+ *                All other rights remain with Vector Informatik GmbH.
+ *  \endverbatim
+ *  -------------------------------------------------------------------------------------------------------------------
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
- *             File:  SWC_WLCAPP.c
+ *             File:  Rte_Compiler_Cfg.h
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
  *        SW-C Type:  SWC_WLCAPP
- *  Generation Time:  2020-02-05 11:25:12
+ *  Generation Time:  2020-01-15 11:48:01
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0
  *          License:  CBD1900162
  *
- *      Description:  C-Code implementation template for SW-C <SWC_WLCAPP>
+ *      Description:  RTE Compiler Abstraction header file (Contract Phase)
  *********************************************************************************************************************/
-
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of version logging area >>                DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
-/* PRQA S 0777, 0779 EOF */ /* MD_MSR_5.1_777, MD_MSR_5.1_779 */
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of version logging area >>                  DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
-/**********************************************************************************************************************
- *
- * AUTOSAR Modelling Object Descriptions
- *
- **********************************************************************************************************************
- *
- * Data Types:
- * ===========
- * ComM_ModeType
- *   uint8 represents integers with a minimum value of 0 and a maximum value of 255.
- *      The order-relation on uint8 is: x < y if y - x is positive.
- *      uint8 has a lexical representation consisting of a finite-length sequence 
- *      of decimal digits (#x30-#x39).
- *      
- *      For example: 1, 0, 126, +10.
- *
- *********************************************************************************************************************/
-
-#include "Rte_SWC_WLCAPP.h" /* PRQA S 0857 */ /* MD_MSR_1.1_857 */
-
+/* double include prevention */
+#ifndef _RTE_COMPILER_CFG_H
+# define _RTE_COMPILER_CFG_H
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
@@ -68,91 +58,88 @@
 
 
 /**********************************************************************************************************************
- *
- * Used AUTOSAR Data Types
- *
- **********************************************************************************************************************
- *
- * Primitive Types:
- * ================
- * uint8: Integer in interval [0...255] (standard type)
- *
- * Enumeration Types:
- * ==================
- * ComM_ModeType: Enumeration of integer in interval [0...3] with enumerators
- *   COMM_NO_COMMUNICATION (0U)
- *   COMM_SILENT_COMMUNICATION (1U)
- *   COMM_FULL_COMMUNICATION (2U)
- *
- *********************************************************************************************************************/
-
-
-#define SWC_WLCAPP_START_SEC_CODE
-#include "SWC_WLCAPP_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
-
-/**********************************************************************************************************************
- *
- * Runnable Entity Name: ComControl_Init_Runnable
- *
- *---------------------------------------------------------------------------------------------------------------------
- *
- * Executed once after the RTE is started
- *
- **********************************************************************************************************************
- *
- * Service Calls:
- * ==============
- *   Service Invocation:
- *   -------------------
- *   Std_ReturnType Rte_Call_UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57_GetCurrentComMode(ComM_ModeType *ComMode)
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_ComM_UserRequest_E_NOT_OK
- *   Std_ReturnType Rte_Call_UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57_GetMaxComMode(ComM_ModeType *ComMode)
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_ComM_UserRequest_E_NOT_OK
- *   Std_ReturnType Rte_Call_UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57_GetRequestedComMode(ComM_ModeType *ComMode)
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_ComM_UserRequest_E_NOT_OK
- *   Std_ReturnType Rte_Call_UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57_RequestComMode(ComM_ModeType ComMode)
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_ComM_UserRequest_E_MODE_LIMITATION, RTE_E_ComM_UserRequest_E_NOT_OK
- *
+ * RTE specific defines
  *********************************************************************************************************************/
 /**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
- * Symbol: ComControl_Init_Runnable_doc
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: RTE_CODE
+ *********************************************************************************************************************/
+
+/* used for code */
+# define RTE_CODE
+
+/* used for all global or static variables that are not initialized by the startup code of the compiler */
+# define RTE_VAR_NOINIT
+
+/* used for global or static constants */
+# define RTE_CONST
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
 
 /**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ * SW-C specific defines
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: RTE_SWC_WLCAPP_APPL
  *********************************************************************************************************************/
 
-FUNC(void, SWC_WLCAPP_CODE) ComControl_Init_Runnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
-{
+/* used for references on application variables */
+# define RTE_SWC_WLCAPP_APPL_VAR
+
+/* used for references on application data (constants or variables) */
+# define RTE_SWC_WLCAPP_APPL_DATA
+
+/* used for references on application functions */
+# define RTE_SWC_WLCAPP_APPL_CODE
+
+/* used for references on application constants */
+# define RTE_SWC_WLCAPP_APPL_CONST
+
 /**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
- * Symbol: ComControl_Init_Runnable
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: SWC_WLCAPP_CODE
  *********************************************************************************************************************/
 
+/* used for SWC specific code */
+# define SWC_WLCAPP_CODE
 
 /**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-}
-
-
-#define SWC_WLCAPP_STOP_SEC_CODE
-#include "SWC_WLCAPP_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
-
-
 /**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of function definition area >>            DO NOT CHANGE THIS COMMENT!
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: SWC_WLCAPP_CONST
  *********************************************************************************************************************/
 
+/* used for global or static SWC specific constants */
+# define SWC_WLCAPP_CONST
 
 /**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of function definition area >>              DO NOT CHANGE THIS COMMENT!
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: SWC_WLCAPP_VAR
+ *********************************************************************************************************************/
+
+/* used for all global or static SWC specific variables that are not initialized by the startup code of the compiler */
+# define SWC_WLCAPP_VAR_NOINIT
+
+/* used for global or static SWC specific variables that are initialized by the startup code of the compiler */
+# define SWC_WLCAPP_VAR_INIT
+
+/* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
+# define SWC_WLCAPP_VAR_ZERO_INIT
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
 
@@ -164,3 +151,5 @@ FUNC(void, SWC_WLCAPP_CODE) ComControl_Init_Runnable(void) /* PRQA S 0850 */ /* 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of removed code area >>                     DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
+
+#endif /* _RTE_COMPILER_CFG_H */

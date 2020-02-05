@@ -22,16 +22,16 @@
  *  -------------------------------------------------------------------------------------------------------------------
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
- *             File:  Communication_Read_APP_MemMap.h
+ *             File:  SWC_WLCAPP_MemMap.h
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
- *        SW-C Type:  Communication_Read_APP
- *  Generation Time:  2020-02-05 11:25:12
+ *        SW-C Type:  SWC_WLCAPP
+ *  Generation Time:  2020-01-15 11:48:01
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0
  *          License:  CBD1900162
  *
- *      Description:  Memory Mapping header file for SW-C <Communication_Read_APP> (Contract Phase)
+ *      Description:  Memory Mapping header file for SW-C <SWC_WLCAPP> (Contract Phase)
  *********************************************************************************************************************/
 
 
@@ -55,17 +55,17 @@
  *********************************************************************************************************************/
 
 /**********************************************************************************************************************
- * Communication_Read_APP specific defines
+ * SWC_WLCAPP specific defines
  *********************************************************************************************************************/
 
 /* open sections */
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!         << Start of memory mapping implementation >>         DO NOT CHANGE THIS COMMENT!
- * Symbol: Communication_Read_APP_START_SEC_CODE
+ * Symbol: SWC_WLCAPP_START_SEC_CODE
  *********************************************************************************************************************/
 
-#ifdef Communication_Read_APP_START_SEC_CODE
-# undef Communication_Read_APP_START_SEC_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#ifdef SWC_WLCAPP_START_SEC_CODE
+# undef SWC_WLCAPP_START_SEC_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # define START_SEC_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 #endif
@@ -75,11 +75,11 @@
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!         << Start of memory mapping implementation >>         DO NOT CHANGE THIS COMMENT!
- * Symbol: Communication_Read_APP_START_SEC_CONST_UNSPECIFIED
+ * Symbol: SWC_WLCAPP_START_SEC_CONST_UNSPECIFIED
  *********************************************************************************************************************/
 
-#ifdef Communication_Read_APP_START_SEC_CONST_UNSPECIFIED
-# undef Communication_Read_APP_START_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#ifdef SWC_WLCAPP_START_SEC_CONST_UNSPECIFIED
+# undef SWC_WLCAPP_START_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # define START_SEC_CONST_UNSPECIFIED
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 #endif
@@ -89,11 +89,11 @@
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!         << Start of memory mapping implementation >>         DO NOT CHANGE THIS COMMENT!
- * Symbol: Communication_Read_APP_START_SEC_VAR_NOINIT_UNSPECIFIED
+ * Symbol: SWC_WLCAPP_START_SEC_VAR_NOINIT_UNSPECIFIED
  *********************************************************************************************************************/
 
-#ifdef Communication_Read_APP_START_SEC_VAR_NOINIT_UNSPECIFIED
-# undef Communication_Read_APP_START_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#ifdef SWC_WLCAPP_START_SEC_VAR_NOINIT_UNSPECIFIED
+# undef SWC_WLCAPP_START_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # define START_SEC_VAR_NOINIT_UNSPECIFIED
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 #endif
@@ -103,11 +103,11 @@
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!         << Start of memory mapping implementation >>         DO NOT CHANGE THIS COMMENT!
- * Symbol: Communication_Read_APP_START_SEC_VAR_INIT_UNSPECIFIED
+ * Symbol: SWC_WLCAPP_START_SEC_VAR_INIT_UNSPECIFIED
  *********************************************************************************************************************/
 
-#ifdef Communication_Read_APP_START_SEC_VAR_INIT_UNSPECIFIED
-# undef Communication_Read_APP_START_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#ifdef SWC_WLCAPP_START_SEC_VAR_INIT_UNSPECIFIED
+# undef SWC_WLCAPP_START_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # define START_SEC_VAR_INIT_UNSPECIFIED
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 #endif
@@ -117,11 +117,11 @@
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!         << Start of memory mapping implementation >>         DO NOT CHANGE THIS COMMENT!
- * Symbol: Communication_Read_APP_START_SEC_VAR_ZERO_INIT_UNSPECIFIED
+ * Symbol: SWC_WLCAPP_START_SEC_VAR_ZERO_INIT_UNSPECIFIED
  *********************************************************************************************************************/
 
-#ifdef Communication_Read_APP_START_SEC_VAR_ZERO_INIT_UNSPECIFIED
-# undef Communication_Read_APP_START_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#ifdef SWC_WLCAPP_START_SEC_VAR_ZERO_INIT_UNSPECIFIED
+# undef SWC_WLCAPP_START_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # define START_SEC_VAR_ZERO_INIT_UNSPECIFIED
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 #endif
@@ -133,11 +133,11 @@
 /* close sections */
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!         << Start of memory mapping implementation >>         DO NOT CHANGE THIS COMMENT!
- * Symbol: Communication_Read_APP_STOP_SEC_CODE
+ * Symbol: SWC_WLCAPP_STOP_SEC_CODE
  *********************************************************************************************************************/
 
-#ifdef Communication_Read_APP_STOP_SEC_CODE
-# undef Communication_Read_APP_STOP_SEC_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#ifdef SWC_WLCAPP_STOP_SEC_CODE
+# undef SWC_WLCAPP_STOP_SEC_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # define STOP_SEC_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 #endif
@@ -147,11 +147,11 @@
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!         << Start of memory mapping implementation >>         DO NOT CHANGE THIS COMMENT!
- * Symbol: Communication_Read_APP_STOP_SEC_CONST_UNSPECIFIED
+ * Symbol: SWC_WLCAPP_STOP_SEC_CONST_UNSPECIFIED
  *********************************************************************************************************************/
 
-#ifdef Communication_Read_APP_STOP_SEC_CONST_UNSPECIFIED
-# undef Communication_Read_APP_STOP_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#ifdef SWC_WLCAPP_STOP_SEC_CONST_UNSPECIFIED
+# undef SWC_WLCAPP_STOP_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # define STOP_SEC_CONST
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 #endif
@@ -161,11 +161,11 @@
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!         << Start of memory mapping implementation >>         DO NOT CHANGE THIS COMMENT!
- * Symbol: Communication_Read_APP_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+ * Symbol: SWC_WLCAPP_STOP_SEC_VAR_NOINIT_UNSPECIFIED
  *********************************************************************************************************************/
 
-#ifdef Communication_Read_APP_STOP_SEC_VAR_NOINIT_UNSPECIFIED
-# undef Communication_Read_APP_STOP_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#ifdef SWC_WLCAPP_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+# undef SWC_WLCAPP_STOP_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # define STOP_SEC_VAR
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 #endif
@@ -175,11 +175,11 @@
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!         << Start of memory mapping implementation >>         DO NOT CHANGE THIS COMMENT!
- * Symbol: Communication_Read_APP_STOP_SEC_VAR_INIT_UNSPECIFIED
+ * Symbol: SWC_WLCAPP_STOP_SEC_VAR_INIT_UNSPECIFIED
  *********************************************************************************************************************/
 
-#ifdef Communication_Read_APP_STOP_SEC_VAR_INIT_UNSPECIFIED
-# undef Communication_Read_APP_STOP_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#ifdef SWC_WLCAPP_STOP_SEC_VAR_INIT_UNSPECIFIED
+# undef SWC_WLCAPP_STOP_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # define STOP_SEC_VAR
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 #endif
@@ -189,11 +189,11 @@
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!         << Start of memory mapping implementation >>         DO NOT CHANGE THIS COMMENT!
- * Symbol: Communication_Read_APP_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED
+ * Symbol: SWC_WLCAPP_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED
  *********************************************************************************************************************/
 
-#ifdef Communication_Read_APP_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED
-# undef Communication_Read_APP_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#ifdef SWC_WLCAPP_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED
+# undef SWC_WLCAPP_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # define STOP_SEC_VAR
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 #endif

@@ -2278,6 +2278,17 @@
                                     <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DcmEcuReset</TARGET-R-PORT-REF>
                                   </REQUESTER-IREF>
                                 </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="63a2b7af-875f-4758-95bb-4b34e9dcc83b">
+                                  <SHORT-NAME>Communication_Read_APP_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_Dcm_DataServices_Diag_RWDI_LightOnO</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Communication_Read_APP/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
                               </CONNECTORS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="ff2fed10-e9b2-43a3-b700-ddb5191b3479">
@@ -2313,6 +2324,7 @@
                                     <SD GID="782f8768-e908-4e3c-a74c-cc9f3858aa5b">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComfEna</SD>
                                     <SD GID="78b68e9b-0977-43fb-8deb-7d8f369eb2f7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComfEna_ASIL</SD>
                                     <SD GID="b8cebb45-cdab-4eaa-81e1-da1a53b7b17b">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP</SD>
+                                    <SD GID="63a2b7af-875f-4758-95bb-4b34e9dcc83b">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Communication_Read_APP_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_Dcm_DataServices_Diag_RWDI_LightOnO</SD>
                                     <SD GID="0fdeb1f5-790f-491b-8636-d60075d66349">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Day</SD>
                                     <SD GID="c5c30fd6-931f-4480-a405-34b79bde84e2">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</SD>
                                     <SD GID="d8958a83-7c71-41fa-9af6-c5135765ad03">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm_DcmEcuReset_Communication_Read_APP_DcmEcuReset</SD>
@@ -2359,7 +2371,11 @@
                                     <SD GID="374A289C-8BA0-408F-9939-1824463BFF87">/ComponentTypes/Communication_Read_APP/CGW_WLC_MsgCntr</SD>
                                     <SD GID="E75ABFD7-8F2D-4490-8EEC-BFC065580125">/ComponentTypes/Communication_Read_APP/ComfEna</SD>
                                     <SD GID="787C47C1-07F9-422F-985D-00B2875062FF">/ComponentTypes/Communication_Read_APP/ComfEna_ASIL</SD>
+                                    <SD GID="181D4EBC-CBC4-4613-8AEB-9A6F03E9C500">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead_DataServices_Diag_RWDI_LightOnOf2065F94A</SD>
+                                    <SD GID="B58E1F65-55E6-4050-9283-8DDA765926C8">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData_DataServices_Diag_RWDI_LightOnOffCounter_LBCB6C10A</SD>
+                                    <SD GID="B0D89E14-B796-4F68-8FD9-7B37FF325AE8">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/OIT_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData_DataServices_Diag_RWDI_LightOnOffCounter_9798F8A6</SD>
                                     <SD GID="FFE71E43-ED97-42EE-951A-A850BDC2C64B">/ComponentTypes/Communication_Read_APP/Communication_Read_APP_InternalBehavior/TMT_WLCAPP_Runnable</SD>
+                                    <SD GID="A201F79E-7D84-42DF-8EBB-160265B3AC6B">/ComponentTypes/Communication_Read_APP/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</SD>
                                     <SD GID="AF6D8962-9026-4180-A093-6DC9C7ACA5BE">/ComponentTypes/Communication_Read_APP/Day</SD>
                                     <SD GID="C2CEFB7D-798B-4D90-944E-60AAA5B2EE82">/ComponentTypes/Communication_Read_APP/DcmEcuReset</SD>
                                     <SD GID="83FB0B14-D2BD-40EC-9B7F-069A17FCB8E7">/ComponentTypes/Communication_Read_APP/Hr</SD>

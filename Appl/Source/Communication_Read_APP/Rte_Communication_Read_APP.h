@@ -13,7 +13,7 @@
  *             File:  Rte_Communication_Read_APP.h
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
  *        SW-C Type:  Communication_Read_APP
- *  Generation Time:  2020-01-15 11:48:01
+ *  Generation Time:  2020-02-05 11:25:12
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0
@@ -146,6 +146,7 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Write_Communication_Read_APP_WLC_01_CRC_WLC_0
 FUNC(Std_ReturnType, RTE_CODE) Rte_Write_Communication_Read_APP_WLC_01_MsgCntr_WLC_01_MsgCntr(WLC_01_MsgCntr data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 FUNC(Std_ReturnType, RTE_CODE) Rte_Write_Communication_Read_APP_WLC_02_CRC_WLC_02_CRC(WLC_02_CRC data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 FUNC(Std_ReturnType, RTE_CODE) Rte_Write_Communication_Read_APP_WLC_02_MsgCntr_WLC_02_MsgCntr(WLC_02_MsgCntr data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+FUNC(uint8, RTE_CODE) Rte_Mode_Communication_Read_APP_DcmEcuReset_DcmEcuReset(void); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 
 # define RTE_STOP_SEC_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
@@ -194,6 +195,12 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Write_Communication_Read_APP_WLC_02_MsgCntr_W
 # define Rte_Write_WLC_01_MsgCntr_WLC_01_MsgCntr Rte_Write_Communication_Read_APP_WLC_01_MsgCntr_WLC_01_MsgCntr
 # define Rte_Write_WLC_02_CRC_WLC_02_CRC Rte_Write_Communication_Read_APP_WLC_02_CRC_WLC_02_CRC
 # define Rte_Write_WLC_02_MsgCntr_WLC_02_MsgCntr Rte_Write_Communication_Read_APP_WLC_02_MsgCntr_WLC_02_MsgCntr
+
+
+/**********************************************************************************************************************
+ * Rte_Mode_<p>_<m>
+ *********************************************************************************************************************/
+# define Rte_Mode_DcmEcuReset_DcmEcuReset Rte_Mode_Communication_Read_APP_DcmEcuReset_DcmEcuReset
 
 
 
@@ -257,13 +264,126 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Write_Communication_Read_APP_WLC_02_MsgCntr_W
  *   Std_ReturnType Rte_Write_WLC_02_CRC_WLC_02_CRC(WLC_02_CRC data)
  *   Std_ReturnType Rte_Write_WLC_02_MsgCntr_WLC_02_MsgCntr(WLC_02_MsgCntr data)
  *
+ * Mode Interfaces:
+ * ================
+ *   uint8 Rte_Mode_DcmEcuReset_DcmEcuReset(void)
+ *   Modes of Rte_ModeType_DcmEcuReset:
+ *   - RTE_MODE_DcmEcuReset_EXECUTE
+ *   - RTE_MODE_DcmEcuReset_HARD
+ *   - RTE_MODE_DcmEcuReset_JUMPTOBOOTLOADER
+ *   - RTE_MODE_DcmEcuReset_JUMPTOSYSSUPPLIERBOOTLOADER
+ *   - RTE_MODE_DcmEcuReset_KEYONOFF
+ *   - RTE_MODE_DcmEcuReset_NONE
+ *   - RTE_MODE_DcmEcuReset_SOFT
+ *   - RTE_TRANSITION_DcmEcuReset
+ *
  *********************************************************************************************************************/
 
 # define RTE_RUNNABLE_ComReadandWrite_Runnable ComReadandWrite_Runnable
 FUNC(void, Communication_Read_APP_CODE) ComReadandWrite_Runnable(void); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ConditionCheckRead> of PortPrototype <DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_DCM_E_PENDING
+ *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+
+# define RTE_RUNNABLE_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <ReadData> of PortPrototype <DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_DCM_E_PENDING
+ *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+
+# define RTE_RUNNABLE_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) Data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <WriteData> of PortPrototype <DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value>
+ *
+ **********************************************************************************************************************
+ *
+ * Runnable prototype:
+ * ===================
+ *   Std_ReturnType DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
+ *     Argument Data: uint8* is of type Dcm_Data4ByteType
+ *
+ **********************************************************************************************************************
+ *
+ * Available Application Errors:
+ * =============================
+ *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_DCM_E_PENDING
+ *   RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_E_NOT_OK
+ *
+ *********************************************************************************************************************/
+
+# define RTE_RUNNABLE_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData
+# ifdef RTE_PTR2ARRAYBASETYPE_PASSING
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData(P2CONST(uint8, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# else
+FUNC(Std_ReturnType, Communication_Read_APP_CODE) DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_COMMUNICATION_READ_APP_APPL_VAR) ErrorCode); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# endif
+
 # define Communication_Read_APP_STOP_SEC_CODE
 # include "Communication_Read_APP_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+
+/**********************************************************************************************************************
+ * Application errors
+ *********************************************************************************************************************/
+
+# define RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_DCM_E_PENDING (10U)
+
+# define RTE_E_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_E_NOT_OK (1U)
 
 # ifdef __cplusplus
 } /* extern "C" */
