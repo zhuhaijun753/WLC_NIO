@@ -1,0 +1,356 @@
+11:53:30 **** Clean-only build of configuration Debug for project wlc ****
+make -j4 clean 
+rm -rf ./*/*.d ./*/*/*.d ./*/*/*/*.d ./*/*/*/*/*/*.d ./*/*/*/*/*/*/*.d  ./*/*.o ./*/*/*.o ./*/*/*/*.o ./*/*/*/*/*/*.o ./*/*/*/*/*/*/*.o   "wlc.siz"   "wlc.elf" 
+ 
+11:53:34 **** Build of configuration Debug for project wlc ****
+make -j4 all 
+Building file: ../Generated_Code/Cpu.c
+Building file: ../Generated_Code/adConv1.c
+Executing target #1 ../Generated_Code/Cpu.c
+Executing target #2 ../Generated_Code/adConv1.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/Cpu.args" -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/adConv1.args" -MMD -MP -MF"Generated_Code/adConv1.d" -MT"Generated_Code/adConv1.o" -o "Generated_Code/adConv1.o" "../Generated_Code/adConv1.c"
+Building file: ../Generated_Code/clockMan1.c
+Building file: ../Generated_Code/dmaController1.c
+Executing target #3 ../Generated_Code/clockMan1.c
+Executing target #4 ../Generated_Code/dmaController1.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/clockMan1.args" -MMD -MP -MF"Generated_Code/clockMan1.d" -MT"Generated_Code/clockMan1.o" -o "Generated_Code/clockMan1.o" "../Generated_Code/clockMan1.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/dmaController1.args" -MMD -MP -MF"Generated_Code/dmaController1.d" -MT"Generated_Code/dmaController1.o" -o "Generated_Code/dmaController1.o" "../Generated_Code/dmaController1.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/flexTimer_mc1.c
+Finished building: ../Generated_Code/adConv1.c
+Executing target #5 ../Generated_Code/flexTimer_mc1.c
+ 
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/flexTimer_mc1.args" -MMD -MP -MF"Generated_Code/flexTimer_mc1.d" -MT"Generated_Code/flexTimer_mc1.o" -o "Generated_Code/flexTimer_mc1.o" "../Generated_Code/flexTimer_mc1.c"
+Finished building: ../Generated_Code/dmaController1.c
+ 
+Finished building: ../Generated_Code/clockMan1.c
+Building file: ../Generated_Code/flexTimer_pwm1.c
+ 
+Executing target #6 ../Generated_Code/flexTimer_pwm1.c
+Building file: ../Generated_Code/i2c1.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/flexTimer_pwm1.args" -MMD -MP -MF"Generated_Code/flexTimer_pwm1.d" -MT"Generated_Code/flexTimer_pwm1.o" -o "Generated_Code/flexTimer_pwm1.o" "../Generated_Code/flexTimer_pwm1.c"
+Executing target #7 ../Generated_Code/i2c1.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/i2c1.args" -MMD -MP -MF"Generated_Code/i2c1.d" -MT"Generated_Code/i2c1.o" -o "Generated_Code/i2c1.o" "../Generated_Code/i2c1.c"
+Building file: ../Generated_Code/lpuart1.c
+Executing target #8 ../Generated_Code/lpuart1.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/lpuart1.args" -MMD -MP -MF"Generated_Code/lpuart1.d" -MT"Generated_Code/lpuart1.o" -o "Generated_Code/lpuart1.o" "../Generated_Code/lpuart1.c"
+Finished building: ../Generated_Code/flexTimer_mc1.c
+ 
+Building file: ../Generated_Code/pin_mux.c
+Executing target #9 ../Generated_Code/pin_mux.c
+Finished building: ../Generated_Code/flexTimer_pwm1.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/pin_mux.args" -MMD -MP -MF"Generated_Code/pin_mux.d" -MT"Generated_Code/pin_mux.o" -o "Generated_Code/pin_mux.o" "../Generated_Code/pin_mux.c"
+ 
+Building file: ../Project_Settings/Startup_Code/startup_S32K144.S
+Finished building: ../Generated_Code/i2c1.c
+Executing target #10 ../Project_Settings/Startup_Code/startup_S32K144.S
+ 
+Invoking: Standard S32DS Assembler
+Building file: ../SDK/platform/devices/S32K144/startup/system_S32K144.c
+Finished building: ../Generated_Code/lpuart1.c
+Executing target #11 ../SDK/platform/devices/S32K144/startup/system_S32K144.c
+ 
+arm-none-eabi-gcc "@Project_Settings/Startup_Code/startup_S32K144.args" -o "Project_Settings/Startup_Code/startup_S32K144.o" "../Project_Settings/Startup_Code/startup_S32K144.S"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/devices/S32K144/startup/system_S32K144.args" -MMD -MP -MF"SDK/platform/devices/S32K144/startup/system_S32K144.d" -MT"SDK/platform/devices/S32K144/startup/system_S32K144.o" -o "SDK/platform/devices/S32K144/startup/system_S32K144.o" "../SDK/platform/devices/S32K144/startup/system_S32K144.c"
+Building file: ../SDK/platform/devices/startup.c
+Executing target #12 ../SDK/platform/devices/startup.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/devices/startup.args" -MMD -MP -MF"SDK/platform/devices/startup.d" -MT"SDK/platform/devices/startup.o" -o "SDK/platform/devices/startup.o" "../SDK/platform/devices/startup.c"
+Finished building: ../Project_Settings/Startup_Code/startup_S32K144.S
+ 
+Building file: ../SDK/platform/drivers/src/adc/adc_driver.c
+Executing target #13 ../SDK/platform/drivers/src/adc/adc_driver.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/adc/adc_driver.args" -MMD -MP -MF"SDK/platform/drivers/src/adc/adc_driver.d" -MT"SDK/platform/drivers/src/adc/adc_driver.o" -o "SDK/platform/drivers/src/adc/adc_driver.o" "../SDK/platform/drivers/src/adc/adc_driver.c"
+Finished building: ../Generated_Code/pin_mux.c
+ 
+Building file: ../SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c
+Executing target #14 ../SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.args" -MMD -MP -MF"SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.d" -MT"SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o" -o "SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o" "../SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c"
+Finished building: ../SDK/platform/devices/S32K144/startup/system_S32K144.c
+ 
+Building file: ../SDK/platform/drivers/src/clock/clock_manager.c
+Executing target #15 ../SDK/platform/drivers/src/clock/clock_manager.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/clock/clock_manager.args" -MMD -MP -MF"SDK/platform/drivers/src/clock/clock_manager.d" -MT"SDK/platform/drivers/src/clock/clock_manager.o" -o "SDK/platform/drivers/src/clock/clock_manager.o" "../SDK/platform/drivers/src/clock/clock_manager.c"
+Finished building: ../SDK/platform/devices/startup.c
+ 
+Finished building: ../SDK/platform/drivers/src/adc/adc_driver.c
+Building file: ../SDK/platform/drivers/src/edma/edma_driver.c
+ 
+Executing target #16 ../SDK/platform/drivers/src/edma/edma_driver.c
+Building file: ../SDK/platform/drivers/src/edma/edma_hw_access.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/edma/edma_driver.args" -MMD -MP -MF"SDK/platform/drivers/src/edma/edma_driver.d" -MT"SDK/platform/drivers/src/edma/edma_driver.o" -o "SDK/platform/drivers/src/edma/edma_driver.o" "../SDK/platform/drivers/src/edma/edma_driver.c"
+Executing target #17 ../SDK/platform/drivers/src/edma/edma_hw_access.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/edma/edma_hw_access.args" -MMD -MP -MF"SDK/platform/drivers/src/edma/edma_hw_access.d" -MT"SDK/platform/drivers/src/edma/edma_hw_access.o" -o "SDK/platform/drivers/src/edma/edma_hw_access.o" "../SDK/platform/drivers/src/edma/edma_hw_access.c"
+Finished building: ../SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c
+ 
+Building file: ../SDK/platform/drivers/src/edma/edma_irq.c
+Executing target #18 ../SDK/platform/drivers/src/edma/edma_irq.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/edma/edma_irq.args" -MMD -MP -MF"SDK/platform/drivers/src/edma/edma_irq.d" -MT"SDK/platform/drivers/src/edma/edma_irq.o" -o "SDK/platform/drivers/src/edma/edma_irq.o" "../SDK/platform/drivers/src/edma/edma_irq.c"
+Finished building: ../SDK/platform/drivers/src/clock/clock_manager.c
+ 
+Building file: ../SDK/platform/drivers/src/ftm/ftm_common.c
+Executing target #19 ../SDK/platform/drivers/src/ftm/ftm_common.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/ftm/ftm_common.args" -MMD -MP -MF"SDK/platform/drivers/src/ftm/ftm_common.d" -MT"SDK/platform/drivers/src/ftm/ftm_common.o" -o "SDK/platform/drivers/src/ftm/ftm_common.o" "../SDK/platform/drivers/src/ftm/ftm_common.c"
+Finished building: ../SDK/platform/drivers/src/edma/edma_hw_access.c
+ 
+Building file: ../SDK/platform/drivers/src/ftm/ftm_hw_access.c
+Executing target #20 ../SDK/platform/drivers/src/ftm/ftm_hw_access.c
+Finished building: ../SDK/platform/drivers/src/edma/edma_driver.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/ftm/ftm_hw_access.args" -MMD -MP -MF"SDK/platform/drivers/src/ftm/ftm_hw_access.d" -MT"SDK/platform/drivers/src/ftm/ftm_hw_access.o" -o "SDK/platform/drivers/src/ftm/ftm_hw_access.o" "../SDK/platform/drivers/src/ftm/ftm_hw_access.c"
+ 
+Building file: ../SDK/platform/drivers/src/ftm/ftm_mc_driver.c
+Executing target #21 ../SDK/platform/drivers/src/ftm/ftm_mc_driver.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/ftm/ftm_mc_driver.args" -MMD -MP -MF"SDK/platform/drivers/src/ftm/ftm_mc_driver.d" -MT"SDK/platform/drivers/src/ftm/ftm_mc_driver.o" -o "SDK/platform/drivers/src/ftm/ftm_mc_driver.o" "../SDK/platform/drivers/src/ftm/ftm_mc_driver.c"
+Finished building: ../SDK/platform/drivers/src/edma/edma_irq.c
+ 
+Building file: ../SDK/platform/drivers/src/ftm/ftm_pwm_driver.c
+Executing target #22 ../SDK/platform/drivers/src/ftm/ftm_pwm_driver.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/ftm/ftm_pwm_driver.args" -MMD -MP -MF"SDK/platform/drivers/src/ftm/ftm_pwm_driver.d" -MT"SDK/platform/drivers/src/ftm/ftm_pwm_driver.o" -o "SDK/platform/drivers/src/ftm/ftm_pwm_driver.o" "../SDK/platform/drivers/src/ftm/ftm_pwm_driver.c"
+Finished building: ../SDK/platform/drivers/src/ftm/ftm_common.c
+ 
+Building file: ../SDK/platform/drivers/src/interrupt/interrupt_manager.c
+Finished building: ../SDK/platform/drivers/src/ftm/ftm_hw_access.c
+Executing target #23 ../SDK/platform/drivers/src/interrupt/interrupt_manager.c
+ 
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/interrupt/interrupt_manager.args" -MMD -MP -MF"SDK/platform/drivers/src/interrupt/interrupt_manager.d" -MT"SDK/platform/drivers/src/interrupt/interrupt_manager.o" -o "SDK/platform/drivers/src/interrupt/interrupt_manager.o" "../SDK/platform/drivers/src/interrupt/interrupt_manager.c"
+Building file: ../SDK/platform/drivers/src/lpi2c/lpi2c_driver.c
+Executing target #24 ../SDK/platform/drivers/src/lpi2c/lpi2c_driver.c
+Finished building: ../SDK/platform/drivers/src/ftm/ftm_mc_driver.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/lpi2c/lpi2c_driver.args" -MMD -MP -MF"SDK/platform/drivers/src/lpi2c/lpi2c_driver.d" -MT"SDK/platform/drivers/src/lpi2c/lpi2c_driver.o" -o "SDK/platform/drivers/src/lpi2c/lpi2c_driver.o" "../SDK/platform/drivers/src/lpi2c/lpi2c_driver.c"
+ 
+Building file: ../SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.c
+Executing target #25 ../SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.args" -MMD -MP -MF"SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.d" -MT"SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.o" -o "SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.o" "../SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.c"
+Finished building: ../SDK/platform/drivers/src/ftm/ftm_pwm_driver.c
+ 
+Building file: ../SDK/platform/drivers/src/lpi2c/lpi2c_irq.c
+Executing target #26 ../SDK/platform/drivers/src/lpi2c/lpi2c_irq.c
+Finished building: ../SDK/platform/drivers/src/interrupt/interrupt_manager.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/lpi2c/lpi2c_irq.args" -MMD -MP -MF"SDK/platform/drivers/src/lpi2c/lpi2c_irq.d" -MT"SDK/platform/drivers/src/lpi2c/lpi2c_irq.o" -o "SDK/platform/drivers/src/lpi2c/lpi2c_irq.o" "../SDK/platform/drivers/src/lpi2c/lpi2c_irq.c"
+ 
+Building file: ../SDK/platform/drivers/src/lpuart/lpuart_driver.c
+Executing target #27 ../SDK/platform/drivers/src/lpuart/lpuart_driver.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/lpuart/lpuart_driver.args" -MMD -MP -MF"SDK/platform/drivers/src/lpuart/lpuart_driver.d" -MT"SDK/platform/drivers/src/lpuart/lpuart_driver.o" -o "SDK/platform/drivers/src/lpuart/lpuart_driver.o" "../SDK/platform/drivers/src/lpuart/lpuart_driver.c"
+Finished building: ../SDK/platform/drivers/src/lpi2c/lpi2c_hw_access.c
+ 
+Building file: ../SDK/platform/drivers/src/lpuart/lpuart_hw_access.c
+Executing target #28 ../SDK/platform/drivers/src/lpuart/lpuart_hw_access.c
+Finished building: ../SDK/platform/drivers/src/lpi2c/lpi2c_driver.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/lpuart/lpuart_hw_access.args" -MMD -MP -MF"SDK/platform/drivers/src/lpuart/lpuart_hw_access.d" -MT"SDK/platform/drivers/src/lpuart/lpuart_hw_access.o" -o "SDK/platform/drivers/src/lpuart/lpuart_hw_access.o" "../SDK/platform/drivers/src/lpuart/lpuart_hw_access.c"
+ 
+Building file: ../SDK/platform/drivers/src/lpuart/lpuart_irq.c
+Executing target #29 ../SDK/platform/drivers/src/lpuart/lpuart_irq.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/lpuart/lpuart_irq.args" -MMD -MP -MF"SDK/platform/drivers/src/lpuart/lpuart_irq.d" -MT"SDK/platform/drivers/src/lpuart/lpuart_irq.o" -o "SDK/platform/drivers/src/lpuart/lpuart_irq.o" "../SDK/platform/drivers/src/lpuart/lpuart_irq.c"
+Finished building: ../SDK/platform/drivers/src/lpi2c/lpi2c_irq.c
+ 
+Building file: ../SDK/platform/drivers/src/pins/pins_driver.c
+Executing target #30 ../SDK/platform/drivers/src/pins/pins_driver.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/pins/pins_driver.args" -MMD -MP -MF"SDK/platform/drivers/src/pins/pins_driver.d" -MT"SDK/platform/drivers/src/pins/pins_driver.o" -o "SDK/platform/drivers/src/pins/pins_driver.o" "../SDK/platform/drivers/src/pins/pins_driver.c"
+Finished building: ../SDK/platform/drivers/src/lpuart/lpuart_driver.c
+ 
+Building file: ../SDK/platform/drivers/src/pins/pins_port_hw_access.c
+Executing target #31 ../SDK/platform/drivers/src/pins/pins_port_hw_access.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/drivers/src/pins/pins_port_hw_access.args" -MMD -MP -MF"SDK/platform/drivers/src/pins/pins_port_hw_access.d" -MT"SDK/platform/drivers/src/pins/pins_port_hw_access.o" -o "SDK/platform/drivers/src/pins/pins_port_hw_access.o" "../SDK/platform/drivers/src/pins/pins_port_hw_access.c"
+Finished building: ../SDK/platform/drivers/src/lpuart/lpuart_hw_access.c
+ 
+Building file: ../SDK/platform/pal/i2c/src/i2c_pal.c
+Executing target #32 ../SDK/platform/pal/i2c/src/i2c_pal.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/pal/i2c/src/i2c_pal.args" -MMD -MP -MF"SDK/platform/pal/i2c/src/i2c_pal.d" -MT"SDK/platform/pal/i2c/src/i2c_pal.o" -o "SDK/platform/pal/i2c/src/i2c_pal.o" "../SDK/platform/pal/i2c/src/i2c_pal.c"
+Finished building: ../SDK/platform/drivers/src/lpuart/lpuart_irq.c
+Finished building: ../SDK/platform/drivers/src/pins/pins_driver.c
+ 
+ 
+Building file: ../SDK/rtos/osif/osif_baremetal.c
+Building file: ../Sources/app/systemIdConfig.c
+Executing target #33 ../SDK/rtos/osif/osif_baremetal.c
+Executing target #34 ../Sources/app/systemIdConfig.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/rtos/osif/osif_baremetal.args" -MMD -MP -MF"SDK/rtos/osif/osif_baremetal.d" -MT"SDK/rtos/osif/osif_baremetal.o" -o "SDK/rtos/osif/osif_baremetal.o" "../SDK/rtos/osif/osif_baremetal.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemIdConfig.args" -MMD -MP -MF"Sources/app/systemIdConfig.d" -MT"Sources/app/systemIdConfig.o" -o "Sources/app/systemIdConfig.o" "../Sources/app/systemIdConfig.c"
+Finished building: ../SDK/platform/drivers/src/pins/pins_port_hw_access.c
+ 
+Finished building: ../SDK/platform/pal/i2c/src/i2c_pal.c
+Building file: ../Sources/app/systemPing.c
+ 
+Executing target #35 ../Sources/app/systemPing.c
+Building file: ../Sources/app/systemPowerTrans.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemPing.args" -MMD -MP -MF"Sources/app/systemPing.d" -MT"Sources/app/systemPing.o" -o "Sources/app/systemPing.o" "../Sources/app/systemPing.c"
+Executing target #36 ../Sources/app/systemPowerTrans.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemPowerTrans.args" -MMD -MP -MF"Sources/app/systemPowerTrans.d" -MT"Sources/app/systemPowerTrans.o" -o "Sources/app/systemPowerTrans.o" "../Sources/app/systemPowerTrans.c"
+../Sources/app/systemPing.c: In function 'SPingEntry':
+../Sources/app/systemPing.c:92:8: warning: unused variable 'CoilIndex' [-Wunused-variable]
+  Coils CoilIndex;
+        ^
+Finished building: ../SDK/rtos/osif/osif_baremetal.c
+Finished building: ../Sources/app/systemIdConfig.c
+ 
+ 
+Building file: ../Sources/app/systemSafe.c
+Building file: ../Sources/app/systemSelection.c
+Executing target #37 ../Sources/app/systemSafe.c
+Executing target #38 ../Sources/app/systemSelection.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+Finished building: ../Sources/app/systemPing.c
+Finished building: ../Sources/app/systemPowerTrans.c
+ 
+arm-none-eabi-gcc "@Sources/app/systemSelection.args" -MMD -MP -MF"Sources/app/systemSelection.d" -MT"Sources/app/systemSelection.o" -o "Sources/app/systemSelection.o" "../Sources/app/systemSelection.c"
+ 
+arm-none-eabi-gcc "@Sources/app/systemSafe.args" -MMD -MP -MF"Sources/app/systemSafe.d" -MT"Sources/app/systemSafe.o" -o "Sources/app/systemSafe.o" "../Sources/app/systemSafe.c"
+Building file: ../Sources/app/systemStatusCharge.c
+Building file: ../Sources/app/systemStatusFault.c
+Executing target #39 ../Sources/app/systemStatusCharge.c
+Executing target #40 ../Sources/app/systemStatusFault.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemStatusCharge.args" -MMD -MP -MF"Sources/app/systemStatusCharge.d" -MT"Sources/app/systemStatusCharge.o" -o "Sources/app/systemStatusCharge.o" "../Sources/app/systemStatusCharge.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemStatusFault.args" -MMD -MP -MF"Sources/app/systemStatusFault.d" -MT"Sources/app/systemStatusFault.o" -o "Sources/app/systemStatusFault.o" "../Sources/app/systemStatusFault.c"
+Finished building: ../Sources/app/systemSelection.c
+Finished building: ../Sources/app/systemSafe.c
+ 
+ 
+Building file: ../Sources/app/systemStatusNfc.c
+Building file: ../Sources/app/systemStatusPause.c
+Executing target #41 ../Sources/app/systemStatusNfc.c
+Executing target #42 ../Sources/app/systemStatusPause.c
+Finished building: ../Sources/app/systemStatusFault.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemStatusPause.args" -MMD -MP -MF"Sources/app/systemStatusPause.d" -MT"Sources/app/systemStatusPause.o" -o "Sources/app/systemStatusPause.o" "../Sources/app/systemStatusPause.c"
+ 
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemStatusNfc.args" -MMD -MP -MF"Sources/app/systemStatusNfc.d" -MT"Sources/app/systemStatusNfc.o" -o "Sources/app/systemStatusNfc.o" "../Sources/app/systemStatusNfc.c"
+Finished building: ../Sources/app/systemStatusCharge.c
+ 
+Building file: ../Sources/app/systemStatusStandby.c
+Building file: ../Sources/app/systemTask.c
+Executing target #43 ../Sources/app/systemStatusStandby.c
+Executing target #44 ../Sources/app/systemTask.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemStatusStandby.args" -MMD -MP -MF"Sources/app/systemStatusStandby.d" -MT"Sources/app/systemStatusStandby.o" -o "Sources/app/systemStatusStandby.o" "../Sources/app/systemStatusStandby.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemTask.args" -MMD -MP -MF"Sources/app/systemTask.d" -MT"Sources/app/systemTask.o" -o "Sources/app/systemTask.o" "../Sources/app/systemTask.c"
+../Sources/app/systemTask.c:104:13: warning: 'SystemStsRun' defined but not used [-Wunused-function]
+ static void SystemStsRun()
+             ^
+Finished building: ../Sources/app/systemStatusPause.c
+ 
+Building file: ../Sources/app/systemTerminate.c
+Executing target #45 ../Sources/app/systemTerminate.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemTerminate.args" -MMD -MP -MF"Sources/app/systemTerminate.d" -MT"Sources/app/systemTerminate.o" -o "Sources/app/systemTerminate.o" "../Sources/app/systemTerminate.c"
+Finished building: ../Sources/app/systemStatusNfc.c
+ 
+Finished building: ../Sources/app/systemTask.c
+Building file: ../Sources/app/systemTimers.c
+ 
+Executing target #46 ../Sources/app/systemTimers.c
+Finished building: ../Sources/app/systemStatusStandby.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/app/systemTimers.args" -MMD -MP -MF"Sources/app/systemTimers.d" -MT"Sources/app/systemTimers.o" -o "Sources/app/systemTimers.o" "../Sources/app/systemTimers.c"
+ 
+Building file: ../Sources/hal/CommDec.c
+Building file: ../Sources/hal/ObjectDetection.c
+Executing target #47 ../Sources/hal/CommDec.c
+Executing target #48 ../Sources/hal/ObjectDetection.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/hal/CommDec.args" -MMD -MP -MF"Sources/hal/CommDec.d" -MT"Sources/hal/CommDec.o" -o "Sources/hal/CommDec.o" "../Sources/hal/CommDec.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/hal/ObjectDetection.args" -MMD -MP -MF"Sources/hal/ObjectDetection.d" -MT"Sources/hal/ObjectDetection.o" -o "Sources/hal/ObjectDetection.o" "../Sources/hal/ObjectDetection.c"
+Finished building: ../Sources/app/systemTerminate.c
+ 
+Building file: ../Sources/hal/Packet.c
+Executing target #49 ../Sources/hal/Packet.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/hal/Packet.args" -MMD -MP -MF"Sources/hal/Packet.d" -MT"Sources/hal/Packet.o" -o "Sources/hal/Packet.o" "../Sources/hal/Packet.c"
+Finished building: ../Sources/app/systemTimers.c
+ 
+Building file: ../Sources/hal/hal.c
+Executing target #50 ../Sources/hal/hal.c
+Finished building: ../Sources/hal/CommDec.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/hal/hal.args" -MMD -MP -MF"Sources/hal/hal.d" -MT"Sources/hal/hal.o" -o "Sources/hal/hal.o" "../Sources/hal/hal.c"
+Finished building: ../Sources/hal/ObjectDetection.c
+ 
+ 
+Building file: ../Sources/hal/measure.c
+Building file: ../Sources/hal/pid.c
+Executing target #51 ../Sources/hal/measure.c
+Executing target #52 ../Sources/hal/pid.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/hal/measure.args" -MMD -MP -MF"Sources/hal/measure.d" -MT"Sources/hal/measure.o" -o "Sources/hal/measure.o" "../Sources/hal/measure.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/hal/pid.args" -MMD -MP -MF"Sources/hal/pid.d" -MT"Sources/hal/pid.o" -o "Sources/hal/pid.o" "../Sources/hal/pid.c"
+Finished building: ../Sources/hal/Packet.c
+ 
+Building file: ../Sources/hal/safety.c
+Executing target #53 ../Sources/hal/safety.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/hal/safety.args" -MMD -MP -MF"Sources/hal/safety.d" -MT"Sources/hal/safety.o" -o "Sources/hal/safety.o" "../Sources/hal/safety.c"
+Finished building: ../Sources/hal/hal.c
+ 
+Building file: ../Sources/interrupt.c
+Executing target #54 ../Sources/interrupt.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/interrupt.args" -MMD -MP -MF"Sources/interrupt.d" -MT"Sources/interrupt.o" -o "Sources/interrupt.o" "../Sources/interrupt.c"
+Finished building: ../Sources/hal/measure.c
+Finished building: ../Sources/hal/pid.c
+ 
+ 
+Building file: ../Sources/main.c
+Executing target #55 ../Sources/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/hal/safety.c
+ 
+Finished building: ../Sources/interrupt.c
+ 
+Finished building: ../Sources/main.c
+ 
+Building target: wlc.elf
+Executing target #56 wlc.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "wlc.elf" "@wlc.args"   
+Finished building target: wlc.elf
+ 
+Executing target #57 wlc.siz
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley  wlc.elf 
+   text	   data	    bss	    dec	    hex	filename
+  43504	   2168	   3496	  49168	   c010	wlc.elf
+Finished building: wlc.siz
+ 
