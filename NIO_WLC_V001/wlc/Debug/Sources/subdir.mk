@@ -37,7 +37,7 @@ C_DEPS += \
 # Each subdirectory must supply rules for building sources it contributes
 Sources/interrupt.o: ../Sources/interrupt.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #54 $<'
+	@echo 'Executing target #243 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Sources/interrupt.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Sources/interrupt.o" "$<"
 	@echo 'Finished building: $<'
@@ -45,7 +45,7 @@ Sources/interrupt.o: ../Sources/interrupt.c
 
 Sources/main.o: ../Sources/main.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #55 $<'
+	@echo 'Executing target #244 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Sources/main.o" "$<"
 	@echo 'Finished building: $<'

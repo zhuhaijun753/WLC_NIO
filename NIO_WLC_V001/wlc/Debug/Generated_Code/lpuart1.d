@@ -38,14 +38,16 @@ Generated_Code/lpuart1.o: ../Generated_Code/lpuart1.c \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/rtos/osif/osif.h \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/drivers/inc/edma_driver.h \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/callbacks.h \
- D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal.h \
- D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/Generated_Code/i2c_pal_cfg.h \
- D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal_mapping.h \
+ D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal.h \
+ D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/Generated_Code/i2c_pal_cfg.h \
+ D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal_mapping.h \
+ C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/drivers/inc/flexcan_driver.h \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/S32K144/startup/system_S32K144.h \
  ../Generated_Code/flexTimer_pwm1.h ../Generated_Code/flexTimer_mc1.h \
  ../Generated_Code/adConv1.h ../Generated_Code/dmaController1.h \
  ../Generated_Code/i2c1.h ../Generated_Code/pin_mux.h \
- C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/drivers/inc/pins_driver.h
+ C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/drivers/inc/pins_driver.h \
+ ../Generated_Code/canCom1.h
 
 C:/NXP/S32DS_ARM_v2018.R1/S32DS/arm_ewl2/EWL_C/include/lib_c99.prefix:
 
@@ -127,11 +129,13 @@ C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/drivers/inc/ed
 
 C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/callbacks.h:
 
-D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal.h:
+D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal.h:
 
-D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/Generated_Code/i2c_pal_cfg.h:
+D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/Generated_Code/i2c_pal_cfg.h:
 
-D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal_mapping.h:
+D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal_mapping.h:
+
+C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/drivers/inc/flexcan_driver.h:
 
 C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/S32K144/startup/system_S32K144.h:
 
@@ -148,3 +152,5 @@ C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/S32K14
 ../Generated_Code/pin_mux.h:
 
 C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/drivers/inc/pins_driver.h:
+
+../Generated_Code/canCom1.h:

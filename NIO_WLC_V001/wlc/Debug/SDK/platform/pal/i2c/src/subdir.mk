@@ -30,7 +30,7 @@ C_DEPS += \
 # Each subdirectory must supply rules for building sources it contributes
 SDK/platform/pal/i2c/src/i2c_pal.o: ../SDK/platform/pal/i2c/src/i2c_pal.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #32 $<'
+	@echo 'Executing target #36 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@SDK/platform/pal/i2c/src/i2c_pal.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "SDK/platform/pal/i2c/src/i2c_pal.o" "$<"
 	@echo 'Finished building: $<'

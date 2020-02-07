@@ -8,6 +8,7 @@
 C_SRCS_QUOTED += \
 "../Generated_Code/Cpu.c" \
 "../Generated_Code/adConv1.c" \
+"../Generated_Code/canCom1.c" \
 "../Generated_Code/clockMan1.c" \
 "../Generated_Code/dmaController1.c" \
 "../Generated_Code/flexTimer_mc1.c" \
@@ -19,6 +20,7 @@ C_SRCS_QUOTED += \
 C_SRCS += \
 ../Generated_Code/Cpu.c \
 ../Generated_Code/adConv1.c \
+../Generated_Code/canCom1.c \
 ../Generated_Code/clockMan1.c \
 ../Generated_Code/dmaController1.c \
 ../Generated_Code/flexTimer_mc1.c \
@@ -30,6 +32,7 @@ C_SRCS += \
 OBJS_OS_FORMAT += \
 ./Generated_Code/Cpu.o \
 ./Generated_Code/adConv1.o \
+./Generated_Code/canCom1.o \
 ./Generated_Code/clockMan1.o \
 ./Generated_Code/dmaController1.o \
 ./Generated_Code/flexTimer_mc1.o \
@@ -41,6 +44,7 @@ OBJS_OS_FORMAT += \
 C_DEPS_QUOTED += \
 "./Generated_Code/Cpu.d" \
 "./Generated_Code/adConv1.d" \
+"./Generated_Code/canCom1.d" \
 "./Generated_Code/clockMan1.d" \
 "./Generated_Code/dmaController1.d" \
 "./Generated_Code/flexTimer_mc1.d" \
@@ -52,6 +56,7 @@ C_DEPS_QUOTED += \
 OBJS += \
 ./Generated_Code/Cpu.o \
 ./Generated_Code/adConv1.o \
+./Generated_Code/canCom1.o \
 ./Generated_Code/clockMan1.o \
 ./Generated_Code/dmaController1.o \
 ./Generated_Code/flexTimer_mc1.o \
@@ -63,6 +68,7 @@ OBJS += \
 OBJS_QUOTED += \
 "./Generated_Code/Cpu.o" \
 "./Generated_Code/adConv1.o" \
+"./Generated_Code/canCom1.o" \
 "./Generated_Code/clockMan1.o" \
 "./Generated_Code/dmaController1.o" \
 "./Generated_Code/flexTimer_mc1.o" \
@@ -74,6 +80,7 @@ OBJS_QUOTED += \
 C_DEPS += \
 ./Generated_Code/Cpu.d \
 ./Generated_Code/adConv1.d \
+./Generated_Code/canCom1.d \
 ./Generated_Code/clockMan1.d \
 ./Generated_Code/dmaController1.d \
 ./Generated_Code/flexTimer_mc1.d \
@@ -100,9 +107,17 @@ Generated_Code/adConv1.o: ../Generated_Code/adConv1.c
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Generated_Code/clockMan1.o: ../Generated_Code/clockMan1.c
+Generated_Code/canCom1.o: ../Generated_Code/canCom1.c
 	@echo 'Building file: $<'
 	@echo 'Executing target #3 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Generated_Code/canCom1.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Generated_Code/canCom1.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Generated_Code/clockMan1.o: ../Generated_Code/clockMan1.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #4 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Generated_Code/clockMan1.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Generated_Code/clockMan1.o" "$<"
 	@echo 'Finished building: $<'
@@ -110,7 +125,7 @@ Generated_Code/clockMan1.o: ../Generated_Code/clockMan1.c
 
 Generated_Code/dmaController1.o: ../Generated_Code/dmaController1.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #4 $<'
+	@echo 'Executing target #5 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Generated_Code/dmaController1.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Generated_Code/dmaController1.o" "$<"
 	@echo 'Finished building: $<'
@@ -118,7 +133,7 @@ Generated_Code/dmaController1.o: ../Generated_Code/dmaController1.c
 
 Generated_Code/flexTimer_mc1.o: ../Generated_Code/flexTimer_mc1.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #5 $<'
+	@echo 'Executing target #6 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Generated_Code/flexTimer_mc1.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Generated_Code/flexTimer_mc1.o" "$<"
 	@echo 'Finished building: $<'
@@ -126,7 +141,7 @@ Generated_Code/flexTimer_mc1.o: ../Generated_Code/flexTimer_mc1.c
 
 Generated_Code/flexTimer_pwm1.o: ../Generated_Code/flexTimer_pwm1.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #6 $<'
+	@echo 'Executing target #7 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Generated_Code/flexTimer_pwm1.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Generated_Code/flexTimer_pwm1.o" "$<"
 	@echo 'Finished building: $<'
@@ -134,7 +149,7 @@ Generated_Code/flexTimer_pwm1.o: ../Generated_Code/flexTimer_pwm1.c
 
 Generated_Code/i2c1.o: ../Generated_Code/i2c1.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #7 $<'
+	@echo 'Executing target #8 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Generated_Code/i2c1.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Generated_Code/i2c1.o" "$<"
 	@echo 'Finished building: $<'
@@ -142,7 +157,7 @@ Generated_Code/i2c1.o: ../Generated_Code/i2c1.c
 
 Generated_Code/lpuart1.o: ../Generated_Code/lpuart1.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #8 $<'
+	@echo 'Executing target #9 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Generated_Code/lpuart1.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Generated_Code/lpuart1.o" "$<"
 	@echo 'Finished building: $<'
@@ -150,7 +165,7 @@ Generated_Code/lpuart1.o: ../Generated_Code/lpuart1.c
 
 Generated_Code/pin_mux.o: ../Generated_Code/pin_mux.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #9 $<'
+	@echo 'Executing target #10 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Generated_Code/pin_mux.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Generated_Code/pin_mux.o" "$<"
 	@echo 'Finished building: $<'

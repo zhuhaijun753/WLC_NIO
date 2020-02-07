@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 55
+#Progress monitor hint: 244
 first : all
 -include ../makefile.init
 
@@ -22,6 +22,7 @@ RM := rm -rf
 -include SDK/platform/drivers/src/clock/S32K1xx/subdir.mk
 -include SDK/platform/drivers/src/clock/subdir.mk
 -include SDK/platform/drivers/src/edma/subdir.mk
+-include SDK/platform/drivers/src/flexcan/subdir.mk
 -include SDK/platform/drivers/src/ftm/subdir.mk
 -include SDK/platform/drivers/src/interrupt/subdir.mk
 -include SDK/platform/drivers/src/lpi2c/subdir.mk
@@ -29,6 +30,25 @@ RM := rm -rf
 -include SDK/platform/drivers/src/pins/subdir.mk
 -include SDK/platform/pal/i2c/src/subdir.mk
 -include SDK/rtos/osif/subdir.mk
+-include Sources/BSW/BswM/subdir.mk
+-include Sources/BSW/Can/subdir.mk
+-include Sources/BSW/CanIf/subdir.mk
+-include Sources/BSW/CanNm/subdir.mk
+-include Sources/BSW/CanSM/subdir.mk
+-include Sources/BSW/CanTp/subdir.mk
+-include Sources/BSW/Com/subdir.mk
+-include Sources/BSW/ComM/subdir.mk
+-include Sources/BSW/Dcm/subdir.mk
+-include Sources/BSW/Dem/subdir.mk
+-include Sources/BSW/Det/subdir.mk
+-include Sources/BSW/EcuM/subdir.mk
+-include Sources/BSW/Nm/subdir.mk
+-include Sources/BSW/Os/subdir.mk
+-include Sources/BSW/PduR/subdir.mk
+-include Sources/BSW/VStdLib/subdir.mk
+-include Sources/app/AutosarApp/GenData/subdir.mk
+-include Sources/app/AutosarApp/GenData/RteAnalyzer/Source/subdir.mk
+-include Sources/app/AutosarApp/Source/subdir.mk
 -include Sources/app/subdir.mk
 -include Sources/hal/subdir.mk
 -include Sources/subdir.mk
@@ -66,16 +86,16 @@ wlc.siz \
 all: warning-messages explicit-dependencies wlc.elf secondary-outputs
 
 # Tool invocations
-wlc.elf: $(OBJS) D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
+wlc.elf: $(OBJS) D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Executing target #56 $@'
+	@echo 'Executing target #245 $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "wlc.elf" "@wlc.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 wlc.siz: $(EXECUTABLES)
-	@echo 'Executing target #57 $@'
+	@echo 'Executing target #246 $@'
 	@echo 'Invoking: Standard S32DS Print Size'
 	arm-none-eabi-size --format=berkeley $(EXECUTABLES)
 	@echo 'Finished building: $@'
@@ -83,7 +103,7 @@ wlc.siz: $(EXECUTABLES)
 
 # Other Targets
 clean:
-	-$(RM) ./*/*.d ./*/*/*.d ./*/*/*/*.d ./*/*/*/*/*/*.d ./*/*/*/*/*/*/*.d  ./*/*.o ./*/*/*.o ./*/*/*/*.o ./*/*/*/*/*/*.o ./*/*/*/*/*/*/*.o  $(SECONDARY_SIZE_QUOTED) $(EXECUTABLES_QUOTED)
+	-$(RM) ./*/*.d ./*/*/*.d ./*/*/*/*/*.d ./*/*/*/*/*/*/*.d ./*/*/*/*.d ./*/*/*/*/*/*.d  ./*/*.o ./*/*/*.o ./*/*/*/*/*.o ./*/*/*/*/*/*/*.o ./*/*/*/*.o ./*/*/*/*/*/*.o  $(SECONDARY_SIZE_QUOTED) $(EXECUTABLES_QUOTED)
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_SIZE)

@@ -51,7 +51,7 @@ C_DEPS += \
 # Each subdirectory must supply rules for building sources it contributes
 SDK/platform/drivers/src/ftm/ftm_common.o: ../SDK/platform/drivers/src/ftm/ftm_common.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #19 $<'
+	@echo 'Executing target #23 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@SDK/platform/drivers/src/ftm/ftm_common.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "SDK/platform/drivers/src/ftm/ftm_common.o" "$<"
 	@echo 'Finished building: $<'
@@ -59,7 +59,7 @@ SDK/platform/drivers/src/ftm/ftm_common.o: ../SDK/platform/drivers/src/ftm/ftm_c
 
 SDK/platform/drivers/src/ftm/ftm_hw_access.o: ../SDK/platform/drivers/src/ftm/ftm_hw_access.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #20 $<'
+	@echo 'Executing target #24 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@SDK/platform/drivers/src/ftm/ftm_hw_access.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "SDK/platform/drivers/src/ftm/ftm_hw_access.o" "$<"
 	@echo 'Finished building: $<'
@@ -67,7 +67,7 @@ SDK/platform/drivers/src/ftm/ftm_hw_access.o: ../SDK/platform/drivers/src/ftm/ft
 
 SDK/platform/drivers/src/ftm/ftm_mc_driver.o: ../SDK/platform/drivers/src/ftm/ftm_mc_driver.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #21 $<'
+	@echo 'Executing target #25 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@SDK/platform/drivers/src/ftm/ftm_mc_driver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "SDK/platform/drivers/src/ftm/ftm_mc_driver.o" "$<"
 	@echo 'Finished building: $<'
@@ -75,7 +75,7 @@ SDK/platform/drivers/src/ftm/ftm_mc_driver.o: ../SDK/platform/drivers/src/ftm/ft
 
 SDK/platform/drivers/src/ftm/ftm_pwm_driver.o: ../SDK/platform/drivers/src/ftm/ftm_pwm_driver.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #22 $<'
+	@echo 'Executing target #26 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@SDK/platform/drivers/src/ftm/ftm_pwm_driver.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "SDK/platform/drivers/src/ftm/ftm_pwm_driver.o" "$<"
 	@echo 'Finished building: $<'

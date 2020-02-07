@@ -73,6 +73,7 @@ Coils GetMaxStrengthCoil(void);
 
 void HAL_Init(void);
 void HAL_SetPwmPeriod(uint32_t newPeriod);
+void HAL_CANInit();
 uint16 HAL_GetAdcSampleData(ADC_CHANNEL_TYPE adc_channel);
 uint16 HAL_GetBatteryVoltage(void);
 uint16 HAL_GetInputCurrent(void);

@@ -16,7 +16,7 @@
 #include "S32K144.h"
 #include "systemDef.h"
 #include "systemTimers.h"
-
+#include "canCom1.h"
 
 static uint16 current_offset;			//
 static uint16_t ApCurrent;
@@ -93,6 +93,11 @@ void HAL_Init(void)
     LPUART_DRV_Init(INST_LPUART1, &lpuart1_State, &lpuart1_InitConfig0);
 
     /*
+     * CAN 初始化
+     */
+    HAL_CANInit();
+
+    /*
      * INT初始化
      */
     INT_SYS_InstallHandler(FTM0_Ovf_Reload_IRQn, &FTM1_Ovf_Reload_IRQHandler, (isr_t *)0);
@@ -105,8 +110,30 @@ void HAL_Init(void)
     INT_SYS_EnableIRQ(PORTC_IRQn);
 
 }
+/*add CAN Driver init
+ *
+ */
+void HAL_CANInit()
+{
 
+	   FLEXCAN_DRV_Init(INST_CANCOM1, &canCom1_State, &canCom1_InitConfig0);
 
+	    flexcan_data_info_t dataInfo =
+	    {
+	            .data_length = 1U,
+	            .msg_id_type = FLEXCAN_MSG_ID_STD,
+	            .enable_brs  = true,
+	            .fd_enable   = true,
+	            .fd_padding  = 0U
+	    };
+
+	    /* Configure RX message buffer with index RX_MSG_ID and RX_MAILBOX */
+	    FLEXCAN_DRV_ConfigRxMb(INST_CANCOM1, 0, &dataInfo, 2);
+
+}
+/*
+ *
+ */
 void HAL_SetPwmPeriod(uint32_t newPeriod)
 {
 	FTM_DRV_UpdatePwmPeriod(INST_FLEXTIMER_PWM1, FTM_PWM_UPDATE_IN_TICKS, newPeriod, TRUE);

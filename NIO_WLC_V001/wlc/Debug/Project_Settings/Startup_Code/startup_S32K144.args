@@ -3,9 +3,9 @@
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/arm_ewl2/EWL_C/include/arm"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/arm_ewl2/EWL_Runtime/include"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/arm_ewl2/EWL_Runtime/include/arm"
--I"D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/Generated_Code"
--I"D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/Sources"
--I"D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/include"
+-I"D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/Generated_Code"
+-I"D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/Sources"
+-I"D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/include"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/drivers/src/lin"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/S32K144/startup"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/rtos/osif"
@@ -37,8 +37,8 @@
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/S32K146/startup"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/drivers/src/flexcan"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/S32K142/include"
--I"D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/Generated_Code"
--I"D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/Sources"
+-I"D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/Generated_Code"
+-I"D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/Sources"
 -x assembler-with-cpp
 -O0
 -g3

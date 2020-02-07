@@ -1,0 +1,263 @@
+/**********************************************************************************************************************
+ *  FILE REQUIRES USER MODIFICATIONS
+ *  Template Scope: sections marked with Start and End comments
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  This file includes template code that must be completed and/or adapted during BSW integration.
+ *  The template code is incomplete and only intended for providing a signature and an empty implementation.
+ *  It is neither intended nor qualified for use in series production without applying suitable quality measures.
+ *  The template code must be completed as described in the instructions given within this file and/or in the.
+ *  Technical Reference..
+ *  The completed implementation must be tested with diligent care and must comply with all quality requirements which.
+ *  are necessary according to the state of the art before its use..
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ *  FILE DESCRIPTION
+ *  -------------------------------------------------------------------------------------------------------------------
+ *             File:  Communication_Read_APP.c
+ *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
+ *        SW-C Type:  Communication_Read_APP
+ *  Generation Time:  2020-01-15 11:43:46
+ *
+ *        Generator:  MICROSAR RTE Generator Version 4.20.0
+ *                    RTE Core Version 1.20.0
+ *          License:  CBD1900162
+ *
+ *      Description:  C-Code implementation template for SW-C <Communication_Read_APP>
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of version logging area >>                DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+/* PRQA S 0777, 0779 EOF */ /* MD_MSR_5.1_777, MD_MSR_5.1_779 */
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of version logging area >>                  DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+#include "Rte_Communication_Read_APP.h" /* PRQA S 0857 */ /* MD_MSR_1.1_857 */
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ *
+ * Used AUTOSAR Data Types
+ *
+ **********************************************************************************************************************
+ *
+ * Primitive Types:
+ * ================
+ * CGW_03_CRC: Integer in interval [0...255]
+ * CGW_03_MsgCntr: Integer in interval [0...15]
+ * CGW_WLC_CRC: Integer in interval [0...255]
+ * CGW_WLC_MsgCntr: Integer in interval [0...15]
+ * Day: Integer in interval [0...31]
+ * Hr: Integer in interval [0...23]
+ * Min: Integer in interval [0...59]
+ * Sec: Integer in interval [0...59]
+ * UsrData0_WLC: Integer in interval [0...255]
+ * UsrData1_WLC: Integer in interval [0...255]
+ * UsrData2_WLC: Integer in interval [0...255]
+ * UsrData3_WLC: Integer in interval [0...255]
+ * UsrData4_WLC: Integer in interval [0...255]
+ * UsrData5_WLC: Integer in interval [0...255]
+ * VehOdometer: Integer in interval [0...16777214]
+ * VehSpd: Integer in interval [0...8191]
+ * WLCMuteViaHW: Boolean
+ * WLC_01_CRC: Integer in interval [0...255]
+ * WLC_01_MsgCntr: Integer in interval [0...15]
+ * WLC_02_CRC: Integer in interval [0...255]
+ * WLC_02_MsgCntr: Integer in interval [0...15]
+ * Yr: Integer in interval [0...255]
+ *
+ * Enumeration Types:
+ * ==================
+ * ComfEna: Enumeration of integer in interval [0...3] with enumerators
+ *   Cx0_Comfort_not_enabled (0U)
+ *   Cx1_Comfort_enabled (1U)
+ *   Cx2_Reserved (2U)
+ *   Cx3_Invalid (3U)
+ * ComfEna_ASIL: Enumeration of integer in interval [0...3] with enumerators
+ *   Cx0_Comfort_not_enabled (0U)
+ *   Cx1_Comfort_enabled (1U)
+ *   Cx2_Reserved (2U)
+ *   Cx3_Invalid (3U)
+ * ImobEnaReq: Enumeration of integer in interval [0...3] with enumerators
+ *   Cx0_Disable (0U)
+ *   Cx1_Enable_AID1 (1U)
+ *   Cx2_Enable_AID2 (2U)
+ *   Cx3_Invalid (3U)
+ * Mth: Enumeration of integer in interval [0...15] with enumerators
+ *   Cx0_Unknown (0U)
+ *   Cx1_January (1U)
+ *   Cx2_February (2U)
+ *   Cx3_March (3U)
+ *   Cx4_April (4U)
+ *   Cx5_May (5U)
+ *   Cx6_June (6U)
+ *   Cx7_July (7U)
+ *   Cx8_August (8U)
+ *   Cx9_September (9U)
+ *   CxA_October (10U)
+ *   CxB_November (11U)
+ *   CxC_December (12U)
+ *   CxD_Reserved (13U)
+ *   CxE_Reserved (14U)
+ *   CxF_Invalid (15U)
+ * VehState: Enumeration of integer in interval [0...15] with enumerators
+ *   Cx0_Parked_vehicle_Off_ (0U)
+ *   Cx1_Driver_present_On_ (1U)
+ *   Cx2_Driving (2U)
+ *   Cx3_Software_update (3U)
+ *   Cx4_Reserved (4U)
+ *   Cx5_Reserved (5U)
+ *   Cx6_Reserved (6U)
+ *   Cx7_Reserved (7U)
+ *   Cx8_Reserved (8U)
+ *   Cx9_Reserved (9U)
+ *   CxA_Reserved (10U)
+ *   CxB_Reserved (11U)
+ *   CxC_Reserved (12U)
+ *   CxD_Reserved (13U)
+ *   CxE_Reserved (14U)
+ *   CxF_Invalid (15U)
+ * VehState_ASIL: Enumeration of integer in interval [0...15] with enumerators
+ *   Cx0_Parked_vehicle_Off_ (0U)
+ *   Cx1_Driver_present_On_ (1U)
+ *   Cx2_Driving (2U)
+ *   Cx3_Software_update (3U)
+ *   Cx4_Reserved (4U)
+ *   Cx5_Reserved (5U)
+ *   Cx6_Reserved (6U)
+ *   Cx7_Reserved (7U)
+ *   Cx8_Reserved (8U)
+ *   Cx9_Reserved (9U)
+ *   CxA_Reserved (10U)
+ *   CxB_Reserved (11U)
+ *   CxC_Reserved (12U)
+ *   CxD_Reserved (13U)
+ *   CxE_Reserved (14U)
+ *   CxF_Invalid (15U)
+ * WLCChrgFctEnaReq: Enumeration of integer in interval [0...3] with enumerators
+ *   Cx0_Disable_WLC_charging_function (0U)
+ *   Cx1_Enable_WLC_charging_function (1U)
+ *   Cx2_No_operation (2U)
+ *   Cx3_Invalid (3U)
+ * WLCChrgRate: Enumeration of integer in interval [0...3] with enumerators
+ *   Cx0_Not_started_ (0U)
+ *   Cx1_Power_Requested_ (1U)
+ *   Cx2_Power_Reduced_ (2U)
+ *   Cx3_Reserved (3U)
+ * WLCChrgSts: Enumeration of integer in interval [0...3] with enumerators
+ *   Cx0_WLC_stopped (0U)
+ *   Cx1_WLC_on_going (1U)
+ *   Cx2_Charge_complete (2U)
+ *   Cx3_Invalid (3U)
+ * WLCCtrlSts: Enumeration of integer in interval [0...3] with enumerators
+ *   Cx0_WLC_enabled (0U)
+ *   Cx1_WLC_disabled (1U)
+ *   Cx2_Reserved (2U)
+ *   Cx3_Invalid (3U)
+ * WLCFailSts: Enumeration of integer in interval [0...15] with enumerators
+ *   Cx0_No_failure (0U)
+ *   Cx1_Over_temperature (1U)
+ *   Cx2_Under_voltage (2U)
+ *   Cx3_Over_voltage (3U)
+ *   Cx4_Internal_error (4U)
+ *   Cx5_Foreign_object_existing (5U)
+ *   Cx6_Unknown_error (6U)
+ *   Cx7_Smartphone_no_response_or_error (7U)
+ *   Cx8_Conductive_Device_Detected (8U)
+ *   Cx9_Reserved (9U)
+ *   CxA_Reserved (10U)
+ *   CxB_Reserved (11U)
+ *   CxC_Reserved (12U)
+ *   CxD_Reserved (13U)
+ *   CxE_Reserved (14U)
+ *   CxF_Invalid (15U)
+ * WLCImobSts: Enumeration of integer in interval [0...3] with enumerators
+ *   Cx0_Disable (0U)
+ *   Cx1_Enable (1U)
+ *   Cx2_Reserved (2U)
+ *   Cx3_Invalid (3U)
+ *
+ *********************************************************************************************************************/
+
+
+#define Communication_Read_APP_START_SEC_CODE
+#include "Communication_Read_APP_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: ComReadandWrite_Runnable
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered on TimingEvent every 10ms
+ *
+ **********************************************************************************************************************
+ *
+ * Input Interfaces:
+ * =================
+ *   Explicit S/R API:
+ *   -----------------
+ *   Std_ReturnType Rte_Read_VehSpd_VehSpd(VehSpd *data)
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: ComReadandWrite_Runnable_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(void, Communication_Read_APP_CODE) ComReadandWrite_Runnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: ComReadandWrite_Runnable
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+
+#define Communication_Read_APP_STOP_SEC_CODE
+#include "Communication_Read_APP_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of function definition area >>            DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of function definition area >>              DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of removed code area >>                   DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of removed code area >>                     DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/

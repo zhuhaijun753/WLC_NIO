@@ -12,6 +12,54 @@
 #include "systemTimers.h"
 #include "systemStatus.h"
 #include "systemSmSetting.h"
+#include "canCom1.h"
+
+
+#include "EcuM.h"
+#define RTE_CORE
+
+#include "Rte_Type.h"
+#include "Rte_Main.h"
+
+#include "Rte_BswM.h"
+#include "Rte_ComM.h"
+#include "Rte_Dcm.h"
+#include "Rte_DemMaster_0.h"
+#include "Rte_DemSatellite_0.h"
+#include "Rte_DemoSWC.h"
+#include "Rte_Det.h"
+#include "Rte_DioControlCDD.h"
+#include "Rte_EcuM.h"
+#include "Rte_Os_OsCore0_swc.h"
+#include "SchM_BswM.h"
+#include "SchM_Can.h"
+#include "SchM_CanIf.h"
+#include "SchM_CanNm.h"
+#include "SchM_CanSM.h"
+#include "SchM_CanTp.h"
+#include "SchM_Com.h"
+#include "SchM_ComM.h"
+#include "SchM_Dcm.h"
+#include "SchM_Dem.h"
+#include "SchM_Det.h"
+#include "SchM_Dio.h"
+#include "SchM_EcuM.h"
+#include "SchM_Mcu.h"
+#include "SchM_Nm.h"
+#include "SchM_PduR.h"
+#include "SchM_Port.h"
+
+#include "Rte_Hook.h"
+
+#include "Com.h"
+#include "Can.h"
+
+#if defined(IL_ASRCOM_VERSION)
+# define RTE_USE_COM_TXSIGNAL_RDACCESS
+#endif
+
+#include "Rte_Cbk.h"
+
 
 #define NUM_1MS_COUNTS_FOR_10MS         10U
 #define NUM_10MS_COUNTS_FOR_100MS       10U
@@ -145,6 +193,21 @@ static void AppTask_1msHandle(uint16 wNumTicks)
 	{
 		KeyChargeRun();
 	}
+
+    flexcan_msgbuff_t recvBuff;
+
+    /* Start receiving data in RX_MAILBOX. */
+    FLEXCAN_DRV_Receive(0, 0, &recvBuff);
+
+    /* Wait until the previous FlexCAN receive is completed */
+    while(FLEXCAN_DRV_GetTransferStatus(INST_CANCOM1, 0) == STATUS_BUSY);
+
+    if(recvBuff.msgId == 1)
+    {
+        /* Toggle output value LED1 */
+      //  PINS_DRV_TogglePins(GPIO_PORT, (1 << LED0));
+    }
+
 
 }
 

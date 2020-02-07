@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dem_Cfg.h
- *   Generation Time: 2019-11-28 22:25:12
+ *   Generation Time: 2020-02-07 18:24:55
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -239,7 +239,7 @@
 #define DEM_CFG_SUPPORT_DTCSUPPRESSION                                     STD_OFF      /* Autodetected - via /Dem/DemGeneral/DemSuppressionSupport == (DEM_DTC_SUPPRESSION | DEM_EVENT_AND_DTC_SUPPRESSION) */ 
 #define DEM_CFG_SUPPORT_DTR                                                STD_OFF      /* ((DEM_CFG_SUPPORT_OBDII == STD_OFF) && (DEM_CFG_SUPPORT_WWHOBD == STD_OFF)) */ 
 #define DEM_CFG_SUPPORT_ENABLE_CONDITIONS                                  STD_OFF      /* /Dem/DemGeneral/DemEnableConditionSupport */ 
-#define DEM_CFG_SUPPORT_ERECS                                              STD_OFF      /* Internal - STD_ON: any DTC has ExtendedDataRecord(s), STD_OFF: no DTC has ExtendedDataRecords */ 
+#define DEM_CFG_SUPPORT_ERECS                                              STD_ON       /* Internal - STD_ON: any DTC has ExtendedDataRecord(s), STD_OFF: no DTC has ExtendedDataRecords */ 
 #define DEM_CFG_SUPPORT_EVENTAVAILABLE                                     STD_OFF      /* Autodetected - STD_ON: /Dem/DemGeneral/DemAvailabilitySupport == DEM_EVENT_AVAILABILITY, STD_OFF: else */ 
 #define DEM_CFG_SUPPORT_EVENTAVAILABLE_DEFAULT                             STD_ON       /* Vector extension - /Dem/DemGeneral/DemPostbuild/DemEventAvailableDefaultSupport */ 
 #define DEM_CFG_SUPPORT_EVENTAVAILABLE_NV                                  STD_OFF      /* Autodetected - STD_ON: /Dem/DemGeneral/DemAvailabilityStorage == TRUE, STD_OFF: else */ 
@@ -315,7 +315,7 @@
 #define DEM_CFG_SUPPORT_USER_CAS                                           STD_OFF      /* Vector extension - /Dem/DemGeneral/DemUserDefinedCompareAndSwap */ 
 #define DEM_CFG_SUPPORT_USER_CONTROLLED_WIR                                STD_OFF      /* Vector extension - /Dem/DemGeneral/DemUserControlledWirSupport */ 
 #define DEM_CFG_SUPPORT_USER_CONTROLLED_WIR_DURING_CDTCS                   STD_ON       /* Autodetected - via /Dem/DemGeneral/DemUserControlledWirBehavior == DEM_ENABLED_DURING_CONTROLDTCSETTING */ 
-#define DEM_CFG_SUPPORT_USER_ERECS                                         STD_OFF      /* Internal - STD_ON: require generic buffer ExtendedData[], STD_OFF: all configured DemDataClass of DemExtendedDataRecordClass have individual buffers in Dem_Cfg_PrimaryEntryType */ 
+#define DEM_CFG_SUPPORT_USER_ERECS                                         STD_ON       /* Internal - STD_ON: require generic buffer ExtendedData[], STD_OFF: all configured DemDataClass of DemExtendedDataRecordClass have individual buffers in Dem_Cfg_PrimaryEntryType */ 
 #define DEM_CFG_SUPPORT_USER_INDICATORS                                    STD_OFF      /* Autodetected - STD_ON: any event has a user (non-special) indicator, STD_OFF: no event has standard user indicator (but some events may have a special indicators like MIL or any J1939 Lamp) */ 
 #define DEM_CFG_SUPPORT_VERSION_INFO                                       STD_ON       /* /Dem/DemGeneral/DemVersionInfoApi */ 
 #define DEM_CFG_SUPPORT_VID08                                              STD_OFF      /* (DEM_CFG_SUPPORT_OBDII == STD_OFF) */ 

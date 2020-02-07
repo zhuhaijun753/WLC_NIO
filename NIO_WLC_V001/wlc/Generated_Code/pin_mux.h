@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K14x_09
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-02-05, 11:45, # CodeGen: 8
+**     Date/Time   : 2020-02-06, 15:55, # CodeGen: 11
 **     Abstract    :
 **
 **     Settings    :
@@ -53,12 +53,12 @@
 **              Peripheral Type CAN                        : 
 **                Custom name                              : CAN0
 **                CAN0                                     : 
-**                  Receiver Input                         : <Automatic>
-**                  Transmitter Output                     : <Automatic>
+**                  Receiver Input                         : PTE4
+**                  Transmitter Output                     : PTE5
 **                Custom name                              : CAN1
 **                CAN1                                     : 
-**                  Receiver Input                         : PTA12
-**                  Transmitter Output                     : PTA13
+**                  Receiver Input                         : <Automatic>
+**                  Transmitter Output                     : <Automatic>
 **                Custom name                              : CAN2
 **                CAN2                                     : 
 **                  Receiver Input                         : <Automatic>

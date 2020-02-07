@@ -2,9 +2,9 @@ SDK/platform/pal/i2c/src/i2c_pal.o: ../SDK/platform/pal/i2c/src/i2c_pal.c \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/arm_ewl2/EWL_C/include/lib_c99.prefix \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/arm_ewl2/EWL_C/include/common.prefix \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/arm_ewl2/EWL_C/include/ewl_c_version.h \
- D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal.h \
- D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/Generated_Code/i2c_pal_cfg.h \
- D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal_mapping.h \
+ D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal.h \
+ D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/Generated_Code/i2c_pal_cfg.h \
+ D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal_mapping.h \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/device_registers.h \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/common/s32_core_cm4.h \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/S32K144/include/S32K144.h \
@@ -37,11 +37,11 @@ C:/NXP/S32DS_ARM_v2018.R1/S32DS/arm_ewl2/EWL_C/include/common.prefix:
 
 C:/NXP/S32DS_ARM_v2018.R1/S32DS/arm_ewl2/EWL_C/include/ewl_c_version.h:
 
-D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal.h:
+D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal.h:
 
-D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/Generated_Code/i2c_pal_cfg.h:
+D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/Generated_Code/i2c_pal_cfg.h:
 
-D:/Auto/TEME/NIO/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal_mapping.h:
+D:/Auto/Demo/WLCProject/NIO_WLC_V001/wlc/SDK/platform/pal/i2c/inc/i2c_pal_mapping.h:
 
 C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K14x_EAR_0.8.6/platform/devices/device_registers.h:
 

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dem_Lcfg.h
- *   Generation Time: 2019-11-28 22:25:12
+ *   Generation Time: 2020-02-07 18:24:56
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -125,7 +125,7 @@
 #define DEM_CFG_MASKEDBITSOFDATACOLLECTIONTABLE                       STD_ON
 #define DEM_CFG_STORAGEKINDOFDATACOLLECTIONTABLE                      STD_ON
 #define DEM_CFG_UPDATEOFDATACOLLECTIONTABLE                           STD_ON
-#define DEM_CFG_DATACOLLECTIONTABLEEDR2COLLIND                        STD_OFF  /**< Deactivateable: 'Dem_Cfg_DataCollectionTableEdr2CollInd' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define DEM_CFG_DATACOLLECTIONTABLEEDR2COLLIND                        STD_ON
 #define DEM_CFG_DATACOLLECTIONTABLEFFM2COLLIND                        STD_OFF  /**< Deactivateable: 'Dem_Cfg_DataCollectionTableFfm2CollInd' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define DEM_CFG_DATACOLLECTIONTABLEJ19392COLLIND                      STD_OFF  /**< Deactivateable: 'Dem_Cfg_DataCollectionTableJ19392CollInd' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define DEM_CFG_DATACOLLECTIONTABLEPID2COLLIND                        STD_OFF  /**< Deactivateable: 'Dem_Cfg_DataCollectionTablePid2CollInd' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
@@ -243,9 +243,9 @@
 #define DEM_CFG_STORAGECONDITIONGROUPTABLEUSEDOFEVENTTABLE            STD_OFF  /**< Deactivateable: 'Dem_Cfg_EventTable.StorageConditionGroupTableUsed' Reason: '(DEM_CFG_HAS_STORAGE_CONDITIONS == STD_OFF)' */
 #define DEM_CFG_EVENTTABLEIND                                         STD_ON
 #define DEM_CFG_EXTENDEDDATATABLE                                     STD_ON
-#define DEM_CFG_DATACOLLECTIONTABLEEDR2COLLINDENDIDXOFEXTENDEDDATATABLE STD_OFF  /**< Deactivateable: 'Dem_Cfg_ExtendedDataTable.DataCollectionTableEdr2CollIndEndIdx' Reason: 'the optional indirection is deactivated because DataCollectionTableEdr2CollIndUsedOfExtendedDataTable is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
-#define DEM_CFG_DATACOLLECTIONTABLEEDR2COLLINDSTARTIDXOFEXTENDEDDATATABLE STD_OFF  /**< Deactivateable: 'Dem_Cfg_ExtendedDataTable.DataCollectionTableEdr2CollIndStartIdx' Reason: 'the optional indirection is deactivated because DataCollectionTableEdr2CollIndUsedOfExtendedDataTable is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
-#define DEM_CFG_DATACOLLECTIONTABLEEDR2COLLINDUSEDOFEXTENDEDDATATABLE STD_OFF  /**< Deactivateable: 'Dem_Cfg_ExtendedDataTable.DataCollectionTableEdr2CollIndUsed' Reason: 'the optional indirection is deactivated because DataCollectionTableEdr2CollIndUsedOfExtendedDataTable is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
+#define DEM_CFG_DATACOLLECTIONTABLEEDR2COLLINDENDIDXOFEXTENDEDDATATABLE STD_ON
+#define DEM_CFG_DATACOLLECTIONTABLEEDR2COLLINDSTARTIDXOFEXTENDEDDATATABLE STD_ON
+#define DEM_CFG_DATACOLLECTIONTABLEEDR2COLLINDUSEDOFEXTENDEDDATATABLE STD_ON
 #define DEM_CFG_MAXRECORDSIZEOFEXTENDEDDATATABLE                      STD_ON
 #define DEM_CFG_FILTERINFOTABLE                                       STD_ON
 #define DEM_CFG_FILTERREPORTEDEVENTS                                  STD_ON
@@ -395,6 +395,7 @@
 #define DEM_CFG_CONFIGURATIONIDOFPCCONFIG                             STD_ON
 #define DEM_CFG_CYCLEIDTABLEOFPCCONFIG                                STD_ON
 #define DEM_CFG_DTCSELECTORTABLEOFPCCONFIG                            STD_ON
+#define DEM_CFG_DATACOLLECTIONTABLEEDR2COLLINDOFPCCONFIG              STD_ON
 #define DEM_CFG_DATACOLLECTIONTABLEOFPCCONFIG                         STD_ON
 #define DEM_CFG_DATAELEMENTTABLECOL2ELMTINDOFPCCONFIG                 STD_ON
 #define DEM_CFG_DATAELEMENTTABLEOFPCCONFIG                            STD_ON
@@ -513,6 +514,8 @@
 #define DEM_CFG_NO_DATAELEMENTTABLECOL2ELMTINDSTARTIDXOFDATACOLLECTIONTABLE 255u
 #define DEM_CFG_NO_ENABLECONDITIONGROUPTABLEINDENDIDXOFENABLECONDITIONTABLE 255u
 #define DEM_CFG_NO_ENABLECONDITIONGROUPTABLEINDSTARTIDXOFENABLECONDITIONTABLE 255u
+#define DEM_CFG_NO_DATACOLLECTIONTABLEEDR2COLLINDENDIDXOFEXTENDEDDATATABLE 255u
+#define DEM_CFG_NO_DATACOLLECTIONTABLEEDR2COLLINDSTARTIDXOFEXTENDEDDATATABLE 255u
 #define DEM_CFG_NO_EVENTTABLEINDENDIDXOFSATELLITEINFO                 255u
 #define DEM_CFG_NO_EVENTTABLEINDSTARTIDXOFSATELLITEINFO               255u
 /** 
@@ -588,6 +591,7 @@
 #define DEM_CFG_ISDEF_MASKEDBITSOFDATACOLLECTIONTABLE                 STD_OFF
 #define DEM_CFG_ISDEF_STORAGEKINDOFDATACOLLECTIONTABLE                STD_OFF
 #define DEM_CFG_ISDEF_UPDATEOFDATACOLLECTIONTABLE                     STD_ON
+#define DEM_CFG_ISDEF_DATACOLLECTIONTABLEEDR2COLLIND                  STD_OFF
 #define DEM_CFG_ISDEF_DATAISSTOREDINNVOFDATAELEMENTTABLE              STD_OFF
 #define DEM_CFG_ISDEF_ELEMENTKINDOFDATAELEMENTTABLE                   STD_OFF
 #define DEM_CFG_ISDEF_ELEMENTSIZEOFDATAELEMENTTABLE                   STD_OFF
@@ -640,7 +644,10 @@
 #define DEM_CFG_ISDEF_SATELLITEEVENTIDXOFEVENTTABLE                   STD_OFF
 #define DEM_CFG_ISDEF_SATELLITEINFOIDXOFEVENTTABLE                    STD_ON
 #define DEM_CFG_ISDEF_EVENTTABLEIND                                   STD_OFF
-#define DEM_CFG_ISDEF_MAXRECORDSIZEOFEXTENDEDDATATABLE                STD_ON
+#define DEM_CFG_ISDEF_DATACOLLECTIONTABLEEDR2COLLINDENDIDXOFEXTENDEDDATATABLE STD_OFF
+#define DEM_CFG_ISDEF_DATACOLLECTIONTABLEEDR2COLLINDSTARTIDXOFEXTENDEDDATATABLE STD_OFF
+#define DEM_CFG_ISDEF_DATACOLLECTIONTABLEEDR2COLLINDUSEDOFEXTENDEDDATATABLE STD_OFF
+#define DEM_CFG_ISDEF_MAXRECORDSIZEOFEXTENDEDDATATABLE                STD_OFF
 #define DEM_CFG_ISDEF_RECORDSIZEOFFREEZEFRAMETABLE                    STD_ON
 #define DEM_CFG_ISDEF_RECORDSIZEUDSOFFREEZEFRAMETABLE                 STD_ON
 #define DEM_CFG_ISDEF_DATAELEMENTTABLEIDXOFGENERALOBDINPUT            STD_ON
@@ -661,6 +668,7 @@
 #define DEM_CFG_ISDEF_COMMITBUFFEROFPCCONFIG                          STD_ON
 #define DEM_CFG_ISDEF_CYCLEIDTABLEOFPCCONFIG                          STD_ON
 #define DEM_CFG_ISDEF_DTCSELECTORTABLEOFPCCONFIG                      STD_ON
+#define DEM_CFG_ISDEF_DATACOLLECTIONTABLEEDR2COLLINDOFPCCONFIG        STD_ON
 #define DEM_CFG_ISDEF_DATACOLLECTIONTABLEOFPCCONFIG                   STD_ON
 #define DEM_CFG_ISDEF_DATAELEMENTTABLECOL2ELMTINDOFPCCONFIG           STD_ON
 #define DEM_CFG_ISDEF_DATAELEMENTTABLEOFPCCONFIG                      STD_ON
@@ -731,6 +739,7 @@
 #define DEM_CFG_EQ2_MASKEDBITSOFDATACOLLECTIONTABLE                   
 #define DEM_CFG_EQ2_STORAGEKINDOFDATACOLLECTIONTABLE                  
 #define DEM_CFG_EQ2_UPDATEOFDATACOLLECTIONTABLE                       FALSE
+#define DEM_CFG_EQ2_DATACOLLECTIONTABLEEDR2COLLIND                    
 #define DEM_CFG_EQ2_DATAISSTOREDINNVOFDATAELEMENTTABLE                
 #define DEM_CFG_EQ2_ELEMENTKINDOFDATAELEMENTTABLE                     
 #define DEM_CFG_EQ2_ELEMENTSIZEOFDATAELEMENTTABLE                     
@@ -783,7 +792,10 @@
 #define DEM_CFG_EQ2_SATELLITEEVENTIDXOFEVENTTABLE                     
 #define DEM_CFG_EQ2_SATELLITEINFOIDXOFEVENTTABLE                      0u
 #define DEM_CFG_EQ2_EVENTTABLEIND                                     
-#define DEM_CFG_EQ2_MAXRECORDSIZEOFEXTENDEDDATATABLE                  0u
+#define DEM_CFG_EQ2_DATACOLLECTIONTABLEEDR2COLLINDENDIDXOFEXTENDEDDATATABLE 
+#define DEM_CFG_EQ2_DATACOLLECTIONTABLEEDR2COLLINDSTARTIDXOFEXTENDEDDATATABLE 
+#define DEM_CFG_EQ2_DATACOLLECTIONTABLEEDR2COLLINDUSEDOFEXTENDEDDATATABLE 
+#define DEM_CFG_EQ2_MAXRECORDSIZEOFEXTENDEDDATATABLE                  
 #define DEM_CFG_EQ2_RECORDSIZEOFFREEZEFRAMETABLE                      0u
 #define DEM_CFG_EQ2_RECORDSIZEUDSOFFREEZEFRAMETABLE                   0u
 #define DEM_CFG_EQ2_DATAELEMENTTABLEIDXOFGENERALOBDINPUT              0u
@@ -804,6 +816,7 @@
 #define DEM_CFG_EQ2_COMMITBUFFEROFPCCONFIG                            Dem_Cfg_CommitBuffer
 #define DEM_CFG_EQ2_CYCLEIDTABLEOFPCCONFIG                            Dem_Cfg_CycleIdTable
 #define DEM_CFG_EQ2_DTCSELECTORTABLEOFPCCONFIG                        Dem_Cfg_DTCSelectorTable
+#define DEM_CFG_EQ2_DATACOLLECTIONTABLEEDR2COLLINDOFPCCONFIG          Dem_Cfg_DataCollectionTableEdr2CollInd
 #define DEM_CFG_EQ2_DATACOLLECTIONTABLEOFPCCONFIG                     Dem_Cfg_DataCollectionTable
 #define DEM_CFG_EQ2_DATAELEMENTTABLECOL2ELMTINDOFPCCONFIG             Dem_Cfg_DataElementTableCol2ElmtInd
 #define DEM_CFG_EQ2_DATAELEMENTTABLEOFPCCONFIG                        Dem_Cfg_DataElementTable
@@ -958,6 +971,10 @@
 #define DEM_G_NUMBER_OF_RATIO_IDS                                     0u                                /* Number of OBD RatioIds (incl. ID 0, internally used for global values) */ 
 
 
+ /*  Support for optimized routines of Vector DCM - Extended Data records  */ 
+#define DEM_DCM_NUM_EXTDATA_RECID                                     2u 
+#define DEM_DCM_LST_EXTDATA_RECID                                     0x01u, 0x02u 
+
  /*  Event IDs [symbolic name value] - sorted by name.
      See Dem_Cfg_EventTable[] for this list sorted by Ids.  */ 
 #define DemConf_DemEventParameter_AutoCreatedDemEvent_ECUM_E_ALL_RUN_REQUESTS_KILLED          9u 
@@ -1032,6 +1049,8 @@
 #define DEM_CFG_GLOBAL_OBD_IIFFUDS_SIZE                               2u           /* Data size of OBD-II record incl PID numbers (each 2B) plus RecordNumber (1B) plus RecordCount (1B). */ 
 
  /*  Defines for supporting A2L  */ 
+#define DEM_A2L_MAX_NUMBER_PRIMEM_EXTRECORD                           2uL 
+#define DEM_A2L_MAX_SIZE_PRIMEM_EXTRECORD                             4uL 
 #define DEM_A2L_NUMBER_OF_EVENTS                                      12uL         /* incl. event #0 */ 
 #define DEM_A2L_NUMBER_OF_MIL_GROUPS                                  0uL          /* number of DemMILGroup containers + 1 */ 
 #define DEM_A2L_MAX_SIZE_STDENV_RECORD                                0uL          /* largest, configured StdEnvData */ 
@@ -1049,9 +1068,9 @@
 #define DEM_CFG_MAX_NUMBER_AGED_DTCS                                  0u           /* Maximum number of aged DTCs (number of DTCs assigned to an ageable event). */ 
 #define DEM_CFG_MAX_NUMBER_AGING_DTCS                                 0u           /* Maximum number of aging DTCs (number of DTCs assigned to an event). */ 
 #define DEM_CFG_MAX_NUMBER_CONFIGURABLE_DTRS                          0u           /* Maximum number of configurable Dtrs (defined by the largest DemDtrId value, or with PostBuild-Loadable the value /Dem/DemGeneral/DemPostbuild/DemMaxNumberDtr). */ 
-#define DEM_CFG_MAX_NUM_EXT_RECORDS                                   1u           /* Largest count of EDR records per event to be stored in ExtendedData[DEM_CFG_MAX_NUM_EXT_RECORDS][DEM_CFG_MAX_SIZE_EXT_RECORD] - ignore records with pure ROM data and/or data having own_variable. '1' if there are 0 records. */ 
+#define DEM_CFG_MAX_NUM_EXT_RECORDS                                   2u           /* Largest count of EDR records per event to be stored in ExtendedData[DEM_CFG_MAX_NUM_EXT_RECORDS][DEM_CFG_MAX_SIZE_EXT_RECORD] - ignore records with pure ROM data and/or data having own_variable. '1' if there are 0 records. */ 
 #define DEM_CFG_MAX_NUM_SNAPSHOTS                                     1u           /* Largest count of FreezeFrame records per event to be stored in SnapshotData[DEM_CFG_MAX_NUM_SNAPSHOTS][DEM_CFG_MAX_SIZE_SNAPSHOT]. '1' if there are 0 records. */ 
-#define DEM_CFG_MAX_SIZE_EXT_RECORD                                   1u           /* Data size of the largest EDR record to be stored in ExtendedData[DEM_CFG_MAX_NUM_EXT_RECORDS][DEM_CFG_MAX_SIZE_EXT_RECORD] or '1' if size is 0. */ 
+#define DEM_CFG_MAX_SIZE_EXT_RECORD                                   4u           /* Data size of the largest EDR record to be stored in ExtendedData[DEM_CFG_MAX_NUM_EXT_RECORDS][DEM_CFG_MAX_SIZE_EXT_RECORD] or '1' if size is 0. */ 
 #define DEM_CFG_MAX_SIZE_GLOBAL_SNAPSHOT                              1u           /* Data size of the global freeze frame record to be stored in GlobalSnapshotData[DEM_CFG_MAX_SIZE_GLOBAL_SNAPSHOT] or '1' if size is 0 or there is no global freeze frame. */ 
 #define DEM_CFG_MAX_SIZE_OBDFREEZEFRAME                               0u           /* Data size of largest configured FreezeFrame 0 (OBD II) record. */ 
 #define DEM_CFG_MAX_SIZE_SNAPSHOT                                     1u           /* Data size of the largest FreezeFrame record to be stored in SnapshotData[DEM_CFG_MAX_NUM_SNAPSHOTS][DEM_CFG_MAX_SIZE_SNAPSHOT] or '1' if size is 0 or there are 0 records. */ 
@@ -1124,6 +1143,7 @@
 #define Dem_Cfg_GetConfigurationIdOfPCConfig()                        0x0493u  /**< Magic constant derived from the configuration parameters /Dem/DemGeneral/DemCompiledConfigId and /Dem/DemGeneral/DemCompiledPostbuildCrc. Each value change is evidence to incompatible NV stored data and triggers a re-initialization of the NV data. */
 #define Dem_Cfg_GetCycleIdTableOfPCConfig()                           Dem_Cfg_CycleIdTable  /**< the pointer to Dem_Cfg_CycleIdTable */
 #define Dem_Cfg_GetDTCSelectorTableOfPCConfig()                       Dem_Cfg_DTCSelectorTable  /**< the pointer to Dem_Cfg_DTCSelectorTable */
+#define Dem_Cfg_GetDataCollectionTableEdr2CollIndOfPCConfig()         Dem_Cfg_DataCollectionTableEdr2CollInd  /**< the pointer to Dem_Cfg_DataCollectionTableEdr2CollInd */
 #define Dem_Cfg_GetDataCollectionTableOfPCConfig()                    Dem_Cfg_DataCollectionTable  /**< the pointer to Dem_Cfg_DataCollectionTable */
 #define Dem_Cfg_GetDataElementTableCol2ElmtIndOfPCConfig()            Dem_Cfg_DataElementTableCol2ElmtInd  /**< the pointer to Dem_Cfg_DataElementTableCol2ElmtInd */
 #define Dem_Cfg_GetDataElementTableOfPCConfig()                       Dem_Cfg_DataElementTable  /**< the pointer to Dem_Cfg_DataElementTable */
@@ -1241,6 +1261,9 @@
 #define Dem_Cfg_GetDebounceTableIdxOfEventTable(Index)                (Dem_Cfg_GetEventTableOfPCConfig()[(Index)].DebounceTableIdxOfEventTable)
 #define Dem_Cfg_GetDtcTableIdxOfEventTable(Index)                     (Dem_Cfg_GetEventTableOfPCConfig()[(Index)].DtcTableIdxOfEventTable)
 #define Dem_Cfg_GetEventKindOfEventTable(Index)                       (Dem_Cfg_GetEventTableOfPCConfig()[(Index)].EventKindOfEventTable)
+#define Dem_Cfg_GetDataCollectionTableEdr2CollIndEndIdxOfExtendedDataTable(Index) (Dem_Cfg_GetExtendedDataTableOfPCConfig()[(Index)].DataCollectionTableEdr2CollIndEndIdxOfExtendedDataTable)
+#define Dem_Cfg_GetDataCollectionTableEdr2CollIndStartIdxOfExtendedDataTable(Index) (Dem_Cfg_GetExtendedDataTableOfPCConfig()[(Index)].DataCollectionTableEdr2CollIndStartIdxOfExtendedDataTable)
+#define Dem_Cfg_GetMaxRecordSizeOfExtendedDataTable(Index)            (Dem_Cfg_GetExtendedDataTableOfPCConfig()[(Index)].MaxRecordSizeOfExtendedDataTable)
 #define Dem_Cfg_GetFilterInfoTable(Index)                             (Dem_Cfg_GetFilterInfoTableOfPCConfig()[(Index)])
 #define Dem_Cfg_GetFilterReportedEvents(Index)                        (Dem_Cfg_GetFilterReportedEventsOfPCConfig()[(Index)])
 #define Dem_Cfg_GetFreezeFrameIteratorTable(Index)                    (Dem_Cfg_GetFreezeFrameIteratorTableOfPCConfig()[(Index)])
@@ -1285,6 +1308,7 @@
 #define Dem_Cfg_IsDataElementTableCol2ElmtIndUsedOfDataCollectionTable(Index) (((boolean)(Dem_Cfg_GetDataElementTableCol2ElmtIndStartIdxOfDataCollectionTable(Index) != DEM_CFG_NO_DATAELEMENTTABLECOL2ELMTINDSTARTIDXOFDATACOLLECTIONTABLE)) != FALSE)  /**< TRUE, if the 0:n relation has 1 relation pointing to Dem_Cfg_DataElementTableCol2ElmtInd */
 #define Dem_Cfg_GetIdNumberOfDataCollectionTable(Index)               ((Dem_Cfg_IdNumberOfDataCollectionTableType)((Index)))
 #define Dem_Cfg_IsUpdateOfDataCollectionTable(Index)                  (((FALSE)) != FALSE)
+#define Dem_Cfg_GetDataCollectionTableEdr2CollInd(Index)              ((Dem_Cfg_DataCollectionTableEdr2CollIndType)(((Index) + 1u)))  /**< the indexes of the 1:1 sorted relation pointing to Dem_Cfg_DataCollectionTable */
 #define Dem_Cfg_IsDataIsStoredInNVOfDataElementTable(Index)           (((boolean)(Dem_Cfg_GetElementSizeOfDataElementTable(Index) == 4u)) != FALSE)
 #define Dem_Cfg_GetDataElementTableCol2ElmtInd(Index)                 ((Dem_Cfg_DataElementTableCol2ElmtIndType)(((Index) + 1u)))  /**< the indexes of the 1:1 sorted relation pointing to Dem_Cfg_DataElementTable */
 #define Dem_Cfg_IsDebounceContinuousOfDebounceTable(Index)            (((FALSE)) != FALSE)  /**< DemDebounceContinuous of the DemEventParameter/DemEventClass/DemDebounceAlgorithmClass/DemDebounceCounterBased and ~/DemDebounceTimeBase */
@@ -1322,7 +1346,7 @@
 #define Dem_Cfg_GetSatelliteEventIdxOfEventTable(Index)               ((Dem_Cfg_SatelliteEventIdxOfEventTableType)((Index)))  /**< Index of this event in the satellite's RAM buffers Dem_Cfg_SatelliteInfoNN.SatelliteData[] and Dem_Cfg_SatelliteInfoNN.SatelliteExtendedData[]. */
 #define Dem_Cfg_GetSatelliteInfoIdxOfEventTable(Index)                0u  /**< the index of the 1:1 relation pointing to Dem_Cfg_SatelliteInfo */
 #define Dem_Cfg_GetEventTableInd(Index)                               ((Dem_Cfg_EventTableIndType)((Index)))  /**< the indexes of the 1:1 sorted relation pointing to Dem_Cfg_EventTable */
-#define Dem_Cfg_GetMaxRecordSizeOfExtendedDataTable(Index)            0u
+#define Dem_Cfg_IsDataCollectionTableEdr2CollIndUsedOfExtendedDataTable(Index) (((boolean)(Dem_Cfg_GetDataCollectionTableEdr2CollIndStartIdxOfExtendedDataTable(Index) != DEM_CFG_NO_DATACOLLECTIONTABLEEDR2COLLINDSTARTIDXOFEXTENDEDDATATABLE)) != FALSE)  /**< TRUE, if the 0:n relation has 1 relation pointing to Dem_Cfg_DataCollectionTableEdr2CollInd */
 #define Dem_Cfg_GetRecordSizeOfFreezeFrameTable(Index)                0u  /**< Summarized size of did data that is stored in Dem_Cfg_PrimaryEntryType.SnapshotData[][] (i.e. typically without size of dids containing internal data elements). */
 #define Dem_Cfg_GetRecordSizeUdsOfFreezeFrameTable(Index)             0u  /**< Summarized size of did data, did numbers and snapshot header (i.e. dynamical payload size of the uds response message). */
 #define Dem_Cfg_GetDataElementTableIdxOfGeneralObdInput(Index)        0u  /**< the index of the 1:1 relation pointing to Dem_Cfg_DataElementTable */
@@ -1449,6 +1473,7 @@
 #define Dem_Cfg_HasMaskedBitsOfDataCollectionTable()                  (TRUE != FALSE)
 #define Dem_Cfg_HasStorageKindOfDataCollectionTable()                 (TRUE != FALSE)
 #define Dem_Cfg_HasUpdateOfDataCollectionTable()                      (TRUE != FALSE)
+#define Dem_Cfg_HasDataCollectionTableEdr2CollInd()                   (TRUE != FALSE)
 #define Dem_Cfg_HasDataElementTable()                                 (TRUE != FALSE)
 #define Dem_Cfg_HasDataIsStoredInNVOfDataElementTable()               (TRUE != FALSE)
 #define Dem_Cfg_HasElementKindOfDataElementTable()                    (TRUE != FALSE)
@@ -1514,6 +1539,9 @@
 #define Dem_Cfg_HasSatelliteInfoIdxOfEventTable()                     (TRUE != FALSE)
 #define Dem_Cfg_HasEventTableInd()                                    (TRUE != FALSE)
 #define Dem_Cfg_HasExtendedDataTable()                                (TRUE != FALSE)
+#define Dem_Cfg_HasDataCollectionTableEdr2CollIndEndIdxOfExtendedDataTable() (TRUE != FALSE)
+#define Dem_Cfg_HasDataCollectionTableEdr2CollIndStartIdxOfExtendedDataTable() (TRUE != FALSE)
+#define Dem_Cfg_HasDataCollectionTableEdr2CollIndUsedOfExtendedDataTable() (TRUE != FALSE)
 #define Dem_Cfg_HasMaxRecordSizeOfExtendedDataTable()                 (TRUE != FALSE)
 #define Dem_Cfg_HasFilterInfoTable()                                  (TRUE != FALSE)
 #define Dem_Cfg_HasFilterReportedEvents()                             (TRUE != FALSE)
@@ -1584,6 +1612,7 @@
 #define Dem_Cfg_HasConfigurationIdOfPCConfig()                        (TRUE != FALSE)
 #define Dem_Cfg_HasCycleIdTableOfPCConfig()                           (TRUE != FALSE)
 #define Dem_Cfg_HasDTCSelectorTableOfPCConfig()                       (TRUE != FALSE)
+#define Dem_Cfg_HasDataCollectionTableEdr2CollIndOfPCConfig()         (TRUE != FALSE)
 #define Dem_Cfg_HasDataCollectionTableOfPCConfig()                    (TRUE != FALSE)
 #define Dem_Cfg_HasDataElementTableCol2ElmtIndOfPCConfig()            (TRUE != FALSE)
 #define Dem_Cfg_HasDataElementTableOfPCConfig()                       (TRUE != FALSE)
@@ -1771,6 +1800,8 @@ typedef struct Dem_Cfg_PrimaryEntryType_s {
   uint32 Timestamp;
   uint16 AgingCounter;
   uint16 EventId;
+  uint8  ExtendedData[ 2 /*DEM_CFG_MAX_NUM_EXT_RECORDS*/][ 4 /*DEM_CFG_MAX_SIZE_EXT_RECORD*/];  /* (DEM_CFG_SUPPORT_USER_ERECS == STD_ON) */
+  uint8  ExtendedHeader;                                                                        /* (DEM_CFG_SUPPORT_USER_ERECS == STD_ON) */
 }                                                                     Dem_Cfg_PrimaryEntryType; 
 
 typedef P2VAR(Dem_Cfg_PrimaryEntryType, TYPEDEF, DEM_SHARED_DATA)     Dem_SharedMemoryEntryPtrType; 
@@ -1841,6 +1872,9 @@ typedef uint8_least Dem_Cfg_DTCSelectorTableIterType;
 
 /**   \brief  type used to iterate Dem_Cfg_DataCollectionTable */
 typedef uint8_least Dem_Cfg_DataCollectionTableIterType;
+
+/**   \brief  type used to iterate Dem_Cfg_DataCollectionTableEdr2CollInd */
+typedef uint8_least Dem_Cfg_DataCollectionTableEdr2CollIndIterType;
 
 /**   \brief  type used to iterate Dem_Cfg_DataElementTable */
 typedef uint8_least Dem_Cfg_DataElementTableIterType;
@@ -2007,6 +2041,9 @@ typedef uint8 Dem_Cfg_StorageKindOfDataCollectionTableType;
 /**   \brief  value based type definition for Dem_Cfg_UpdateOfDataCollectionTable */
 typedef boolean Dem_Cfg_UpdateOfDataCollectionTableType;
 
+/**   \brief  value based type definition for Dem_Cfg_DataCollectionTableEdr2CollInd */
+typedef uint8 Dem_Cfg_DataCollectionTableEdr2CollIndType;
+
 /**   \brief  value based type definition for Dem_Cfg_DataIsStoredInNVOfDataElementTable */
 typedef boolean Dem_Cfg_DataIsStoredInNVOfDataElementTableType;
 
@@ -2171,6 +2208,15 @@ typedef uint8 Dem_Cfg_SatelliteInfoIdxOfEventTableType;
 
 /**   \brief  value based type definition for Dem_Cfg_EventTableInd */
 typedef uint8 Dem_Cfg_EventTableIndType;
+
+/**   \brief  value based type definition for Dem_Cfg_DataCollectionTableEdr2CollIndEndIdxOfExtendedDataTable */
+typedef uint8 Dem_Cfg_DataCollectionTableEdr2CollIndEndIdxOfExtendedDataTableType;
+
+/**   \brief  value based type definition for Dem_Cfg_DataCollectionTableEdr2CollIndStartIdxOfExtendedDataTable */
+typedef uint8 Dem_Cfg_DataCollectionTableEdr2CollIndStartIdxOfExtendedDataTableType;
+
+/**   \brief  value based type definition for Dem_Cfg_DataCollectionTableEdr2CollIndUsedOfExtendedDataTable */
+typedef boolean Dem_Cfg_DataCollectionTableEdr2CollIndUsedOfExtendedDataTableType;
 
 /**   \brief  value based type definition for Dem_Cfg_MaxRecordSizeOfExtendedDataTable */
 typedef uint8 Dem_Cfg_MaxRecordSizeOfExtendedDataTableType;
@@ -2371,7 +2417,9 @@ typedef struct sDem_Cfg_EventTableType
 /**   \brief  type used in Dem_Cfg_ExtendedDataTable */
 typedef struct sDem_Cfg_ExtendedDataTableType
 {
-  uint8 Dem_Cfg_ExtendedDataTableNeverUsed;  /**< dummy entry for the structure in the configuration variant precompile which is not used by the code. */
+  Dem_Cfg_DataCollectionTableEdr2CollIndEndIdxOfExtendedDataTableType DataCollectionTableEdr2CollIndEndIdxOfExtendedDataTable;  /**< the end index of the 0:n relation pointing to Dem_Cfg_DataCollectionTableEdr2CollInd */
+  Dem_Cfg_DataCollectionTableEdr2CollIndStartIdxOfExtendedDataTableType DataCollectionTableEdr2CollIndStartIdxOfExtendedDataTable;  /**< the start index of the 0:n relation pointing to Dem_Cfg_DataCollectionTableEdr2CollInd */
+  Dem_Cfg_MaxRecordSizeOfExtendedDataTableType MaxRecordSizeOfExtendedDataTable;
 } Dem_Cfg_ExtendedDataTableType;
 
 /**   \brief  type used in Dem_Cfg_FreezeFrameTable */
@@ -2535,6 +2583,27 @@ extern CONST(Dem_Cfg_DtcTableType, DEM_CONST) Dem_Cfg_DtcTable[2];
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
 extern CONST(Dem_Cfg_EventTableType, DEM_CONST) Dem_Cfg_EventTable[12];
+#define DEM_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  Dem_Cfg_ExtendedDataTable
+**********************************************************************************************************************/
+/** 
+  \var    Dem_Cfg_ExtendedDataTable
+  \details
+  Element                                   Description
+  DataCollectionTableEdr2CollIndEndIdx      the end index of the 0:n relation pointing to Dem_Cfg_DataCollectionTableEdr2CollInd
+  DataCollectionTableEdr2CollIndStartIdx    the start index of the 0:n relation pointing to Dem_Cfg_DataCollectionTableEdr2CollInd
+  MaxRecordSize                         
+*/ 
+#define DEM_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+extern CONST(Dem_Cfg_ExtendedDataTableType, DEM_CONST) Dem_Cfg_ExtendedDataTable[2];
 #define DEM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */

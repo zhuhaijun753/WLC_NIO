@@ -35,6 +35,27 @@
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot.270971903" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
 								<option id="gnu.c.compiler.option.include.paths.1667989322" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/app/AutosarApp/GenData&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/app/AutosarApp/GenData/Components&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/app/AutosarApp/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Can&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/BswM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/_Common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ComM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/CanIf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/CanSM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Dcm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Dem&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Nm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Os&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/EcuM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Com&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/CanNm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/VStdLib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/PduR&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/CanTp&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Det&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/CddDk4&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
@@ -83,11 +104,13 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/ftm&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/osif/&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/pal/i2c/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/app&quot;"/>
 								</option>
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.207045368" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.2091247319" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="CPU_S32K144HFT0VLLT"/>
 								</option>
+								<option id="gnu.c.compiler.option.include.files.1261330211" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1590876186" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.1317441865" name="Standard S32DS C++ Compiler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler">
@@ -240,7 +263,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry excluding="Linker_Files|Debugger/wlc_Debug_RAM.launch|Debugger/wlc_Release.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
+						<entry excluding="BSW/CddDk4" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
 					</sourceEntries>
 				</configuration>
@@ -486,7 +509,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry excluding="Linker_Files|Debugger/wlc_Debug_RAM.launch|Debugger/wlc_Debug.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
+						<entry excluding="BSW/CddDk4" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
 					</sourceEntries>
 				</configuration>
@@ -732,7 +755,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry excluding="Linker_Files|Debugger/wlc_Release.launch|Debugger/wlc_Debug.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
+						<entry excluding="BSW/CddDk4" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
 					</sourceEntries>
 				</configuration>

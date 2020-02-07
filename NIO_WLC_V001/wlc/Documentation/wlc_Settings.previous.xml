@@ -2,11 +2,11 @@
 <PE_PROJECT_SETTINGS_DOCUMENTATION>
   <PE_product_version v="version 10.1 for Internal Usage Only" />
   <PE_core_version v="Processor Expert Version 0521" />
-  <CPU_Bean name="Cpu" type="S32K144_100">
+  <CPU_Bean name="Cpu" type="S32K144_64">
     <Enabled v="Y" />
     <Properties>
       <Component_name v="Cpu" />
-      <CPU_type v="S32K144_100" />
+      <CPU_type v="S32K144_64" />
     </Properties>
     <Methods>
       <EmptySection_DummyValue />
@@ -20,23 +20,6 @@
       <boolgroup name="Generate linker file" v="no" />
     </CompilerProperties>
   </CPU_Bean>
-  <Bean name="pin_mux" type="PinSettings">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="pin_mux" />
-      <PinSettings_IP_Block v="PinSettings" />
-      <Processor v="S32K144_100" />
-      <group name="Settings">
-        <EmptySection_DummyValue />
-      </group>
-    </Properties>
-    <Methods>
-      <EmptySection_DummyValue />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
   <Bean name="clockMan1" type="clock_manager">
     <Enabled v="Y" />
     <Properties>
@@ -175,6 +158,23 @@
       <Component_name v="i2c1" />
       <Device v="LPI2C0" />
       <Component_version v="S32K144_SDK01" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="pin_mux" type="PinSettings">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="pin_mux" />
+      <PinSettings_IP_Block v="PinSettings" />
+      <Processor v="S32K144_64" />
+      <group name="Settings">
+        <EmptySection_DummyValue />
+      </group>
     </Properties>
     <Methods>
       <EmptySection_DummyValue />
