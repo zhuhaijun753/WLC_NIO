@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Barrier_Lcfg.c
- *   Generation Time: 2019-12-01 17:02:33
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 13:43:07
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *

@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Resource_Lcfg.c
- *   Generation Time: 2019-11-29 15:47:49
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 16:00:27
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -113,7 +113,7 @@ CONST(Os_ResourceConfigType, OS_CONST) OsCfg_Resource_OsResource =
   },
   /* .Core            = */ &OsCfg_Core_OsCore0,
   /* .ResourceId      = */ OsResource,
-  /* .CeilingPriority = */ 1
+  /* .CeilingPriority = */ 4
 };
 
 #define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED

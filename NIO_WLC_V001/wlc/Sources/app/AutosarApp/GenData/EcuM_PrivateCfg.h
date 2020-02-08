@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_PrivateCfg.h
- *   Generation Time: 2020-02-06 13:02:58
+ *   Generation Time: 2020-02-07 22:17:22
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -55,7 +55,7 @@
 # endif
 
 # include "Os.h"
-# include "Mcu.h"
+//# include "Mcu.h"
 # include "Dem.h"
 
 /**********************************************************************************************************************
@@ -67,6 +67,7 @@
 # define EcuM_GlobalRestore()                                         EnableAllInterrupts() 
 /* PRQA L:functiongen */
 
+typedef uint8 Mcu_ModeType;
 
 
 
@@ -92,8 +93,8 @@
 #define EcuM_GetDefaultShutdownModeOfPCConfig()                       0u  /**< Default Shutdown Mode - Depending on target it its either a Sleep Mode or Reset Mode. */
 #define EcuM_GetDefaultShutdownTargetOfPCConfig()                     ECUM_STATE_OFF  /**< Default Shutdown Target */
 #define EcuM_GetDriverInitOneOfPCConfig()                             EcuM_DriverInitOne  /**< the pointer to EcuM_DriverInitOne */
-#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                        0xB00C515Bu
-#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                        0x4D269A71u
+#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                        0xDEBDAC1Bu
+#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                        0x295EA172u
 #define EcuM_GetGeneratorCompatibilityVersionOfPCConfig()             2560u
 #define EcuM_GetMaxWakeupSourceCountOfPCConfig()                      6u  /**< Max Wakeup source count. */
 #define EcuM_GetModuleStateOfPCConfig()                               (&(EcuM_ModuleState))  /**< the pointer to EcuM_ModuleState */

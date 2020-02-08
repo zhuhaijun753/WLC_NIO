@@ -2047,10 +2047,6 @@
                               <SHORT-NAME>DcmDspDidRead</SHORT-NAME>
                               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspDidInfo/DcmDspDidAccess/DcmDspDidRead</DEFINITION-REF>
                             </ECUC-CONTAINER-VALUE>
-                            <ECUC-CONTAINER-VALUE UUID="8807c7b9-45f1-4247-9071-7dedcc5da0f6">
-                              <SHORT-NAME>DcmDspDidWrite</SHORT-NAME>
-                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspDidInfo/DcmDspDidAccess/DcmDspDidWrite</DEFINITION-REF>
-                            </ECUC-CONTAINER-VALUE>
                           </SUB-CONTAINERS>
                         </ECUC-CONTAINER-VALUE>
                       </SUB-CONTAINERS>

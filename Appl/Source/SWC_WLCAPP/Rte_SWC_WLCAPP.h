@@ -13,7 +13,7 @@
  *             File:  Rte_SWC_WLCAPP.h
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
  *        SW-C Type:  SWC_WLCAPP
- *  Generation Time:  2020-02-05 20:41:34
+ *  Generation Time:  2020-02-07 22:30:53
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0
@@ -128,6 +128,20 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Call_SWC_WLCAPP_UR_CN_NIO_ES6_RF_CAN_SR_V3_0_
 
 # define RTE_RUNNABLE_ComControl_Init_Runnable ComControl_Init_Runnable
 FUNC(void, SWC_WLCAPP_CODE) ComControl_Init_Runnable(void); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: WLC_Runnable
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered on TimingEvent every 100ms
+ *
+ *********************************************************************************************************************/
+
+# define RTE_RUNNABLE_WLC_Runnable WLC_Runnable
+FUNC(void, SWC_WLCAPP_CODE) WLC_Runnable(void); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 
 # define SWC_WLCAPP_STOP_SEC_CODE
 # include "SWC_WLCAPP_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */

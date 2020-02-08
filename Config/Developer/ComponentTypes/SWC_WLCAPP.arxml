@@ -42,6 +42,11 @@
                   <SHORT-NAME>ComControl_Init_Runnable_InitEvent</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/SWC_WLCAPP/SWC_WLCAPP_InternalBehavior/ComControl_Init_Runnable</START-ON-EVENT-REF>
                 </INIT-EVENT>
+                <TIMING-EVENT UUID="70A3C6D7-F545-4C13-B915-33807E9984A4">
+                  <SHORT-NAME>TMT_WLC_Runnable</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/SWC_WLCAPP/SWC_WLCAPP_InternalBehavior/WLC_Runnable</START-ON-EVENT-REF>
+                  <PERIOD>0.1</PERIOD>
+                </TIMING-EVENT>
               </EVENTS>
               <RUNNABLES>
                 <RUNNABLE-ENTITY UUID="9C65898D-D89F-4C6B-AA17-32D997D53E8D">
@@ -83,6 +88,9 @@
                       </OPERATION-IREF>
                     </SYNCHRONOUS-SERVER-CALL-POINT>
                   </SERVER-CALL-POINTS>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4C5B84C8-EDE4-4828-B53A-027C7BB9EE77">
+                  <SHORT-NAME>WLC_Runnable</SHORT-NAME>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
             </SWC-INTERNAL-BEHAVIOR>

@@ -2799,6 +2799,7 @@
                                     <SD GID="28396984-A160-455F-92DF-6313E4DAD74D">/ComponentTypes/Communication_Write_APP_Implementation</SD>
                                     <SD GID="8E0436A5-123C-4264-B5C9-E06A847104B7">/ComponentTypes/SWC_WLCAPP</SD>
                                     <SD GID="4FD5FB85-A42F-40C4-A92A-32C536B19E93">/ComponentTypes/SWC_WLCAPP/SWC_WLCAPP_InternalBehavior/ComControl_Init_Runnable_InitEvent</SD>
+                                    <SD GID="70A3C6D7-F545-4C13-B915-33807E9984A4">/ComponentTypes/SWC_WLCAPP/SWC_WLCAPP_InternalBehavior/TMT_WLC_Runnable</SD>
                                     <SD GID="3C337188-42A5-4FAB-87DF-458A477E1176">/ComponentTypes/SWC_WLCAPP/UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57</SD>
                                     <SD GID="B4E175E8-A93B-4104-8DF9-B94DB15938A0">/ComponentTypes/SWC_WLCAPP_Implementation</SD>
                                     <SD GID="15916549-277B-4117-A115-05930AEB6D66">/DataType/Constraint/DC_CGW_03_CRC</SD>
@@ -3157,7 +3158,6 @@
                                     <SD GID="f8c1c617-0e3b-4d61-9b25-3500b5de996d">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_ReadData_DataServices_Diag_VM_HardwarePartNumber</SD>
                                     <SD GID="6048a0c8-f5a3-4bc5-bd09-d9fb12c7cddf">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_ConfigurarionFingerprint</SD>
                                     <SD GID="0c2961c9-e5b5-460b-a40f-a383cb15ad25">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_ECUConfigurarion</SD>
-                                    <SD GID="e76fba2f-d218-41b6-afe2-764876d216a2">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_ECUDiagDatabaseVersion</SD>
                                     <SD GID="459b3434-11ba-4dbb-9675-9e32dc57f526">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_RepairShopFingerPrint</SD>
                                     <SD GID="370e8b9e-763c-45f8-a139-824e0034284a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_VIN</SD>
                                     <SD GID="901ac311-1850-486c-987d-a4d6e92f962a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction/OpServerCallDcm_MainFunction_WriteData_DataServices_DcmDspData_VM_CalibrarionPartNumber</SD>
@@ -3282,10 +3282,6 @@
                                     <SD GID="09b043f5-e669-4d5b-99c1-fe95f05c798e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ReadData</SD>
                                     <SD GID="08586d51-2bdd-4f39-ba27-96763dbeaef6">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ReadData/Data</SD>
                                     <SD GID="2c69590d-1aed-4f4e-b842-75c6549c2908">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/ReadData/OpStatus</SD>
-                                    <SD GID="74c06a62-1152-4a3c-8ebb-e4de0eba7c8e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/WriteData</SD>
-                                    <SD GID="27c18726-91e0-4d90-abd4-851a9e06017e">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/WriteData/Data</SD>
-                                    <SD GID="376a37bc-ed52-47a8-af37-9d96f830b874">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/WriteData/ErrorCode</SD>
-                                    <SD GID="cacca474-d54a-4ffb-891b-9021f9c546b2">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUDiagDatabaseVersion/WriteData/OpStatus</SD>
                                     <SD GID="258606b2-8285-405f-a13f-f7df43a61a28">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate</SD>
                                     <SD GID="b378fc16-9fcc-43d5-81f0-4f56608d6159">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ConditionCheckRead</SD>
                                     <SD GID="c6275e8e-313f-4f28-af27-4e3453296b15">/MICROSAR/Dcm_swc/Interfaces/DataServices_DcmDspData_ECUManufacturingDate/ConditionCheckRead/ErrorCode</SD>

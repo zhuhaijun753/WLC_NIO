@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dcm_Lcfg.c
- *   Generation Time: 2020-02-06 13:02:57
+ *   Generation Time: 2020-02-07 22:17:22
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -333,10 +333,10 @@ CONST(Dcm_CfgDidMgrDidInfoType, DCM_CONST) Dcm_CfgDidMgrDidInfo[23]=
   ,{    0u,   4u,   4u,  32u,0x01u} /* DID: 0xF197 */
   ,{    4u,   4u,   4u,  33u,0x03u} /* DID: 0xF198 */
   ,{    4u,   4u,   4u,  35u,0x01u} /* DID: 0xF199 */
-  ,{    4u,   4u,   4u,  36u,0x03u} /* DID: 0xF19E */
+  ,{    4u,   4u,   4u,  36u,0x01u} /* DID: 0xF19E */
 };
 /*! DID operation properties */
-CONST(Dcm_CfgDidMgrDidOpInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpInfo[38]=
+CONST(Dcm_CfgDidMgrDidOpInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpInfo[37]=
 {
    {    0u,   0u,0x05u} /* DID: 0x1000 */
   ,{    0u,   2u,0x01u} /* DID: 0x1000 */
@@ -375,10 +375,9 @@ CONST(Dcm_CfgDidMgrDidOpInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpInfo[38]=
   ,{    0u,  58u,0x01u} /* DID: 0xF198 */
   ,{    0u,  59u,0x05u} /* DID: 0xF199 */
   ,{    0u,  61u,0x05u} /* DID: 0xF19E */
-  ,{    0u,  63u,0x01u} /* DID: 0xF19E */
 };
 /*! DID operation classes */
-CONST(Dcm_CfgDidMgrDidOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpClassInfo[65]=
+CONST(Dcm_CfgDidMgrDidOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpClassInfo[64]=
 {
    {  0u}
   ,{  1u}
@@ -444,10 +443,9 @@ CONST(Dcm_CfgDidMgrDidOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpClassInfo[65
   ,{ 61u}
   ,{ 62u}
   ,{ 63u}
-  ,{ 64u}
 };
 /*! DID signal operation classes */
-CONST(Dcm_CfgDidMgrSignalOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrSignalOpClassInfo[64]=
+CONST(Dcm_CfgDidMgrSignalOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrSignalOpClassInfo[63]=
 {
    { ((Dcm_DidMgrOpFuncType)(Rte_Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ReadData)),   4u,   4u,0x0002u} /* DID: 0x1000 */ /* PRQA S 0313 */ /* MD_Dcm_0313 */
   ,{ ((Dcm_DidMgrOpFuncType)(Rte_Call_DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value_ConditionCheckRead)),   0u,   0u,0x0201u} /* DID: 0x1000 */ /* PRQA S 0313 */ /* MD_Dcm_0313 */
@@ -512,7 +510,6 @@ CONST(Dcm_CfgDidMgrSignalOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrSignalOpClassI
   ,{ ((Dcm_DidMgrOpFuncType)(Rte_Call_DataServices_DcmDspData_ECUProgrammingDate_ConditionCheckRead)),   0u,   0u,0x0201u} /* DID: 0xF199 */         /* PRQA S 0313 */ /* MD_Dcm_0313 */
   ,{ ((Dcm_DidMgrOpFuncType)(Rte_Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ReadData)),   4u,   4u,0x0002u} /* DID: 0xF19E */               /* PRQA S 0313 */ /* MD_Dcm_0313 */
   ,{ ((Dcm_DidMgrOpFuncType)(Rte_Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_ConditionCheckRead)),   0u,   0u,0x0201u} /* DID: 0xF19E */     /* PRQA S 0313 */ /* MD_Dcm_0313 */
-  ,{ ((Dcm_DidMgrOpFuncType)(Rte_Call_DataServices_DcmDspData_ECUDiagDatabaseVersion_WriteData)),   4u,   4u,0x1002u} /* DID: 0xF19E */              /* PRQA S 0313 */ /* MD_Dcm_0313 */
 };
 /*! DCM service initializers */
 CONST(Dcm_DiagSvcInitFuncType, DCM_CONST) Dcm_CfgDiagSvcInitializers[2]=

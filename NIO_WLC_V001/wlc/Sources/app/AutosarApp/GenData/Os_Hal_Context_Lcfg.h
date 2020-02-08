@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Context_Lcfg.h
- *   Generation Time: 2019-11-29 15:47:49
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 16:32:26
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -92,12 +92,29 @@ extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_ErrorHook_OsCore
 /*! HAL dynamic ISR2 level context data: Level1 */
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level1_Dyn;
 
+/*! HAL dynamic ISR2 level context data: Level2 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level2_Dyn;
+
+/*! HAL dynamic ISR2 level context data: Level3 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level3_Dyn;
+
+/*! HAL dynamic ISR2 level context data: Level4 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level4_Dyn;
+
+/*! HAL dynamic task context data: BrsMainBackgroundTask */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_BrsMainBackgroundTask_Dyn;
+
+
+/*! HAL dynamic task context data: BrsMainTask */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_BrsMainTask_Dyn;
+
+
+/*! HAL dynamic task context data: Default_Init_Task */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Init_Task_Dyn;
+
+
 /*! HAL dynamic task context data: IdleTask_OsCore0 */
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_IdleTask_OsCore0_Dyn;
-
-
-/*! HAL dynamic task context data: OsTask */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_Dyn;
 
 
 /*! HAL dynamic task context data: OsTask_APP */
@@ -106,6 +123,10 @@ extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_APP_Dyn;
 
 /*! HAL dynamic task context data: OsTask_BSW_SCHM */
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_BSW_SCHM_Dyn;
+
+
+/*! HAL dynamic task context data: OsTask_Cdd */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_Cdd_Dyn;
 
 
 /*! HAL exception context data: OsCore0 */
@@ -128,32 +149,38 @@ extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Os_CoreInitHo
 /*! HAL hook context configuration data: ErrorHook_OsCore0 */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_ErrorHook_OsCore0;
 
-/*! HAL ISR2 context configuration data: CanIsrGlobalStatus */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrGlobalStatus;
-
 /*! HAL ISR2 context configuration data: CanIsrRxFifo */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrRxFifo;
 
-/*! HAL ISR2 context configuration data: CanIsrStatus_0 */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrStatus_0;
+/*! HAL ISR2 context configuration data: CanIsrStatus_3 */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrStatus_3;
 
-/*! HAL ISR2 context configuration data: CanIsrTx_0 */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrTx_0;
+/*! HAL ISR2 context configuration data: CanIsrTx_3 */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrTx_3;
 
 /*! HAL ISR2 context configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CounterIsr_SystemTimer;
 
+/*! HAL task context configuration data: BrsMainBackgroundTask */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_BrsMainBackgroundTask;
+
+/*! HAL task context configuration data: BrsMainTask */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_BrsMainTask;
+
+/*! HAL task context configuration data: Default_Init_Task */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Init_Task;
+
 /*! HAL task context configuration data: IdleTask_OsCore0 */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_IdleTask_OsCore0;
-
-/*! HAL task context configuration data: OsTask */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask;
 
 /*! HAL task context configuration data: OsTask_APP */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask_APP;
 
 /*! HAL task context configuration data: OsTask_BSW_SCHM */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask_BSW_SCHM;
+
+/*! HAL task context configuration data: OsTask_Cdd */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask_Cdd;
 
 /*! HAL kernel stack configuration data: OsCore0_Kernel */
 extern CONST(Os_Hal_ContextStackConfigType, OS_CONST) OsCfg_Hal_Stack_OsCore0_Kernel;

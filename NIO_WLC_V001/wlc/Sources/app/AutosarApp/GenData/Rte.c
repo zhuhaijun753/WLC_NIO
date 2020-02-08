@@ -243,6 +243,7 @@ VAR(Dcm_EcuResetType, RTE_VAR_NOINIT) Rte_ModeMachine_Dcm_DcmEcuReset_DcmEcuRese
 
 #define RTE_CONST_MSEC_SystemTimer_0 (0UL)
 #define RTE_CONST_MSEC_SystemTimer_10 (10UL)
+#define RTE_CONST_MSEC_SystemTimer_100 (100UL)
 #define RTE_CONST_MSEC_SystemTimer_20 (20UL)
 #define RTE_CONST_MSEC_SystemTimer_5 (5UL)
 
@@ -304,6 +305,7 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void) /* PRQA S 0850 */ /* MD_MSR_19.8 
 
   /* activate the alarms used for TimingEvents */
   (void)SetRelAlarm(Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(10)); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)SetRelAlarm(Rte_Al_TE_SWC_WLCAPP_WLC_Runnable, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(100)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
   return RTE_E_OK;
 } /* PRQA S 6050 */ /* MD_MSR_STCAL */
@@ -312,6 +314,7 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Stop(void) /* PRQA S 0850 */ /* MD_MSR_19.8 *
 {
   /* deactivate alarms */
   (void)CancelAlarm(Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)CancelAlarm(Rte_Al_TE_SWC_WLCAPP_WLC_Runnable); /* PRQA S 3417 */ /* MD_Rte_Os */
 
   return RTE_E_OK;
 }
@@ -757,9 +760,15 @@ TASK(OsTask_APP) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1 */
 
   for(;;)
   {
-    (void)WaitEvent(Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)WaitEvent(Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable | Rte_Ev_Run_SWC_WLCAPP_WLC_Runnable); /* PRQA S 3417 */ /* MD_Rte_Os */
     (void)GetEvent(OsTask_APP, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
-    (void)ClearEvent(ev & (Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable)); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)ClearEvent(ev & (Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable | Rte_Ev_Run_SWC_WLCAPP_WLC_Runnable)); /* PRQA S 3417 */ /* MD_Rte_Os */
+
+    if ((ev & Rte_Ev_Run_SWC_WLCAPP_WLC_Runnable) != (EventMaskType)0)
+    {
+      /* call runnable */
+      WLC_Runnable();
+    }
 
     if ((ev & Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable) != (EventMaskType)0)
     {

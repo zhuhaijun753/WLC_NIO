@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Cfg.h
- *   Generation Time: 2019-11-29 15:47:49
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 16:32:26
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -69,7 +69,7 @@
 # define OS_CFG_NUM_BARRIERS                                     (0uL)
 
 /*! Number of ISR2 nesting levels. */
-# define OS_CFG_NUM_ISRLEVELS                                    (1uL)
+# define OS_CFG_NUM_ISRLEVELS                                    (4uL)
 
 /*! Number of all spinlocks. */
 # define OS_CFG_NUM_SYSTEM_SPINLOCKS                             (0uL)
@@ -82,8 +82,8 @@
 # define OS_CFG_NUM_CORE_OSCORE0_HOOKS            (2uL)
 # define OS_CFG_NUM_CORE_OSCORE0_IOCS             (0uL)
 # define OS_CFG_NUM_CORE_OSCORE0_RESOURCES        (1uL)
-# define OS_CFG_NUM_CORE_OSCORE0_STACKS           (8uL)
-# define OS_CFG_NUM_CORE_OSCORE0_ISRS             (5uL)
+# define OS_CFG_NUM_CORE_OSCORE0_STACKS           (11uL)
+# define OS_CFG_NUM_CORE_OSCORE0_ISRS             (4uL)
 
 
 /**********************************************************************************************************************

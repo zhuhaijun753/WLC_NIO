@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.h
- *   Generation Time: 2020-01-15 11:41:21
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 16:00:26
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -86,6 +86,9 @@
 # define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+/*! Alarm configuration data: BrsCyclicAlarm_1ms */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_BrsCyclicAlarm_1ms;
+
 /*! Alarm configuration data: Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms;
 
@@ -95,8 +98,8 @@ extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_OsTask
 /*! Alarm configuration data: Rte_Al_TE_CanTp_CanTp_MainFunction */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_CanTp_CanTp_MainFunction;
 
-/*! Alarm configuration data: Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable */
-extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable;
+/*! Alarm configuration data: Rte_Al_TE_DioControlCDD_Dio_Control_Runnable */
+extern CONST(Os_AlarmActivateTaskConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_DioControlCDD_Dio_Control_Runnable;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

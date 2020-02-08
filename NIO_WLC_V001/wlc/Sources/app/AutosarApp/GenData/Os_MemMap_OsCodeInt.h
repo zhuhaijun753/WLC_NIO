@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_MemMap_OsCodeInt.h
- *   Generation Time: 2019-12-01 17:02:38
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 13:43:08
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -42,7 +42,7 @@
 **********************************************************************************************************************/
 
                                                                                                                         /* PRQA S 0883 */ /* MD_Os_Dir4.10_0883_MemMap */
-
+#if 0
 /*******  CODE sections  *********************************************************************************************/
 
 #ifdef OS_START_SEC_CODE
@@ -73,4 +73,5 @@
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
+#endif
 /* PRQA S 0883 */ /* MD_Os_Dir4.10_0883_MemMap */

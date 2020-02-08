@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Lcfg.c
- *   Generation Time: 2019-11-29 17:40:28
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 17:10:34
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -183,11 +183,14 @@ OS_LOCAL CONST(Os_ResourceConfigRefType, OS_CONST) OsCfg_Core_OsCore0_ResourceRe
 /*! Object reference table for core stacks: OsCore0 */
 OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore0_StackRefs[OS_CFG_NUM_CORE_OSCORE0_STACKS + 1u] =
 {
+  (Os_StackConfigRefType) &OsCfg_Stack_BrsMainTask,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Error,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Init,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Isr_Core,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Kernel,
-  (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio0,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio100,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio18,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio2,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio4294967295,
   (Os_StackConfigRefType) &OsCfg_Stack_OsTask_APP,
   (Os_StackConfigRefType) &OsCfg_Stack_OsTask_BSW_SCHM,
@@ -197,10 +200,9 @@ OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore0_StackRefs[OS_
 /*! Object reference table for core ISRs: OsCore0 */
 OS_LOCAL CONST(Os_IsrConfigRefType, OS_CONST) OsCfg_Core_OsCore0_IsrRefs[OS_CFG_NUM_CORE_OSCORE0_ISRS + 1u] =
 {
-  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrGlobalStatus), 
   OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrRxFifo), 
-  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrStatus_0), 
-  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrTx_0), 
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrStatus_3), 
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrTx_3), 
   OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer), 
   NULL_PTR
 };

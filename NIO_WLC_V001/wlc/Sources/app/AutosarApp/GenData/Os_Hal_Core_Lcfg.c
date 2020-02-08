@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Core_Lcfg.c
- *   Generation Time: 2019-12-01 17:02:34
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 16:32:26
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -106,10 +106,7 @@ OS_LOCAL VAR(Os_Hal_Core2ThreadType, OS_VAR_NOINIT_FAST) OsCfg_Hal_Core2Thread_O
 CONSTP2CONST(Os_Hal_IntIsrConfigType, OS_CONST, OS_CONST)
   OsCfg_Hal_Core_OsCore0_InterruptSourceRefs[OS_CFG_NUM_CORE_OSCORE0_INTERRUPTSOURCEREFS + 1u] =
 {
-  &OsCfg_Hal_IntIsr_CanIsrGlobalStatus,
   &OsCfg_Hal_IntIsr_CanIsrRxFifo,
-  &OsCfg_Hal_IntIsr_CanIsrStatus_0,
-  &OsCfg_Hal_IntIsr_CanIsrTx_0,
   NULL_PTR
 };
 
@@ -157,6 +154,8 @@ CONST(Os_Hal_SystemConfigType, OS_CONST) OsCfg_Hal_System =
 CONSTP2CONST(Os_Hal_IntIsrConfigType, OS_CONST, OS_CONST)
   OsCfg_Hal_System_InterruptSourceRefs[OS_CFG_NUM_SYSTEM_INTERRUPTSOURCEREFS + 1u] =
 {
+  &OsCfg_Hal_IntIsr_CanIsrStatus_3,
+  &OsCfg_Hal_IntIsr_CanIsrTx_3,
   &OsCfg_Hal_IntIsr_CounterIsr_SystemTimer,
   NULL_PTR
 };

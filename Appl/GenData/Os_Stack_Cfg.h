@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Stack_Cfg.h
- *   Generation Time: 2019-11-29 17:40:29
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 17:10:34
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -61,12 +61,15 @@
 /*! Defines whether stack measurement is active (STD_ON) or not (STD_OFF). */
 # define OS_CFG_STACKMEASUREMENT                 (STD_OFF)
 
-/* Configured stack sizes (Total: 8192 Byte) */
+/* Configured stack sizes (Total: 11264 Byte) */
+# define OS_CFG_SIZE_BRSMAINTASK_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_ERROR_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_INIT_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_ISR_CORE_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_KERNEL_STACK     (1024uL)
-# define OS_CFG_SIZE_OSCORE0_TASK_PRIO0_STACK     (1024uL)
+# define OS_CFG_SIZE_OSCORE0_TASK_PRIO100_STACK     (1024uL)
+# define OS_CFG_SIZE_OSCORE0_TASK_PRIO18_STACK     (1024uL)
+# define OS_CFG_SIZE_OSCORE0_TASK_PRIO2_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_TASK_PRIO4294967295_STACK     (1024uL)
 # define OS_CFG_SIZE_OSTASK_APP_STACK     (1024uL)
 # define OS_CFG_SIZE_OSTASK_BSW_SCHM_STACK     (1024uL)

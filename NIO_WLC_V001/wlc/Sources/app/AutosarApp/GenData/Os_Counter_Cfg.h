@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Counter_Cfg.h
- *   Generation Time: 2019-11-29 17:40:28
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 16:00:26
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -69,7 +69,7 @@
 # define OS_CFG_COUNTER_PFRT_USED                (STD_OFF)
 
 /*! Number of counter jobs: SystemTimer */
-# define OS_CFG_NUM_COUNTER_SYSTEMTIMER_JOBS     (4uL)
+# define OS_CFG_NUM_COUNTER_SYSTEMTIMER_JOBS     (5uL)
 
 
 /**********************************************************************************************************************

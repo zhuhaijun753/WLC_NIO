@@ -16,7 +16,7 @@
  *             File:  SWC_WLCAPP.c
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
  *        SW-C Type:  SWC_WLCAPP
- *  Generation Time:  2020-02-05 20:41:35
+ *  Generation Time:  2020-02-07 22:30:53
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0
@@ -133,6 +133,39 @@ FUNC(void, SWC_WLCAPP_CODE) ComControl_Init_Runnable(void) /* PRQA S 0850 */ /* 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: ComControl_Init_Runnable
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
+ * Runnable Entity Name: WLC_Runnable
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered on TimingEvent every 100ms
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: WLC_Runnable_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(void, SWC_WLCAPP_CODE) WLC_Runnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: WLC_Runnable
  *********************************************************************************************************************/
 
 

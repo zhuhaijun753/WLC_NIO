@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dem_Lcfg.c
- *   Generation Time: 2019-11-28 22:25:12
+ *   Generation Time: 2020-02-07 18:24:55
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -149,8 +149,8 @@
 CONST(Dem_Cfg_DataCollectionTableType, DEM_CONST) Dem_Cfg_DataCollectionTable[3] = {
     /* Index    CollectionSize  DataElementTableCol2ElmtIndEndIdx                                  DataElementTableCol2ElmtIndStartIdx                                  MaskedBits  StorageKind                     Referable Keys */
   { /*     0 */             0u, DEM_CFG_NO_DATAELEMENTTABLECOL2ELMTINDENDIDXOFDATACOLLECTIONTABLE, DEM_CFG_NO_DATAELEMENTTABLECOL2ELMTINDSTARTIDXOFDATACOLLECTIONTABLE,      0x00u, DEM_CFG_EREC_TYPE_GLOBAL },  /* [#NoDataCollectionConfigured] */
-  { /*     1 */             4u,                                                                1u,                                                                  0u,      0x02u, DEM_CFG_EREC_TYPE_USER   },  /* [#EdrOccurrenceCounter] */
-  { /*     2 */             4u,                                                                2u,                                                                  1u,      0x02u, DEM_CFG_EREC_TYPE_USER   }   /* [#EdrOdometerValue] */
+  { /*     1 */             4u,                                                                1u,                                                                  0u,      0x02u, DEM_CFG_EREC_TYPE_USER   },  /* [#EdrOccurrenceCounter, Ext:DemExtendedDataClass] */
+  { /*     2 */             4u,                                                                2u,                                                                  1u,      0x02u, DEM_CFG_EREC_TYPE_USER   }   /* [#EdrOdometerValue, Ext:DemExtendedDataClass] */
 };
 #define DEM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -266,6 +266,31 @@ CONST(Dem_Cfg_EventTableType, DEM_CONST) Dem_Cfg_EventTable[12] = {
   { /*     9 */ /*no AgingCycle*/ 1U                   ,               1u,          0u, DEM_CFG_DEM_EVENT_KIND_BSW_EVENTKINDOFEVENTTABLE },  /* [AutoCreatedDemEvent_ECUM_E_ALL_RUN_REQUESTS_KILLED, Satellite#0] */
   { /*    10 */ /*no AgingCycle*/ 1U                   ,               1u,          0u, DEM_CFG_DEM_EVENT_KIND_BSW_EVENTKINDOFEVENTTABLE },  /* [AutoCreatedDemEvent_ECUM_E_CONFIGURATION_DATA_INCONSISTENT, Satellite#0] */
   { /*    11 */ /*no AgingCycle*/ 1U                   ,               1u,          0u, DEM_CFG_DEM_EVENT_KIND_BSW_EVENTKINDOFEVENTTABLE }   /* [AutoCreatedDemEvent_ECUM_E_IMPROPER_CALLER, Satellite#0] */
+};
+#define DEM_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  Dem_Cfg_ExtendedDataTable
+**********************************************************************************************************************/
+/** 
+  \var    Dem_Cfg_ExtendedDataTable
+  \details
+  Element                                   Description
+  DataCollectionTableEdr2CollIndEndIdx      the end index of the 0:n relation pointing to Dem_Cfg_DataCollectionTableEdr2CollInd
+  DataCollectionTableEdr2CollIndStartIdx    the start index of the 0:n relation pointing to Dem_Cfg_DataCollectionTableEdr2CollInd
+  MaxRecordSize                         
+*/ 
+#define DEM_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
+/*lint -restore */
+CONST(Dem_Cfg_ExtendedDataTableType, DEM_CONST) Dem_Cfg_ExtendedDataTable[2] = {
+    /* Index    DataCollectionTableEdr2CollIndEndIdx                                DataCollectionTableEdr2CollIndStartIdx                                MaxRecordSize        Referable Keys */
+  { /*     0 */ DEM_CFG_NO_DATACOLLECTIONTABLEEDR2COLLINDENDIDXOFEXTENDEDDATATABLE, DEM_CFG_NO_DATACOLLECTIONTABLEEDR2COLLINDSTARTIDXOFEXTENDEDDATATABLE,            0u },  /* [#NoExtendedDataRecordConfigured, #EVENT_INVALID, DTC_0x000002, DemEventParameter, DemEventParameter_001, DemEventParameter_002, DemEventParameter_003, DemEventParameter_004, DemEventParameter_005, DemEventParameter_006, AutoCreatedDemEvent_ECUM_E_ALL_RUN_REQUESTS_KILLED, AutoCreatedDemEvent_ECUM_E_CONFIGURATION_DATA_INCONSISTENT, AutoCreatedDemEvent_ECUM_E_IMPROPER_CALLER] */
+  { /*     1 */                                                                 2u,                                                                   0u,            4u }   /* [#DemExtendedDataClass] */
 };
 #define DEM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */

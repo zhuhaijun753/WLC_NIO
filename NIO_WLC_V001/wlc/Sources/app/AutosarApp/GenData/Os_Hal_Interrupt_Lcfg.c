@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Interrupt_Lcfg.c
- *   Generation Time: 2019-12-01 17:02:35
- *           Project: WLC - Version 1.0
+ *   Generation Time: 2019-07-11 16:32:26
+ *           Project: Demo - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -91,47 +91,36 @@
 #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-/*! HAL ISR configuration data: CanIsrGlobalStatus */
-CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrGlobalStatus =
-{
-  /* .EICBaseAddr = */ (Os_Hal_EICnRefType)(OS_HAL_INTC1_BASE + (OS_HAL_EIC_OFFSET * 1uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
-  /* .IBDBaseAddr = */ (Os_Hal_IBDnRefType)(OS_HAL_EIBD1_BASE + (OS_HAL_IBD_OFFSET * 1uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
-  /* .IntChannel  = */ (uint32)1uL,
-  /* .IntLevel    = */ (uint32)0uL,
-  /* .IntMask     = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
-  /* .CoreID      = */ (uint32)0uL
-};
-
 /*! HAL ISR configuration data: CanIsrRxFifo */
 CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrRxFifo =
 {
-  /* .EICBaseAddr = */ (Os_Hal_EICnRefType)(OS_HAL_INTC1_BASE + (OS_HAL_EIC_OFFSET * 2uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
-  /* .IBDBaseAddr = */ (Os_Hal_IBDnRefType)(OS_HAL_EIBD1_BASE + (OS_HAL_IBD_OFFSET * 2uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
-  /* .IntChannel  = */ (uint32)2uL,
-  /* .IntLevel    = */ (uint32)0uL,
-  /* .IntMask     = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
+  /* .EICBaseAddr = */ (Os_Hal_EICnRefType)(OS_HAL_INTC1_BASE + (OS_HAL_EIC_OFFSET * 23uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
+  /* .IBDBaseAddr = */ (Os_Hal_IBDnRefType)(OS_HAL_EIBD1_BASE + (OS_HAL_IBD_OFFSET * 23uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
+  /* .IntChannel  = */ (uint32)23uL,
+  /* .IntLevel    = */ (uint32)12uL,
+  /* .IntMask     = */ (uint32)(0x0000F000uL & OS_HAL_PMR_MASK),
   /* .CoreID      = */ (uint32)0uL
 };
 
-/*! HAL ISR configuration data: CanIsrStatus_0 */
-CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrStatus_0 =
+/*! HAL ISR configuration data: CanIsrStatus_3 */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrStatus_3 =
 {
-  /* .EICBaseAddr = */ (Os_Hal_EICnRefType)(OS_HAL_INTC1_BASE + (OS_HAL_EIC_OFFSET * 3uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
-  /* .IBDBaseAddr = */ (Os_Hal_IBDnRefType)(OS_HAL_EIBD1_BASE + (OS_HAL_IBD_OFFSET * 3uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
-  /* .IntChannel  = */ (uint32)3uL,
-  /* .IntLevel    = */ (uint32)0uL,
-  /* .IntMask     = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
+  /* .EICBaseAddr = */ (Os_Hal_EICnRefType)(OS_HAL_INTC2_BASE + (OS_HAL_EIC_OFFSET * 220uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
+  /* .IBDBaseAddr = */ (Os_Hal_IBDnRefType)(OS_HAL_EIBD2_BASE + (OS_HAL_IBD_OFFSET * 220uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
+  /* .IntChannel  = */ (uint32)220uL,
+  /* .IntLevel    = */ (uint32)11uL,
+  /* .IntMask     = */ (uint32)(0x0000F800uL & OS_HAL_PMR_MASK),
   /* .CoreID      = */ (uint32)0uL
 };
 
-/*! HAL ISR configuration data: CanIsrTx_0 */
-CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrTx_0 =
+/*! HAL ISR configuration data: CanIsrTx_3 */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrTx_3 =
 {
-  /* .EICBaseAddr = */ (Os_Hal_EICnRefType)(OS_HAL_INTC1_BASE + (OS_HAL_EIC_OFFSET * 4uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
-  /* .IBDBaseAddr = */ (Os_Hal_IBDnRefType)(OS_HAL_EIBD1_BASE + (OS_HAL_IBD_OFFSET * 4uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
-  /* .IntChannel  = */ (uint32)4uL,
-  /* .IntLevel    = */ (uint32)0uL,
-  /* .IntMask     = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
+  /* .EICBaseAddr = */ (Os_Hal_EICnRefType)(OS_HAL_INTC2_BASE + (OS_HAL_EIC_OFFSET * 222uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
+  /* .IBDBaseAddr = */ (Os_Hal_IBDnRefType)(OS_HAL_EIBD2_BASE + (OS_HAL_IBD_OFFSET * 222uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
+  /* .IntChannel  = */ (uint32)222uL,
+  /* .IntLevel    = */ (uint32)10uL,
+  /* .IntMask     = */ (uint32)(0x0000FC00uL & OS_HAL_PMR_MASK),
   /* .CoreID      = */ (uint32)0uL
 };
 
@@ -141,8 +130,8 @@ CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CounterIsr_SystemTimer
   /* .EICBaseAddr = */ (Os_Hal_EICnRefType)(OS_HAL_INTC2_BASE + (OS_HAL_EIC_OFFSET * 84uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
   /* .IBDBaseAddr = */ (Os_Hal_IBDnRefType)(OS_HAL_EIBD2_BASE + (OS_HAL_IBD_OFFSET * 84uL)),           /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
   /* .IntChannel  = */ (uint32)84uL,
-  /* .IntLevel    = */ (uint32)0uL,
-  /* .IntMask     = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
+  /* .IntLevel    = */ (uint32)8uL,
+  /* .IntMask     = */ (uint32)(0x0000FF00uL & OS_HAL_PMR_MASK),
   /* .CoreID      = */ (uint32)0uL
 };
 

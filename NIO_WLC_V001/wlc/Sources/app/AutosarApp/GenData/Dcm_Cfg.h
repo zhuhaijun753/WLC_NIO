@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dcm_Cfg.h
- *   Generation Time: 2020-02-06 13:02:57
+ *   Generation Time: 2020-02-07 22:17:22
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -579,11 +579,11 @@
 /*! Size of table Dcm_CfgDidMgrDidInfo */
 # define DCM_CFGDIDMGRDIDINFO_SIZE                                             23u
 /*! Size of table Dcm_CfgDidMgrDidOpInfo */
-# define DCM_CFGDIDMGRDIDOPINFO_SIZE                                           38u
+# define DCM_CFGDIDMGRDIDOPINFO_SIZE                                           37u
 /*! Size of table Dcm_CfgDidMgrDidOpClassInfo */
-# define DCM_CFGDIDMGRDIDOPCLASSINFO_SIZE                                      65u
+# define DCM_CFGDIDMGRDIDOPCLASSINFO_SIZE                                      64u
 /*! Size of table Dcm_CfgDidMgrSignalOpClassInfo */
-# define DCM_CFGDIDMGRSIGNALOPCLASSINFO_SIZE                                   64u
+# define DCM_CFGDIDMGRSIGNALOPCLASSINFO_SIZE                                   63u
 /*! Invalid value for Routine Info Byte */
 # define DCM_CFGRIDMGR_INVALID_ROUTINEINFOBYTE                                    0u
 /*! Specifies total number of supported memory operations */
