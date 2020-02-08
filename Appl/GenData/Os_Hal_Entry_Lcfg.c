@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Entry_Lcfg.c
- *   Generation Time: 2019-07-11 16:32:26
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -111,11 +111,13 @@
  *  CAT2 ISR HANDLER CORE 0
  *********************************************************************************************************************/
 
+  extern void Os_Hal_Irq_CanIsrGlobalStatus(void); 
+
   extern void Os_Hal_Irq_CanIsrRxFifo(void); 
 
-  extern void Os_Hal_Irq_CanIsrStatus_3(void); 
+  extern void Os_Hal_Irq_CanIsrStatus_0(void); 
 
-  extern void Os_Hal_Irq_CanIsrTx_3(void); 
+  extern void Os_Hal_Irq_CanIsrTx_0(void); 
 
   extern void Os_Hal_Irq_CounterIsr_SystemTimer(void); 
 

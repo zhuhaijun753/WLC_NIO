@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Cfg.h
- *   Generation Time: 2019-07-11 17:10:34
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -120,11 +120,11 @@
 # define OS_CFG_EVENT                            (STD_ON)
 
 /* Event masks */
-# define BrsEvCyclicAlarm_1ms     ((EventMaskType)1uLL)
 # define Rte_Ev_Cyclic2_OsTask_BSW_SCHM_0_10ms     ((EventMaskType)1uLL)
 # define Rte_Ev_Cyclic2_OsTask_BSW_SCHM_0_20ms     ((EventMaskType)2uLL)
 # define Rte_Ev_Run_CanTp_CanTp_MainFunction     ((EventMaskType)4uLL)
-# define Rte_Ev_Run_DemoSWC_Runnable_Signal_Process     ((EventMaskType)1uLL)
+# define Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable     ((EventMaskType)1uLL)
+# define Rte_Ev_Run_SWC_WLCAPP_WLC_Runnable     ((EventMaskType)2uLL)
 
 /* Software counter timing macros */
 

@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_EntryAsm_Lcfg.asm
- *   Generation Time: 2019-07-11 16:32:26
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -47,9 +47,7 @@
  *********************************************************************************************************************/
 
 #include "Os_Cfg.h"
-
-//#include "Os_Hal_Compiler_ASM.h"
-
+#include "Os_Hal_Compiler_ASM.h"
 
 /**********************************************************************************************************************
  *  LOCAL CONSTANT MACROS
@@ -79,7 +77,7 @@
  /**********************************************************************************************************************
  *  EXCEPTION VECTOR TABLE CORE 0
  *********************************************************************************************************************/
-#if 0
+
   OS_HAL_ASM_SECTION_TEXT(OS_EXCVEC_CORE0_CODE)
   OS_HAL_ASM_ALIGN(512)
   OS_HAL_ASM_GLOBAL(_OS_EXCVEC_CORE0_CODE_START)
@@ -162,10 +160,10 @@
   OS_HAL_ASM_LABEL(_OS_INTVEC_CORE0_CODE_START)
   
   /* Irq Channel 0 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
-  /* Irq Channel 1 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
-  /* Irq Channel 2 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
-  /* Irq Channel 3 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
-  /* Irq Channel 4 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
+  /* Irq Channel 1 */ OS_HAL_ASM_WORD(Os_Hal_Irq_CanIsrGlobalStatus) 
+  /* Irq Channel 2 */ OS_HAL_ASM_WORD(Os_Hal_Irq_CanIsrRxFifo) 
+  /* Irq Channel 3 */ OS_HAL_ASM_WORD(Os_Hal_Irq_CanIsrStatus_0) 
+  /* Irq Channel 4 */ OS_HAL_ASM_WORD(Os_Hal_Irq_CanIsrTx_0) 
   /* Irq Channel 5 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 6 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 7 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
@@ -184,7 +182,7 @@
   /* Irq Channel 20 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 21 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 22 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
-  /* Irq Channel 23 */ OS_HAL_ASM_WORD(Os_Hal_Irq_CanIsrRxFifo) 
+  /* Irq Channel 23 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 24 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 25 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 26 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
@@ -381,9 +379,9 @@
   /* Irq Channel 217 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 218 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 219 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
-  /* Irq Channel 220 */ OS_HAL_ASM_WORD(Os_Hal_Irq_CanIsrStatus_3) 
+  /* Irq Channel 220 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 221 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
-  /* Irq Channel 222 */ OS_HAL_ASM_WORD(Os_Hal_Irq_CanIsrTx_3) 
+  /* Irq Channel 222 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 223 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 224 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
   /* Irq Channel 225 */ OS_HAL_ASM_WORD(Os_Hal_UnhandledIrq) 
@@ -679,15 +677,17 @@
  *  CAT2 ISR HANDLER CORE 0
  *********************************************************************************************************************/
 
+  OS_HAL_ASM_CAT2ISR(CanIsrGlobalStatus) 
+
   OS_HAL_ASM_CAT2ISR(CanIsrRxFifo) 
 
-  OS_HAL_ASM_CAT2ISR(CanIsrStatus_3) 
+  OS_HAL_ASM_CAT2ISR(CanIsrStatus_0) 
 
-  OS_HAL_ASM_CAT2ISR(CanIsrTx_3) 
+  OS_HAL_ASM_CAT2ISR(CanIsrTx_0) 
 
   OS_HAL_ASM_CAT2ISR(CounterIsr_SystemTimer) 
 
-#endif
+
 
 /**********************************************************************************************************************
  *  END OF FILE: Os_Hal_EntryAsm_Lcfg.asm

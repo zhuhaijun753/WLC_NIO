@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_MemMap.h
- *   Generation Time: 2019-07-11 16:32:27
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -107,59 +107,31 @@
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
-#ifdef OS_START_SEC_BrsMainBackgroundTask_CODE
+#ifdef OS_START_SEC_CanIsrGlobalStatus_CODE
 # ifdef OS_MEMMAP_SECTION_OPEN
 #  error A MemMap section is already open. Nesting is not supported.
 # endif
 # define OS_MEMMAP_SECTION_OPEN
-# define OS_BrsMainBackgroundTask_CODE_OPEN
+# define OS_CanIsrGlobalStatus_CODE_OPEN
 # ifndef MEMMAP_ERROR
 #  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
 # endif
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section text = ".OS_BrsMainBackgroundTask_CODE" /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_START_SEC_BrsMainBackgroundTask_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# pragma ghs section text = ".OS_CanIsrGlobalStatus_CODE" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# undef OS_START_SEC_CanIsrGlobalStatus_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
-#ifdef OS_STOP_SEC_BrsMainBackgroundTask_CODE
+#ifdef OS_STOP_SEC_CanIsrGlobalStatus_CODE
 # ifndef OS_MEMMAP_SECTION_OPEN
 #  error No MemMap section is currently opened.
 # endif
 # undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# ifndef OS_BrsMainBackgroundTask_CODE_OPEN
-#  error Section OS_BrsMainBackgroundTask_CODE is currently not opened and so cannot be closed.
+# ifndef OS_CanIsrGlobalStatus_CODE_OPEN
+#  error Section OS_CanIsrGlobalStatus_CODE is currently not opened and so cannot be closed.
 # endif
-# undef OS_BrsMainBackgroundTask_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_CanIsrGlobalStatus_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # pragma ghs section text = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_STOP_SEC_BrsMainBackgroundTask_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
-# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-#endif
-
-#ifdef OS_START_SEC_BrsMainTask_CODE
-# ifdef OS_MEMMAP_SECTION_OPEN
-#  error A MemMap section is already open. Nesting is not supported.
-# endif
-# define OS_MEMMAP_SECTION_OPEN
-# define OS_BrsMainTask_CODE_OPEN
-# ifndef MEMMAP_ERROR
-#  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
-# endif
-# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section text = ".OS_BrsMainTask_CODE" /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_START_SEC_BrsMainTask_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
-#endif
-
-#ifdef OS_STOP_SEC_BrsMainTask_CODE
-# ifndef OS_MEMMAP_SECTION_OPEN
-#  error No MemMap section is currently opened.
-# endif
-# undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# ifndef OS_BrsMainTask_CODE_OPEN
-#  error Section OS_BrsMainTask_CODE is currently not opened and so cannot be closed.
-# endif
-# undef OS_BrsMainTask_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section text = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_STOP_SEC_BrsMainTask_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_STOP_SEC_CanIsrGlobalStatus_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
@@ -191,87 +163,87 @@
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
-#ifdef OS_START_SEC_CanIsrStatus_3_CODE
+#ifdef OS_START_SEC_CanIsrStatus_0_CODE
 # ifdef OS_MEMMAP_SECTION_OPEN
 #  error A MemMap section is already open. Nesting is not supported.
 # endif
 # define OS_MEMMAP_SECTION_OPEN
-# define OS_CanIsrStatus_3_CODE_OPEN
+# define OS_CanIsrStatus_0_CODE_OPEN
 # ifndef MEMMAP_ERROR
 #  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
 # endif
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section text = ".OS_CanIsrStatus_3_CODE" /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_START_SEC_CanIsrStatus_3_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# pragma ghs section text = ".OS_CanIsrStatus_0_CODE" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# undef OS_START_SEC_CanIsrStatus_0_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
-#ifdef OS_STOP_SEC_CanIsrStatus_3_CODE
+#ifdef OS_STOP_SEC_CanIsrStatus_0_CODE
 # ifndef OS_MEMMAP_SECTION_OPEN
 #  error No MemMap section is currently opened.
 # endif
 # undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# ifndef OS_CanIsrStatus_3_CODE_OPEN
-#  error Section OS_CanIsrStatus_3_CODE is currently not opened and so cannot be closed.
+# ifndef OS_CanIsrStatus_0_CODE_OPEN
+#  error Section OS_CanIsrStatus_0_CODE is currently not opened and so cannot be closed.
 # endif
-# undef OS_CanIsrStatus_3_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_CanIsrStatus_0_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # pragma ghs section text = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_STOP_SEC_CanIsrStatus_3_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_STOP_SEC_CanIsrStatus_0_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
-#ifdef OS_START_SEC_CanIsrTx_3_CODE
+#ifdef OS_START_SEC_CanIsrTx_0_CODE
 # ifdef OS_MEMMAP_SECTION_OPEN
 #  error A MemMap section is already open. Nesting is not supported.
 # endif
 # define OS_MEMMAP_SECTION_OPEN
-# define OS_CanIsrTx_3_CODE_OPEN
+# define OS_CanIsrTx_0_CODE_OPEN
 # ifndef MEMMAP_ERROR
 #  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
 # endif
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section text = ".OS_CanIsrTx_3_CODE" /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_START_SEC_CanIsrTx_3_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# pragma ghs section text = ".OS_CanIsrTx_0_CODE" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# undef OS_START_SEC_CanIsrTx_0_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
-#ifdef OS_STOP_SEC_CanIsrTx_3_CODE
+#ifdef OS_STOP_SEC_CanIsrTx_0_CODE
 # ifndef OS_MEMMAP_SECTION_OPEN
 #  error No MemMap section is currently opened.
 # endif
 # undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# ifndef OS_CanIsrTx_3_CODE_OPEN
-#  error Section OS_CanIsrTx_3_CODE is currently not opened and so cannot be closed.
+# ifndef OS_CanIsrTx_0_CODE_OPEN
+#  error Section OS_CanIsrTx_0_CODE is currently not opened and so cannot be closed.
 # endif
-# undef OS_CanIsrTx_3_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_CanIsrTx_0_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # pragma ghs section text = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_STOP_SEC_CanIsrTx_3_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_STOP_SEC_CanIsrTx_0_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
-#ifdef OS_START_SEC_Default_Init_Task_CODE
+#ifdef OS_START_SEC_OsTask_CODE
 # ifdef OS_MEMMAP_SECTION_OPEN
 #  error A MemMap section is already open. Nesting is not supported.
 # endif
 # define OS_MEMMAP_SECTION_OPEN
-# define OS_Default_Init_Task_CODE_OPEN
+# define OS_OsTask_CODE_OPEN
 # ifndef MEMMAP_ERROR
 #  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
 # endif
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section text = ".OS_Default_Init_Task_CODE" /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_START_SEC_Default_Init_Task_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# pragma ghs section text = ".OS_OsTask_CODE" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# undef OS_START_SEC_OsTask_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
-#ifdef OS_STOP_SEC_Default_Init_Task_CODE
+#ifdef OS_STOP_SEC_OsTask_CODE
 # ifndef OS_MEMMAP_SECTION_OPEN
 #  error No MemMap section is currently opened.
 # endif
 # undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# ifndef OS_Default_Init_Task_CODE_OPEN
-#  error Section OS_Default_Init_Task_CODE is currently not opened and so cannot be closed.
+# ifndef OS_OsTask_CODE_OPEN
+#  error Section OS_OsTask_CODE is currently not opened and so cannot be closed.
 # endif
-# undef OS_Default_Init_Task_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_OsTask_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # pragma ghs section text = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_STOP_SEC_Default_Init_Task_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_STOP_SEC_OsTask_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
@@ -328,34 +300,6 @@
 # undef OS_OsTask_BSW_SCHM_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # pragma ghs section text = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
 # undef OS_STOP_SEC_OsTask_BSW_SCHM_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
-# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-#endif
-
-#ifdef OS_START_SEC_OsTask_Cdd_CODE
-# ifdef OS_MEMMAP_SECTION_OPEN
-#  error A MemMap section is already open. Nesting is not supported.
-# endif
-# define OS_MEMMAP_SECTION_OPEN
-# define OS_OsTask_Cdd_CODE_OPEN
-# ifndef MEMMAP_ERROR
-#  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
-# endif
-# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section text = ".OS_OsTask_Cdd_CODE" /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_START_SEC_OsTask_Cdd_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
-#endif
-
-#ifdef OS_STOP_SEC_OsTask_Cdd_CODE
-# ifndef OS_MEMMAP_SECTION_OPEN
-#  error No MemMap section is currently opened.
-# endif
-# undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# ifndef OS_OsTask_Cdd_CODE_OPEN
-#  error Section OS_OsTask_Cdd_CODE is currently not opened and so cannot be closed.
-# endif
-# undef OS_OsTask_Cdd_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section text = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_STOP_SEC_OsTask_Cdd_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 

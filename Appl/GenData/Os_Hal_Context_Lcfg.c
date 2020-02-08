@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Context_Lcfg.c
- *   Generation Time: 2019-07-11 17:10:34
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -91,7 +91,7 @@
 /**********************************************************************************************************************
  *  GLOBAL DATA
  *********************************************************************************************************************/
-#if 0
+
 #define OS_START_SEC_CORE0_VAR_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -104,35 +104,17 @@ VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_ErrorHook_OsCore0_Dyn;
 /*! HAL dynamic ISR2 level context data: Level1 */
 VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level1_Dyn;
 
-/*! HAL dynamic ISR2 level context data: Level2 */
-VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level2_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level3 */
-VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level3_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level4 */
-VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level4_Dyn;
-
-/*! HAL dynamic task context data: BrsMainBackgroundTask */
-VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_BrsMainBackgroundTask_Dyn;
-
-/*! HAL dynamic task context data: BrsMainTask */
-VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_BrsMainTask_Dyn;
-
-/*! HAL dynamic task context data: Default_Init_Task */
-VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Init_Task_Dyn;
-
 /*! HAL dynamic task context data: IdleTask_OsCore0 */
 VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_IdleTask_OsCore0_Dyn;
+
+/*! HAL dynamic task context data: OsTask */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_Dyn;
 
 /*! HAL dynamic task context data: OsTask_APP */
 VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_APP_Dyn;
 
 /*! HAL dynamic task context data: OsTask_BSW_SCHM */
 VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_BSW_SCHM_Dyn;
-
-/*! HAL dynamic task context data: OsTask_Cdd */
-VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_Cdd_Dyn;
 
 /*! HAL exception context data: OsCore0 */
 VAR(Os_ExceptionContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_ExceptionContext;
@@ -156,7 +138,7 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Os_CoreInitHook_OsCo
   /* .Entry         = */ (uint32)&Os_HookWrapperOs_CoreInitHook, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .ReturnAddress = */ (uint32)&Os_TrapHookReturn, /* PRQA S 0305, 306 */ /* MD_Os_Hal_Rule11.1_0305, MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
-  /* .Os_Hal_PMR    = */ (uint32)(0x0000FF00uL & OS_HAL_PMR_MASK),
+  /* .Os_Hal_PMR    = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
   /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL  
 }
 ;
@@ -169,8 +151,21 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_ErrorHook_OsCore0 =
   /* .Entry         = */ (uint32)&Os_HookWrapperStatusHook, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .ReturnAddress = */ (uint32)&Os_TrapHookReturn, /* PRQA S 0305, 306 */ /* MD_Os_Hal_Rule11.1_0305, MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
-  /* .Os_Hal_PMR    = */ (uint32)(0x0000FF00uL & OS_HAL_PMR_MASK),
+  /* .Os_Hal_PMR    = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
   /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL  
+}
+;
+
+/*! HAL ISR2 context configuration data: CanIsrGlobalStatus */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrGlobalStatus =
+{
+  /* .Os_Hal_SL     = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
+  /* .Os_Hal_SP     = */ (uint32)OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
+  /* .Entry         = */ (uint32)&Os_Isr_CanIsrGlobalStatus, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
+  /* .ReturnAddress = */ (uint32)&Os_TrapIsrEpilogue, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
+  /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
+  /* .Os_Hal_PMR    = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
+  /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL
 }
 ;
 
@@ -182,33 +177,33 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrRxFifo =
   /* .Entry         = */ (uint32)&Os_Isr_CanIsrRxFifo, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .ReturnAddress = */ (uint32)&Os_TrapIsrEpilogue, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
-  /* .Os_Hal_PMR    = */ (uint32)(0x0000FF00uL & OS_HAL_PMR_MASK),
+  /* .Os_Hal_PMR    = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
   /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL
 }
 ;
 
-/*! HAL ISR2 context configuration data: CanIsrStatus_3 */
-CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrStatus_3 =
+/*! HAL ISR2 context configuration data: CanIsrStatus_0 */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrStatus_0 =
 {
   /* .Os_Hal_SL     = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Os_Hal_SP     = */ (uint32)OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Entry         = */ (uint32)&Os_Isr_CanIsrStatus_3, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
+  /* .Entry         = */ (uint32)&Os_Isr_CanIsrStatus_0, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .ReturnAddress = */ (uint32)&Os_TrapIsrEpilogue, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
-  /* .Os_Hal_PMR    = */ (uint32)(0x0000FF00uL & OS_HAL_PMR_MASK),
+  /* .Os_Hal_PMR    = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
   /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL
 }
 ;
 
-/*! HAL ISR2 context configuration data: CanIsrTx_3 */
-CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrTx_3 =
+/*! HAL ISR2 context configuration data: CanIsrTx_0 */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsrTx_0 =
 {
   /* .Os_Hal_SL     = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Os_Hal_SP     = */ (uint32)OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Entry         = */ (uint32)&Os_Isr_CanIsrTx_3, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
+  /* .Entry         = */ (uint32)&Os_Isr_CanIsrTx_0, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .ReturnAddress = */ (uint32)&Os_TrapIsrEpilogue, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
-  /* .Os_Hal_PMR    = */ (uint32)(0x0000FF00uL & OS_HAL_PMR_MASK),
+  /* .Os_Hal_PMR    = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
   /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL
 }
 ;
@@ -221,47 +216,8 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CounterIsr_SystemTim
   /* .Entry         = */ (uint32)&Os_Isr_Os_TimerPitIsr, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .ReturnAddress = */ (uint32)&Os_TrapIsrEpilogue, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
-  /* .Os_Hal_PMR    = */ (uint32)(0x0000FF00uL & OS_HAL_PMR_MASK),
+  /* .Os_Hal_PMR    = */ (uint32)(0x0000FFFFuL & OS_HAL_PMR_MASK),
   /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL
-}
-;
-
-/*! HAL task context configuration data: BrsMainBackgroundTask */
-CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_BrsMainBackgroundTask =
-{
-  /* .Os_Hal_SL     = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Task_Prio2_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Os_Hal_SP     = */ (uint32)OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Task_Prio2_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Entry         = */ (uint32)&Os_Task_BrsMainBackgroundTask, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .ReturnAddress = */ (uint32)&Os_TrapTaskMissingTerminateTask, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
-  /* .Os_Hal_PMR    = */ (uint32)(0x00000000uL & OS_HAL_PMR_MASK),
-  /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL  
-}
-;
-
-/*! HAL task context configuration data: BrsMainTask */
-CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_BrsMainTask =
-{
-  /* .Os_Hal_SL     = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_BrsMainTask_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Os_Hal_SP     = */ (uint32)OS_STACK_GETHIGHADDRESS(OsCfg_Stack_BrsMainTask_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Entry         = */ (uint32)&Os_Task_BrsMainTask, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .ReturnAddress = */ (uint32)&Os_TrapTaskMissingTerminateTask, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
-  /* .Os_Hal_PMR    = */ (uint32)(0x00000000uL & OS_HAL_PMR_MASK),
-  /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL  
-}
-;
-
-/*! HAL task context configuration data: Default_Init_Task */
-CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Init_Task =
-{
-  /* .Os_Hal_SL     = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Task_Prio100_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Os_Hal_SP     = */ (uint32)OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Task_Prio100_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Entry         = */ (uint32)&Os_Task_Default_Init_Task, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .ReturnAddress = */ (uint32)&Os_TrapTaskMissingTerminateTask, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
-  /* .Os_Hal_PMR    = */ (uint32)(0x00000000uL & OS_HAL_PMR_MASK),
-  /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL  
 }
 ;
 
@@ -271,6 +227,19 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_IdleTask_OsCore0 =
   /* .Os_Hal_SL     = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Task_Prio4294967295_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Os_Hal_SP     = */ (uint32)OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Task_Prio4294967295_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Entry         = */ (uint32)&Os_Task_Os_IdleTask, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
+  /* .ReturnAddress = */ (uint32)&Os_TrapTaskMissingTerminateTask, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
+  /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
+  /* .Os_Hal_PMR    = */ (uint32)(0x00000000uL & OS_HAL_PMR_MASK),
+  /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL  
+}
+;
+
+/*! HAL task context configuration data: OsTask */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask =
+{
+  /* .Os_Hal_SL     = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Task_Prio0_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
+  /* .Os_Hal_SP     = */ (uint32)OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Task_Prio0_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
+  /* .Entry         = */ (uint32)&Os_Task_OsTask, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .ReturnAddress = */ (uint32)&Os_TrapTaskMissingTerminateTask, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
   /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
   /* .Os_Hal_PMR    = */ (uint32)(0x00000000uL & OS_HAL_PMR_MASK),
@@ -304,19 +273,6 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask_BSW_SCHM =
 }
 ;
 
-/*! HAL task context configuration data: OsTask_Cdd */
-CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask_Cdd =
-{
-  /* .Os_Hal_SL     = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Task_Prio18_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Os_Hal_SP     = */ (uint32)OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Task_Prio18_Dyn), /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Entry         = */ (uint32)&Os_Task_OsTask_Cdd, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .ReturnAddress = */ (uint32)&Os_TrapTaskMissingTerminateTask, /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */ /* COMP_WARN_OS_HAL_EXPR_NOT_ARITHMETIC_TYPE */
-  /* .Os_Hal_PSW    = */ (uint32)0x00018000uL,
-  /* .Os_Hal_PMR    = */ (uint32)(0x00000000uL & OS_HAL_PMR_MASK),
-  /* .Os_Hal_ASID   = */ (uint32)0x000003FFuL  
-}
-;
-
 /*! HAL kernel stack configuration data: OsCore0_Kernel */
 CONST(Os_Hal_ContextStackConfigType, OS_CONST) OsCfg_Hal_Stack_OsCore0_Kernel =
 {
@@ -343,7 +299,6 @@ CONSTP2VAR(Os_ExceptionContextType, AUTOMATIC, OS_CONST)
 
 #define OS_STOP_SEC_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-#endif
 /**********************************************************************************************************************
  *  LOCAL FUNCTION PROTOTYPES
  *********************************************************************************************************************/

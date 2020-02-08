@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Interrupt_Lcfg.h
- *   Generation Time: 2019-07-11 16:32:26
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -88,14 +88,17 @@
 # define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+/*! HAL ISR configuration data: CanIsrGlobalStatus */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrGlobalStatus;
+
 /*! HAL ISR configuration data: CanIsrRxFifo */
 extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrRxFifo;
 
-/*! HAL ISR configuration data: CanIsrStatus_3 */
-extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrStatus_3;
+/*! HAL ISR configuration data: CanIsrStatus_0 */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrStatus_0;
 
-/*! HAL ISR configuration data: CanIsrTx_3 */
-extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrTx_3;
+/*! HAL ISR configuration data: CanIsrTx_0 */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsrTx_0;
 
 /*! HAL ISR configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CounterIsr_SystemTimer;

@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Compiler_Cfg.h
- *   Generation Time: 2019-07-11 16:32:26
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -48,15 +48,13 @@
  *  OS USER CALLOUT CODE SECTIONS
  *********************************************************************************************************************/
 
-# define OS_BRSMAINBACKGROUNDTASK_CODE
-# define OS_BRSMAINTASK_CODE
+# define OS_CANISRGLOBALSTATUS_CODE
 # define OS_CANISRRXFIFO_CODE
-# define OS_CANISRSTATUS_3_CODE
-# define OS_CANISRTX_3_CODE
-# define OS_DEFAULT_INIT_TASK_CODE
+# define OS_CANISRSTATUS_0_CODE
+# define OS_CANISRTX_0_CODE
+# define OS_OSTASK_CODE
 # define OS_OSTASK_APP_CODE
 # define OS_OSTASK_BSW_SCHM_CODE
-# define OS_OSTASK_CDD_CODE
 
 
 #endif /* OS_COMPILER_CFG_H */

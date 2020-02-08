@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Task_Lcfg.h
- *   Generation Time: 2019-07-11 16:00:27
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -84,26 +84,17 @@
 # define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-/*! Task configuration data: BrsMainBackgroundTask */
-extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_BrsMainBackgroundTask;
-
-/*! Task configuration data: BrsMainTask */
-extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_BrsMainTask;
-
-/*! Task configuration data: Default_Init_Task */
-extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Init_Task;
-
 /*! Task configuration data: IdleTask_OsCore0 */
 extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_IdleTask_OsCore0;
+
+/*! Task configuration data: OsTask */
+extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_OsTask;
 
 /*! Task configuration data: OsTask_APP */
 extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_OsTask_APP;
 
 /*! Task configuration data: OsTask_BSW_SCHM */
 extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_OsTask_BSW_SCHM;
-
-/*! Task configuration data: OsTask_Cdd */
-extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_OsTask_Cdd;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

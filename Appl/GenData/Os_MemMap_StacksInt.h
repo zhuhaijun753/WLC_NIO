@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_MemMap_StacksInt.h
- *   Generation Time: 2019-07-11 17:10:34
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -46,37 +46,6 @@
 /**********************************************************************************************************************
  *  STACK SECTIONS
  *********************************************************************************************************************/
-#if 0
-#ifdef OS_START_SEC_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED
-# ifdef OS_MEMMAP_SECTION_OPEN
-#  error A MemMap section is already open. Nesting is not supported.
-# endif
-# define OS_MEMMAP_SECTION_OPEN
-# define OS_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED_OPEN
-# ifndef MEMMAP_ERROR
-#  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
-# endif
-# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs startdata /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# pragma ghs section bss = ".OS_STACK_BRSMAINTASK_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# pragma alignvar(4) /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_START_SEC_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-#endif
-
-#ifdef OS_STOP_SEC_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED
-# ifndef OS_MEMMAP_SECTION_OPEN
-#  error No MemMap section is currently opened.
-# endif
-# undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# ifndef OS_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED_OPEN
-#  error Section OS_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED is currently not opened and so cannot be closed.
-# endif
-# undef OS_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section bss = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# pragma ghs enddata /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_STOP_SEC_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-#endif
 
 #ifdef OS_START_SEC_STACK_OSCORE0_ERROR_VAR_NOINIT_UNSPECIFIED
 # ifdef OS_MEMMAP_SECTION_OPEN
@@ -202,96 +171,34 @@
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
-#ifdef OS_START_SEC_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT_UNSPECIFIED
+#ifdef OS_START_SEC_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED
 # ifdef OS_MEMMAP_SECTION_OPEN
 #  error A MemMap section is already open. Nesting is not supported.
 # endif
 # define OS_MEMMAP_SECTION_OPEN
-# define OS_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT_UNSPECIFIED_OPEN
+# define OS_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED_OPEN
 # ifndef MEMMAP_ERROR
 #  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
 # endif
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 # pragma ghs startdata /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# pragma ghs section bss = ".OS_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma ghs section bss = ".OS_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 # pragma alignvar(4) /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_START_SEC_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_START_SEC_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
-#ifdef OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT_UNSPECIFIED
+#ifdef OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED
 # ifndef OS_MEMMAP_SECTION_OPEN
 #  error No MemMap section is currently opened.
 # endif
 # undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# ifndef OS_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT_UNSPECIFIED_OPEN
-#  error Section OS_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT_UNSPECIFIED is currently not opened and so cannot be closed.
+# ifndef OS_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED_OPEN
+#  error Section OS_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED is currently not opened and so cannot be closed.
 # endif
-# undef OS_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # pragma ghs section bss = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
 # pragma ghs enddata /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-#endif
-
-#ifdef OS_START_SEC_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT_UNSPECIFIED
-# ifdef OS_MEMMAP_SECTION_OPEN
-#  error A MemMap section is already open. Nesting is not supported.
-# endif
-# define OS_MEMMAP_SECTION_OPEN
-# define OS_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT_UNSPECIFIED_OPEN
-# ifndef MEMMAP_ERROR
-#  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
-# endif
-# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs startdata /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# pragma ghs section bss = ".OS_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# pragma alignvar(4) /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_START_SEC_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-#endif
-
-#ifdef OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT_UNSPECIFIED
-# ifndef OS_MEMMAP_SECTION_OPEN
-#  error No MemMap section is currently opened.
-# endif
-# undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# ifndef OS_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT_UNSPECIFIED_OPEN
-#  error Section OS_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT_UNSPECIFIED is currently not opened and so cannot be closed.
-# endif
-# undef OS_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section bss = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# pragma ghs enddata /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-#endif
-
-#ifdef OS_START_SEC_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED
-# ifdef OS_MEMMAP_SECTION_OPEN
-#  error A MemMap section is already open. Nesting is not supported.
-# endif
-# define OS_MEMMAP_SECTION_OPEN
-# define OS_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED_OPEN
-# ifndef MEMMAP_ERROR
-#  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
-# endif
-# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs startdata /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# pragma ghs section bss = ".OS_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# pragma alignvar(4) /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_START_SEC_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-#endif
-
-#ifdef OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED
-# ifndef OS_MEMMAP_SECTION_OPEN
-#  error No MemMap section is currently opened.
-# endif
-# undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# ifndef OS_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED_OPEN
-#  error Section OS_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED is currently not opened and so cannot be closed.
-# endif
-# undef OS_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
-# pragma ghs section bss = default /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# pragma ghs enddata /* PRQA S 3116 */ /* MD_MSR_Pragma */
-# undef OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
@@ -387,5 +294,5 @@
 # undef OS_STOP_SEC_STACK_OSTASK_BSW_SCHM_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
-#endif
+
 /* PRQA S 0883 */ /* MD_Os_Dir4.10_0883_MemMap */

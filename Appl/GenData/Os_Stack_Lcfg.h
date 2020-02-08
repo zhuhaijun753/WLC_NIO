@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Stack_Lcfg.h
- *   Generation Time: 2019-07-11 17:10:34
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -77,17 +77,6 @@
  *  GLOBAL DATA PROTOTYPES
  *********************************************************************************************************************/
 
-# define OS_START_SEC_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED
-# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-/* Task stack: BrsMainTask */
-/* User: [BrsMainTask] */
-extern OS_STACK_DECLARE(OsCfg_Stack_BrsMainTask_Dyn, OS_CFG_SIZE_BRSMAINTASK_STACK);
-
-# define OS_STOP_SEC_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED
-# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-
 # define OS_START_SEC_STACK_OSCORE0_ERROR_VAR_NOINIT_UNSPECIFIED
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -114,7 +103,7 @@ extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Init_Dyn, OS_CFG_SIZE_OSCORE0_INIT_S
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /* ISR core global stack: OsCore0_Isr_Core */
-/* User: [CanIsrRxFifo, CanIsrStatus_3, CanIsrTx_3, CounterIsr_SystemTimer] */
+/* User: [CanIsrGlobalStatus, CanIsrRxFifo, CanIsrStatus_0, CanIsrTx_0, CounterIsr_SystemTimer] */
 extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Isr_Core_Dyn, OS_CFG_SIZE_OSCORE0_ISR_CORE_STACK);
 
 # define OS_STOP_SEC_STACK_OSCORE0_ISR_CORE_VAR_NOINIT_UNSPECIFIED
@@ -132,36 +121,14 @@ extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Kernel_Dyn, OS_CFG_SIZE_OSCORE0_KERN
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
-# define OS_START_SEC_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT_UNSPECIFIED
+# define OS_START_SEC_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-/* Shared Task stack: OsCore0_Task_Prio100 */
-/* User: [Default_Init_Task] */
-extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio100_Dyn, OS_CFG_SIZE_OSCORE0_TASK_PRIO100_STACK);
+/* Shared Task stack: OsCore0_Task_Prio0 */
+/* User: [OsTask] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio0_Dyn, OS_CFG_SIZE_OSCORE0_TASK_PRIO0_STACK);
 
-# define OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO100_VAR_NOINIT_UNSPECIFIED
-# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-
-# define OS_START_SEC_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT_UNSPECIFIED
-# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-/* Shared Task stack: OsCore0_Task_Prio18 */
-/* User: [OsTask_Cdd] */
-extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio18_Dyn, OS_CFG_SIZE_OSCORE0_TASK_PRIO18_STACK);
-
-# define OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO18_VAR_NOINIT_UNSPECIFIED
-# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-
-# define OS_START_SEC_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED
-# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-/* Shared Task stack: OsCore0_Task_Prio2 */
-/* User: [BrsMainBackgroundTask] */
-extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio2_Dyn, OS_CFG_SIZE_OSCORE0_TASK_PRIO2_STACK);
-
-# define OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED
+# define OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -205,9 +172,6 @@ extern OS_STACK_DECLARE(OsCfg_Stack_OsTask_BSW_SCHM_Dyn, OS_CFG_SIZE_OSTASK_BSW_
 # define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-/*! Stack configuration data: BrsMainTask */
-extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_BrsMainTask;
-
 /*! Stack configuration data: OsCore0_Error */
 extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Error;
 
@@ -220,14 +184,8 @@ extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Isr_Core;
 /*! Stack configuration data: OsCore0_Kernel */
 extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Kernel;
 
-/*! Stack configuration data: OsCore0_Task_Prio100 */
-extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio100;
-
-/*! Stack configuration data: OsCore0_Task_Prio18 */
-extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio18;
-
-/*! Stack configuration data: OsCore0_Task_Prio2 */
-extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio2;
+/*! Stack configuration data: OsCore0_Task_Prio0 */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio0;
 
 /*! Stack configuration data: OsCore0_Task_Prio4294967295 */
 extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio4294967295;

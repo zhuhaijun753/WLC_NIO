@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Scheduler_Cfg.h
- *   Generation Time: 2019-07-11 16:00:27
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -57,16 +57,12 @@
  *********************************************************************************************************************/
 
 /*! Defines the number of all task queues. */
-# define OS_CFG_NUM_TASKQUEUES                   (7u)
+# define OS_CFG_NUM_TASKQUEUES                   (3u)
 
 /* Number of task queue activation slots: OsCore0 */
-# define OS_CFG_NUM_TASKQUEUE0_OSCORE0_SLOTS     (3u)
-# define OS_CFG_NUM_TASKQUEUE1_OSCORE0_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE0_OSCORE0_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE1_OSCORE0_SLOTS     (4u)
 # define OS_CFG_NUM_TASKQUEUE2_OSCORE0_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE3_OSCORE0_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE4_OSCORE0_SLOTS     (3u)
-# define OS_CFG_NUM_TASKQUEUE5_OSCORE0_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE6_OSCORE0_SLOTS     (2u)
 
 
 /**********************************************************************************************************************

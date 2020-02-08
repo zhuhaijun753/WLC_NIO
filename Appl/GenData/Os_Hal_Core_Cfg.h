@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Core_Cfg.h
- *   Generation Time: 2019-07-11 16:32:26
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -58,15 +58,15 @@
 
 #define OS_HAL_CFG_CORE_COUNT  1uL
 
-#define OS_HAL_CFG_ISR_COUNT   4uL
+#define OS_HAL_CFG_ISR_COUNT   5uL
 
 
 /*! Number of interrupt sources initialized by the hardware init core. */
-#define OS_CFG_NUM_SYSTEM_INTERRUPTSOURCEREFS                     (3uL)
+#define OS_CFG_NUM_SYSTEM_INTERRUPTSOURCEREFS                     (1uL)
 
 
 /*! Number of interrupt sources initialized by core OsCore0 */
-#define OS_CFG_NUM_CORE_OSCORE0_INTERRUPTSOURCEREFS           (1uL)
+#define OS_CFG_NUM_CORE_OSCORE0_INTERRUPTSOURCEREFS           (4uL)
 
 
 

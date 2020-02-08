@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Cfg.h
- *   Generation Time: 2019-07-11 16:32:26
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -62,21 +62,23 @@
 # define OS_CFG_HAL_MINOR_VERSION                (20u)
 
 /* ISR core and level definitions */
+# define OS_ISR_CANISRGLOBALSTATUS_CORE      (0)
+# define OS_ISR_CANISRGLOBALSTATUS_LEVEL     (0)
 # define OS_ISR_CANISRRXFIFO_CORE      (0)
-# define OS_ISR_CANISRRXFIFO_LEVEL     (12)
-# define OS_ISR_CANISRSTATUS_3_CORE      (0)
-# define OS_ISR_CANISRSTATUS_3_LEVEL     (11)
-# define OS_ISR_CANISRTX_3_CORE      (0)
-# define OS_ISR_CANISRTX_3_LEVEL     (10)
+# define OS_ISR_CANISRRXFIFO_LEVEL     (0)
+# define OS_ISR_CANISRSTATUS_0_CORE      (0)
+# define OS_ISR_CANISRSTATUS_0_LEVEL     (0)
+# define OS_ISR_CANISRTX_0_CORE      (0)
+# define OS_ISR_CANISRTX_0_LEVEL     (0)
 # define OS_ISR_COUNTERISR_SYSTEMTIMER_CORE      (0)
-# define OS_ISR_COUNTERISR_SYSTEMTIMER_LEVEL     (8)
+# define OS_ISR_COUNTERISR_SYSTEMTIMER_LEVEL     (0)
 
 /* Hardware counter timing macros */
 
 /* Counter timing macros and constants: SystemTimer */
 # define OSMAXALLOWEDVALUE_SystemTimer     (2147483647uL) /* 0x7FFFFFFFuL */
 # define OSMINCYCLE_SystemTimer            (1uL)
-# define OSTICKSPERBASE_SystemTimer        (20000uL)
+# define OSTICKSPERBASE_SystemTimer        (1uL)
 # define OSTICKDURATION_SystemTimer        (1000000uL)
 
 /* OSEK compatibility for the system timer. */

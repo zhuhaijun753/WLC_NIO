@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Application_Lcfg.c
- *   Generation Time: 2019-07-11 16:32:26
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -115,11 +115,11 @@ OS_LOCAL VAR(Os_AppType, OS_VAR_NOINIT) OsCfg_App_SystemApplication_OsCore0_Dyn;
 /*! Object reference table for application alarms: SystemApplication_OsCore0 */
 OS_LOCAL CONST(Os_AlarmConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_AlarmRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ALARMS + 1u] =
 {
-  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_BrsCyclicAlarm_1ms),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_CanTp_CanTp_MainFunction),
-  OS_ALARM_CASTCONFIG_ALARMACTIVATETASK_2_ALARM(OsCfg_Alarm_Rte_Al_TE_DioControlCDD_Dio_Control_Runnable),
+  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable),
+  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_SWC_WLCAPP_WLC_Runnable),
   NULL_PTR
 };
 
@@ -139,9 +139,10 @@ OS_LOCAL CONST(Os_HookConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCor
 /*! Object reference table for application ISRs: SystemApplication_OsCore0 */
 OS_LOCAL CONST(Os_IsrConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_IsrRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ISRS + 1u] =
 {
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrGlobalStatus),
   OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrRxFifo),
-  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrStatus_3),
-  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrTx_3),
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrStatus_0),
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsrTx_0),
   OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer),
   NULL_PTR
 };
@@ -161,13 +162,10 @@ OS_LOCAL CONST(Os_SchTConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCor
 /*! Object reference table for application tasks: SystemApplication_OsCore0 */
 OS_LOCAL CONST(Os_TaskConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_TaskRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_TASKS + 1u] =
 {
-  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_BrsMainBackgroundTask),
-  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_BrsMainTask),
-  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Init_Task),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_IdleTask_OsCore0),
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_OsTask),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_OsTask_APP),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_OsTask_BSW_SCHM),
-  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_OsTask_Cdd),
   NULL_PTR
 };
 

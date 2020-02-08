@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hook_Lcfg.c
- *   Generation Time: 2019-07-11 13:43:07
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -74,8 +74,6 @@
 #include "Os_Hal_Context_Lcfg.h"
 
 
-
-#if 0
 /**********************************************************************************************************************
  *  LOCAL CONSTANT MACROS
  *********************************************************************************************************************/
@@ -198,7 +196,7 @@ CONSTP2CONST(Os_HookConfigType, OS_CONST, OS_CONST) OsCfg_HookRefs[OS_CFG_NUM_HO
 #define OS_STOP_SEC_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-#endif
+
 /**********************************************************************************************************************
  *  LOCAL FUNCTION PROTOTYPES
  *********************************************************************************************************************/

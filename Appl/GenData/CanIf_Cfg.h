@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Cfg.h
- *   Generation Time: 2020-02-04 16:15:32
+ *   Generation Time: 2020-02-08 12:42:12
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -106,8 +106,8 @@
 #define CANIF_RX_SEARCH_CONSIDER_MSG_TYPE                  STD_OFF
 #define CANIF_ECUC_SAFE_BSW_CHECKS                         STD_OFF
 #define CANIF_EXTENDED_RAM_CHECK_SUPPORT                   STD_OFF
-#define CANIF_DATA_CHECKSUM_RX_SUPPORT                     STD_OFF
-#define CANIF_DATA_CHECKSUM_TX_SUPPORT                     STD_OFF
+#define CANIF_DATA_CHECKSUM_RX_SUPPORT                     STD_ON
+#define CANIF_DATA_CHECKSUM_TX_SUPPORT                     STD_ON
 #define CANIF_SET_PDU_RECEPTION_MODE_SUPPORT               STD_OFF 
 #define CANIF_BUS_MIRRORING_SUPPORT                        STD_OFF 
 
@@ -316,6 +316,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 **********************************************************************************************************************/
 #define CANIF_CFG_MAXRXDLC_PLUS_MAXMETADATA     0u
 
+#define CANIF_CFG_MAXTXDLC_PLUS_DATACHECKSUM    8u
 
 
 /**********************************************************************************************************************
@@ -368,6 +369,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_CTRLSTATES                                              STD_ON
 #define CANIF_CTRLMODEOFCTRLSTATES                                    STD_ON
 #define CANIF_PDUMODEOFCTRLSTATES                                     STD_ON
+#define CANIF_DATACHECKSUMRXERRFCTPTR                                 STD_ON
 #define CANIF_FINALMAGICNUMBER                                        STD_OFF  /**< Deactivateable: 'CanIf_FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
 #define CANIF_GENERATORCOMPATIBILITYVERSION                           STD_ON
 #define CANIF_GENERATORVERSION                                        STD_ON
@@ -391,7 +393,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_RXPDUCONFIG                                             STD_ON
 #define CANIF_CANIFRXPDUIDOFRXPDUCONFIG                               STD_OFF  /**< Deactivateable: 'CanIf_RxPduConfig.CanIfRxPduId' Reason: '"CanIfDataChecksumRxSupport" is deactivated.' */
 #define CANIF_DLCOFRXPDUCONFIG                                        STD_ON
-#define CANIF_ISDATACHECKSUMRXPDUOFRXPDUCONFIG                        STD_OFF  /**< Deactivateable: 'CanIf_RxPduConfig.IsDataChecksumRxPdu' Reason: '"CanIfDataChecksumRxSupport" is deactivated.' */
+#define CANIF_ISDATACHECKSUMRXPDUOFRXPDUCONFIG                        STD_ON
 #define CANIF_MSGTYPEOFRXPDUCONFIG                                    STD_OFF  /**< Deactivateable: 'CanIf_RxPduConfig.MsgType' Reason: '"CanIfRxSearchConsiderMsgType" is deactivated.' */
 #define CANIF_RXINDICATIONFCTLISTIDXOFRXPDUCONFIG                     STD_ON
 #define CANIF_RXMETADATALENGTHOFRXPDUCONFIG                           STD_OFF  /**< Deactivateable: 'CanIf_RxPduConfig.RxMetaDataLength' Reason: 'Rx meta data support is deactivated.' */
@@ -434,7 +436,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_CANIDTXMASKOFTXPDUCONFIG                                STD_OFF  /**< Deactivateable: 'CanIf_TxPduConfig.CanIdTxMask' Reason: 'Tx meta data support is deactivated.' */
 #define CANIF_CTRLSTATESIDXOFTXPDUCONFIG                              STD_ON
 #define CANIF_DLCOFTXPDUCONFIG                                        STD_ON
-#define CANIF_ISDATACHECKSUMTXPDUOFTXPDUCONFIG                        STD_OFF  /**< Deactivateable: 'CanIf_TxPduConfig.IsDataChecksumTxPdu' Reason: '"CanIfDataChecksumTxSupport" is deactivated.' */
+#define CANIF_ISDATACHECKSUMTXPDUOFTXPDUCONFIG                        STD_ON
 #define CANIF_MAILBOXCONFIGIDXOFTXPDUCONFIG                           STD_ON
 #define CANIF_TXCONFIRMATIONFCTLISTIDXOFTXPDUCONFIG                   STD_ON
 #define CANIF_TXMETADATALENGTHOFTXPDUCONFIG                           STD_OFF  /**< Deactivateable: 'CanIf_TxPduConfig.TxMetaDataLength' Reason: 'Tx meta data support is deactivated.' */
@@ -459,6 +461,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_CANIFCTRLID2MAPPEDTXBUFFERSCONFIGOFPCCONFIG             STD_ON
 #define CANIF_CTRLMODEINDICATIONFCTPTROFPCCONFIG                      STD_ON
 #define CANIF_CTRLSTATESOFPCCONFIG                                    STD_ON
+#define CANIF_DATACHECKSUMRXERRFCTPTROFPCCONFIG                       STD_ON
 #define CANIF_FINALMAGICNUMBEROFPCCONFIG                              STD_OFF  /**< Deactivateable: 'CanIf_PCConfig.FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
 #define CANIF_GENERATORCOMPATIBILITYVERSIONOFPCCONFIG                 STD_ON
 #define CANIF_GENERATORVERSIONOFPCCONFIG                              STD_ON
@@ -520,6 +523,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_ISDEF_RXINDICATIONFCTOFRXINDICATIONFCTLIST              STD_OFF
 #define CANIF_ISDEF_RXINDICATIONLAYOUTOFRXINDICATIONFCTLIST           STD_OFF
 #define CANIF_ISDEF_DLCOFRXPDUCONFIG                                  STD_OFF
+#define CANIF_ISDEF_ISDATACHECKSUMRXPDUOFRXPDUCONFIG                  STD_OFF
 #define CANIF_ISDEF_RXINDICATIONFCTLISTIDXOFRXPDUCONFIG               STD_OFF
 #define CANIF_ISDEF_RXPDUCANIDOFRXPDUCONFIG                           STD_OFF
 #define CANIF_ISDEF_RXPDUMASKOFRXPDUCONFIG                            STD_OFF
@@ -533,6 +537,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_ISDEF_CANIDOFTXPDUCONFIG                                STD_OFF
 #define CANIF_ISDEF_CTRLSTATESIDXOFTXPDUCONFIG                        STD_OFF
 #define CANIF_ISDEF_DLCOFTXPDUCONFIG                                  STD_OFF
+#define CANIF_ISDEF_ISDATACHECKSUMTXPDUOFTXPDUCONFIG                  STD_OFF
 #define CANIF_ISDEF_MAILBOXCONFIGIDXOFTXPDUCONFIG                     STD_OFF
 #define CANIF_ISDEF_TXCONFIRMATIONFCTLISTIDXOFTXPDUCONFIG             STD_OFF
 #define CANIF_ISDEF_UPPERLAYERTXPDUIDOFTXPDUCONFIG                    STD_OFF
@@ -542,6 +547,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_ISDEF_CANIFCTRLID2MAPPEDTXBUFFERSCONFIGOFPCCONFIG       STD_ON
 #define CANIF_ISDEF_CTRLMODEINDICATIONFCTPTROFPCCONFIG                STD_ON
 #define CANIF_ISDEF_CTRLSTATESOFPCCONFIG                              STD_ON
+#define CANIF_ISDEF_DATACHECKSUMRXERRFCTPTROFPCCONFIG                 STD_ON
 #define CANIF_ISDEF_MAILBOXCONFIGOFPCCONFIG                           STD_ON
 #define CANIF_ISDEF_MAPPEDTXBUFFERSCONFIGOFPCCONFIG                   STD_ON
 #define CANIF_ISDEF_RXINDICATIONFCTLISTOFPCCONFIG                     STD_ON
@@ -575,6 +581,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_EQ2_RXINDICATIONFCTOFRXINDICATIONFCTLIST                
 #define CANIF_EQ2_RXINDICATIONLAYOUTOFRXINDICATIONFCTLIST             
 #define CANIF_EQ2_DLCOFRXPDUCONFIG                                    
+#define CANIF_EQ2_ISDATACHECKSUMRXPDUOFRXPDUCONFIG                    
 #define CANIF_EQ2_RXINDICATIONFCTLISTIDXOFRXPDUCONFIG                 
 #define CANIF_EQ2_RXPDUCANIDOFRXPDUCONFIG                             
 #define CANIF_EQ2_RXPDUMASKOFRXPDUCONFIG                              
@@ -588,6 +595,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_EQ2_CANIDOFTXPDUCONFIG                                  
 #define CANIF_EQ2_CTRLSTATESIDXOFTXPDUCONFIG                          
 #define CANIF_EQ2_DLCOFTXPDUCONFIG                                    
+#define CANIF_EQ2_ISDATACHECKSUMTXPDUOFTXPDUCONFIG                    
 #define CANIF_EQ2_MAILBOXCONFIGIDXOFTXPDUCONFIG                       
 #define CANIF_EQ2_TXCONFIRMATIONFCTLISTIDXOFTXPDUCONFIG               
 #define CANIF_EQ2_UPPERLAYERTXPDUIDOFTXPDUCONFIG                      
@@ -597,6 +605,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_EQ2_CANIFCTRLID2MAPPEDTXBUFFERSCONFIGOFPCCONFIG         CanIf_CanIfCtrlId2MappedTxBuffersConfig
 #define CANIF_EQ2_CTRLMODEINDICATIONFCTPTROFPCCONFIG                  CanIf_CtrlModeIndicationFctPtr
 #define CANIF_EQ2_CTRLSTATESOFPCCONFIG                                CanIf_CtrlStates.raw
+#define CANIF_EQ2_DATACHECKSUMRXERRFCTPTROFPCCONFIG                   CanIf_DataChecksumRxErrFctPtr
 #define CANIF_EQ2_MAILBOXCONFIGOFPCCONFIG                             CanIf_MailBoxConfig
 #define CANIF_EQ2_MAPPEDTXBUFFERSCONFIGOFPCCONFIG                     CanIf_MappedTxBuffersConfig
 #define CANIF_EQ2_RXINDICATIONFCTLISTOFPCCONFIG                       CanIf_RxIndicationFctList
@@ -704,6 +713,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_GetCanIfCtrlId2MappedTxBuffersConfigOfPCConfig()        CanIf_CanIfCtrlId2MappedTxBuffersConfig  /**< the pointer to CanIf_CanIfCtrlId2MappedTxBuffersConfig */
 #define CanIf_GetCtrlModeIndicationFctPtrOfPCConfig()                 CanIf_CtrlModeIndicationFctPtr  /**< the pointer to CanIf_CtrlModeIndicationFctPtr */
 #define CanIf_GetCtrlStatesOfPCConfig()                               CanIf_CtrlStates.raw  /**< the pointer to CanIf_CtrlStates */
+#define CanIf_GetDataChecksumRxErrFctPtrOfPCConfig()                  CanIf_DataChecksumRxErrFctPtr  /**< the pointer to CanIf_DataChecksumRxErrFctPtr */
 #define CanIf_GetGeneratorCompatibilityVersionOfPCConfig()            0x0212u
 #define CanIf_GetGeneratorVersionOfPCConfig()                         0x00041101u
 #define CanIf_GetMailBoxConfigOfPCConfig()                            CanIf_MailBoxConfig  /**< the pointer to CanIf_MailBoxConfig */
@@ -745,6 +755,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_GetCtrlModeIndicationFctPtr()                           (CanIf_GetCtrlModeIndicationFctPtrOfPCConfig())
 #define CanIf_GetCtrlModeOfCtrlStates(Index)                          (CanIf_GetCtrlStatesOfPCConfig()[(Index)].CtrlModeOfCtrlStates)
 #define CanIf_GetPduModeOfCtrlStates(Index)                           (CanIf_GetCtrlStatesOfPCConfig()[(Index)].PduModeOfCtrlStates)
+#define CanIf_GetDataChecksumRxErrFctPtr()                            (CanIf_GetDataChecksumRxErrFctPtrOfPCConfig())
 #define CanIf_GetCtrlStatesIdxOfMailBoxConfig(Index)                  (CanIf_GetMailBoxConfigOfPCConfig()[(Index)].CtrlStatesIdxOfMailBoxConfig)
 #define CanIf_GetMailBoxTypeOfMailBoxConfig(Index)                    (CanIf_GetMailBoxConfigOfPCConfig()[(Index)].MailBoxTypeOfMailBoxConfig)
 #define CanIf_GetPduIdFirstOfMailBoxConfig(Index)                     (CanIf_GetMailBoxConfigOfPCConfig()[(Index)].PduIdFirstOfMailBoxConfig)
@@ -755,6 +766,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_GetRxIndicationFctOfRxIndicationFctList(Index)          (CanIf_GetRxIndicationFctListOfPCConfig()[(Index)].RxIndicationFctOfRxIndicationFctList)
 #define CanIf_GetRxIndicationLayoutOfRxIndicationFctList(Index)       (CanIf_GetRxIndicationFctListOfPCConfig()[(Index)].RxIndicationLayoutOfRxIndicationFctList)
 #define CanIf_GetDlcOfRxPduConfig(Index)                              (CanIf_GetRxPduConfigOfPCConfig()[(Index)].DlcOfRxPduConfig)
+#define CanIf_IsIsDataChecksumRxPduOfRxPduConfig(Index)               ((CanIf_GetRxPduConfigOfPCConfig()[(Index)].IsDataChecksumRxPduOfRxPduConfig) != FALSE)
 #define CanIf_GetRxIndicationFctListIdxOfRxPduConfig(Index)           (CanIf_GetRxPduConfigOfPCConfig()[(Index)].RxIndicationFctListIdxOfRxPduConfig)
 #define CanIf_GetRxPduCanIdOfRxPduConfig(Index)                       (CanIf_GetRxPduConfigOfPCConfig()[(Index)].RxPduCanIdOfRxPduConfig)
 #define CanIf_GetRxPduMaskOfRxPduConfig(Index)                        (CanIf_GetRxPduConfigOfPCConfig()[(Index)].RxPduMaskOfRxPduConfig)
@@ -769,6 +781,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_GetCanIdOfTxPduConfig(Index)                            (CanIf_GetTxPduConfigOfPCConfig()[(Index)].CanIdOfTxPduConfig)
 #define CanIf_GetCtrlStatesIdxOfTxPduConfig(Index)                    (CanIf_GetTxPduConfigOfPCConfig()[(Index)].CtrlStatesIdxOfTxPduConfig)
 #define CanIf_GetDlcOfTxPduConfig(Index)                              (CanIf_GetTxPduConfigOfPCConfig()[(Index)].DlcOfTxPduConfig)
+#define CanIf_IsIsDataChecksumTxPduOfTxPduConfig(Index)               ((CanIf_GetTxPduConfigOfPCConfig()[(Index)].IsDataChecksumTxPduOfTxPduConfig) != FALSE)
 #define CanIf_GetMailBoxConfigIdxOfTxPduConfig(Index)                 (CanIf_GetTxPduConfigOfPCConfig()[(Index)].MailBoxConfigIdxOfTxPduConfig)
 #define CanIf_GetTxConfirmationFctListIdxOfTxPduConfig(Index)         (CanIf_GetTxPduConfigOfPCConfig()[(Index)].TxConfirmationFctListIdxOfTxPduConfig)
 #define CanIf_GetUpperLayerTxPduIdOfTxPduConfig(Index)                (CanIf_GetTxPduConfigOfPCConfig()[(Index)].UpperLayerTxPduIdOfTxPduConfig)
@@ -830,6 +843,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_HasCtrlStates()                                         (TRUE != FALSE)
 #define CanIf_HasCtrlModeOfCtrlStates()                               (TRUE != FALSE)
 #define CanIf_HasPduModeOfCtrlStates()                                (TRUE != FALSE)
+#define CanIf_HasDataChecksumRxErrFctPtr()                            (TRUE != FALSE)
 #define CanIf_HasGeneratorCompatibilityVersion()                      (TRUE != FALSE)
 #define CanIf_HasGeneratorVersion()                                   (TRUE != FALSE)
 #define CanIf_HasMailBoxConfig()                                      (TRUE != FALSE)
@@ -847,6 +861,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_HasRxIndicationLayoutOfRxIndicationFctList()            (TRUE != FALSE)
 #define CanIf_HasRxPduConfig()                                        (TRUE != FALSE)
 #define CanIf_HasDlcOfRxPduConfig()                                   (TRUE != FALSE)
+#define CanIf_HasIsDataChecksumRxPduOfRxPduConfig()                   (TRUE != FALSE)
 #define CanIf_HasRxIndicationFctListIdxOfRxPduConfig()                (TRUE != FALSE)
 #define CanIf_HasRxPduCanIdOfRxPduConfig()                            (TRUE != FALSE)
 #define CanIf_HasRxPduMaskOfRxPduConfig()                             (TRUE != FALSE)
@@ -877,6 +892,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_HasCanIdOfTxPduConfig()                                 (TRUE != FALSE)
 #define CanIf_HasCtrlStatesIdxOfTxPduConfig()                         (TRUE != FALSE)
 #define CanIf_HasDlcOfTxPduConfig()                                   (TRUE != FALSE)
+#define CanIf_HasIsDataChecksumTxPduOfTxPduConfig()                   (TRUE != FALSE)
 #define CanIf_HasMailBoxConfigIdxOfTxPduConfig()                      (TRUE != FALSE)
 #define CanIf_HasTxConfirmationFctListIdxOfTxPduConfig()              (TRUE != FALSE)
 #define CanIf_HasUpperLayerTxPduIdOfTxPduConfig()                     (TRUE != FALSE)
@@ -889,6 +905,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_HasCanIfCtrlId2MappedTxBuffersConfigOfPCConfig()        (TRUE != FALSE)
 #define CanIf_HasCtrlModeIndicationFctPtrOfPCConfig()                 (TRUE != FALSE)
 #define CanIf_HasCtrlStatesOfPCConfig()                               (TRUE != FALSE)
+#define CanIf_HasDataChecksumRxErrFctPtrOfPCConfig()                  (TRUE != FALSE)
 #define CanIf_HasGeneratorCompatibilityVersionOfPCConfig()            (TRUE != FALSE)
 #define CanIf_HasGeneratorVersionOfPCConfig()                         (TRUE != FALSE)
 #define CanIf_HasMailBoxConfigOfPCConfig()                            (TRUE != FALSE)
@@ -1092,6 +1109,9 @@ typedef uint8 CanIf_MailBoxConfigIdxOfMappedTxBuffersConfigType;
 /**   \brief  value based type definition for CanIf_DlcOfRxPduConfig */
 typedef uint8 CanIf_DlcOfRxPduConfigType;
 
+/**   \brief  value based type definition for CanIf_IsDataChecksumRxPduOfRxPduConfig */
+typedef boolean CanIf_IsDataChecksumRxPduOfRxPduConfigType;
+
 /**   \brief  value based type definition for CanIf_RxIndicationFctListIdxOfRxPduConfig */
 typedef uint8 CanIf_RxIndicationFctListIdxOfRxPduConfigType;
 
@@ -1167,6 +1187,9 @@ typedef uint8 CanIf_CtrlStatesIdxOfTxPduConfigType;
 /**   \brief  value based type definition for CanIf_DlcOfTxPduConfig */
 typedef uint8 CanIf_DlcOfTxPduConfigType;
 
+/**   \brief  value based type definition for CanIf_IsDataChecksumTxPduOfTxPduConfig */
+typedef boolean CanIf_IsDataChecksumTxPduOfTxPduConfigType;
+
 /**   \brief  value based type definition for CanIf_MailBoxConfigIdxOfTxPduConfig */
 typedef uint8 CanIf_MailBoxConfigIdxOfTxPduConfigType;
 
@@ -1239,6 +1262,7 @@ typedef struct sCanIf_RxPduConfigType
   CanIf_RxPduCanIdOfRxPduConfigType RxPduCanIdOfRxPduConfig;  /**< Rx-PDU: CAN identifier. */
   CanIf_RxPduMaskOfRxPduConfigType RxPduMaskOfRxPduConfig;  /**< Rx-PDU: CAN identifier mask. */
   CanIf_UpperPduIdOfRxPduConfigType UpperPduIdOfRxPduConfig;  /**< PDU ID defined by upper layer. */
+  CanIf_IsDataChecksumRxPduOfRxPduConfigType IsDataChecksumRxPduOfRxPduConfig;  /**< TRUE: Data checksum Rx-PDU, FALSE: None Data checksum Rx-PDU */
   CanIf_DlcOfRxPduConfigType DlcOfRxPduConfig;  /**< Data length code. */
   CanIf_RxIndicationFctListIdxOfRxPduConfigType RxIndicationFctListIdxOfRxPduConfig;  /**< the index of the 1:1 relation pointing to CanIf_RxIndicationFctList */
 } CanIf_RxPduConfigType;
@@ -1263,6 +1287,7 @@ typedef struct sCanIf_TxPduConfigType
 {
   CanIf_CanIdOfTxPduConfigType CanIdOfTxPduConfig;  /**< CAN identifier (16bit / 32bit). */
   CanIf_UpperLayerTxPduIdOfTxPduConfigType UpperLayerTxPduIdOfTxPduConfig;  /**< Upper layer handle ID (8bit / 16bit). */
+  CanIf_IsDataChecksumTxPduOfTxPduConfigType IsDataChecksumTxPduOfTxPduConfig;  /**< TRUE: Data checksum Tx-PDU, FALSE: None Data checksum Tx-PDU */
   CanIf_CtrlStatesIdxOfTxPduConfigType CtrlStatesIdxOfTxPduConfig;  /**< the index of the 1:1 relation pointing to CanIf_CtrlStates */
   CanIf_DlcOfTxPduConfigType DlcOfTxPduConfig;  /**< Data length code. */
   CanIf_MailBoxConfigIdxOfTxPduConfigType MailBoxConfigIdxOfTxPduConfig;  /**< the index of the 1:1 relation pointing to CanIf_MailBoxConfig */
@@ -1482,6 +1507,19 @@ extern CONST(CanIf_CtrlModeIndicationFctType, CANIF_CONST) CanIf_CtrlModeIndicat
 /*lint -restore */
 
 /**********************************************************************************************************************
+  CanIf_DataChecksumRxErrFctPtr
+**********************************************************************************************************************/
+#define CANIF_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+extern CONST(CanIf_DataChecksumRxErrFctType, CANIF_CONST) CanIf_DataChecksumRxErrFctPtr;
+#define CANIF_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
+/**********************************************************************************************************************
   CanIf_MailBoxConfig
 **********************************************************************************************************************/
 /** 
@@ -1558,6 +1596,7 @@ extern CONST(CanIf_RxIndicationFctListType, CANIF_CONST) CanIf_RxIndicationFctLi
   RxPduCanId                Rx-PDU: CAN identifier.
   RxPduMask                 Rx-PDU: CAN identifier mask.
   UpperPduId                PDU ID defined by upper layer.
+  IsDataChecksumRxPdu       TRUE: Data checksum Rx-PDU, FALSE: None Data checksum Rx-PDU
   Dlc                       Data length code.
   RxIndicationFctListIdx    the index of the 1:1 relation pointing to CanIf_RxIndicationFctList
 */ 
@@ -1641,6 +1680,7 @@ extern CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctLi
   Element                     Description
   CanId                       CAN identifier (16bit / 32bit).
   UpperLayerTxPduId           Upper layer handle ID (8bit / 16bit).
+  IsDataChecksumTxPdu         TRUE: Data checksum Tx-PDU, FALSE: None Data checksum Tx-PDU
   CtrlStatesIdx               the index of the 1:1 relation pointing to CanIf_CtrlStates
   Dlc                         Data length code.
   MailBoxConfigIdx            the index of the 1:1 relation pointing to CanIf_MailBoxConfig

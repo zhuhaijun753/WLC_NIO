@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Timer_Lcfg.c
- *   Generation Time: 2019-07-11 13:43:07
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -98,7 +98,7 @@ CONST(Os_Hal_TimerPitConfigType, OS_CONST) OsCfg_Hal_TimerPit_SystemTimer =
   /* Timer Hardware Type = */ (uint32)OS_HAL_TIMER_OSTM,
   /* Timer Channel Index = */ (uint32)OS_HAL_TIMER_CH0,
   /* Timer Unit Index    = */ (uint32)OS_HAL_TIMER_OSTM0,
-  /* Timer Reload Value  = */ (uint32)0x00004E1FuL,
+  /* Timer Reload Value  = */ (uint32)0x00000000uL,
   /* Timer ISR Config    = */ (Os_Hal_IntIsrConfigRefType)&OsCfg_Hal_IntIsr_CounterIsr_SystemTimer
 };
 

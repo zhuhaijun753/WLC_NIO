@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Lcfg.h
- *   Generation Time: 2019-07-11 16:32:27
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -88,39 +88,15 @@
  *  GLOBAL FUNCTION PROTOTYPES
  *********************************************************************************************************************/
 
-# define OS_START_SEC_BrsMainBackgroundTask_CODE
+# define OS_START_SEC_OsTask_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /**********************************************************************************************************************
- *  BrsMainBackgroundTask()
+ *  OsTask()
  *********************************************************************************************************************/
-extern FUNC(void, OS_BRSMAINBACKGROUNDTASK_CODE) Os_Task_BrsMainBackgroundTask(void);
+extern FUNC(void, OS_OSTASK_CODE) Os_Task_OsTask(void);
 
-# define OS_STOP_SEC_BrsMainBackgroundTask_CODE
-# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-
-# define OS_START_SEC_BrsMainTask_CODE
-# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-/**********************************************************************************************************************
- *  BrsMainTask()
- *********************************************************************************************************************/
-extern FUNC(void, OS_BRSMAINTASK_CODE) Os_Task_BrsMainTask(void);
-
-# define OS_STOP_SEC_BrsMainTask_CODE
-# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-
-# define OS_START_SEC_Default_Init_Task_CODE
-# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-/**********************************************************************************************************************
- *  Default_Init_Task()
- *********************************************************************************************************************/
-extern FUNC(void, OS_DEFAULT_INIT_TASK_CODE) Os_Task_Default_Init_Task(void);
-
-# define OS_STOP_SEC_Default_Init_Task_CODE
+# define OS_STOP_SEC_OsTask_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -148,15 +124,15 @@ extern FUNC(void, OS_OSTASK_BSW_SCHM_CODE) Os_Task_OsTask_BSW_SCHM(void);
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
-# define OS_START_SEC_OsTask_Cdd_CODE
+# define OS_START_SEC_CanIsrGlobalStatus_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /**********************************************************************************************************************
- *  OsTask_Cdd()
+ *  CanIsrGlobalStatus()
  *********************************************************************************************************************/
-extern FUNC(void, OS_OSTASK_CDD_CODE) Os_Task_OsTask_Cdd(void);
+extern FUNC(void, OS_CANISRGLOBALSTATUS_CODE) Os_Isr_CanIsrGlobalStatus(void);
 
-# define OS_STOP_SEC_OsTask_Cdd_CODE
+# define OS_STOP_SEC_CanIsrGlobalStatus_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -172,27 +148,27 @@ extern FUNC(void, OS_CANISRRXFIFO_CODE) Os_Isr_CanIsrRxFifo(void);
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
-# define OS_START_SEC_CanIsrStatus_3_CODE
+# define OS_START_SEC_CanIsrStatus_0_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /**********************************************************************************************************************
- *  CanIsrStatus_3()
+ *  CanIsrStatus_0()
  *********************************************************************************************************************/
-extern FUNC(void, OS_CANISRSTATUS_3_CODE) Os_Isr_CanIsrStatus_3(void);
+extern FUNC(void, OS_CANISRSTATUS_0_CODE) Os_Isr_CanIsrStatus_0(void);
 
-# define OS_STOP_SEC_CanIsrStatus_3_CODE
+# define OS_STOP_SEC_CanIsrStatus_0_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
-# define OS_START_SEC_CanIsrTx_3_CODE
+# define OS_START_SEC_CanIsrTx_0_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /**********************************************************************************************************************
- *  CanIsrTx_3()
+ *  CanIsrTx_0()
  *********************************************************************************************************************/
-extern FUNC(void, OS_CANISRTX_3_CODE) Os_Isr_CanIsrTx_3(void);
+extern FUNC(void, OS_CANISRTX_0_CODE) Os_Isr_CanIsrTx_0(void);
 
-# define OS_STOP_SEC_CanIsrTx_3_CODE
+# define OS_STOP_SEC_CanIsrTx_0_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
