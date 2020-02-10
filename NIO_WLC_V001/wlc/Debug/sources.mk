@@ -83,7 +83,6 @@ Sources/BSW/Os \
 Sources/BSW/PduR \
 Sources/BSW/VStdLib \
 Sources/app/AutosarApp/GenData \
-Sources/app/AutosarApp/GenData/RteAnalyzer/Source \
 Sources/app/AutosarApp/Source \
 Sources/app \
 Sources/hal \

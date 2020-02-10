@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.h
- *   Generation Time: 2020-02-08 12:42:12
+ *   Generation Time: 2020-02-09 12:01:52
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -97,9 +97,6 @@ extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_CanTp_C
 
 /*! Alarm configuration data: Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable;
-
-/*! Alarm configuration data: Rte_Al_TE_SWC_WLCAPP_WLC_Runnable */
-extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_SWC_WLCAPP_WLC_Runnable;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

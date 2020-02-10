@@ -35,7 +35,6 @@
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
       EVENT = Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable:"@RO@";
-      EVENT = Rte_Ev_Run_SWC_WLCAPP_WLC_Runnable:"@RO@";
    }:"@RO@@NR@";
 
    ALARM Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable {
@@ -44,16 +43,6 @@
       {
          TASK = OsTask_APP;
          EVENT = Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable;
-      }:"@ROC@";
-      AUTOSTART = FALSE:"@RO@";
-   }:"@RO@@NR@";
-
-   ALARM Rte_Al_TE_SWC_WLCAPP_WLC_Runnable {
-      COUNTER = SystemTimer;
-      ACTION = SETEVENT
-      {
-         TASK = OsTask_APP;
-         EVENT = Rte_Ev_Run_SWC_WLCAPP_WLC_Runnable;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
@@ -112,9 +101,5 @@
    }:"@ROC@@NR@";
 
    EVENT Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable {
-      MASK = AUTO;
-   }:"@ROC@@NR@";
-
-   EVENT Rte_Ev_Run_SWC_WLCAPP_WLC_Runnable {
       MASK = AUTO;
    }:"@ROC@@NR@";

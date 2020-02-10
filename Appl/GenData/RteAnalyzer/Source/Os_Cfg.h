@@ -32,17 +32,15 @@
 
 /* Alarms */
 # define Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable (0U)
-# define Rte_Al_TE_SWC_WLCAPP_WLC_Runnable (1U)
-# define Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms (2U)
-# define Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms (3U)
-# define Rte_Al_TE_CanTp_CanTp_MainFunction (4U)
+# define Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms (1U)
+# define Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms (2U)
+# define Rte_Al_TE_CanTp_CanTp_MainFunction (3U)
 
 /* Events */
 # define Rte_Ev_Cyclic2_OsTask_BSW_SCHM_0_10ms (0x01)
 # define Rte_Ev_Cyclic2_OsTask_BSW_SCHM_0_20ms (0x04)
 # define Rte_Ev_Run_CanTp_CanTp_MainFunction (0x02)
-# define Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable (0x02)
-# define Rte_Ev_Run_SWC_WLCAPP_WLC_Runnable (0x01)
+# define Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable (0x01)
 
 /* Spinlocks */
 

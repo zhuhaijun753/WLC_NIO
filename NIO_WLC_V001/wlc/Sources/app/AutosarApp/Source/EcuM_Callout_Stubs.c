@@ -93,7 +93,7 @@
 #include "Nm.h" 
 #include "PduR.h" 
 #include "Rte_Main.h" 
-#include "Mcu.h" 
+
 
 
 /**********************************************************************************************************************
@@ -186,7 +186,7 @@ FUNC(void, ECUM_CODE) EcuM_ShutdownOS(Std_ReturnType ErrCode)
 #if ( ECUM_NUMBER_OF_CORES > 1 )
   ShutdownAllCores(ErrCode);
 #else
-  ShutdownOS(ErrCode);
+  //ShutdownOS(ErrCode);
 #endif
   
   return;
@@ -283,12 +283,13 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void)
 **********************************************************************************************************************/
 FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void) 
 {
+#if 0
   BswM_PreInit( BswM_Config_Ptr );
   Mcu_Init( McuModuleConfiguration );
   Mcu_InitClock(0);
   while (MCU_PLL_LOCKED != Mcu_GetPllStatus());
   Mcu_DistributePllClock();
-
+#endif
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitOne>                  DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/

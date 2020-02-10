@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Callout_Stubs.c
- *   Generation Time: 2019-11-28 22:25:11
+ *   Generation Time: 2020-02-09 21:06:56
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -95,6 +95,20 @@ FUNC(void, BSWM_CODE) BswM_AL_SetProgrammableInterrupts(void)
  *********************************************************************************************************************/
 
 } /* End of BswM_AL_SetProgrammableInterrupts */
+
+
+FUNC(void, BSWM_CODE) Cdd_Init(void)
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           <USERBLOCK Cdd_Init>                               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+} /* End of Cdd_Init */
 
 
 FUNC(void, BSWM_CODE) ESH_ComM_CheckPendingRequests(void)

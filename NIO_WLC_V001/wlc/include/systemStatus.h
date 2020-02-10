@@ -112,7 +112,7 @@ boolean SSafeAction(EventInfo* pEvtInfo);
 boolean IsRxDetected(void);
 
 
-boolean GetEvent(StateId KeycurrentState, EventInfo* pEventInfo);
+boolean GetEvent1(StateId KeycurrentState, EventInfo* pEventInfo);
 void InitSystemStatus(void);
 void ResetSystemStatus(void);
 void SysStatusRun(void);

@@ -16,7 +16,7 @@
  *             File:  SWC_WLCAPP.c
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
  *        SW-C Type:  SWC_WLCAPP
- *  Generation Time:  2020-02-07 22:30:53
+ *  Generation Time:  2020-02-09 12:02:08
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0
@@ -141,39 +141,6 @@ FUNC(void, SWC_WLCAPP_CODE) ComControl_Init_Runnable(void) /* PRQA S 0850 */ /* 
  *********************************************************************************************************************/
 }
 
-/**********************************************************************************************************************
- *
- * Runnable Entity Name: WLC_Runnable
- *
- *---------------------------------------------------------------------------------------------------------------------
- *
- * Executed if at least one of the following trigger conditions occurred:
- *   - triggered on TimingEvent every 100ms
- *
- *********************************************************************************************************************/
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
- * Symbol: WLC_Runnable_doc
- *********************************************************************************************************************/
-
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-
-FUNC(void, SWC_WLCAPP_CODE) WLC_Runnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
-{
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
- * Symbol: WLC_Runnable
- *********************************************************************************************************************/
-
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-}
-
 
 #define SWC_WLCAPP_STOP_SEC_CODE
 #include "SWC_WLCAPP_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
@@ -193,6 +160,21 @@ FUNC(void, SWC_WLCAPP_CODE) WLC_Runnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 
  * DO NOT CHANGE THIS COMMENT!           << Start of removed code area >>                   DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
+
+
+#if 0
+/***  Start of saved code (symbol: documentation area:WLC_Runnable_doc)  ************************************/
+
+
+/***  End of saved code  ************************************************************************************/
+#endif
+
+#if 0
+/***  Start of saved code (symbol: runnable implementation:WLC_Runnable)  ***********************************/
+
+
+/***  End of saved code  ************************************************************************************/
+#endif
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of removed code area >>                     DO NOT CHANGE THIS COMMENT!

@@ -199,6 +199,18 @@
             <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>
+        <Settings Name="com.vector.cfg.dom.modemgt.ui.editor.bswm.bswmrp.BSWModeRequestPortsPart">
+            <Setting Value="0,1,2,3,4,5,6," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:79,2:179,3:154,4:72,5:103,6:87," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.dom.modemgt.ui.editor.bswm.expr.ExpressionsPart">
+            <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:434,2:809," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
         <Settings Name="com.vector.cfg.dom.modemgt.ui.editor.bswm.incomingmrp.IncomingModeRequestPortsPart">
             <Setting Value="0,1,2,3,4,5," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:20,1:79,2:179,3:154,4:103,5:87," Name="nattable.BODY.columnWidth.sizes"/>
@@ -226,6 +238,12 @@
         <Settings Name="com.vector.cfg.dom.modemgt.ui.editor.bswm.outgoingmrp.OutgoingModeRequestPortsPart">
             <Setting Value="0,1,2,3," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:20,1:79,2:212,3:103," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.dom.modemgt.ui.editor.bswm.rule.RulesPart">
+            <Setting Value="0,1,2,3,4,5,6," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:79,2:201,3:101,4:150,5:153,6:202," Name="nattable.BODY.columnWidth.sizes"/>
             <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>
@@ -360,6 +378,12 @@
             <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.BswM.BswMConfig.BswMRteModeDclGroup.BswMRteMode">
+            <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:156,2:186," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
         <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.CanIf.CanIfInitCfg.CanIfRxPduCfg">
             <Setting Value="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:21,1:492,2:264,3:270,4:135,5:177,6:175,7:233,8:159,9:161,10:348,11:104,12:164,13:225,14:496,15:273,16:268,17:261,18:244," Name="nattable.BODY.columnWidth.sizes"/>
@@ -417,6 +441,12 @@
         <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.Can_Sh2Rscan.Can.CanConfigSet.CanController.CanFilterMask">
             <Setting Value="0,1,2,3,4," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:20,1:145,2:160,3:159,4:104," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.Can_Sh2Rscan.Can.CanConfigSet.CanHardwareObject">
+            <Setting Value="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:348,2:186,3:322,4:222,5:163,6:129,7:242,8:110,9:95,10:249,11:135,12:223,13:170,14:147,15:104,16:126,17:144," Name="nattable.BODY.columnWidth.sizes"/>
             <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>
@@ -769,7 +799,7 @@
             <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>
         <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.EcuM.EcuMConfiguration.EcuMCommonConfiguration.EcuMSleepMode">
-            <Setting Value="0,1,2,3,4,5," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0,1,2,3,4," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:20,1:169,2:144,3:238,4:193," Name="nattable.BODY.columnWidth.sizes"/>
             <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="1" Name="nattable.sortIndexes"/>
@@ -777,6 +807,36 @@
         <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.EcuM.EcuMConfiguration.EcuMCommonConfiguration.EcuMWakeupSource">
             <Setting Value="0,1,2,3,4,5,6,7,8," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:20,1:324,2:229,3:324,4:162,5:195,6:168,7:204,8:198," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.EcuM.EcuMConfiguration.EcuMFlexConfiguration.EcuMAlarmClock">
+            <Setting Value="0,1,2,3,4," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:167,2:142,3:195,4:161," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.EcuM.EcuMConfiguration.EcuMFlexConfiguration.EcuMFlexUserConfig">
+            <Setting Value="0,1,2,3,4," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:194,2:197,3:103,4:187," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.EcuM.EcuMConfiguration.EcuMFlexConfiguration.EcuMResetMode">
+            <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:192,2:143," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.EcuM.EcuMConfiguration.EcuMFlexConfiguration.EcuMShutdownCause">
+            <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:217,2:176," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.EcuM.EcuMConfiguration.EcuMFlexConfiguration.EcuMShutdownTarget">
+            <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:205,2:180," Name="nattable.BODY.columnWidth.sizes"/>
             <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>
@@ -789,6 +849,18 @@
         <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.Nm.NmChannelConfig.NmBusType">
             <Setting Value="0,1," Name="nattable.BODY.columnIndexOrder"/>
             <Setting Value="0:20,1:339," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.Os.OsEvent">
+            <Setting Value="0,1,2," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:102,2:118," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="1" Name="nattable.sortIndexes"/>
+        </Settings>
+        <Settings Name="com.vector.cfg.gui.gce.internal.GCETable.MICROSAR.Os.OsIsr">
+            <Setting Value="0,1,2,3,4,5,6,7,8,9,10,11,12,13," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0:20,1:204,2:124,3:166,4:272,5:192,6:179,7:177,8:162,9:270,10:223,11:175,12:122,13:153," Name="nattable.BODY.columnWidth.sizes"/>
             <Setting Value="ASC" Name="nattable.sortDirections"/>
             <Setting Value="1" Name="nattable.sortIndexes"/>
         </Settings>

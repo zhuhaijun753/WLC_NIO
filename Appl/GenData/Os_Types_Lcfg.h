@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2020-02-08 12:42:12
+ *   Generation Time: 2020-02-09 12:01:52
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -88,7 +88,6 @@
 #define Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms
 #define Rte_Al_TE_CanTp_CanTp_MainFunction Rte_Al_TE_CanTp_CanTp_MainFunction
 #define Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable
-#define Rte_Al_TE_SWC_WLCAPP_WLC_Runnable Rte_Al_TE_SWC_WLCAPP_WLC_Runnable
 
 /* Counter identifiers. */
 #define SystemTimer SystemTimer
@@ -172,8 +171,7 @@ typedef enum
   Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   Rte_Al_TE_CanTp_CanTp_MainFunction = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_SWC_WLCAPP_WLC_Runnable = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ALARMID_COUNT = 5
+  OS_ALARMID_COUNT = 4
 } AlarmType;
 
 /*! Counter identifiers. */

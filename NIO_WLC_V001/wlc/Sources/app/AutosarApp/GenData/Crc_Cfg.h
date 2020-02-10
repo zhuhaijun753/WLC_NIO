@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Crc_Cfg.h
- *   Generation Time: 2020-02-07 18:24:51
+ *   Generation Time: 2020-02-08 12:42:12
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -88,8 +88,8 @@
         
 /***** CRC Calculation configuration *********************************************************************************/
 
-# define CRC_8_MODE              (CRC_8_RUNTIME)
-# define CRC_8H2F_MODE           (CRC_8H2F_RUNTIME)
+# define CRC_8_MODE              (CRC_8_TABLE)
+# define CRC_8H2F_MODE           (CRC_8H2F_TABLE)
 # define CRC_16_MODE             (CRC_16_RUNTIME)
 # define CRC_32_MODE             (CRC_32_RUNTIME)
 # define CRC_32P4_MODE           (CRC_32P4_RUNTIME)

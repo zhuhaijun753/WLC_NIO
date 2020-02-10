@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.c
- *   Generation Time: 2020-02-08 12:42:12
+ *   Generation Time: 2020-02-09 12:01:52
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -98,9 +98,6 @@ OS_LOCAL VAR(Os_AlarmType, OS_VAR_NOINIT) OsCfg_Alarm_Rte_Al_TE_CanTp_CanTp_Main
 
 /*! Dynamic alarm data: Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable */
 OS_LOCAL VAR(Os_AlarmType, OS_VAR_NOINIT) OsCfg_Alarm_Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable_Dyn;
-
-/*! Dynamic alarm data: Rte_Al_TE_SWC_WLCAPP_WLC_Runnable */
-OS_LOCAL VAR(Os_AlarmType, OS_VAR_NOINIT) OsCfg_Alarm_Rte_Al_TE_SWC_WLCAPP_WLC_Runnable_Dyn;
 
 #define OS_STOP_SEC_CORE0_VAR_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -217,31 +214,6 @@ CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Communication_
   /* .Mask  = */ Rte_Ev_Run_Communication_Read_APP_ComReadandWrite_Runnable
 };
 
-/*! Alarm configuration data: Rte_Al_TE_SWC_WLCAPP_WLC_Runnable */
-CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_SWC_WLCAPP_WLC_Runnable =
-{
-  /* .Alarm = */
-  {
-    /* .Job                   = */
-    {
-      /* .Dyn      = */ OS_ALARM_CASTDYN_ALARM_2_JOB(OsCfg_Alarm_Rte_Al_TE_SWC_WLCAPP_WLC_Runnable_Dyn),
-      /* .Counter  = */ OS_COUNTER_CASTCONFIG_TIMERPIT_2_COUNTER(OsCfg_Counter_SystemTimer),
-      /* .Callback = */ Os_AlarmActionSetEvent
-    },
-    /* .Autostart             = */
-    {
-      /* .AlarmTime        = */ 0uL, /* 0.0 sec */
-      /* .Cycle            = */ 0uL, /* 0.0 sec */
-      /* .ApplicationModes = */ OS_APPMODE_NONE,
-      /* .AlarmMode        = */ OS_ALARMMODE_ABSOLUTE
-    },
-    /* .AccessingApplications = */ OS_APPID2MASK(SystemApplication_OsCore0),
-    /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0
-  },
-  /* .Task  = */ &OsCfg_Task_OsTask_APP,
-  /* .Mask  = */ Rte_Ev_Run_SWC_WLCAPP_WLC_Runnable
-};
-
 #define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -256,7 +228,6 @@ CONSTP2CONST(Os_AlarmConfigType, OS_CONST, OS_CONST) OsCfg_AlarmRefs[OS_ALARMID_
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_CanTp_CanTp_MainFunction),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable),
-  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_SWC_WLCAPP_WLC_Runnable),
   NULL_PTR
 };
 

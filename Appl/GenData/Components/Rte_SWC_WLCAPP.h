@@ -93,11 +93,9 @@ FUNC(Std_ReturnType, RTE_COMM_APPL_CODE) ComM_RequestComMode(ComM_UserHandleType
 
 # ifndef RTE_CORE
 #  define RTE_RUNNABLE_ComControl_Init_Runnable ComControl_Init_Runnable
-#  define RTE_RUNNABLE_WLC_Runnable WLC_Runnable
 # endif
 
 FUNC(void, SWC_WLCAPP_CODE) ComControl_Init_Runnable(void); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
-FUNC(void, SWC_WLCAPP_CODE) WLC_Runnable(void); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
 
 # define SWC_WLCAPP_STOP_SEC_CODE
 # include "SWC_WLCAPP_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */

@@ -13,7 +13,7 @@
  *             File:  Rte_DataHandleType.h
  *           Config:  D:/Auto/Demo/WLCProject/WLC.dpa
  *        SW-C Type:  SWC_WLCAPP
- *  Generation Time:  2020-02-07 22:30:53
+ *  Generation Time:  2020-02-09 12:02:07
  *
  *        Generator:  MICROSAR RTE Generator Version 4.20.0
  *                    RTE Core Version 1.20.0

@@ -523,8 +523,6 @@
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Start
  *  Rte_Runnable_SWC_WLCAPP_ComControl_Init_Runnable_Return
  *  Rte_Runnable_SWC_WLCAPP_ComControl_Init_Runnable_Start
- *  Rte_Runnable_SWC_WLCAPP_WLC_Runnable_Return
- *  Rte_Runnable_SWC_WLCAPP_WLC_Runnable_Start
  *  Rte_SwitchAckHook_Dcm_DcmEcuReset_DcmEcuReset_Return
  *  Rte_SwitchAckHook_Dcm_DcmEcuReset_DcmEcuReset_Start
  *  Rte_SwitchHook_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Return

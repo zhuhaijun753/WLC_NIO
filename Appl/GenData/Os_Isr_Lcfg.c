@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Isr_Lcfg.c
- *   Generation Time: 2020-02-08 12:42:12
+ *   Generation Time: 2020-02-09 12:01:52
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -149,7 +149,7 @@ CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_CanIsrGlobalStatus =
   },
   /* .HwConfig                  = */ &OsCfg_Hal_IntIsr_CanIsrGlobalStatus,
   /* .IsrId                     = */ CanIsrGlobalStatus,
-  /* .IsEnabledOnInitialization = */ TRUE
+  /* .IsEnabledOnInitialization = */ FALSE
 }
 ;
 /*! ISR configuration data: CanIsrRxFifo */

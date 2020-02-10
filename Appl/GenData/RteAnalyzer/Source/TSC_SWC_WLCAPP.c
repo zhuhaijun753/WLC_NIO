@@ -74,33 +74,6 @@ Std_ReturnType TSC_SWC_WLCAPP_Rte_Call_UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57_Req
 
 
 
-
-
-
-
-
-
-     /* Client Server Interfaces: */
-
-
-     /* Service calls */
-
-
-     /* Mode Interfaces */
-
-
-
-
-     /* Trigger Interfaces */
-
-     /* Inter-Runnable variables */
-
-
-
-
-
-
-
      /* SWC_WLCAPP */
       /* SWC_WLCAPP */
 

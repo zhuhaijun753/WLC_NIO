@@ -15,6 +15,7 @@
 #include "canCom1.h"
 
 
+
 #include "EcuM.h"
 #define RTE_CORE
 
@@ -26,9 +27,7 @@
 #include "Rte_Dcm.h"
 #include "Rte_DemMaster_0.h"
 #include "Rte_DemSatellite_0.h"
-#include "Rte_DemoSWC.h"
 #include "Rte_Det.h"
-#include "Rte_DioControlCDD.h"
 #include "Rte_EcuM.h"
 #include "Rte_Os_OsCore0_swc.h"
 #include "SchM_BswM.h"
@@ -47,7 +46,6 @@
 #include "SchM_Mcu.h"
 #include "SchM_Nm.h"
 #include "SchM_PduR.h"
-#include "SchM_Port.h"
 
 #include "Rte_Hook.h"
 
@@ -59,6 +57,7 @@
 #endif
 
 #include "Rte_Cbk.h"
+
 
 
 #define NUM_1MS_COUNTS_FOR_10MS         10U
@@ -76,6 +75,9 @@ SysStateId SyscurrentState,SysnextState;
 SysEventInfo SyseventInfo;
 SysStateTransit* SyspStateTransit;
 
+
+int Count5;
+int Count20;
 typedef struct
 {
 	uint16 w1msCount;
@@ -86,7 +88,7 @@ typedef struct
 } TIMER_DATA;
 
 //APP_ERROR_TYPE gApp_error = APP_SUCCESS;
-boolean GetEvent(StateId KeycurrentState, EventInfo* pEventInfo)
+boolean GetEvent1(StateId KeycurrentState, EventInfo* pEventInfo)
 {
 	boolean ret = FALSE;
 
@@ -107,7 +109,7 @@ static void KeyChargeRun()
 {
 	uint8_t i;
 
-	if(GetEvent(KeycurrentState, &eventInfo))
+	if(GetEvent1(KeycurrentState, &eventInfo))
 	{
 		if((KeycurrentState < StateCount)&&(eventInfo.eventId < EventCount))
 		{
@@ -177,8 +179,33 @@ static void SystemStsRun()
 	}
 }
 
+static void AppTask_5msHandle(void)
+{
+	  CanTp_MainFunction();
+}
+
+
+static void AppTask_20msHandle(void)
+{
+	   ComM_MainFunction_0();
+}
+
 static void AppTask_1msHandle(uint16 wNumTicks)
 {
+
+	Count5++;
+	Count20++;
+	if(Count5>5)
+	{
+		AppTask_5msHandle();
+		Count5=0;
+	}
+
+	if(Count20>20)
+	{
+		AppTask_20msHandle();
+		Count20=0;
+	}
 	//GetMaxStrengthCoil();
 	//if(TRUE==GetKeyCoilObjSts())
 //	{
@@ -215,7 +242,41 @@ static void AppTask_10msHandle(uint16 wNumTicks)
 {
 	//PROT_CheckBoardParams(wNumTicks);
 	//DISP_Handler(wNumTicks);
+	  /* call runnable */
+		      BswM_MainFunction();
 
+		      /* call schedulable entity */
+		      CanNm_MainFunction();
+
+		      /* call schedulable entity */
+		      CanSM_MainFunction();
+
+		      /* call schedulable entity */
+	//	      Can_MainFunction_BusOff();
+
+		      /* call schedulable entity */
+		      Can_MainFunction_Mode();
+
+		      /* call schedulable entity */
+	//	      Can_MainFunction_Wakeup();
+
+		      /* call schedulable entity */
+		      Com_MainFunctionRx();
+
+		      /* call schedulable entity */
+		      Com_MainFunctionTx();
+
+		      /* call runnable */
+		      Dcm_MainFunction();
+
+		      /* call runnable */
+		      Dem_MasterMainFunction();
+
+		      /* call runnable */
+		      Dem_SatelliteMainFunction();
+
+		      /* call runnable */
+		      EcuM_MainFunction();
 }
 
 static void AppTask_100msHandle(void)

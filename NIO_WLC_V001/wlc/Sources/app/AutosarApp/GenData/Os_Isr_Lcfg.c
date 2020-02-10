@@ -172,7 +172,7 @@ CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_CanIsrStatus_3 =
     /* .UsesFpu               = */ FALSE
   },
   /* .HwConfig                  = */ &OsCfg_Hal_IntIsr_CanIsrStatus_3,
-  /* .IsrId                     = */ CanIsrStatus_3,
+  /* .IsrId                     = */
   /* .IsEnabledOnInitialization = */ TRUE
 }
 ;
@@ -199,7 +199,7 @@ CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_CanIsrTx_3 =
     /* .UsesFpu               = */ FALSE
   },
   /* .HwConfig                  = */ &OsCfg_Hal_IntIsr_CanIsrTx_3,
-  /* .IsrId                     = */ CanIsrTx_3,
+  /* .IsrId                     = */
   /* .IsEnabledOnInitialization = */ TRUE
 }
 ;

@@ -21,8 +21,8 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2019-07-11 16:32:27
- *           Project: Demo - Version 1.0
+ *   Generation Time: 2020-02-08 12:42:12
+ *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
  *
@@ -71,26 +71,24 @@
 /* Fast trusted function identifiers. */
 
 /* Task identifiers. */
-#define BrsMainBackgroundTask BrsMainBackgroundTask
-#define BrsMainTask BrsMainTask
-#define Default_Init_Task Default_Init_Task
 #define IdleTask_OsCore0 IdleTask_OsCore0
+#define OsTask OsTask
 #define OsTask_APP OsTask_APP
 #define OsTask_BSW_SCHM OsTask_BSW_SCHM
-#define OsTask_Cdd OsTask_Cdd
 
 /* Category 2 ISR identifiers. */
+#define CanIsrGlobalStatus CanIsrGlobalStatus
 #define CanIsrRxFifo CanIsrRxFifo
-#define CanIsrStatus_3 CanIsrStatus_3
-#define CanIsrTx_3 CanIsrTx_3
+#define CanIsrStatus_0 CanIsrStatus_0
+#define CanIsrTx_0 CanIsrTx_0
 #define CounterIsr_SystemTimer CounterIsr_SystemTimer
 
 /* Alarm identifiers. */
-#define BrsCyclicAlarm_1ms BrsCyclicAlarm_1ms
 #define Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms
 #define Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms
 #define Rte_Al_TE_CanTp_CanTp_MainFunction Rte_Al_TE_CanTp_CanTp_MainFunction
-#define Rte_Al_TE_DioControlCDD_Dio_Control_Runnable Rte_Al_TE_DioControlCDD_Dio_Control_Runnable
+#define Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable
+#define Rte_Al_TE_SWC_WLCAPP_WLC_Runnable Rte_Al_TE_SWC_WLCAPP_WLC_Runnable
 
 /* Counter identifiers. */
 #define SystemTimer SystemTimer
@@ -147,36 +145,34 @@ typedef enum
 /*! Task identifiers. */
 typedef enum
 {
-  BrsMainBackgroundTask = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  BrsMainTask = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Default_Init_Task = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  IdleTask_OsCore0 = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OsTask_APP = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OsTask_BSW_SCHM = 5,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OsTask_Cdd = 6,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_TASKID_COUNT = 7,
+  IdleTask_OsCore0 = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OsTask = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OsTask_APP = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OsTask_BSW_SCHM = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_TASKID_COUNT = 4,
   INVALID_TASK = OS_TASKID_COUNT
 } TaskType;
 
 /*! Category 2 ISR identifiers. */
 typedef enum
 {
-  CanIsrRxFifo = 0,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  CanIsrStatus_3 = 1,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  CanIsrTx_3 = 2,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  CounterIsr_SystemTimer = 3,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ISRID_COUNT = 4,
+  CanIsrGlobalStatus = 0,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  CanIsrRxFifo = 1,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  CanIsrStatus_0 = 2,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  CanIsrTx_0 = 3,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  CounterIsr_SystemTimer = 4,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ISRID_COUNT = 5,
   INVALID_ISR = OS_ISRID_COUNT
 } ISRType;
 
 /*! Alarm identifiers. */
 typedef enum
 {
-  BrsCyclicAlarm_1ms = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_CanTp_CanTp_MainFunction = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_DioControlCDD_Dio_Control_Runnable = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_CanTp_CanTp_MainFunction = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_Communication_Read_APP_ComReadandWrite_Runnable = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_SWC_WLCAPP_WLC_Runnable = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   OS_ALARMID_COUNT = 5
 } AlarmType;
 

@@ -14,7 +14,7 @@
     "FileName": "",
     "WorkspacePath": "",
     "GeneratorBasePath": "D:\\Auto\\CBD1900162\\Generators\\Rte\\",
-    "OutputDirectory": "C:\\Users\\86159\\AppData\\Local\\Temp\\1581085015821-0\\"
+    "OutputDirectory": "C:\\Users\\86159\\AppData\\Local\\Temp\\1581220878564-0\\"
   },
   "ECUName": "WLC",
   "EnableVFBTracing": false,
@@ -48542,46 +48542,6 @@
             "InterRunnableVariableAccessList": [],
             "ExternalTriggeringPointList": [],
             "InternalTriggeringPointList": []
-          },
-          {
-            "$id": "4120",
-            "RunnableName": "WLC_Runnable",
-            "Description": "",
-            "Symbol": "",
-            "Reentrant": false,
-            "IsInitRunnable": false,
-            "DataLayerLinkList": [
-              null
-            ],
-            "TriggerList": [
-              {
-                "$id": "4121",
-                "CycleTime": 100,
-                "CycleTimeUnit": 1,
-                "CyclicTriggerOffset": 0,
-                "CyclicTriggerOffsetUnit": 0,
-                "CyclicTriggerImplementation": 0,
-                "TriggerType": "TimingEvent",
-                "RTEEventList": [
-                  "TMT_WLC_Runnable"
-                ],
-                "PositionInTask": 0,
-                "UsesSchedule": 0,
-                "BitPosition": 0
-              }
-            ],
-            "DataSendPointList": [],
-            "DataReceivePointList": [],
-            "DataWriteAccessList": [],
-            "DataReadAccessList": [],
-            "ModeSwitchPointList": [],
-            "ModeAccessPointList": [],
-            "ServerCallPointList": [],
-            "ServerReturnPointList": [],
-            "ExclusiveAreaAccessList": [],
-            "InterRunnableVariableAccessList": [],
-            "ExternalTriggeringPointList": [],
-            "InternalTriggeringPointList": []
           }
         ],
         "CalibrationParameters": [],
@@ -48592,12 +48552,26 @@
       "CTCalibrationSupport": false,
       "OperationPorts": [
         {
-          "$id": "4122",
+          "$id": "4120",
           "PortPrototypeName": "UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57",
           "OperationPrototypeName": "RequestComMode",
           "OperationServerPort": {
-            "$id": "4123",
+            "$id": "4121",
             "OperationPrototypeName": "RequestComMode",
+            "PortPrototypeName": "UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57",
+            "ComponentName": "ComM"
+          },
+          "ClientPortCount": 1,
+          "QueueLength": 1,
+          "IsClient": true
+        },
+        {
+          "$id": "4122",
+          "PortPrototypeName": "UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57",
+          "OperationPrototypeName": "GetRequestedComMode",
+          "OperationServerPort": {
+            "$id": "4123",
+            "OperationPrototypeName": "GetRequestedComMode",
             "PortPrototypeName": "UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57",
             "ComponentName": "ComM"
           },
@@ -48608,10 +48582,10 @@
         {
           "$id": "4124",
           "PortPrototypeName": "UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57",
-          "OperationPrototypeName": "GetRequestedComMode",
+          "OperationPrototypeName": "GetMaxComMode",
           "OperationServerPort": {
             "$id": "4125",
-            "OperationPrototypeName": "GetRequestedComMode",
+            "OperationPrototypeName": "GetMaxComMode",
             "PortPrototypeName": "UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57",
             "ComponentName": "ComM"
           },
@@ -48622,23 +48596,9 @@
         {
           "$id": "4126",
           "PortPrototypeName": "UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57",
-          "OperationPrototypeName": "GetMaxComMode",
-          "OperationServerPort": {
-            "$id": "4127",
-            "OperationPrototypeName": "GetMaxComMode",
-            "PortPrototypeName": "UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57",
-            "ComponentName": "ComM"
-          },
-          "ClientPortCount": 1,
-          "QueueLength": 1,
-          "IsClient": true
-        },
-        {
-          "$id": "4128",
-          "PortPrototypeName": "UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57",
           "OperationPrototypeName": "GetCurrentComMode",
           "OperationServerPort": {
-            "$id": "4129",
+            "$id": "4127",
             "OperationPrototypeName": "GetCurrentComMode",
             "PortPrototypeName": "UR_CN_NIO_ES6_RF_CAN_SR_V3_0_e01a4c57",
             "ComponentName": "ComM"
@@ -48655,7 +48615,7 @@
     }
   ],
   "LdComPduTable": {
-    "$id": "4130"
+    "$id": "4128"
   },
   "IsAUTOSAR3Rte": false,
   "Type": 8,

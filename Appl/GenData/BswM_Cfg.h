@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Cfg.h
- *   Generation Time: 2019-11-28 22:25:11
+ *   Generation Time: 2020-02-09 21:06:56
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -55,6 +55,7 @@
 #include "BswM_Dcm.h"
 #include "BswM_EcuM.h"
 #include "Rte_BswM_Type.h"
+#include "Cdd.h" 
 
 
 
@@ -1383,6 +1384,7 @@ extern VAR(boolean, BSWM_VAR_NOINIT) BswM_PreInitialized;
 ----------------------------------------------------------------------------- */
 /* PRQA S 0777 CALLOUTDECLARATIONS */ /* MD_MSR_Rule5.2_0779 */
 extern FUNC(void, BSWM_CODE) BswM_AL_SetProgrammableInterrupts(void);
+extern FUNC(void, BSWM_CODE) Cdd_Init(void);
 extern FUNC(void, BSWM_CODE) ESH_ComM_CheckPendingRequests(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterPostRun(void);
 extern FUNC(void, BSWM_CODE) BswM_ESH_OnEnterShutdown(void);
