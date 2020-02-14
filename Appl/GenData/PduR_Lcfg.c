@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_Lcfg.c
- *   Generation Time: 2020-02-04 16:15:32
+ *   Generation Time: 2020-02-13 13:28:30
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -146,6 +146,7 @@ CONST(PduR_ExclusiveAreaRomType, PDUR_CONST) PduR_ExclusiveAreaRom[1] = {  /* PR
   UpTpCopyRxDataFctPtr          Transport protocol CopyRxData function pointers
   UpTpCopyTxDataFctPtr          Transport protocol CopyTxData function pointers
   UpIfRxIndicationFctPtr        Upper layer communication interface Rx indication function pointers.
+  UpIfTxConfirmationFctPtr      Upper layer communication interface Tx confimation function pointers
   UpTpStartOfReceptionFctPtr    Transport protocol StartOfReception function pointers
   UpTpTpRxIndicationFctPtr      Transport protocol TpRxIndication function pointers
   UpTpTpTxConfirmationFctPtr    Transport protocol TpTxConfimation function pointers
@@ -158,13 +159,13 @@ CONST(PduR_ExclusiveAreaRomType, PDUR_CONST) PduR_ExclusiveAreaRom[1] = {  /* PR
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
 CONST(PduR_MmRomType, PDUR_CONST) PduR_MmRom[6] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    CoreManagerRomIdx  MaskedBits  RmGDestRomEndIdx  RmGDestRomStartIdx  UpTpCopyRxDataFctPtr  UpTpCopyTxDataFctPtr  UpIfRxIndicationFctPtr  UpTpStartOfReceptionFctPtr  UpTpTpRxIndicationFctPtr  UpTpTpTxConfirmationFctPtr  LoIfTransmitFctPtr  LoTpTransmitFctPtr  UpIfTriggerTransmitFctPtr        Comment                        Referable Keys */
-  { /*     0 */                0u,      0x05u,               3u,                 0u, Cdd_CopyRxData      , Cdd_CopyTxData      , NULL_PTR              , Cdd_StartOfReception      , Cdd_TpRxIndication      , Cdd_TpTxConfirmation      , NULL_PTR          , NULL_PTR          , NULL_PTR                  },  /* [BswModule: CDDTp] */  /* [/ActiveEcuC/PduR/CDDTp, /ActiveEcuC/PduR] */
-  { /*     1 */                0u,      0x14u,               5u,                 3u, NULL_PTR            , NULL_PTR            , NULL_PTR              , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , CanIf_Transmit    , NULL_PTR          , NULL_PTR                  },  /* [BswModule: CanIf] */  /* [/ActiveEcuC/PduR/CanIf, /ActiveEcuC/PduR] */
-  { /*     2 */                0u,      0x14u,               6u,                 5u, NULL_PTR            , NULL_PTR            , NULL_PTR              , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , CanNm_Transmit    , NULL_PTR          , NULL_PTR                  },  /* [BswModule: CanNm] */  /* [/ActiveEcuC/PduR/CanNm, /ActiveEcuC/PduR] */
-  { /*     3 */                0u,      0x0Cu,              10u,                 6u, NULL_PTR            , NULL_PTR            , NULL_PTR              , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , NULL_PTR          , CanTp_Transmit    , NULL_PTR                  },  /* [BswModule: CanTp] */  /* [/ActiveEcuC/PduR/CanTp, /ActiveEcuC/PduR] */
-  { /*     4 */                0u,      0x06u,              17u,                10u, NULL_PTR            , NULL_PTR            , Com_RxIndication      , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , NULL_PTR          , NULL_PTR          , Com_TriggerTransmit       },  /* [BswModule: Com]   */  /* [/ActiveEcuC/PduR/Com, /ActiveEcuC/PduR] */
-  { /*     5 */                0u,      0x05u,              19u,                17u, Dcm_CopyRxData      , Dcm_CopyTxData      , NULL_PTR              , Dcm_StartOfReception      , Dcm_TpRxIndication      , Dcm_TpTxConfirmation      , NULL_PTR          , NULL_PTR          , NULL_PTR                  }   /* [BswModule: Dcm]   */  /* [/ActiveEcuC/PduR/Dcm, /ActiveEcuC/PduR] */
+    /* Index    CoreManagerRomIdx  MaskedBits  RmGDestRomEndIdx  RmGDestRomStartIdx  UpTpCopyRxDataFctPtr  UpTpCopyTxDataFctPtr  UpIfRxIndicationFctPtr  UpIfTxConfirmationFctPtr  UpTpStartOfReceptionFctPtr  UpTpTpRxIndicationFctPtr  UpTpTpTxConfirmationFctPtr  LoIfTransmitFctPtr  LoTpTransmitFctPtr  UpIfTriggerTransmitFctPtr        Comment                        Referable Keys */
+  { /*     0 */                0u,      0x05u,               3u,                 0u, Cdd_CopyRxData      , Cdd_CopyTxData      , NULL_PTR              , NULL_PTR                , Cdd_StartOfReception      , Cdd_TpRxIndication      , Cdd_TpTxConfirmation      , NULL_PTR          , NULL_PTR          , NULL_PTR                  },  /* [BswModule: CDDTp] */  /* [/ActiveEcuC/PduR/CDDTp, /ActiveEcuC/PduR] */
+  { /*     1 */                0u,      0x14u,               5u,                 3u, NULL_PTR            , NULL_PTR            , NULL_PTR              , NULL_PTR                , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , CanIf_Transmit    , NULL_PTR          , NULL_PTR                  },  /* [BswModule: CanIf] */  /* [/ActiveEcuC/PduR/CanIf, /ActiveEcuC/PduR] */
+  { /*     2 */                0u,      0x14u,               6u,                 5u, NULL_PTR            , NULL_PTR            , NULL_PTR              , NULL_PTR                , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , CanNm_Transmit    , NULL_PTR          , NULL_PTR                  },  /* [BswModule: CanNm] */  /* [/ActiveEcuC/PduR/CanNm, /ActiveEcuC/PduR] */
+  { /*     3 */                0u,      0x0Cu,              10u,                 6u, NULL_PTR            , NULL_PTR            , NULL_PTR              , NULL_PTR                , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , NULL_PTR          , CanTp_Transmit    , NULL_PTR                  },  /* [BswModule: CanTp] */  /* [/ActiveEcuC/PduR/CanTp, /ActiveEcuC/PduR] */
+  { /*     4 */                0u,      0x06u,              17u,                10u, NULL_PTR            , NULL_PTR            , Com_RxIndication      , Com_TxConfirmation      , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , NULL_PTR          , NULL_PTR          , Com_TriggerTransmit       },  /* [BswModule: Com]   */  /* [/ActiveEcuC/PduR/Com, /ActiveEcuC/PduR] */
+  { /*     5 */                0u,      0x05u,              19u,                17u, Dcm_CopyRxData      , Dcm_CopyTxData      , NULL_PTR              , NULL_PTR                , Dcm_StartOfReception      , Dcm_TpRxIndication      , Dcm_TpTxConfirmation      , NULL_PTR          , NULL_PTR          , NULL_PTR                  }   /* [BswModule: Dcm]   */  /* [/ActiveEcuC/PduR/Dcm, /ActiveEcuC/PduR] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -266,37 +267,38 @@ CONST(PduR_RmGDestRomType, PDUR_CONST) PduR_RmGDestRom[19] = {  /* PRQA S 1514, 
   \var    PduR_RmSrcRom
   \brief  PduR RoutiongManager SrcPdu Table
   \details
-  Element            Description
-  MmRomIdx           the index of the 1:1 relation pointing to PduR_MmRom
-  RmDestRomEndIdx    the end index of the 1:n relation pointing to PduR_RmDestRom
-  RmDestRomLength    the number of relations pointing to PduR_RmDestRom
-  SrcHnd             handle to be used as parameter for the TxConfirmation or TriggerTransmit function call.
+  Element              Description
+  MaskedBits           contains bitcoded the boolean data of PduR_TriggerTransmitSupportedOfRmSrcRom, PduR_TxConfirmationSupportedOfRmSrcRom
+  MmRomIdx             the index of the 1:1 relation pointing to PduR_MmRom
+  RmDestRomLength      the number of relations pointing to PduR_RmDestRom
+  RmDestRomStartIdx    the start index of the 1:n relation pointing to PduR_RmDestRom
+  SrcHnd               handle to be used as parameter for the TxConfirmation or TriggerTransmit function call.
 */ 
 #define PDUR_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
 CONST(PduR_RmSrcRomType, PDUR_CONST) PduR_RmSrcRom[19] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    MmRomIdx  RmDestRomEndIdx  RmDestRomLength  SrcHnd                                                                                     Comment                                       Referable Keys */
-  { /*     0 */       1u,              8u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_3ec2fcac] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/BCU_04_oNIO_ES6_RF_CAN_SR_V3_0_b06c3b94_Rx/PduRSrcPdu_3ec2fcac] */
-  { /*     1 */       1u,              9u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_3feaaad3] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CDC_IC_01_oNIO_ES6_RF_CAN_SR_V3_0_7ab33239_Rx/PduRSrcPdu_3feaaad3] */
-  { /*     2 */       1u,             13u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_8b049bb0] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CDC_WLC_oNIO_ES6_RF_CAN_SR_V3_0_cbd6c32f_Rx/PduRSrcPdu_8b049bb0] */
-  { /*     3 */       1u,             19u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_f115c878] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CGW_02_oNIO_ES6_RF_CAN_SR_V3_0_371b1f5e_Rx/PduRSrcPdu_f115c878] */
-  { /*     4 */       1u,             14u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_8f6b5f25] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CGW_03_oNIO_ES6_RF_CAN_SR_V3_0_2fb1cd3a_Rx/PduRSrcPdu_8f6b5f25] */
-  { /*     5 */       1u,             17u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_ece35bb2] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CGW_TCU_01_oNIO_ES6_RF_CAN_SR_V3_0_9e3e6b3d_Rx/PduRSrcPdu_ece35bb2] */
-  { /*     6 */       1u,             12u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_8b01a8ad] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_57df1db7_Rx/PduRSrcPdu_8b01a8ad] */
-  { /*     7 */       3u,              1u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu]          */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CDC_WLC_NFC_CDDroute_RX/PduRSrcPdu] */
-  { /*     8 */       3u,              7u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_392782f6] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/DIAG_REQ_AllECU_oNIO_ES6_RF_CAN_SR_V3_0_5b04e722_Rx/PduRSrcPdu_392782f6] */
-  { /*     9 */       3u,             18u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_eddf36be] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/DIAG_REQ_WLC_oNIO_ES6_RF_CAN_SR_V3_0_af2d88ff_Rx/PduRSrcPdu_eddf36be] */
-  { /*    10 */       3u,              2u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_1]        */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_CGW_WLC_PduRRoutingPath/PduRSrcPdu_1] */
-  { /*    11 */       3u,             11u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_5]        */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath/PduRSrcPdu_5] */
-  { /*    12 */       5u,             16u,              1u, DcmConf_DcmDslProtocolTx_DIAG_RESP_WLC_oNIO_ES6_RF_CAN_SR_V3_0_7db09b81_Tx_237b1533 },  /* [PduRSrcPdu: PduRSrcPdu_cd65fdce] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/DIAG_RESP_WLC_oNIO_ES6_RF_CAN_SR_V3_0_7db09b81_Tx/PduRSrcPdu_cd65fdce] */
-  { /*    13 */       0u,              4u,              1u,  CddConf_CddPduRUpperLayerTxPdu_IMOB_WLC_CGW_oNIO_ES6_RF_CAN_CddPduRUpperLayerRxPdu },  /* [PduRSrcPdu: PduRSrcPdu_2]        */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_WLC_CGW_oNIO_ES6_RF_CAN/PduRSrcPdu_2] */
-  { /*    14 */       4u,             15u,              1u,                          ComConf_ComIPdu_NM_WLC_oNIO_ES6_RF_CAN_SR_V3_0_9357dd65_Tx },  /* [PduRSrcPdu: PduRSrcPdu_9febb8af] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/NM_WLC_oNIO_ES6_RF_CAN_SR_V3_0_9357dd65_Tx/PduRSrcPdu_9febb8af] */
-  { /*    15 */       4u,              5u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_2f5fea6f] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_01_oNIO_ES6_RF_CAN_SR_V3_0_0b9d3d12_Tx/PduRSrcPdu_2f5fea6f] */
-  { /*    16 */       4u,              3u,              1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_19a519a0] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_02_oNIO_ES6_RF_CAN_SR_V3_0_3e708b41_Tx/PduRSrcPdu_19a519a0] */
-  { /*    17 */       0u,              6u,              1u,   CddConf_CddPduRUpperLayerTxPdu_WLC_CDC_NFC_oNIO_ES6_RF_CAN_CddPduRUpperLayerTxPdu },  /* [PduRSrcPdu: PduRSrcPdu_3]        */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_CDC_NFC_oNIO_ES6_RF_CAN_PduRRoutingPath_Tx/PduRSrcPdu_3] */
-  { /*    18 */       0u,             10u,              1u,  CddConf_CddPduRUpperLayerTxPdu_WLC_DEVLP_01_oNIO_ES6_RF_CAN_CddPduRUpperLayerTxPdu }   /* [PduRSrcPdu: PduRSrcPdu_4]        */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_01_oNIO_ES6_RF_CAN_PduRRoutingPath/PduRSrcPdu_4] */
+    /* Index    MaskedBits  MmRomIdx  RmDestRomLength  RmDestRomStartIdx  SrcHnd                                                                                     Comment                                       Referable Keys */
+  { /*     0 */      0x00u,       1u,              1u,                7u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_3ec2fcac] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/BCU_04_oNIO_ES6_RF_CAN_SR_V3_0_b06c3b94_Rx/PduRSrcPdu_3ec2fcac] */
+  { /*     1 */      0x00u,       1u,              1u,                8u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_3feaaad3] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CDC_IC_01_oNIO_ES6_RF_CAN_SR_V3_0_7ab33239_Rx/PduRSrcPdu_3feaaad3] */
+  { /*     2 */      0x00u,       1u,              1u,               12u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_8b049bb0] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CDC_WLC_oNIO_ES6_RF_CAN_SR_V3_0_cbd6c32f_Rx/PduRSrcPdu_8b049bb0] */
+  { /*     3 */      0x00u,       1u,              1u,               18u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_f115c878] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CGW_02_oNIO_ES6_RF_CAN_SR_V3_0_371b1f5e_Rx/PduRSrcPdu_f115c878] */
+  { /*     4 */      0x00u,       1u,              1u,               13u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_8f6b5f25] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CGW_03_oNIO_ES6_RF_CAN_SR_V3_0_2fb1cd3a_Rx/PduRSrcPdu_8f6b5f25] */
+  { /*     5 */      0x00u,       1u,              1u,               16u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_ece35bb2] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CGW_TCU_01_oNIO_ES6_RF_CAN_SR_V3_0_9e3e6b3d_Rx/PduRSrcPdu_ece35bb2] */
+  { /*     6 */      0x00u,       1u,              1u,               11u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_8b01a8ad] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CGW_WLC_oNIO_ES6_RF_CAN_SR_V3_0_57df1db7_Rx/PduRSrcPdu_8b01a8ad] */
+  { /*     7 */      0x00u,       3u,              1u,                0u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu]          */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/CDC_WLC_NFC_CDDroute_RX/PduRSrcPdu] */
+  { /*     8 */      0x00u,       3u,              1u,                6u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_392782f6] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/DIAG_REQ_AllECU_oNIO_ES6_RF_CAN_SR_V3_0_5b04e722_Rx/PduRSrcPdu_392782f6] */
+  { /*     9 */      0x00u,       3u,              1u,               17u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_eddf36be] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/DIAG_REQ_WLC_oNIO_ES6_RF_CAN_SR_V3_0_af2d88ff_Rx/PduRSrcPdu_eddf36be] */
+  { /*    10 */      0x00u,       3u,              1u,                1u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_1]        */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_CGW_WLC_PduRRoutingPath/PduRSrcPdu_1] */
+  { /*    11 */      0x00u,       3u,              1u,               10u,                                                            PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_5]        */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_02_oNIO_ES6_RF_CAN_PduRRoutingPath/PduRSrcPdu_5] */
+  { /*    12 */      0x00u,       5u,              1u,               15u, DcmConf_DcmDslProtocolTx_DIAG_RESP_WLC_oNIO_ES6_RF_CAN_SR_V3_0_7db09b81_Tx_237b1533 },  /* [PduRSrcPdu: PduRSrcPdu_cd65fdce] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/DIAG_RESP_WLC_oNIO_ES6_RF_CAN_SR_V3_0_7db09b81_Tx/PduRSrcPdu_cd65fdce] */
+  { /*    13 */      0x00u,       0u,              1u,                3u,  CddConf_CddPduRUpperLayerTxPdu_IMOB_WLC_CGW_oNIO_ES6_RF_CAN_CddPduRUpperLayerRxPdu },  /* [PduRSrcPdu: PduRSrcPdu_2]        */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/IMOB_WLC_CGW_oNIO_ES6_RF_CAN/PduRSrcPdu_2] */
+  { /*    14 */      0x02u,       4u,              1u,               14u,                          ComConf_ComIPdu_NM_WLC_oNIO_ES6_RF_CAN_SR_V3_0_9357dd65_Tx },  /* [PduRSrcPdu: PduRSrcPdu_9febb8af] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/NM_WLC_oNIO_ES6_RF_CAN_SR_V3_0_9357dd65_Tx/PduRSrcPdu_9febb8af] */
+  { /*    15 */      0x01u,       4u,              1u,                4u,                          ComConf_ComIPdu_WLC_01_oNIO_ES6_RF_CAN_SR_V3_0_0b9d3d12_Tx },  /* [PduRSrcPdu: PduRSrcPdu_2f5fea6f] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_01_oNIO_ES6_RF_CAN_SR_V3_0_0b9d3d12_Tx/PduRSrcPdu_2f5fea6f] */
+  { /*    16 */      0x01u,       4u,              1u,                2u,                          ComConf_ComIPdu_WLC_02_oNIO_ES6_RF_CAN_SR_V3_0_3e708b41_Tx },  /* [PduRSrcPdu: PduRSrcPdu_19a519a0] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_02_oNIO_ES6_RF_CAN_SR_V3_0_3e708b41_Tx/PduRSrcPdu_19a519a0] */
+  { /*    17 */      0x00u,       0u,              1u,                5u,   CddConf_CddPduRUpperLayerTxPdu_WLC_CDC_NFC_oNIO_ES6_RF_CAN_CddPduRUpperLayerTxPdu },  /* [PduRSrcPdu: PduRSrcPdu_3]        */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_CDC_NFC_oNIO_ES6_RF_CAN_PduRRoutingPath_Tx/PduRSrcPdu_3] */
+  { /*    18 */      0x00u,       0u,              1u,                9u,  CddConf_CddPduRUpperLayerTxPdu_WLC_DEVLP_01_oNIO_ES6_RF_CAN_CddPduRUpperLayerTxPdu }   /* [PduRSrcPdu: PduRSrcPdu_4]        */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/WLC_DEVLP_01_oNIO_ES6_RF_CAN_PduRRoutingPath/PduRSrcPdu_4] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -550,6 +552,24 @@ FUNC(void, PDUR_CODE) PduR_CanIfRxIndication(PduIdType RxPduId, P2CONST(PduInfoT
   PDUR_DUMMY_STATEMENT(RxPduId);        /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
   PDUR_DUMMY_STATEMENT(info);   		/* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
 }
+
+
+/**********************************************************************************************************************
+ * PduR_CanIfTxConfirmation
+ *********************************************************************************************************************/
+/*!
+ * \internal
+ * - call internal general communication interface TxConfirmation function.
+ * \endinternal
+ *********************************************************************************************************************/
+FUNC(void, PDUR_CODE) PduR_CanIfTxConfirmation(PduIdType TxPduId) /* COV_PDUR_WRAPPER_FUNC */
+{
+#if (PDUR_TXCONFIRMATIONUSEDOFTXIF2UP == STD_ON)
+  PduR_LoIfTxConfirmation(TxPduId);
+#endif
+  PDUR_DUMMY_STATEMENT(TxPduId);        /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+}
+
 
 
 /**********************************************************************************************************************

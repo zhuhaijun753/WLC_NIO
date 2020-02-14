@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Cfg.h
- *   Generation Time: 2020-02-08 12:42:12
+ *   Generation Time: 2020-02-13 13:28:31
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -729,7 +729,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_GetSizeOfTxBufferPrioByCanIdBaseOfPCConfig()            1u  /**< the number of accomplishable value elements in CanIf_TxBufferPrioByCanIdBase */
 #define CanIf_GetSizeOfTxBufferPrioByCanIdByteQueueConfigOfPCConfig() 1u  /**< the number of accomplishable value elements in CanIf_TxBufferPrioByCanIdByteQueueConfig */
 #define CanIf_GetSizeOfTxBufferPrioByCanIdByteQueueMappedTxPdusOfPCConfig() 7u  /**< the number of accomplishable value elements in CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus */
-#define CanIf_GetSizeOfTxConfirmationFctListOfPCConfig()              3u  /**< the number of accomplishable value elements in CanIf_TxConfirmationFctList */
+#define CanIf_GetSizeOfTxConfirmationFctListOfPCConfig()              4u  /**< the number of accomplishable value elements in CanIf_TxConfirmationFctList */
 #define CanIf_GetSizeOfTxPduConfigOfPCConfig()                        7u  /**< the number of accomplishable value elements in CanIf_TxPduConfig */
 #define CanIf_GetSizeOfTxPduQueueIndexOfPCConfig()                    7u  /**< the number of accomplishable value elements in CanIf_TxPduQueueIndex */
 #define CanIf_GetSizeOfTxQueueOfPCConfig()                            7u  /**< the number of accomplishable value elements in CanIf_TxQueue */
@@ -1664,7 +1664,7 @@ extern CONST(CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType, CANIF_CONST) Ca
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctList[3];
+extern CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctList[4];
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */

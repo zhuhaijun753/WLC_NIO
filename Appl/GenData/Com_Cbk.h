@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Cbk.h
- *   Generation Time: 2019-12-01 17:02:33
+ *   Generation Time: 2020-02-13 13:28:30
  *           Project: WLC - Version 1.0
  *          Delivery: CBD1900162_D00
  *      Tool Version: DaVinci Configurator (beta) 5.19.29
@@ -123,6 +123,21 @@
 **********************************************************************************************************************/
 FUNC(void, COM_CODE) Com_RxIndication(PduIdType RxPduId, P2CONST(PduInfoType, AUTOMATIC, COM_APPL_DATA) PduInfoPtr);
 
+/**********************************************************************************************************************
+  Com_TxConfirmation
+**********************************************************************************************************************/
+/** \brief    This function is called by the lower layer after the PDU has been transmitted on the network.
+              A confirmation that is received for an I-PDU that does not require a confirmation is silently discarded.
+    \param    TxPduId    ID of AUTOSAR COM I-PDU that has been transmitted.
+                            Range: 0..(maximum number of I-PDU IDs transmitted by AUTOSAR COM) - 1
+    \return   none
+    \context  The function can be called on interrupt and task level. It is not allowed to use CAT1 interrupts with Rte (BSW00326]). Due to this, the interrupt context shall be configured to a CAT2 interrupt if an Rte is used.
+    \synchronous TRUE
+    \reentrant   TRUE, for different Handles
+    \trace    SPEC-2737028
+    \note     The function is called by the lower layer.
+**********************************************************************************************************************/
+FUNC(void, COM_CODE) Com_TxConfirmation(PduIdType TxPduId);
 
 /**********************************************************************************************************************
   Com_TriggerTransmit
